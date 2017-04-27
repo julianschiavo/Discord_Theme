@@ -1,3 +1,27 @@
+#ui-tab-bar-item {
+display:block!important;
+}
+
+/*img.emoji[alt*="rainbow"] {
+content: "L🌈L";
+}
+
+img.emoji[alt*="rainbow"]::after {
+content: "L🌈L";
+}*/
+
+#app-mount > div > div:nth-child(2) > div > div.layers.flex-vertical.flex-spacer > div:nth-child(2) > div > div.content-region,
+#app-mount > div > div.modal-container > div.modal > div > div > div.message-reactions-reactors,
+#app-mount > div > div:nth-child(2) > div > div.layers.flex-vertical.flex-spacer > div > section > div.chat.flex-vertical.flex-spacer > div.content.flex-spacer.flex-horizontal > div.search-results-wrap,
+#app-mount > div > div:nth-child(2) > div > div.layers.flex-vertical.flex-spacer > div > section > div.chat.flex-vertical.flex-spacer > div.content.flex-spacer.flex-horizontal > div.search-results-wrap > div.scroller-wrap.dark,
+#app-mount > div > div:nth-child(2) > div > div.layers.flex-vertical.flex-spacer > div > section > div.chat.flex-vertical.flex-spacer > div.content.flex-spacer.flex-horizontal > div.search-results-wrap > div.scroller-wrap.dark > div {
+overflow: auto!important;
+}
+
+.ui-standard-sidebar-view .content-region .scrollbar:after, .ui-standard-sidebar-view .sidebar-region .scrollbar:after {
+    display: block!important;
+}
+
 .avatar-large[style*="a_"] + .comment .message.first .body .username-wrapper:after {
 	content: 'Nitro';
 	color: white;
@@ -618,9 +642,9 @@ display:none!important;
 
 
 /* Scroller */
-/* BOTH | This one can't be used on light and dark, must define both */
+/* BOTH | This one can't be used on light and dark, must define both 
 .scroller-wrap .scroller::-webkit-scrollbar { width: 14px; }
-.scroller.guild-channels::-webkit-scrollbar { display: none; }
+//.scroller.guild-channels::-webkit-scrollbar { display: none; }
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
   border: 4px solid rgba(255, 255, 255, 0) !important;
   background-color: rgba(0, 0, 0, 0) !important;
@@ -637,7 +661,7 @@ display:none!important;
 .scroller-wrap .scroller::-webkit-scrollbar-thumb:active {
   border: 4px solid rgba(255, 255, 255, 0) !important;
   background-color: rgba(225, 225, 225, 0.2) !important;
-}
+}*/
 /* END: Scroller */
 
 /* User Popout */
@@ -1264,10 +1288,10 @@ display:none!important;
   background-color: var(--dark-highlight);
 }
 /* END: Account Section */
-.channel-textarea { margin: 1px 0px 0px; margin-right: 10px!important; margin-left: 10px!important; margin-top: -3px!important; margin-bottom: -3px!important; }
+.channel-textarea { margin: 1px 0px 0px; margin-right: 10px!important; margin-left: 10px!important; margin-top: -1px!important; margin-bottom: -1px!important; }
 .channel-textarea-upload { border: none; }
 //.channel-textarea { border:none; }
-.channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { border-width: 0.5px; border-radius: 7px; height: 160%; padding: 1 1 1 1; }
+.channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner { border-width: 0.5px; border-radius: 7px; height: 160%; padding: 2 2 2 2; }
 /* Message Textarea */
 /* BOTH .*/
 /*.message-group h2 strong { color: var(--light-dark-text); }
@@ -1329,12 +1353,12 @@ display:none!important;
 /* DARK */
 .theme-dark .channel-textarea-inner { background-color: transparent; }
 .theme-dark .channel-textarea-inner .channel-textarea-upload:hover { background-color: transparent; }
-.theme-dark .chat form .typing { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
-//48,48,48,.9
+//.theme-dark .chat form .typing { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
+.theme-dark .chat form .typing { background-color: rgba(48, 48, 48, 0); padding-left: 10px; padding-right: 10px; }
 .theme-dark .chat form {background-color: #3c3c3c; border: none; color: #fff; }
 .theme-dark #autocomplete-popout .row.selected, #autocomplete-popout .row:hover { background: #181818 }
 .theme-dark #autocomplete-popout .row { -webkit-transition: all 50ms ease; transition: all 50ms ease; }
-.theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
+//.theme-dark #autocomplete-popout .scroller::-webkit-scrollbar { display: none }
 .theme-dark .channel-textarea-autocomplete-inner { background-color: var(--dark-primary)!important; }
 .theme-dark .channel-textarea-autocomplete-inner header { background-color: var(--dark-highlight)!important; }
 .theme-dark .channel-textarea-autocomplete-inner ul { background-color: var(--dark-primary)!important; }
