@@ -301,7 +301,7 @@ display:none!important;
 
 /* Dark theme */
 
-.theme-dark .search .search-bar {
+.  .search .search-bar {
 
   background: none !important;
 
@@ -497,11 +497,18 @@ display:none!important;
   --light-secondary: #ecf0f1;
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
+--nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 .theme-dark .messages-wrapper .messages .divider span,
 .theme-light .messages-wrapper .messages .divider span {
   background-color: transparent;
 }
+.mention {
+   background-color: rgba(115,139,215,.2);
+ }
+ .mention:hover {
+   background-color: rgba(115,139,215,.7);
+ }
 /*::selection {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -511,7 +518,7 @@ display:none!important;
 /* BOTH */
 .ui-tab-bar.SIDE .ui-tab-bar-item:before {
   margin-right: 10px;
-  vertical-align: -40%;
+  vertical-align: -25%;
 }
 
 .theme-light .ui-card-primary, .theme-dark .ui-card-primary {
@@ -591,22 +598,22 @@ display:none!important;
 .theme-dark .ui-standard-sidebar-view .sidebar-region .scroller { background-color: var(--dark-highlight); }
 .theme-dark .ui-standard-sidebar-view .content-region .scroller { background-color: var(--dark-secondary); }
 .theme-dark .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: var(--accent); }
-/* Account */ .theme-dark .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg); }
-/* Privacy and Safety */ .theme-dark .ui-tab-bar-item:nth-of-type(3):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_https_white_24px.svg); }
-/* Authorized Apps */ .theme-dark .ui-tab-bar-item:nth-of-type(4):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_white_24px.svg); }
-/* Connections */ .theme-dark .ui-tab-bar-item:nth-of-type(5):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg); }
-/* Nitro */ .theme-dark .ui-tab-bar-item:nth-of-type(7):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg); }
-/* Voice */ div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(10):before  { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg); }
-/* Overlay */ .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(11):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg); }
-/* Notification */ div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(11):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg); }
-/* Keybinds */ div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(12):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg); }
-/* Games */ .theme-dark .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(13):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg); }
-/* Text & Images */ .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(14):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg); }
-/* Appearance */ .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(16):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(15):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_palette_white_24px.svg); }
-/* Streamer Mode */ .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(16):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(16):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg); }
-/* Language */ .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(18):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(17):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_translate_white_24px.svg); }
-/* Change log */ .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(19):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(20):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(19):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_white_24px.svg); }
-/* Log out */ .theme-dark .ui-tab-bar-item:nth-of-type(19):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(21):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(22):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(21):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_reply_white_24px.svg); }
+/* Account  .theme-dark .ui-tab-bar-item:nth-of-type(2):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_person_white_24px.svg); }
+ Privacy and Safety  .theme-dark .ui-tab-bar-item:nth-of-type(3):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_https_white_24px.svg); }
+ Authorized Apps  .theme-dark .ui-tab-bar-item:nth-of-type(4):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_done_white_24px.svg); }
+ Connections  .theme-dark .ui-tab-bar-item:nth-of-type(5):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_signal_wifi_4_bar_white_24px.svg); }
+ Nitro  .theme-dark .ui-tab-bar-item:nth-of-type(7):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_favorite_white_24px.svg); }
+ Voice  div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(10):before  { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg); }
+ Overlay  .theme-dark .ui-tab-bar-item:nth-of-type(10):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(11):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_desktop_windows_white_24px.svg); }
+ Notification  div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(11):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_notifications_white_24px.svg); }
+ Keybinds  div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(12):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_keyboard_white_24px.svg); }
+ Games  .theme-dark .ui-tab-bar-item:nth-of-type(11):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(13):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_games_white_24px.svg); }
+ Text & Images  .theme-dark .ui-tab-bar-item:nth-of-type(12):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(14):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_chat_white_24px.svg); }
+ Appearance .theme-dark .ui-tab-bar-item:nth-of-type(13):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(16):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(15):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_palette_white_24px.svg); }
+ Streamer Mode  .theme-dark .ui-tab-bar-item:nth-of-type(14):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(16):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(16):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_videocam_white_24px.svg); }
+ Language .theme-dark .ui-tab-bar-item:nth-of-type(15):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(18):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(17):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_translate_white_24px.svg); }
+ Change log  .theme-dark .ui-tab-bar-item:nth-of-type(17):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(19):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(20):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(19):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_white_24px.svg); }
+ Log out  .theme-dark .ui-tab-bar-item:nth-of-type(19):before, div.platform-osx .theme-dark .ui-tab-bar-item:nth-of-type(21):before, div.platform-win .theme-dark .ui-tab-bar-item:nth-of-type(22):before, div.platform-linux .theme-dark .ui-tab-bar-item:nth-of-type(21):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_reply_white_24px.svg); }*/
 
 .theme-dark .ui-standard-sidebar-view .content-region, .theme-dark .ui-standard-sidebar-view .content-region .scrollbar {
   background: var(--dark-secondary);
@@ -639,6 +646,69 @@ display:none!important;
 /* Change log */ .theme-light .ui-tab-bar-item:nth-of-type(17):before, div.platform-osx .theme-light .ui-tab-bar-item:nth-of-type(19):before, div.platform-win .theme-light .ui-tab-bar-item:nth-of-type(20):before, div.platform-linux .theme-light .ui-tab-bar-item:nth-of-type(19):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_edit_black_24px.svg); }
 /* Log out */ .theme-light .ui-tab-bar-item:nth-of-type(19):before, div.platform-osx .theme-light .ui-tab-bar-item:nth-of-type(21):before, div.platform-win .theme-light .ui-tab-bar-item:nth-of-type(22):before, div.platform-linux .theme-light .ui-tab-bar-item:nth-of-type(21):before { content: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_reply_black_24px.svg); }
 /* END: User Settings */
+
+/* NSFW */
+ /* BOTH */
+ .theme-dark .chat > .content > .flex-justify-center {
+   background-color: var(--dark-primary);
+ }
+ .theme-dark .ui-guild-nsfw .image, .theme-light .ui-guild-nsfw .image {
+   background-image: var(--nsfw-image);
+ }
+ 
+ .theme-dark .ui-guild-nsfw .title, .theme-light .ui-guild-nsfw .title { font-size: 0; }
+ .theme-dark .ui-guild-nsfw .title::before, .theme-light .ui-guild-nsfw .title::before { content: "Oh nose... NSFW!"; font-size: 30px; }
+ /* END: NSFW */
+ 
+ /* Header */
+ /* BOTH */
+ .private-channel-recipients-invite,
+ .messages-popout-wrap {
+   -webkit-animation: popout-content 400ms cubic-bezier(.3, .3, 0, 1);
+   animation: popout-content 400ms cubic-bezier(.3, .3, 0, 1)
+ }
+ 
+ .popout.popout-bottom-right.no-arrow.no-shadow {
+   margin-top: 27px!important;
+   margin-left: 10px!important;
+   z-index: 10!important;
+ }
+ 
+ @-webkit-keyframes popout-content {
+   from {
+     -webkit-transform: translate(0, -65px);
+     transform: translate(0, -65px);
+     opacity: 0;
+   }
+ }
+ 
+ @keyframes popout-content {
+   from {
+     -webkit-transform: translate(0, -65px);
+     transform: translate(0, -65px);
+     opacity: 0;
+   }
+ }
+ 
+ .header-toolbar button.popout-open span, .header-toolbar button.active {
+   opacity: 1;
+   z-index: 20;
+ }
+ 
+ .header-toolbar button.popout-open {
+   -webkit-transform: translate(0, 65px);
+   transform: translate(0, 65px);
+   transition: all 500ms cubic-bezier(.3, .3, 0, 1);
+   -webkit-transition: all 500ms cubic-bezier(.3, .3, 0, 1);
+ }
+ 
+ .header-toolbar button {
+   -webkit-transition: all 300ms cubic-bezier(.23, .23, 0, 1);
+   transition: all 300ms cubic-bezier(.23, .23, 0, 1);
+   display: block;
+ }
+ /* END: Header */
+
 
 
 /* Scroller */
@@ -713,17 +783,31 @@ display:none!important;
 
 /* User Profile Modal */
 /* BOTH | This one can't be used on light and dark, must define both */
+.avatar-profile {
+   background-size: 128px 128px;
+   margin-top: -29px;
+ }
+#user-profile-modal { border-radius: 0; }
 .avatar-profile .status {
   border-color: var(--dark-secondary);
 }
+
 #user-profile-modal .header {
   background-color: var(--dark-highlight);
   background-image: none;
+  border-radius: 0;
 }
+#user-profile-modal .header .header-info {
+   margin-top: -30px;
+ }
 #user-profile-modal .scroller {
-  background-color: var(--dark-secondary);
+  background: var(--dark-secondary);
   border-bottom: 0;
 }
+#user-profile-modal .tab-bar {
+   margin-left: -185px;
+   margin-top: 0px;
+ }
 #user-profile-modal .tab-bar-container {
   background-color: var(--dark-primary);
   border-bottom: 0;
@@ -738,6 +822,7 @@ display:none!important;
   font-weight: bold;
   border-bottom-color: #fff;
 }
+#user-profile-modal .guilds .section .section-header { color: #fff; }
 #user-profile-modal .guilds .section .connected-accounts .connected-account {
   border: 0;
   background: var(--dark-primary);
@@ -1007,11 +1092,18 @@ display:none!important;
   }
 }
 
-.theme-dark .status-picker.popout-menu {
+.theme-light .status-picker.popout-menu, .theme-dark .status-picker.popout-menu {
   background-color: var(--dark-highlight) !important;
-  border-radius: 0;
+  border-radius: 10px;
   animation: status-picker 600ms ease-in-out!important;
 }
+
+.popout-menu { border-radius: 0;}
+
+ .status-picker .popout-menu-item {
+   background-color: var(--dark-primary);
+   color: #fff;
+ }
 
 .status-picker .popout-menu-item { color: #fff; }
 .status-picker .popout-menu-item:hover {
@@ -1044,6 +1136,16 @@ display:none!important;
     opacity: 1;
   }
 }
+
+.small-popout-box {
+   border-radius: 0;
+   color: #fff;
+   background: var(--dark-primary);
+   border: 0;
+ }
+ 
+ .option-popout .btn-item { color: #fff; }
+ .option-popout .btn-item:hover { background: var(--dark-secondary); color: #fff; }
 
 .context-menu {
   background: var(--dark-highlight)!important;
@@ -1277,13 +1379,13 @@ display:none!important;
 .account .btn { background: none; }
 .account .btn-deafen, .account .btn-settings { box-shadow: none; }
 .account .btn-deafen, .account .btn-mute { border-right: none; display: none!important; }
-#voice-connection .btn, #voice-connection .btn-group, #voice-connection .btn-disconnect {
+#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
   background: transparent;
   border: none;
   box-shadow: none;
 }
 /* Get rid of the top border */
-.account, #voice-connection {
+.account, #rtc-connection {
   border: none;
   background-color: var(--dark-highlight);
 }
@@ -1596,6 +1698,7 @@ display:none!important;
 }
 
 .need-help-modal .header {
+  border-radius: 0;
   background-color: var(--dark-highlight);
   color: var(--dark-highlight);
 }
@@ -1605,6 +1708,7 @@ display:none!important;
 }
 
 .need-help-modal .footer {
+  border-radius: 0;
   background-color: var(--dark-highlight);
   border-top: none;
   color: white;
@@ -1801,9 +1905,11 @@ display:none!important;
 
 /* Markdown */
 /* BOTH */
+.markdown-modal .markdown-modal-header { text-align: center; }
 .markdown-modal, .markdown-modal .markdown-modal-header {
   background-color: var(--dark-highlight);
   color: #fff;
+  border-radius: 0;
   border-bottom: none;
 }
 .markdown-modal .scroller-wrap { background-color: var(--dark-primary); }
@@ -1861,6 +1967,27 @@ display:none!important;
 
 /* Channel Section */
 /* BOTH */
+@-webkit-keyframes status-picker {
+   from {
+     transform: translateY(-40px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes server-settings {
+   from {
+     transform: translateY(-150px);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0px);
+     opacity: 1;
+   }
+ }
 .guild-channels { background-color: var(--dark-highlight-channellist); }
 .guild-header header { background-color: var(--dark-highlight-channellist); }
 .guild-channels .channel-text.selected:before { border-left: 2px solid var(--accent); }
@@ -1869,19 +1996,31 @@ display:none!important;
 .guild-channels .channel:hover .channel-name { -webkit-transform: translate(10px); transform: translate(10px); }
 .guild-channels .channel-text.selected { background: var(--dark-secondary); }
 .guild-channels .channel-text:hover { background: var(--dark-secondary); opacity: .75 }
-.popout.popout-bottom { margin: 0px; }
+.popout-menu { width: 320px; box-shadow: none; }
+ .popout-menu .popout-menu-item, .popout-menu .popout-menu-item:hover { transition: all 200ms ease-in-out; }
+ .popout-menu .popout-menu-item { color: #fff; padding: 10px 30px 10px 20px; }
+ .popout-menu .popout-menu-item:hover { transform: translateX(0.5em); background: transparent; }
 .guild-header header:hover { background-color: var(--dark-secondary); }
 .guild-header.popout-open header { background-color: var(--dark-secondary); }
 .guild-header header { height: 57px; box-shadow: none; }
+.popout-menu .popout-menu-icon[src^="/assets/9a93097ab591379729c68f15a17b26af.svg"] {
+   background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg')!important;
+ }
 /* DARK */
 .theme-dark .popout-menu .popout-menu-separator {
-  border-bottom: 1px solid var(--dark-primary);
+  display: none;
+ }
+ .theme-dark .popout-menu {
+   background: var(--dark-primary);
+   animation: server-settings 500ms ease-in-out;
+   border-radius: 10px;
+   border: 3px solid var(--dark-highlight);
 }
-.theme-dark .popout-menu { background: var(--dark-secondary); }
 /* END: Channel Section */
 
 /* Server Settings */
 .settings .settings-inner, .settings .settings-right { background: var(--dark-secondary) !important; }
+.roles-list-popout { background-color: var(--dark-primary) }
 .notification-settings-modal .notification-settings-modal-channel-settings-list { box-shadow: 0 -1px var(--dark-primary); }
 .settings .settings-actions {
   background-color: var(--dark-secondary);
@@ -1953,6 +2092,10 @@ display:none!important;
 .guild-settings-modal-emoji .emoji-uploader .emoji-uploader-username { color: white; }
 .checkbox .checkbox-inner+span { color: white; }
 .form .control-group label { color: grey; }
+.form .control-groups>.control-group { color: #fff; }
+ .settings .settings-inner .settings-panel { color: #fff; }
+ #rtc-debug-modal #users-section .selected-user .scroller { color: #fff; }
+ #rtc-debug-modal #users-section .user-list li.selected { background: var(--dark-primary); }
 .form hr { border-bottom: 1px solid grey; }
 .form .Select.is-open .Select-control:hover { border-color: grey; }
 .Select-option { color: white !important; }
@@ -1963,6 +2106,7 @@ display:none!important;
 .guild-settings-modal-members h6 { color: grey; }
 .guild-settings-modal-members .guild-settings-modal-members-footer { border-top: 1px solid grey; }
 .popout header { background-color: var(--accent); color: #fff; }
+.popout header:last-child { padding-bottom: 53px; }
 .form .btn-clear { background: var(--accent); color: white; }
 .member-roles .manipulate:hover { border-color: var(--accent); }
 .guild-settings-modal-members .guild-settings-modal-members-footer a { color: var(--accent); }
@@ -2086,7 +2230,9 @@ display:none!important;
 /* DARK */
 .theme-dark .popout section { background-color: var(--dark-secondary); }
 /* LIGHT */
-
+/* BOTH */
+ .ui-flex.flex-horizontal-reverse>.ui-flex, .ui-flex.flex-horizontal-reverse>.ui-flex-child,
+ .ui-flex.flex-horizontal>.ui-flex, .ui-flex.flex-horizontal>.ui-flex-child { background: transparent; }
 /* END: Server Settings */
 
 /* Server Section */
@@ -2099,6 +2245,8 @@ display:none!important;
 .guilds-wrapper .guilds .guild.active .guild-inner {
   background-color: transparent !important;
 }
+
+.guilds-wrapper .guilds .friends-icon { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg')}
 
 .guilds-wrapper .guilds .guild.selected {
   background: transparent;
