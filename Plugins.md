@@ -38,6 +38,12 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/wideGuilds.css";
 ```
 
+### Use Default Discord Dark Theme Colors and Notifications (Community made)
+[Click here for preview](https://i.alexflipnote.xyz/.png)
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/defDarkColors.css";
+```
+
 ### Auto-hide Member list in Guilds
 [Click here for preview](https://i.alexflipnote.xyz/cc78b7.gif)
 ```css
