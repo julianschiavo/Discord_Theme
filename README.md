@@ -1,5 +1,11 @@
 ![Banner](https://i.mify.pw/7458a1.png)
 
+&nbsp;
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/RNws7dvyjuxA4no4Jb2eCo5X/justdotJS/Discord_Theme'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/RNws7dvyjuxA4no4Jb2eCo5X/justdotJS/Discord_Theme.svg' />
+</a>
+&nbsp;
+
 ## About theme
 ***Discord_Theme*** theme is made by **AlexFlipnote#0021** & **CyberRonin#5517**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins (almost, depends if the import URL is custom made for 1 theme).
