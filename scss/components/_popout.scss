@@ -274,13 +274,23 @@ div[class*="avatarStatusNormal-"] { border: 0; }
 
 // Emoji picker
 .emoji-picker {
+  .sticky-header {
+    left: 0;
+    width: 100%;
+  }
+
+  .header { background-color: var(--dark-highlight); }
+  div[class*="scrollerWrap-"] { background: var(--dark-secondary); }
+
   .category {
     color: var(--accent);
     font-size: 13px;
+    font-weight: bold;
+    padding-left: 1em;
   }
 
   .categories {
-    background: var(--dark-secondary);
+    background: var(--dark-primary);
     border-top: 0;
     margin: 0;
     padding: 0 12px;
@@ -305,16 +315,15 @@ div[class*="avatarStatusNormal-"] { border: 0; }
       background-position: 50% !important;
       background-repeat: no-repeat !important;
       background-size: contain !important;
-      &.selected { background: var(--dark-primary); }
+      &.selected { background: var(--dark-secondary); }
     }
   }
 
   .header {
-    background-color: var(--dark-highlight);
     border-bottom: 0;
 
     .search-bar {
-      background-color: transparent;
+      background-color: var(--dark-highlight) !important;
       .search-bar-inner { background: transparent; font-weight: bolder; }
     }
   }
