@@ -299,6 +299,9 @@ div[class*="autocomplete-"] {
   border: 0;
   box-shadow: none; }
 
+.theme-dark .channel-members {
+  background-color: var(--dark-primary); }
+
 .theme-dark .private-channel-call, .theme-dark .ui-video {
   background-color: var(--dark-highlight); }
 
