@@ -583,7 +583,7 @@ div[class*="autocomplete-"] {
 .theme-dark .user-settings-account::after,
 .theme-light .user-settings-account::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.4.99';
+  content: 'Theme version: 1.0.5.17';
   font-weight: bold; }
 
 :root {
@@ -1689,6 +1689,8 @@ div[class*="userPopout-"] {
     background: var(--dark-secondary);
     border-top: 0; }
   div[class*="userPopout-"] div[class*="headerNormal-"] {
+    background: var(--dark-highlight); }
+  div[class*="userPopout-"] div[class*="headerPlaying-"] {
     background: var(--dark-highlight); }
   div[class*="userPopout-"] div[class*="body-"] {
     background: var(--dark-primary);
