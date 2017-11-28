@@ -1787,6 +1787,24 @@ div[class*="avatarStatusNormal-"] {
   transform: scale(1.2);
   border: 0; }
 
+div[class*="root-"] {
+  border-radius: 0; }
+  div[class*="root-"] button[class*="buttonBrandInverted-"] {
+    background: #2ecc71;
+    color: #fff; }
+  div[class*="root-"] div[class*="topSectionPlaying"] {
+    background: transparent; }
+  div[class*="root-"] header[class*="header-"], div[class*="root-"] div[class*="activityProfile-"] {
+    background-color: var(--dark-highlight); }
+  div[class*="root-"] div[class*="topSectionNormal-"], div[class*="root-"] div[class*="tabBarContainer-"] {
+    background-color: var(--dark-primary);
+    border-top: 0; }
+  div[class*="root-"] div[class*="scrollerWrap-"], div[class*="root-"] div[class*="empty-"] {
+    background-color: var(--dark-secondary); }
+  div[class*="root-"] div[class*="connectedAccount-"] {
+    background-color: var(--dark-primary);
+    border: 0; }
+
 #user-profile-modal {
   border-radius: 0; }
   #user-profile-modal .avatar-wrapper {
