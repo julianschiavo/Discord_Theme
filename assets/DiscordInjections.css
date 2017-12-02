@@ -5,9 +5,11 @@
 .theme-dark .ellipsis-1MzbWB.primary400-1OkqpL.di-autocomplete-commandinfo { background-color: transparent !important; }
 
 /* Snazzah - DiscordBots */
-.with-background .header-info { background-color: rgba(0,0,0,0.4)!important; }
-.with-background .header-info:before { background-color: rgba(0,0,0,0.4); }
-.with-background .headerText-3tKBWq{background-color:rgba(0,0,0,0.4)!important;}
+.activity.db-prefix { color:#fff; }
+.with-background .headerText-3tKBWq,.with-background .activityUserPopout-1nmgaw{background-color:rgba(0,0,0,0.4)!important;}
+.with-background .headerInfo-Gkqcz9 { background-color: rgba(0,0,0,0.4)!important; }
+.with-background .headerInfo-Gkqcz9:before { background-color: rgba(0,0,0,0.4); }
+.with-background .headerInfo-Gkqcz9:after { background-color: rgba(0,0,0,0.4); }
 
 /* Snazzah - Citador */
 .quote-msg .message-group{margin-bottom:0px!important;}
