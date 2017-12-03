@@ -1695,6 +1695,9 @@ div[class*="userPopout-"] {
   div[class*="userPopout-"] div[class*="body-"] {
     background: var(--dark-primary);
     border-bottom: 0; }
+  div[class*="userPopout-"] div[class*="bodyAlignCenter-"], div[class*="userPopout-"] div[class*="bodyNormal-"] {
+    background: transparent;
+    border-bottom: 0; }
   div[class*="userPopout-"] div[class*="footer-"] {
     background: var(--dark-secondary); }
   div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarNormal-"] {
