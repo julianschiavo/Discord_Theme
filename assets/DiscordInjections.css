@@ -7,9 +7,7 @@
 /* Snazzah - DiscordBots */
 .activity.db-prefix { color:#fff; }
 .with-background .headerText-3tKBWq,.with-background .activityUserPopout-1nmgaw{background-color:rgba(0,0,0,0.4)!important;}
-.with-background .headerInfo-Gkqcz9 { background-color: rgba(0,0,0,0.4)!important; }
-.with-background .headerInfo-Gkqcz9:before { background-color: rgba(0,0,0,0.4); }
-.with-background .headerInfo-Gkqcz9:after { background-color: rgba(0,0,0,0.4); }
+.with-background .headerInfo-Gkqcz9:after { background-color: rgba(0,0,0,0.4)!important; }
 .with-background .body-UB0LrI {background:transparent!important;}
 
 /* Snazzah - Citador */
