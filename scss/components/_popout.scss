@@ -66,7 +66,13 @@ div[class*="userPopout-"] {
 
   div[class*="headerNormal-"] { background: var(--dark-highlight); }
   div[class*="headerPlaying-"] { background: var(--dark-highlight); }
-  div[class*="body-"] { background: var(--dark-primary); border-bottom: 0; }
+  div[class*="body-"] {
+    background: var(--dark-primary);
+    border-bottom: 0;
+
+    div[class*="roleName-"] { font-weight: normal; }
+  }
+
   div[class*="bodyAlignCenter-"], div[class*="bodyNormal-"] { background: transparent; border-bottom: 0; }
   div[class*="footer-"] { background: var(--dark-secondary); }
 

@@ -1695,6 +1695,8 @@ div[class*="userPopout-"] {
   div[class*="userPopout-"] div[class*="body-"] {
     background: var(--dark-primary);
     border-bottom: 0; }
+    div[class*="userPopout-"] div[class*="body-"] div[class*="roleName-"] {
+      font-weight: normal; }
   div[class*="userPopout-"] div[class*="bodyAlignCenter-"], div[class*="userPopout-"] div[class*="bodyNormal-"] {
     background: transparent;
     border-bottom: 0; }
