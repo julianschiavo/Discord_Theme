@@ -18,7 +18,8 @@
   display: none; }
 
 .theme-dark div[class*="title-"] {
-  background: var(--dark-primary); }
+  background: var(--dark-primary);
+  box-shadow: none; }
 
 .theme-dark div[class*="info-"] div[class*="title-"] {
   background: transparent; }
@@ -85,6 +86,11 @@
   border: 1px solid var(--accent); }
 .message-group .edit-message .edit-operation > a {
   color: var(--accent); }
+.message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabled-"] {
+  padding-top: 10px; }
+  .message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
+    background-color: var(--dark-primary);
+    border-radius: 5px; }
 
 .channel-textarea-inner .channel-textarea-upload {
   border-right-color: none; }
@@ -225,15 +231,9 @@ div[class*="autocomplete-"] {
 .theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] {
   background: transparent; }
 
-.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"] {
-  background-color: var(--dark-primary);
-  border-radius: 0;
-  margin-bottom: 0;
-  padding-bottom: 4px;
-  padding-top: 5px; }
-
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
 .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   border-radius: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
@@ -335,6 +335,9 @@ div[class*="autocomplete-"] {
   border: 0; }
   .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
     background-color: var(--accent); }
+
+div[class*="container-"] header[class*="header-"] {
+  box-shadow: none; }
 
 .container-RYiLUQ {
   background-color: var(--dark-primary);
@@ -444,6 +447,59 @@ div[class*="autocomplete-"] {
       -webkit-transform: translateX(0.5em);
       transform: translateX(0.5em);
       background: transparent; }
+
+div[class*="wrapperHoveredCollapsed-"] > svg {
+  background: url("https://png.icons8.com/chevron-up/win8/26");
+  background-size: contain;
+  filter: invert(50%);
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transition: all .3s;
+  transform: rotate(90deg);
+  width: 15px; }
+
+div[class*="wrapperHovered-"] > svg {
+  background: url("https://png.icons8.com/chevron-up/win8/26");
+  background-size: contain;
+  filter: invert(50%);
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transition: all .3s;
+  transform: rotate(180deg);
+  width: 15px; }
+
+div[class*="wrapperCollapsed-"] > svg {
+  background: url("https://png.icons8.com/chevron-up/win8/26");
+  background-size: contain;
+  filter: invert(50%);
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transition: all .3s;
+  transform: rotate(90deg);
+  width: 15px; }
+
+div[class*="wrapperDefault-"] > svg {
+  background: url("https://png.icons8.com/chevron-up/win8/26");
+  background-size: contain;
+  filter: invert(50%);
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transition: all .3s;
+  transform: rotate(180deg);
+  width: 15px; }
+
+div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
+  padding-left: 23px; }
+  div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
+    display: none; }
 
 .theme-dark .popout-menu {
   animation: server-settings 500ms ease-in-out;
@@ -1704,6 +1760,8 @@ div[class*="userPopout-"] {
     border-bottom: 0; }
   div[class*="userPopout-"] div[class*="footer-"] {
     background: var(--dark-secondary); }
+  div[class*="userPopout-"] div[class*="content-"] {
+    background-color: transparent; }
   div[class*="userPopout-"] div[class*="avatarWrapperNormal-"] div[class*="avatarNormal-"] {
     background-color: rgba(0, 0, 0, 0.01);
     border: 0; }
@@ -1801,6 +1859,8 @@ div[class*="root-"] {
     color: #fff; }
   div[class*="root-"] div[class*="topSectionPlaying"] {
     background: transparent; }
+  div[class*="root-"] div[class*="content-"] {
+    background-color: transparent; }
   div[class*="root-"] header[class*="header-"], div[class*="root-"] div[class*="activityProfile-"] {
     background-color: var(--dark-highlight); }
   div[class*="root-"] div[class*="topSectionNormal-"], div[class*="root-"] div[class*="tabBarContainer-"] {
@@ -2342,13 +2402,17 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
       border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
       left: -20px;
       top: -4px; }
-  .theme-dark .messages-popout-wrap .messages-popout .message-group {
+  .theme-dark .messages-popout-wrap .messages-popout .message-group, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover {
     background: transparent !important;
     border: 0 !important; }
-    .theme-dark .messages-popout-wrap .messages-popout .message-group .message-group .action-buttons .jump-button {
-      background-color: transparent; }
-      .theme-dark .messages-popout-wrap .messages-popout .message-group .message-group .action-buttons .jump-button:hover {
+    .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {
+      background-color: transparent;
+      box-shadow: none;
+      transition: background-color .1s ease-in-out; }
+      .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons:hover, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons:hover {
         box-shadow: none; }
+      .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons .jump-button {
+        background-color: var(--dark-secondary); }
 
 .user-popout-banned-video {
   display: none; }

@@ -27,3 +27,6 @@ linters:
 
   NestingDepth:
     enabled: false
+
+  UnnecessaryParentReference:
+    enabled: false

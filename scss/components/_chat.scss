@@ -20,7 +20,11 @@
 
 // Chat Messages
 .divider.divider-red + .divider { display: none; }
-.theme-dark div[class*="title-"] { background: var(--dark-primary); }
+.theme-dark div[class*="title-"] {
+  background: var(--dark-primary);
+  box-shadow: none;
+}
+
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
 .theme-dark div[class*="headerBar-"] {
   background: var(--dark-highlight);
@@ -90,6 +94,17 @@
   .edit-message {
     .channel-textarea-inner { border: 1px solid var(--accent); }
     .edit-operation>a { color: var(--accent); }
+
+    .edit-container-inner {
+      div[class*="channelTextAreaEnabled-"] {
+        padding-top: 10px;
+
+        div[class*="inner-"] {
+          background-color: var(--dark-primary);
+          border-radius: 5px;
+        }
+      }
+    }
   }
 }
 
@@ -229,16 +244,10 @@ div[class*="autocomplete-"] {
 .channel-text-area-default, div[class*="channelTextArea-"] { margin: 0; }
 
 .theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] { background: transparent; }
-.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"] {
-  background-color: var(--dark-primary);
-  border-radius: 0;
-  margin-bottom: 0;
-  padding-bottom: 4px;
-  padding-top: 5px;
-}
 
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
 .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   border-radius: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
@@ -352,6 +361,10 @@ div[class*="autocomplete-"] {
 
 
 // Channel section
+div[class*="container-"] header[class*="header-"] {
+  box-shadow: none;
+}
+
 .container-RYiLUQ {
   background-color: var(--dark-primary);
   margin-top: -1px;
@@ -436,6 +449,29 @@ div[class*="autocomplete-"] {
       background: transparent;
     }
   }
+}
+
+@mixin arrow-hover($deg) {
+  background: url('https://png.icons8.com/chevron-up/win8/26');
+  background-size: contain;
+  filter: invert(50%);
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  top: 1px;
+  transition: all .3s;
+  transform: rotate($deg);
+  width: 15px;
+}
+
+div[class*="wrapperHoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
+div[class*="wrapperHovered-"] > svg { @include arrow-hover(180deg); }
+div[class*="wrapperCollapsed-"] > svg { @include arrow-hover(90deg); }
+div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
+
+div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
+  padding-left: 23px;
+  & > svg > path { display: none; }
 }
 
 .theme-dark .popout-menu {
