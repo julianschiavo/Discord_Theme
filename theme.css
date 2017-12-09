@@ -210,6 +210,8 @@ div[class*="autocomplete-"] {
 .theme-dark .message-group .embed {
   background-color: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0); }
+  .theme-dark .message-group .embed .embed-content-inner {
+    background-color: transparent; }
 .theme-dark .message-group .comment .markup {
   color: rgba(255, 255, 255, 0.7) !important; }
   .theme-dark .message-group .comment .markup pre {
