@@ -21,6 +21,7 @@
 }
 
 .theme-dark {
+  div[class*="content-"] { background-color: var(--dark-primary); }
   div[class*="footer-"] { background-color: var(--dark-secondary); }
   .messages-wrapper .messages .divider span {
     background-color: transparent;

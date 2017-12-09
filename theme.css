@@ -597,6 +597,8 @@ div[class*="autocomplete-"] {
   --light-secondary: #ecf0f1;
   --notif: #7a78bd; }
 
+.theme-dark div[class*="content-"] {
+  background-color: var(--dark-primary); }
 .theme-dark div[class*="footer-"] {
   background-color: var(--dark-secondary); }
 .theme-dark .messages-wrapper .messages .divider span {
