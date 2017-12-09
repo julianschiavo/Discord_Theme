@@ -769,6 +769,8 @@ video[autoplay] { display: none; }
 div[class*="autocomplete-"] {
   background-color: var(--dark-secondary) !important;
 
+  div[class*="content-"] { background: transparent; }
+
   header {
     background-color: var(--dark-highlight) !important;
     color: var(--accent);

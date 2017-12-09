@@ -2442,6 +2442,8 @@ video[autoplay] {
 
 div[class*="autocomplete-"] {
   background-color: var(--dark-secondary) !important; }
+  div[class*="autocomplete-"] div[class*="content-"] {
+    background: transparent; }
   div[class*="autocomplete-"] header {
     background-color: var(--dark-highlight) !important;
     color: var(--accent);
