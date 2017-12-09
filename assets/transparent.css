@@ -13,7 +13,7 @@
 .channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
 .chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text,
 .chat form .typing, .theme-dark .chat .private-channel-call,
-.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers, 
+.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers,
 .theme-dark div[class*="headerBar-"], .theme-light div[class*="headerBar-"] {
   background: transparent!important;
   box-shadow: none;
@@ -23,7 +23,11 @@
 }
 
 .theme-dark .chat>.content, .theme-dark .channel-text-area-default div[class*="inner-"] {
-    background-color: transparent!important;
+  background-color: transparent!important;
+}
+
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"], .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
+  background: transparent;
 }
 
 .container-RYiLUQ {
@@ -167,17 +171,17 @@ div[class*="appMount-"], div[class*="channels-"], .theme-dark .chat, .theme-dark
 }
 
 div[class*="winButton"] {
-     margin-top: 4px !important;
- }
+  margin-top: 4px !important;
+}
 
 div[class*="typeWindows-"] {
-    margin-top: 0px !important;
+  margin-top: 0px !important;
 }
 
 div[class*="titleBar-"] {
-    height: 20px !important;
-    margin-top: 0px !important;
-    background-color: rgba(0, 0, 0, .90) !important;
+  height: 20px !important;
+  margin-top: 0px !important;
+  background-color: rgba(0, 0, 0, .90) !important;
 }
 
 /* Keyframes */
