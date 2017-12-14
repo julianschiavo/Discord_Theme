@@ -1,7 +1,31 @@
 @echo off
+
+
+:: Settings
+set Update=0
+set Canary=0
+
+
 cls
 echo Welcome to BeautifulDiscord install tool
 echo --------------------------------------------------
+
+:: Don't change this one
+set Download=https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+
+if {%Update%}=={1} (
+  cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && wget https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.css
+  cd %UserProfile%\Documents\DiscordTheme && beautifuldiscord --css autotheme.css
+  cls
+  echo Successfully Updated!
+  echo ---------------------
+  pause
+  exit
+)
+
+if {%Canary%}=={1} (
+  set Download=https://github.com/leovoel/BeautifulDiscord/archive/canary.zip
+)
 
 :CheckAdmin
   :: Check if admin permissions are placed
@@ -25,26 +49,77 @@ echo --------------------------------------------------
 
 
 :Install
-  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-
   cls
-  echo Done installing chocolatey, continuing to install Python and BeautifulDiscord
-  echo Please do not close this window until it's done...
+  echo Install list:
+  echo   - choco               Downloading and Installing...
+  echo   - Python              Waiting...
+  echo   - BeautifulDiscord    Waiting...
+  echo   - wget                Waiting...
+  echo   - Dicord Theme        Waiting...
+  echo   - Inserting themed    Waiting...
   echo --------------------------------------------------
+  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+  :: Disabling annoying confirm
+  choco feature enable -n allowGlobalConfirmation
 
   :: Python
+  cls
+  echo Install list:
+  echo   - choco               Complete!
+  echo   - Python              Downloading and Installing...
+  echo   - BeautifulDiscord    Waiting...
+  echo   - wget                Waiting...
+  echo   - Dicord Theme        Waiting...
+  echo   - Inserting themed    Waiting...
+  echo --------------------------------------------------
   choco install python
 
   :: BeautifulDiscord
+  cls
+  echo Install list:
+  echo   - choco               Complete!
+  echo   - Python              Complete!
+  echo   - BeautifulDiscord    Downloading and Installing...
+  echo   - wget                Waiting...
+  echo   - Dicord Theme        Waiting...
+  echo   - Inserting themed    Waiting...
+  echo --------------------------------------------------
   pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
   :: wget
+  cls
+  echo Install list:
+  echo   - choco               Complete!
+  echo   - Python              Complete!
+  echo   - BeautifulDiscord    Complete!
+  echo   - wget                Downloading and Installing...
+  echo   - Dicord Theme        Waiting...
+  echo   - Inserting themed    Waiting...
+  echo --------------------------------------------------
   choco install wget
 
   :: Download theme
+  cls
+  echo Install list:
+  echo   - choco               Complete!
+  echo   - Python              Complete!
+  echo   - BeautifulDiscord    Complete!
+  echo   - wget                Complete!
+  echo   - Dicord Theme        Downloading and Installing...
+  echo   - Inserting themed    Waiting...
+  echo --------------------------------------------------
   cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && wget https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.css
 
   :: Insert Theme
+  cls
+  echo Install list:
+  echo   - choco               Complete!
+  echo   - Python              Complete!
+  echo   - BeautifulDiscord    Complete!
+  echo   - wget                Complete!
+  echo   - Dicord Theme        Complete!
+  echo   - Inserting themed    Loading...
+  echo --------------------------------------------------
   cd %UserProfile%\Documents\DiscordTheme && beautifuldiscord --css autotheme.css
 
   cls
