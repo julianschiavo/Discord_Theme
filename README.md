@@ -7,7 +7,7 @@ Do you need more help? Join my server! **[Discord Invite](https://discord.gg/Dpx
 ## Installing
 #### Windows
 - Use the **INSTALL.bat** file<br>
-(Note: a recent update on Canary broke it, use **INSTALL_Canary.bat** if you use Discord Canary)
+(Note: a recent update on Canary broke it, change the settings in install file **set Canary=0** to **set Canary=1**)
 - Remember to keep Discord open while installing!
 
 **What will the Installer download or do to my PC:**

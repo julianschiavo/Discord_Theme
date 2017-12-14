@@ -1,16 +1,16 @@
 @echo off
 
-
 :: Settings
 set Update=0
 set Canary=0
 
 
+:: Do not change anything under this line
+:: Unless you know what you're doing...
+
 cls
 echo Welcome to BeautifulDiscord install tool
 echo --------------------------------------------------
-
-:: Don't change this one
 set Download=https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
 if {%Update%}=={1} (
