@@ -36,7 +36,7 @@ echo --------------------------------------------------
   choco install python
 
   :: BeautifulDiscord
-  pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+  pip install -U https://github.com/leovoel/BeautifulDiscord/archive/canary.zip
 
   :: wget
   choco install wget

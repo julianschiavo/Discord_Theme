@@ -4,20 +4,33 @@ This was made to let everyone who wants, able to have a more good-looking style.
 
 Do you need more help? Join my server! **[Discord Invite](https://discord.gg/DpxkY3x)**
 
-## FAQ
-**Where can I talk with you?**<br>Here: [Discord Invite](https://discord.gg/DpxkY3x)
+## Installing
+#### Windows
+- Use the **INSTALL.bat** file<br>
+(Note: a recent update on Canary broke it, use **INSTALL_Canary.bat** if you use Discord Canary)
+- Remember to keep Discord open while installing!
 
+**What will the Installer download or do to my PC:**
+- chocolatey (To download Python)
+- Python (To use BeautifulDiscord)
+  - Python/BeautifulDiscord
+- wget (To get the theme)
+- Make a folder in **Documents\DiscordTheme**
+- Reboot Discord to install theme
+
+**How does the installer look when done correctly?**
+*Coming soon*
+
+#### Linux and Mac
+- https://github.com/DTinker/discord-resources/wiki/Installing-Modifications
+
+## FAQ
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
-to change stuff, download the **theme.css**, however if you wish for a theme that updates, use **autotheme.css** :P
+to change stuff, download the **theme.css**, however if you wish for a theme that updates, use **autotheme.css**
 
 **How do I use plugins?**<br>Read the [Documentation](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Documentation.md), then get some plugins [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
 
-**How do I use the theme?**<br>[BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications) should be useful to use the skin
-
-**Does it support BetterDiscord?**<br>Yes, however I do highly recommended to use **BeautifulDiscord**<br>
-( You can find BetterDiscord version [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/assets/BetterDiscord.theme.css) )
-
-**I found a bug, what do I do?**<br>Make a **Pull Request / Issue**
+**I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
 ## Screenshots
 ![Preview 1](https://i.alexflipnote.xyz/0db23d.png)
