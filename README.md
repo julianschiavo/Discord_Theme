@@ -18,8 +18,8 @@ Do you need more help? Join my server! **[Discord Invite](https://discord.gg/Dpx
 - Make a folder in **Documents\DiscordTheme**
 - Reboot Discord to install theme
 
-**How does the installer look when done correctly?**
-*Coming soon*
+**How does the installer look when done correctly?**<br>
+Watch here: https://www.youtube.com/watch?v=rmLyPUb4ifo
 
 #### Linux and Mac
 - https://github.com/DTinker/discord-resources/wiki/Installing-Modifications
