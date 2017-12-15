@@ -1,16 +1,55 @@
 @import '../assets/animation';
 
 .theme-dark {
-  .search .search-bar { background: transparent; }
+  .search .search-bar {
+    background: transparent;
+
+    .search-filter {
+      padding: 0 5px;
+      background-color: var(--dark-highlight);
+
+      [data-text] { font-weight: bold; }
+    }
+
+    .search-answer {
+      padding-left: 0;
+      background-color: var(--dark-secondary);
+
+      [data-text] { font-weight: lighter; }
+    }
+  }
+
   .search-popout {
     background-color: var(--dark-highlight);
-    color: #fff;
 
     .option {
+      &.search-query {
+        background-color: #111;
+        border: none;
+
+        &.selected { background-color: #252525; }
+
+        &+.results-group::before { display: none; }
+
+        .keybind-shortcut.dim span {
+          border: 1px solid var(--dark-secondary);
+          box-shadow: inset 0 -4px 0 var(--dark-highlight);
+          background-color: var(--dark-secondary);
+          color: #000;
+
+          &:active { box-shadow: inset 0 -2px 0 var(--dark-highlight); }
+        }
+      }
+
       &::after { background: var(--dark-highlight); }
 
-      .selected {
+      &.selected {
         background-color: var(--dark-secondary);
+
+        strong, .displayed-nick { color: #fff; }
+
+        .filter { color: #fff; }
+
         &::after { background: linear-gradient(90deg, hsla(0, 0%, 95%, 0) 0, var(--dark-secondary) 50%); }
       }
     }

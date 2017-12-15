@@ -111,7 +111,7 @@ div[class*="avatarStatusNormal-"] { border: 0; }
 .bot-tag.bot-tag-invert { background-color: #7289da !important; color: #fff !important; }
 
 
-// Modal Image | Contributed by Snazzah (https://github.com/SnazzyPine25)
+// Modal Image | Contributed by Snazzah (https://github.com/Snazzah)
 .modal-image a {
   background: var(--dark-highlight);
   border-top: 2px solid rgba(0, 0, 0, .2);
@@ -829,4 +829,18 @@ div[class*="autocomplete-"] {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+
+// Small theme fixed with loading spinners and screenshare popouts | Contributed by Snazzah (https://github.com/Snazzah)
+.theme-dark .screenshare-popout {
+  background-color: var(--dark-primary);
+
+  .ui-quick-select-popout-option:hover {
+    background-color: var(--dark-secondary);
+  }
+}
+
+.theme-dark .content-2Jeco_ .marginBottom20-2Ifj-2 {
+  background-color: var(--dark-highlight)
 }
