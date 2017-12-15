@@ -836,11 +836,9 @@ div[class*="autocomplete-"] {
 .theme-dark .screenshare-popout {
   background-color: var(--dark-primary);
 
-  .ui-quick-select-popout-option:hover {
-    background-color: var(--dark-secondary);
-  }
+  .ui-quick-select-popout-option:hover { background-color: var(--dark-secondary); }
 }
 
-.theme-dark .content-2Jeco_ .marginBottom20-2Ifj-2 {
-  background-color: var(--dark-highlight)
+.theme-dark div[class*="content-"] div[class*="marginBottom20-"] {
+  background-color: var(--dark-highlight);
 }
