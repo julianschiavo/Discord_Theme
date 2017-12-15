@@ -84,7 +84,7 @@ if {%Canary%}=={1} (
   echo   - Dicord Theme        Waiting...
   echo   - Inserting themed    Waiting...
   echo --------------------------------------------------
-  pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+  pip install -U %Download%
 
   :: wget
   cls
