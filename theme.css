@@ -2502,9 +2502,6 @@ div[class*="autocomplete-"] {
   .theme-dark .screenshare-popout .ui-quick-select-popout-option:hover {
     background-color: var(--dark-secondary); }
 
-.theme-dark div[class*="content-"] div[class*="marginBottom20-"] {
-  background-color: var(--dark-highlight); }
-
 .theme-dark .search .search-bar {
   background: transparent; }
   .theme-dark .search .search-bar .search-filter {
