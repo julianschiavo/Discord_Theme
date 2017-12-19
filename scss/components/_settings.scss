@@ -8,7 +8,7 @@
 .theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-thumb { background-color: var(--dark-primary); }
 .theme-dark .scrollerThemed-19vinI.themeGhostHairline-2H8SiW .scroller-fzNley::-webkit-scrollbar-track { background-color: var(--dark-secondary); }
 .settings .settings-inner, .settings .settings-right { background: var(--dark-secondary) !important; }
-.roles-list-popout { background-color: var(--dark-primary) }
+.roles-list-popout { background-color: var(--dark-primary); }
 .channel-notification-settings .content label { color: #fff; }
 .theme-dark .ui-region-selector {
   background-color: transparent;
@@ -35,12 +35,14 @@ div[class*="header-"] { text-transform: none; }
   z-index: 2;
 }
 
-.theme-dark .ui-hover-card:before {
+.theme-dark .ui-hover-card::before {
   background: transparent;
   border: 0;
   border-left: 2px solid #fff;
   z-index: 1;
 }
+
+.theme-dark .keybind-list .ui-hover-card::before { z-index: 0 !important; }
 
 div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
   background: transparent;
@@ -60,19 +62,24 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(.4em); }
 }
 
 .notification-settings-modal .notification-settings-modal-channel-settings-header,
-.notification-settings-modal .notification-settings-modal-channel-settings-list  {
+.notification-settings-modal .notification-settings-modal-channel-settings-list {
   background: var(--dark-primary);
 }
 
-.deprecated-settings-modal .settings-actions {
-  background-color: var(--dark-secondary);
-  border-top: 0;
+.deprecated-settings-modal {
+  .settings-header { background-color: var(--dark-highlight); }
+  .settings-actions {
+    background-color: var(--dark-secondary);
+    border-top: 0;
+  }
+
+  .settings-inner {
+    background-color: var(--dark-primary);
+    .settings-panel > div .control-groups { background-color: transparent; }
+    .settings-panel > div h1 { color: #fff; }
+  }
 }
 
-.deprecated-settings-modal .settings-inner .settings-panel > div h1 { color: #fff; }
-.deprecated-settings-modal .settings-header { background-color: var(--dark-highlight); }
-.deprecated-settings-modal .settings-inner { background-color: var(--dark-primary); }
-.deprecated-settings-modal .settings-inner .settings-panel > div .control-groups { background-color: transparent; }
 .channel-mute-button { opacity: .7; }
 .channel-notification-settings { border-bottom: 0; }
 .channel-mute-button:hover { opacity: 1; }

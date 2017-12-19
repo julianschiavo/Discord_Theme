@@ -2637,11 +2637,14 @@ div[class*="header-"] {
 .ui-standard-sidebar-view .custom-scroller > div {
   z-index: 2; }
 
-.theme-dark .ui-hover-card:before {
+.theme-dark .ui-hover-card::before {
   background: transparent;
   border: 0;
   border-left: 2px solid #fff;
   z-index: 1; }
+
+.theme-dark .keybind-list .ui-hover-card::before {
+  z-index: 0 !important; }
 
 div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
   background: transparent; }
@@ -2665,21 +2668,17 @@ div[class*="side-"] div[class*="item-"]:hover {
 .notification-settings-modal .notification-settings-modal-channel-settings-list {
   background: var(--dark-primary); }
 
+.deprecated-settings-modal .settings-header {
+  background-color: var(--dark-highlight); }
 .deprecated-settings-modal .settings-actions {
   background-color: var(--dark-secondary);
   border-top: 0; }
-
-.deprecated-settings-modal .settings-inner .settings-panel > div h1 {
-  color: #fff; }
-
-.deprecated-settings-modal .settings-header {
-  background-color: var(--dark-highlight); }
-
 .deprecated-settings-modal .settings-inner {
   background-color: var(--dark-primary); }
-
-.deprecated-settings-modal .settings-inner .settings-panel > div .control-groups {
-  background-color: transparent; }
+  .deprecated-settings-modal .settings-inner .settings-panel > div .control-groups {
+    background-color: transparent; }
+  .deprecated-settings-modal .settings-inner .settings-panel > div h1 {
+    color: #fff; }
 
 .channel-mute-button {
   opacity: .7; }
