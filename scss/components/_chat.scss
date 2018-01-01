@@ -241,9 +241,13 @@ div[class*="autocomplete-"] {
 }
 
 
-.upload-modal div[class*="autocomplete-"] {
-  background: var(--dark-primary);
-  color: #fff;
+.upload-modal {
+  div[class*="autocomplete-"] {
+    background: var(--dark-primary);
+    color: #fff;
+  }
+
+  div[class*="channelTextArea-"] { margin-top: 10px; }
 }
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
@@ -331,8 +335,30 @@ div[class*="autocomplete-"] {
   + div[class*="container-"] { background-color: var(--dark-highlight); }
 
   .channel {
-    &:hover { background: var(--dark-secondary); opacity: .75; }
-    &:hover::before { border-left: 2px inset var(--accent); }
+    padding-left: -25px;
+
+    &.selected {
+      &::before {
+        @include animation(current-channel 300ms ease-in-out);
+        border-left: 8px solid var(--accent);
+        content: ' ';
+        height: 100%;
+        left: 0;
+        opacity: 1 !important;
+        position: absolute;
+        top: 0;
+      }
+
+      a {
+        background: var(--dark-secondary);
+        border-radius: 0;
+      }
+    }
+
+    a {
+      transition: all 200ms ease;
+      &:hover { padding-left: 15px; transition: all 200ms ease; }
+    }
   }
 
   &.selected {

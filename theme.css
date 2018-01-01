@@ -223,6 +223,8 @@ div[class*="autocomplete-"] {
 .upload-modal div[class*="autocomplete-"] {
   background: var(--dark-primary);
   color: #fff; }
+.upload-modal div[class*="channelTextArea-"] {
+  margin-top: 10px; }
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] {
   background: var(--dark-primary); }
@@ -311,11 +313,29 @@ div[class*="autocomplete-"] {
   background-color: var(--dark-primary); }
   .private-channels + div[class*="container-"] {
     background-color: var(--dark-highlight); }
-  .private-channels .channel:hover {
-    background: var(--dark-secondary);
-    opacity: .75; }
-  .private-channels .channel:hover::before {
-    border-left: 2px inset var(--accent); }
+  .private-channels .channel {
+    padding-left: -25px; }
+    .private-channels .channel.selected::before {
+      animation: current-channel 300ms ease-in-out;
+      -webkit-animation: current-channel 300ms ease-in-out;
+      -ms-animation: current-channel 300ms ease-in-out;
+      -moz-animation: current-channel 300ms ease-in-out;
+      -o-animation: current-channel 300ms ease-in-out;
+      border-left: 8px solid var(--accent);
+      content: ' ';
+      height: 100%;
+      left: 0;
+      opacity: 1 !important;
+      position: absolute;
+      top: 0; }
+    .private-channels .channel.selected a {
+      background: var(--dark-secondary);
+      border-radius: 0; }
+    .private-channels .channel a {
+      transition: all 200ms ease; }
+      .private-channels .channel a:hover {
+        padding-left: 15px;
+        transition: all 200ms ease; }
   .private-channels.selected {
     background: var(--dark-secondary); }
     .private-channels.selected .icon-friends {
