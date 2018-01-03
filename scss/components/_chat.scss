@@ -151,7 +151,7 @@
   margin: 0;
 }
 
-.typing {
+div[class*="typing-"] {
   bottom: 100%;
   left: 10px;
   position: absolute;
@@ -195,7 +195,7 @@ div[class*="autocomplete-"] {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
-  .typing { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
+  div[class*="typing-"] { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
 }
 
 .theme-dark #autocomplete-popout {
