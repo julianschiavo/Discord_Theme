@@ -28,7 +28,7 @@ Watch here: https://www.youtube.com/watch?v=rmLyPUb4ifo
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
 to change stuff, download the **theme.css**, however if you wish for a theme that updates, use **autotheme.css**
 
-**How do I use plugins?**<br>Read the [Documentation](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Documentation.md), then get some plugins [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
+**How do I use plugins?**<br>Read the [Documentation](https://github.com/AlexFlipnote/Discord_Theme/blob/master/docs/Documentation.md), then get some plugins [here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/docs/Plugins.md)
 
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
