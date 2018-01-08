@@ -2030,16 +2030,16 @@ div[class*="root-"] {
   .emoji-picker .dimmer.visible {
     background: rgba(0, 0, 0, 0.5); }
 
-.theme-dark .popout .emoji-picker {
+.theme-dark .popout div[class*="emojiPicker-"] {
   animation: emoji-picker 300ms;
   background: var(--dark-primary) !important;
   border: 1px solid var(--dark-primary);
   border-radius: 0 0 3px 3px !important; }
-  .theme-dark .popout .emoji-picker .sticky-header {
+  .theme-dark .popout div[class*="emojiPicker-"] div[class*="stickyHeader-"] {
     background: var(--dark-primary); }
-  .theme-dark .popout .emoji-picker .scroller {
+  .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] {
     background: transparent !important; }
-    .theme-dark .popout .emoji-picker .scroller .emoji-item {
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="emojiItem-"] {
       transition: all 100ms ease;
       -webkit-transition: all 100ms ease;
       -ms-transition: all 100ms ease;
@@ -2048,13 +2048,14 @@ div[class*="root-"] {
       background-position: 50% !important;
       background-repeat: no-repeat !important;
       background-size: contain !important; }
-      .theme-dark .popout .emoji-picker .scroller .emoji-item.selected {
-        background: var(--dark-secondary); }
-  .theme-dark .popout .emoji-picker .header {
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="selected-"] {
+      background: var(--dark-secondary); }
+  .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] {
+    background-color: var(--dark-highlight);
     border-bottom: 0; }
-    .theme-dark .popout .emoji-picker .header .search-bar {
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar {
       background-color: var(--dark-highlight) !important; }
-      .theme-dark .popout .emoji-picker .header .search-bar .search-bar-inner {
+      .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar .search-bar-inner {
         background: transparent;
         font-weight: bolder; }
 

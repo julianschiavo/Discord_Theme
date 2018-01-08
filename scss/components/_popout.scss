@@ -325,26 +325,28 @@ div[class*="root-"] {
   .dimmer { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
 }
 
-.theme-dark .popout .emoji-picker {
+.theme-dark .popout div[class*="emojiPicker-"] {
   animation: emoji-picker 300ms;
   background: var(--dark-primary) !important;
   border: 1px solid var(--dark-primary);
   border-radius: 0 0 3px 3px !important;
 
-  .sticky-header { background: var(--dark-primary); }
-  .scroller {
+  div[class*="stickyHeader-"] { background: var(--dark-primary); }
+  div[class*="scrollerWrap-"] {
     background: transparent !important;
 
-    .emoji-item {
+    div[class*="emojiItem-"] {
       @include transition(all 100ms ease);
       background-position: 50% !important;
       background-repeat: no-repeat !important;
       background-size: contain !important;
-      &.selected { background: var(--dark-secondary); }
     }
+
+    div[class*="selected-"] { background: var(--dark-secondary); }
   }
 
-  .header {
+  div[class*="header-"] {
+    background-color: var(--dark-highlight);
     border-bottom: 0;
 
     .search-bar {
