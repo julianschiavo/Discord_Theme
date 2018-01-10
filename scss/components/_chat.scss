@@ -506,13 +506,12 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   & > svg > path { display: none; }
 }
 
-.theme-dark .popout-menu {
+.theme-dark .popout div[class*="menu-"] {
   @include animation(server-settings 500ms ease-in-out);
-  background: var(--dark-primary);
-  border: 3px solid var(--dark-highlight);
+  background: var(--dark-highlight);
   border-radius: 10px;
 
-  .popout-menu-separator {
+  div[class*="separator-"] {
     display: none;
   }
 }

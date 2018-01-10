@@ -523,16 +523,15 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
     display: none; }
 
-.theme-dark .popout-menu {
+.theme-dark .popout div[class*="menu-"] {
   animation: server-settings 500ms ease-in-out;
   -webkit-animation: server-settings 500ms ease-in-out;
   -ms-animation: server-settings 500ms ease-in-out;
   -moz-animation: server-settings 500ms ease-in-out;
   -o-animation: server-settings 500ms ease-in-out;
-  background: var(--dark-primary);
-  border: 3px solid var(--dark-highlight);
+  background: var(--dark-highlight);
   border-radius: 10px; }
-  .theme-dark .popout-menu .popout-menu-separator {
+  .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
     display: none; }
 
 .theme-dark .channel-notices .channel-notice {
@@ -2239,7 +2238,7 @@ div[class*="contextMenu-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ­ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
