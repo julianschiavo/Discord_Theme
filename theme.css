@@ -444,32 +444,6 @@ div[class*="container-"] header[class*="header-"] {
   .guild-header header.popout-open header {
     background-color: var(--dark-secondary); }
 
-.popout-menu {
-  box-shadow: none;
-  width: 320px; }
-  .popout-menu .popout-menu-icon[src^="/assets/9a93097ab591379729c68f15a17b26af.svg"] {
-    background-image: url("https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg") !important; }
-  .popout-menu .popout-menu-item {
-    transition: all 200ms ease-in-out;
-    -webkit-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    color: #fff;
-    padding: 10px 30px 10px 20px; }
-    .popout-menu .popout-menu-item:hover {
-      transition: all 200ms ease-in-out;
-      -webkit-transition: all 200ms ease-in-out;
-      -ms-transition: all 200ms ease-in-out;
-      -moz-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      -moz-transform: translateX(0.5em);
-      -o-transform: translateX(0.5em);
-      -ms-transform: translateX(0.5em);
-      -webkit-transform: translateX(0.5em);
-      transform: translateX(0.5em);
-      background: transparent; }
-
 div[class*="wrapperHoveredCollapsed-"] > svg {
   background: url("https://png.icons8.com/chevron-up/win8/26");
   background-size: contain;
@@ -523,16 +497,38 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
     display: none; }
 
-.theme-dark .popout div[class*="menu-"] {
-  animation: server-settings 500ms ease-in-out;
-  -webkit-animation: server-settings 500ms ease-in-out;
-  -ms-animation: server-settings 500ms ease-in-out;
-  -moz-animation: server-settings 500ms ease-in-out;
-  -o-animation: server-settings 500ms ease-in-out;
-  background: var(--dark-highlight);
-  border-radius: 10px; }
-  .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
-    display: none; }
+.theme-dark .popout {
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  box-shadow: none; }
+  .theme-dark .popout div[class*="menu-"] {
+    background: var(--dark-highlight);
+    border-radius: 10px; }
+    .theme-dark .popout div[class*="menu-"] div[class*="item-"] {
+      transition: all 200ms ease-in-out;
+      -webkit-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      color: #fff;
+      padding: 10px 30px 10px 20px; }
+      .theme-dark .popout div[class*="menu-"] div[class*="item-"]:hover {
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        -ms-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        -moz-transform: translateX(0.5em);
+        -o-transform: translateX(0.5em);
+        -ms-transform: translateX(0.5em);
+        -webkit-transform: translateX(0.5em);
+        transform: translateX(0.5em);
+        background: transparent; }
+    .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
+      display: none; }
 
 .theme-dark .channel-notices .channel-notice {
   background-color: var(--dark-highlight); }

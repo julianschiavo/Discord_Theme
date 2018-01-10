@@ -462,27 +462,6 @@ div[class*="container-"] header[class*="header-"] {
   &.popout-open header { background-color: var(--dark-secondary); }
 }
 
-.popout-menu {
-  box-shadow: none;
-  width: 320px;
-
-  .popout-menu-icon[src^="/assets/9a93097ab591379729c68f15a17b26af.svg"] {
-    background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg') !important;
-  }
-
-  .popout-menu-item {
-    @include transition(all 200ms ease-in-out);
-    color: #fff;
-    padding: 10px 30px 10px 20px;
-
-    &:hover {
-      @include transition(all 200ms ease-in-out);
-      @include transform(translateX(.5em));
-      background: transparent;
-    }
-  }
-}
-
 @mixin arrow-hover($deg) {
   background: url('https://png.icons8.com/chevron-up/win8/26');
   background-size: contain;
@@ -506,13 +485,29 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   & > svg > path { display: none; }
 }
 
-.theme-dark .popout div[class*="menu-"] {
-  @include animation(server-settings 500ms ease-in-out);
-  background: var(--dark-highlight);
-  border-radius: 10px;
+.theme-dark .popout {
+  @include transition(all 250ms ease-in-out);
+  box-shadow: none;
 
-  div[class*="separator-"] {
-    display: none;
+  div[class*="menu-"] {
+    background: var(--dark-highlight);
+    border-radius: 10px;
+
+    div[class*="item-"] {
+      @include transition(all 200ms ease-in-out);
+      color: #fff;
+      padding: 10px 30px 10px 20px;
+
+      &:hover {
+        @include transition(all 200ms ease-in-out);
+        @include transform(translateX(.5em));
+        background: transparent;
+      }
+    }
+
+    div[class*="separator-"] {
+      display: none;
+    }
   }
 }
 
