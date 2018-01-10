@@ -33,10 +33,8 @@ to change stuff, download the **theme.css**, however if you wish for a theme tha
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
 ## Screenshots
-![Preview 1](https://i.alexflipnote.xyz/0db23d.png)
+![Preview 1](https://i.alexflipnote.xyz/f8b100.png)
 
-![Preview 2](https://i.alexflipnote.xyz/e2953c.png)
+![Preview 2](https://i.alexflipnote.xyz/ad004f.png)
 
-![Preview 3](https://i.alexflipnote.xyz/c7607e.png)
-
-![Preview 4](https://i.alexflipnote.xyz/921234.png)
+![Preview 3](https://i.alexflipnote.xyz/5ee910.png)
