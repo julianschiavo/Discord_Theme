@@ -57,6 +57,13 @@ This might not be supportive when it comes to browsers **( Tested & works on: Ch
 
 ---
 
+## Freeze time to grab CSS
+There's a command you can use in console to freeze time and grab CSS from menus:
+```js
+setTimeout(function(){debugger;}, 5000);
+```
+With this, you don't have to worry about finding those things that disappears if you just click away for a second.
+
 ## Source-Code Information
 This CSS code is 100% self-made, if you do wish to use this code for your creation, please do, just remember to give proper credits to this theme.
 
