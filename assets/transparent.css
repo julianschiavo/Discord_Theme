@@ -45,6 +45,8 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
   background: transparent!important;
 }
 
+.theme-dark div[class*="layers-"], .theme-dark div[class*="layer-"] { background: transparent; }
+
 .theme-dark .friends-table .messages .divider:before,
 .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider:before,
