@@ -486,7 +486,6 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 }
 
 .theme-dark .popout {
-  @include transition(all 250ms ease-in-out);
   box-shadow: none;
 
   div[class*="menu-"] {

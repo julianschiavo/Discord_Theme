@@ -498,11 +498,6 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
     display: none; }
 
 .theme-dark .popout {
-  transition: all 250ms ease-in-out;
-  -webkit-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
   box-shadow: none; }
   .theme-dark .popout div[class*="menu-"] {
     background: var(--dark-highlight);
