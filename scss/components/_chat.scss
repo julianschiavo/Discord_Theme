@@ -485,31 +485,6 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   & > svg > path { display: none; }
 }
 
-.theme-dark .popout {
-  box-shadow: none;
-
-  div[class*="menu-"] {
-    background: var(--dark-highlight);
-    border-radius: 10px;
-
-    div[class*="item-"] {
-      @include transition(all 200ms ease-in-out);
-      color: #fff;
-      padding: 10px 30px 10px 20px;
-
-      &:hover {
-        @include transition(all 200ms ease-in-out);
-        @include transform(translateX(.5em));
-        background: transparent;
-      }
-    }
-
-    div[class*="separator-"] {
-      display: none;
-    }
-  }
-}
-
 
 // Channel notice
 .theme-dark .channel-notices .channel-notice {

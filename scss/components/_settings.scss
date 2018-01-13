@@ -38,10 +38,6 @@
 
 div[class*="header-"] { text-transform: none; }
 
-.ui-standard-sidebar-view .custom-scroller>div {
-  z-index: 2;
-}
-
 .theme-dark .ui-hover-card::before {
   background: transparent;
   border: 0;
@@ -57,9 +53,18 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 
 div[class*="side-"] div[class*="item-"], div[class*="side-"] div[class*="item-"]:hover { transition: all 200ms ease; }
 div[class*="side-"] div[class*="item-"]:hover { transform: translateX(.4em); }
-.ui-standard-sidebar-view div[class*="itemDefaultSelected-"] {
-  background: var(--accent);
-  transform: translateX(.4em);
+
+.ui-standard-sidebar-view {
+  div[class*="itemDefaultSelected-"] {
+    background: var(--accent);
+    transform: translateX(.4em);
+  }
+
+  div[class*="title-"] { background: transparent; }
+
+  .custom-scroller>div {
+    z-index: 2;
+  }
 }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {

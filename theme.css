@@ -497,34 +497,6 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
     display: none; }
 
-.theme-dark .popout {
-  box-shadow: none; }
-  .theme-dark .popout div[class*="menu-"] {
-    background: var(--dark-highlight);
-    border-radius: 10px; }
-    .theme-dark .popout div[class*="menu-"] div[class*="item-"] {
-      transition: all 200ms ease-in-out;
-      -webkit-transition: all 200ms ease-in-out;
-      -ms-transition: all 200ms ease-in-out;
-      -moz-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      color: #fff;
-      padding: 10px 30px 10px 20px; }
-      .theme-dark .popout div[class*="menu-"] div[class*="item-"]:hover {
-        transition: all 200ms ease-in-out;
-        -webkit-transition: all 200ms ease-in-out;
-        -ms-transition: all 200ms ease-in-out;
-        -moz-transition: all 200ms ease-in-out;
-        -o-transition: all 200ms ease-in-out;
-        -moz-transform: translateX(0.5em);
-        -o-transform: translateX(0.5em);
-        -ms-transform: translateX(0.5em);
-        -webkit-transform: translateX(0.5em);
-        transform: translateX(0.5em);
-        background: transparent; }
-    .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
-      display: none; }
-
 .theme-dark .channel-notices .channel-notice {
   background-color: var(--dark-highlight); }
   .theme-dark .channel-notices .channel-notice .message div {
@@ -2020,41 +1992,71 @@ div[class*="root-"] {
   .emoji-picker .dimmer.visible {
     background: rgba(0, 0, 0, 0.5); }
 
-.theme-dark .popout div[class*="emojiPicker-"] {
-  animation: emoji-picker 300ms;
-  background: var(--dark-primary) !important;
-  border: 1px solid var(--dark-primary);
-  border-radius: 0 0 3px 3px !important; }
-  .theme-dark .popout div[class*="emojiPicker-"] div[class*="stickyHeader-"] {
+.theme-dark .popout {
+  box-shadow: none; }
+  .theme-dark .popout div[class*="popoutList-"] {
+    background: var(--dark-highlight); }
+  .theme-dark .popout div[class*="searchBar-"] {
     background: var(--dark-primary); }
-  .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] {
-    background: transparent !important; }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="emojiItem-"] {
-      transition: all 100ms ease;
-      -webkit-transition: all 100ms ease;
-      -ms-transition: all 100ms ease;
-      -moz-transition: all 100ms ease;
-      -o-transition: all 100ms ease;
-      background-position: 50% !important;
-      background-repeat: no-repeat !important;
-      background-size: contain !important; }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="selected-"] {
-      background: var(--dark-secondary); }
-  .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] {
-    background-color: var(--dark-highlight);
-    border-bottom: 0; }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar {
-      background-color: var(--dark-highlight) !important; }
-      .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar .search-bar-inner {
-        background: transparent;
-        font-weight: bolder; }
-
-.theme-dark .popout.no-shadow .emoji-picker {
-  background: var(--dark-primary) !important;
-  border: 0;
-  border-radius: 0 !important;
-  margin-bottom: -14px !important;
-  margin-right: 14px; }
+  .theme-dark .popout div[class*="emojiPicker-"] {
+    animation: emoji-picker 300ms;
+    background: var(--dark-primary) !important;
+    border: 1px solid var(--dark-primary);
+    border-radius: 0 0 3px 3px !important; }
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="stickyHeader-"] {
+      background: var(--dark-primary); }
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] {
+      background: transparent !important; }
+      .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="emojiItem-"] {
+        transition: all 100ms ease;
+        -webkit-transition: all 100ms ease;
+        -ms-transition: all 100ms ease;
+        -moz-transition: all 100ms ease;
+        -o-transition: all 100ms ease;
+        background-position: 50% !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important; }
+      .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="selected-"] {
+        background: var(--dark-secondary); }
+    .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] {
+      background-color: var(--dark-highlight);
+      border-bottom: 0; }
+      .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar {
+        background-color: var(--dark-highlight) !important; }
+        .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar .search-bar-inner {
+          background: transparent;
+          font-weight: bolder; }
+  .theme-dark .popout.no-shadow .emoji-picker {
+    background: var(--dark-primary) !important;
+    border: 0;
+    border-radius: 0 !important;
+    margin-bottom: -14px !important;
+    margin-right: 14px; }
+  .theme-dark .popout div[class*="menu-"] {
+    background: var(--dark-highlight);
+    border-radius: 10px; }
+    .theme-dark .popout div[class*="menu-"] div[class*="item-"] {
+      transition: all 200ms ease-in-out;
+      -webkit-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      color: #fff;
+      padding: 10px 30px 10px 20px; }
+      .theme-dark .popout div[class*="menu-"] div[class*="item-"]:hover {
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        -ms-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        -moz-transform: translateX(0.5em);
+        -o-transform: translateX(0.5em);
+        -ms-transform: translateX(0.5em);
+        -webkit-transform: translateX(0.5em);
+        transform: translateX(0.5em);
+        background: transparent; }
+    .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
+      display: none; }
 
 .diversity-selector .popout {
   background: var(--dark-secondary);
@@ -2195,12 +2197,12 @@ div[class*="contextMenu-"] {
   border-radius: 0;
   color: #fff; }
 
-.region-select-modal {
+div[class*="regionSelectModal-"] {
   background: var(--dark-highlight); }
-  .region-select-modal .region-select-modal-header {
+  div[class*="regionSelectModal-"] div[class*="regionSelectModalHeader-"] {
     color: #fff;
     text-transform: none; }
-  .region-select-modal .region-select-modal-option {
+  div[class*="regionSelectModal-"] div[class*="regionSelectModalOptions-"] div[class*="regionSelectModalOption-"] {
     transition: all 200ms ease;
     -webkit-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
@@ -2208,7 +2210,7 @@ div[class*="contextMenu-"] {
     -o-transition: all 200ms ease;
     background-color: var(--dark-secondary);
     border: 2px solid #696969; }
-    .region-select-modal .region-select-modal-option:hover {
+    div[class*="regionSelectModal-"] div[class*="regionSelectModalOptions-"] div[class*="regionSelectModalOption-"]:hover {
       transition: all 200ms ease;
       -webkit-transition: all 200ms ease;
       -ms-transition: all 200ms ease;
@@ -2646,9 +2648,6 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 div[class*="header-"] {
   text-transform: none; }
 
-.ui-standard-sidebar-view .custom-scroller > div {
-  z-index: 2; }
-
 .theme-dark .ui-hover-card::before {
   background: transparent;
   border: 0;
@@ -2670,6 +2669,10 @@ div[class*="side-"] div[class*="item-"]:hover {
 .ui-standard-sidebar-view div[class*="itemDefaultSelected-"] {
   background: var(--accent);
   transform: translateX(0.4em); }
+.ui-standard-sidebar-view div[class*="title-"] {
+  background: transparent; }
+.ui-standard-sidebar-view .custom-scroller > div {
+  z-index: 2; }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {
   background: var(--dark-highlight);
