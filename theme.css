@@ -2266,9 +2266,13 @@ div[class*="regionSelectModal-"] {
     -ms-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    background-color: transparent;
-    border-bottom: 0;
-    color: #fff; }
+    background-color: #e74c3c;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    padding: 10px 20px; }
+    .create-guild-container .form-actions .btn-default:hover, .create-guild-container.deprecated .form-actions .btn-default:hover {
+      background-color: #c0392b;
+      font-weight: normal; }
 
 .form .control-group input[type=text],
 .form .control-group label + textarea {
