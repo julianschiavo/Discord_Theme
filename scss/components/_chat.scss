@@ -327,7 +327,10 @@ div[class*="autocomplete-"] {
   background-color: var(--dark-primary);
 }
 
-.theme-dark .private-channel-call, .theme-dark .ui-video { background-color: var(--dark-highlight); }
+.theme-dark div[class*="videoHeight-"] {
+  background-color: var(--dark-highlight);
+  div[class*="video-"] { background-color: transparent; }
+}
 
 .private-channels {
   background-color: var(--dark-primary);

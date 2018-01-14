@@ -306,8 +306,10 @@ div[class*="autocomplete-"] {
 .theme-dark .channel-members {
   background-color: var(--dark-primary); }
 
-.theme-dark .private-channel-call, .theme-dark .ui-video {
+.theme-dark div[class*="videoHeight-"] {
   background-color: var(--dark-highlight); }
+  .theme-dark div[class*="videoHeight-"] div[class*="video-"] {
+    background-color: transparent; }
 
 .private-channels {
   background-color: var(--dark-primary); }
