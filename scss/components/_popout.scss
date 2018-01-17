@@ -392,6 +392,35 @@ div[class*="root-"] {
   }
 }
 
+div[class*="wrapper-"] {
+  background: transparent;
+
+  form[class*="instantInviteModal-"] {
+    .form-header {
+      background: var(--dark-highlight);
+      header { color: #fff; }
+      div[class*="blurb-"] { color: #ccc; }
+    }
+
+    .form-inner { background: var(--dark-primary); }
+    .form-actions { background: var(--dark-secondary); }
+
+    div[class*="clipboardInputInner-"] {
+      background: var(--dark-secondary);
+      border: 0;
+
+      input { background: var(--dark-secondary); }
+      button {
+        background: var(--accent);
+        border-left: 0;
+
+        &::before { background: transparent; }
+      }
+    }
+
+  }
+}
+
 .diversity-selector .popout {
   background: var(--dark-secondary);
   border: 0;
