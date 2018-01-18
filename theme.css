@@ -506,7 +506,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   .theme-dark .channel-notices .channel-notice .message button {
     background-color: var(--dark-primary); }
 
-.badge {
+.badge, div[class*="iconSpacing-"] div[class*="wrapper-"] {
   background-color: var(--notif); }
 
 .new-messages-indicator.new-messages-indicator-mention {

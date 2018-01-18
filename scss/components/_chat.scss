@@ -501,7 +501,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 
 
 // Servers section
-.badge { background-color: var(--notif); }
+.badge, div[class*="iconSpacing-"] div[class*="wrapper-"] { background-color: var(--notif); }
 .new-messages-indicator.new-messages-indicator-mention { background-color: var(--notif); }
 
 .dms .guild .badge,
