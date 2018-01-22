@@ -56,7 +56,7 @@
   background: var(--dark-highlight) !important;
 }
 
-.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
+.theme-dark .chat>.content, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
 .theme-dark .messages-wrapper .messages .message-group-blocked {
   &.revealed { background: var(--dark-primary); }
   .message-group-blocked-btn, .message-group-blocked-btn:hover {
@@ -324,10 +324,6 @@ div[class*="autocomplete-"] {
 
 
 // Friends section
-.theme-dark .channel-members {
-  background-color: var(--dark-primary);
-}
-
 .theme-dark div[class*="videoHeight-"] {
   background-color: var(--dark-highlight);
   div[class*="video-"] { background-color: transparent; }
@@ -336,7 +332,7 @@ div[class*="autocomplete-"] {
 .private-channels {
   background-color: var(--dark-primary);
 
-  + div[class*="container-"] { background-color: var(--dark-highlight); }
+  + div[class*="container-"] { background-color: var(--dark-primary); }
 
   .channel {
     padding-left: -25px;
@@ -374,10 +370,13 @@ div[class*="autocomplete-"] {
 
 #friends {
   .friends-table {
+    background: var(--dark-highlight);
     border: 0;
     margin-top: 0;
     padding-top: 4px;
   }
+
+  div[class*="scrollerWrap-"] { background: var(--dark-secondary); }
 
   .friends-header {
     border: 0;
@@ -408,6 +407,23 @@ div[class*="container-"] {
     svg[class*="colorSelectedText-"] path { fill: #2ecc71; }
     div[class*="nameSelectedText-"] { color: #2ecc71; }
   }
+
+  div[class*="contentUnreadText-"] {
+    svg[class*="colorUnreadText-"] path { fill: var(--accent); }
+    div[class*="nameUnreadText-"] { color: var(--accent); }
+  }
+
+  div[class*="wrapperUnreadText-"] div[class*="unread-"] {
+    background: var(--accent);
+    border-radius: 6px;
+    content: ' ';
+    height: 12px;
+    left: -10px;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    width: 12px;
+  }
 }
 
 .container-RYiLUQ {
@@ -431,18 +447,6 @@ div[class*="container-"] {
   border-radius: 0 5px 5px 0;
 }
 
-.unread-23Kvxk {
-  background: #fff;
-  border-radius: 6px;
-  content: ' ';
-  height: 12px;
-  left: -10px;
-  opacity: 1;
-  position: absolute;
-  top: 15px;
-  width: 12px;
-}
-
 .guild-channels {
   background-color: var(--dark-primary);
   .channel .channel-name { @include transition(all 200ms ease); }
@@ -453,6 +457,19 @@ div[class*="container-"] {
 
   .channel-text.selected { background: var(--dark-secondary); }
   .channel-text:hover { background: var(--dark-secondary); opacity: .75; }
+}
+
+.channel-members-wrap {
+  div[class*="scroller-"] { background: var(--dark-secondary); }
+  .channel-members .member {
+    &:hover { background: var(--dark-primary); }
+    &.popout-open { background: var(--dark-primary); }
+  }
+}
+
+div[class*="titleWrapper-"] div[class*="title-"] {
+  background: var(--dark-secondary);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
 }
 
 .guild-header header {

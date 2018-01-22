@@ -47,7 +47,7 @@
 .confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline {
   background: var(--dark-highlight) !important; }
 
-.theme-dark .chat > .content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
+.theme-dark .chat > .content, .theme-dark .messages-wrapper {
   background-color: var(--dark-secondary) !important; }
 
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
@@ -305,9 +305,6 @@ div[class*="autocomplete-"] {
   border: 0;
   box-shadow: none; }
 
-.theme-dark .channel-members {
-  background-color: var(--dark-primary); }
-
 .theme-dark div[class*="videoHeight-"] {
   background-color: var(--dark-highlight); }
   .theme-dark div[class*="videoHeight-"] div[class*="video-"] {
@@ -316,7 +313,7 @@ div[class*="autocomplete-"] {
 .private-channels {
   background-color: var(--dark-primary); }
   .private-channels + div[class*="container-"] {
-    background-color: var(--dark-highlight); }
+    background-color: var(--dark-primary); }
   .private-channels .channel {
     padding-left: -25px; }
     .private-channels .channel.selected::before {
@@ -348,9 +345,12 @@ div[class*="autocomplete-"] {
       border-left: 2px solid var(--accent); }
 
 #friends .friends-table {
+  background: var(--dark-highlight);
   border: 0;
   margin-top: 0;
   padding-top: 4px; }
+#friends div[class*="scrollerWrap-"] {
+  background: var(--dark-secondary); }
 #friends .friends-header {
   border: 0;
   box-shadow: none;
@@ -375,6 +375,20 @@ div[class*="container-"] div[class*="contentSelectedText-"] svg[class*="colorSel
   fill: #2ecc71; }
 div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSelectedText-"] {
   color: #2ecc71; }
+div[class*="container-"] div[class*="contentUnreadText-"] svg[class*="colorUnreadText-"] path {
+  fill: var(--accent); }
+div[class*="container-"] div[class*="contentUnreadText-"] div[class*="nameUnreadText-"] {
+  color: var(--accent); }
+div[class*="container-"] div[class*="wrapperUnreadText-"] div[class*="unread-"] {
+  background: var(--accent);
+  border-radius: 6px;
+  content: ' ';
+  height: 12px;
+  left: -10px;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  width: 12px; }
 
 .container-RYiLUQ {
   background-color: var(--dark-primary);
@@ -401,17 +415,6 @@ div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSele
   background-color: var(--dark-secondary);
   border-radius: 0 5px 5px 0; }
 
-.unread-23Kvxk {
-  background: #fff;
-  border-radius: 6px;
-  content: ' ';
-  height: 12px;
-  left: -10px;
-  opacity: 1;
-  position: absolute;
-  top: 15px;
-  width: 12px; }
-
 .guild-channels {
   background-color: var(--dark-primary); }
   .guild-channels .channel .channel-name {
@@ -435,6 +438,17 @@ div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSele
   .guild-channels .channel-text:hover {
     background: var(--dark-secondary);
     opacity: .75; }
+
+.channel-members-wrap div[class*="scroller-"] {
+  background: var(--dark-secondary); }
+.channel-members-wrap .channel-members .member:hover {
+  background: var(--dark-primary); }
+.channel-members-wrap .channel-members .member.popout-open {
+  background: var(--dark-primary); }
+
+div[class*="titleWrapper-"] div[class*="title-"] {
+  background: var(--dark-secondary);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 3px 0 rgba(0, 0, 0, 0.06); }
 
 .guild-header header {
   background-color: var(--dark-highlight);
@@ -624,7 +638,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 .theme-dark .user-settings-account::after,
 .theme-light .user-settings-account::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.5.17';
+  content: 'Theme version: 1.0.6.01';
   font-weight: bold; }
 
 :root {
@@ -2623,12 +2637,6 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   .theme-dark .react-datepicker .react-datepicker__header {
     background-color: var(--dark-highlight);
     color: #fff; }
-
-div[class*="scrollerWrap-"] {
-  background: var(--dark-highlight); }
-
-div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
-  background: var(--dark-primary); }
 
 .private-channels .search-bar {
   background-color: var(--dark-highlight);
