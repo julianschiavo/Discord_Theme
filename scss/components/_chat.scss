@@ -97,7 +97,7 @@
 
     .edit-container-inner {
       .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
-      .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
+      .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"], div[class*="channelTextAreaEnabled-"] {
         padding-top: 10px;
 
         div[class*="inner-"] {

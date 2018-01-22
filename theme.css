@@ -87,10 +87,10 @@
 .message-group .edit-message .edit-operation > a {
   color: var(--accent); }
 .message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], .message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabledNoAttach"],
-.message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
+.message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"], .message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabled-"] {
   padding-top: 10px; }
   .message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] div[class*="inner-"], .message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabledNoAttach"] div[class*="inner-"],
-  .message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] div[class*="inner-"] {
+  .message-group .edit-message .edit-container-inner .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] div[class*="inner-"], .message-group .edit-message .edit-container-inner div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
     background-color: var(--dark-primary);
     border-radius: 5px; }
 
@@ -2258,7 +2258,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ­ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
