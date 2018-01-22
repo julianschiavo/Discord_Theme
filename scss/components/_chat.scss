@@ -18,6 +18,16 @@
 }
 
 
+// Search results
+.theme-dark .search-results-wrap {
+  background: var(--dark-highlight);
+
+  .search-result.expanded {
+    background: var(--dark-secondary);
+  }
+}
+
+
 // Chat Messages
 .divider.divider-red + .divider { display: none; }
 .theme-dark div[class*="title-"] {

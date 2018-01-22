@@ -60,6 +60,12 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(.4em); }
     transform: translateX(.4em);
   }
 
+  div[class*="cardPrimary-"] {
+    background: var(--dark-highlight);
+    border: 0;
+    border-radius: 0;
+  }
+
   div[class*="title-"] { background: transparent; }
 
   .custom-scroller>div {
