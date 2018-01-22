@@ -372,9 +372,9 @@ div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"]:
   -o-transition: all 0.5 ease-in-out;
   transform: translateX(0.5em); }
 div[class*="container-"] div[class*="contentSelectedText-"] svg[class*="colorSelectedText-"] path {
-  fill: #2ecc71; }
+  fill: #fff; }
 div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSelectedText-"] {
-  color: #2ecc71; }
+  color: #fff; }
 div[class*="container-"] div[class*="contentUnreadText-"] svg[class*="colorUnreadText-"] path {
   fill: var(--accent); }
 div[class*="container-"] div[class*="contentUnreadText-"] div[class*="nameUnreadText-"] {
