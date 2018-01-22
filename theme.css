@@ -441,10 +441,12 @@ div[class*="container-"] div[class*="wrapperUnreadText-"] div[class*="unread-"] 
 
 .channel-members-wrap div[class*="scroller-"] {
   background: var(--dark-secondary); }
-.channel-members-wrap .channel-members .member:hover {
-  background: var(--dark-primary); }
-.channel-members-wrap .channel-members .member.popout-open {
-  background: var(--dark-primary); }
+.channel-members-wrap .channel-members {
+  background: var(--dark-secondary); }
+  .channel-members-wrap .channel-members .member:hover {
+    background: var(--dark-primary); }
+  .channel-members-wrap .channel-members .member.popout-open {
+    background: var(--dark-primary); }
 
 div[class*="titleWrapper-"] div[class*="title-"] {
   background: var(--dark-secondary);

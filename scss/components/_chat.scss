@@ -461,9 +461,13 @@ div[class*="container-"] {
 
 .channel-members-wrap {
   div[class*="scroller-"] { background: var(--dark-secondary); }
-  .channel-members .member {
-    &:hover { background: var(--dark-primary); }
-    &.popout-open { background: var(--dark-primary); }
+  .channel-members {
+    background: var(--dark-secondary);
+
+    .member {
+      &:hover { background: var(--dark-primary); }
+      &.popout-open { background: var(--dark-primary); }
+    }
   }
 }
 
