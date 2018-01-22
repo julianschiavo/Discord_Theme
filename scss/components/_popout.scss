@@ -111,6 +111,14 @@ div[class*="avatarStatusNormal-"] { border: 0; }
 .bot-tag.bot-tag-invert { background-color: #7289da !important; color: #fff !important; }
 
 
+// Call popout
+div[class*="pictureInPicture-"] {
+  div[class*="pictureInPictureWindow-"] {
+    filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, .5));
+  }
+}
+
+
 // Modal Image | Contributed by Snazzah (https://github.com/Snazzah)
 .modal-image a {
   background: var(--dark-highlight);
