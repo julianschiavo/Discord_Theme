@@ -85,10 +85,15 @@
   .theme-dark div[class*="attachment-"] a[class*="filenameLink-"] {
     color: var(--accent);
     font-weight: bold; }
-  .theme-dark div[class*="attachment-"] div[class*="metadata-"] {
+  .theme-dark div[class*="attachment-"] div[class*="metadata-"], .theme-dark div[class*="attachment-"] svg[class*="downloadButton-"], .theme-dark div[class*="attachment-"] svg[class*="cancelButton-"] {
     color: #fff; }
-  .theme-dark div[class*="attachment-"] svg[class*="downloadButton-"] {
-    color: #fff; }
+  .theme-dark div[class*="attachment-"] div[class*="progressBar-"] {
+    transition: width 0.5s ease-out;
+    -webkit-transition: width 0.5s ease-out;
+    -ms-transition: width 0.5s ease-out;
+    -moz-transition: width 0.5s ease-out;
+    -o-transition: width 0.5s ease-out;
+    background-color: var(--accent); }
 
 .message-group h2 strong {
   color: var(--light-dark-text); }

@@ -102,8 +102,11 @@
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
 
   a[class*="filenameLink-"] { color: var(--accent); font-weight: bold; }
-  div[class*="metadata-"] { color: #fff; }
-  svg[class*="downloadButton-"] { color: #fff; }
+  div[class*="metadata-"], svg[class*="downloadButton-"], svg[class*="cancelButton-"] { color: #fff; }
+  div[class*="progressBar-"] {
+    @include transition(width .5s ease-out);
+    background-color: var(--accent);
+  }
 }
 
 
