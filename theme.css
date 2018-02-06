@@ -82,11 +82,13 @@
 .theme-dark div[class*="attachment-"] {
   background: var(--dark-primary);
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.15)); }
-  .theme-dark div[class*="attachment-"] a[class*="filenameLink-"] {
+  .theme-dark div[class*="attachment-"] div[class*="filename-"], .theme-dark div[class*="attachment-"] a[class*="filenameLink-"] {
     color: var(--accent);
     font-weight: bold; }
   .theme-dark div[class*="attachment-"] div[class*="metadata-"], .theme-dark div[class*="attachment-"] svg[class*="downloadButton-"], .theme-dark div[class*="attachment-"] svg[class*="cancelButton-"] {
     color: #fff; }
+  .theme-dark div[class*="attachment-"] div[class*="size-"] {
+    color: #ccc; }
   .theme-dark div[class*="attachment-"] div[class*="progressBar-"] {
     transition: width 0.5s ease-out;
     -webkit-transition: width 0.5s ease-out;
