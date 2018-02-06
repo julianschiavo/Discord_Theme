@@ -96,6 +96,17 @@
 }
 
 
+// Discord Attachment
+.theme-dark div[class*="attachment-"] {
+  background: var(--dark-primary);
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
+
+  a[class*="filenameLink-"] { color: var(--accent); font-weight: bold; }
+  div[class*="metadata-"] { color: #fff; }
+  svg[class*="downloadButton-"] { color: #fff; }
+}
+
+
 // Message Text Area
 .message-group {
   h2 strong { color: var(--light-dark-text); }

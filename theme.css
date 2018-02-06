@@ -79,6 +79,17 @@
     color: #fff;
     text-align: center; }
 
+.theme-dark div[class*="attachment-"] {
+  background: var(--dark-primary);
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.15)); }
+  .theme-dark div[class*="attachment-"] a[class*="filenameLink-"] {
+    color: var(--accent);
+    font-weight: bold; }
+  .theme-dark div[class*="attachment-"] div[class*="metadata-"] {
+    color: #fff; }
+  .theme-dark div[class*="attachment-"] svg[class*="downloadButton-"] {
+    color: #fff; }
+
 .message-group h2 strong {
   color: var(--light-dark-text); }
 .message-group:last-of-type {
@@ -2279,7 +2290,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ­ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
