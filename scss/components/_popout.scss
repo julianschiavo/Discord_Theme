@@ -917,3 +917,49 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
 
   .ui-quick-select-popout-option:hover { background-color: var(--dark-secondary); }
 }
+
+// Attachment Popout
+
+.attachButton-Di6YUh.popout-open {
+  background-color: var(--dark-highlight) !important;
+  padding: 16px 13px 14px 10px;
+  margin: -6px -13px -4px 0;
+  @include transform(scale(1) !important);
+}
+
+.attachPopout-gjwHsr {
+  margin-left: 3px;
+  margin-bottom: -10px;
+  background-color: var(--dark-highlight) !important;
+  border-radius: 0;
+  padding: 0;
+  @include transition(background-color 200s ease-in-out);
+  @include animation(attach-popout 200ms ease-in-out);
+
+  > g {
+    @include transform(scale(1.1) translate(-1px, -1px));
+  }
+
+  .attachPopoutRow-elxASe {
+    border-radius: 0;
+    padding: 0 15px 0 0;
+
+    &:hover {
+      background-color: var(--dark-primary) !important;
+
+      .attachPopoutIcon-37fHgm {
+        background-color: rgba(0, 0, 0, 0.2);
+        @include transition(background-color 200s ease-in-out !important);
+      }
+    }
+
+    .attachPopoutIcon-37fHgm {
+      padding: 8px 12px;
+      @include transition(background-color 200s ease-in-out);
+    }
+
+    .attachPopoutRowText-3YWM_W {
+      margin-left: 13px;
+    }
+  }
+}

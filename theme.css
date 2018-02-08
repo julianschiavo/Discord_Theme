@@ -766,6 +766,16 @@ div[class*="modal-"] div[class*="header-"] {
     border-radius: 0;
     padding-top: 5px; }
 
+.theme-dark .invite-CTGItT.game-invite-embed, .theme-dark .preview-1mYYph, .theme-dark .preview-1mYYph .header-ygd_5b {
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-secondary) !important; }
+  .theme-dark .invite-CTGItT.game-invite-embed .actionButton-2XHRWc, .theme-dark .preview-1mYYph .actionButton-2XHRWc, .theme-dark .preview-1mYYph .header-ygd_5b .actionButton-2XHRWc {
+    background-color: var(--dark-secondary) !important; }
+.theme-dark .preview-1mYYph + div + .channelTextAreaEnabled-c05Zpy {
+  margin-bottom: 20px !important; }
+.theme-dark .preview-1mYYph + .subHeader-11w1JS {
+  margin-bottom: 5px !important; }
+
 .private-channel-recipients-invite,
 .messages-popout-wrap {
   animation: popout-content 400ms cubic-bezier(0.3, 0.3, 0, 1);
@@ -1689,6 +1699,42 @@ div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@-webkit-keyframes attach-popout {
+  from {
+    transform: scaleY(0);
+    margin-bottom: -50px;
+    opacity: 0; }
+  to {
+    transform: scaleY(1);
+    margin-bottom: -10px;
+    opacity: 1; } }
+@-moz-keyframes attach-popout {
+  from {
+    transform: scaleY(0);
+    margin-bottom: -50px;
+    opacity: 0; }
+  to {
+    transform: scaleY(1);
+    margin-bottom: -10px;
+    opacity: 1; } }
+@-o-keyframes attach-popout {
+  from {
+    transform: scaleY(0);
+    margin-bottom: -50px;
+    opacity: 0; }
+  to {
+    transform: scaleY(1);
+    margin-bottom: -10px;
+    opacity: 1; } }
+@keyframes attach-popout {
+  from {
+    transform: scaleY(0);
+    margin-bottom: -50px;
+    opacity: 0; }
+  to {
+    transform: scaleY(1);
+    margin-bottom: -10px;
+    opacity: 1; } }
 .app a, .connecting a {
   color: var(--accent); }
 
@@ -2584,6 +2630,60 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   background-color: var(--dark-primary); }
   .theme-dark .screenshare-popout .ui-quick-select-popout-option:hover {
     background-color: var(--dark-secondary); }
+
+.attachButton-Di6YUh.popout-open {
+  background-color: var(--dark-highlight) !important;
+  padding: 16px 13px 14px 10px;
+  margin: -6px -13px -4px 0;
+  -moz-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important; }
+
+.attachPopout-gjwHsr {
+  margin-left: 3px;
+  margin-bottom: -10px;
+  background-color: var(--dark-highlight) !important;
+  border-radius: 0;
+  padding: 0;
+  transition: background-color 200s ease-in-out;
+  -webkit-transition: background-color 200s ease-in-out;
+  -ms-transition: background-color 200s ease-in-out;
+  -moz-transition: background-color 200s ease-in-out;
+  -o-transition: background-color 200s ease-in-out;
+  animation: attach-popout 200ms ease-in-out;
+  -webkit-animation: attach-popout 200ms ease-in-out;
+  -ms-animation: attach-popout 200ms ease-in-out;
+  -moz-animation: attach-popout 200ms ease-in-out;
+  -o-animation: attach-popout 200ms ease-in-out; }
+  .attachPopout-gjwHsr > g {
+    -moz-transform: scale(1.1) translate(-1px, -1px);
+    -o-transform: scale(1.1) translate(-1px, -1px);
+    -ms-transform: scale(1.1) translate(-1px, -1px);
+    -webkit-transform: scale(1.1) translate(-1px, -1px);
+    transform: scale(1.1) translate(-1px, -1px); }
+  .attachPopout-gjwHsr .attachPopoutRow-elxASe {
+    border-radius: 0;
+    padding: 0 15px 0 0; }
+    .attachPopout-gjwHsr .attachPopoutRow-elxASe:hover {
+      background-color: var(--dark-primary) !important; }
+      .attachPopout-gjwHsr .attachPopoutRow-elxASe:hover .attachPopoutIcon-37fHgm {
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: background-color 200s ease-in-out !important;
+        -webkit-transition: background-color 200s ease-in-out !important;
+        -ms-transition: background-color 200s ease-in-out !important;
+        -moz-transition: background-color 200s ease-in-out !important;
+        -o-transition: background-color 200s ease-in-out !important; }
+    .attachPopout-gjwHsr .attachPopoutRow-elxASe .attachPopoutIcon-37fHgm {
+      padding: 8px 12px;
+      transition: background-color 200s ease-in-out;
+      -webkit-transition: background-color 200s ease-in-out;
+      -ms-transition: background-color 200s ease-in-out;
+      -moz-transition: background-color 200s ease-in-out;
+      -o-transition: background-color 200s ease-in-out; }
+    .attachPopout-gjwHsr .attachPopoutRow-elxASe .attachPopoutRowText-3YWM_W {
+      margin-left: 13px; }
 
 .theme-dark .search .search-bar {
   background: transparent; }
