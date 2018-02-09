@@ -657,3 +657,13 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   border-radius: 0;
   color: #fff;
 }
+
+// Channel Notices
+
+.theme-dark div[class*="channelNotice-"] {
+  background-color: var(--dark-highlight) !important;
+  button[class*="btn-"] {
+    background-color: var(--dark-primary) !important;
+  }
+}
+

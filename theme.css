@@ -660,6 +660,11 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
   border-radius: 0;
   color: #fff; }
 
+.theme-dark div[class*="channelNotice-"] {
+  background-color: var(--dark-highlight) !important; }
+  .theme-dark div[class*="channelNotice-"] button[class*="btn-"] {
+    background-color: var(--dark-primary) !important; }
+
 .theme-dark .user-settings-account::after,
 .theme-light .user-settings-account::after {
   color: var(--accent);
@@ -2351,7 +2356,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ≡ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
@@ -2695,15 +2700,15 @@ div[class*="attachPopout-"] {
 
 .theme-dark .search .search-bar {
   background: transparent; }
-  .theme-dark .search .search-bar .search-filter {
+  .theme-dark .search .search-bar span[class*="searchFilter-"] {
     background-color: var(--dark-highlight);
     padding: 0 5px; }
-    .theme-dark .search .search-bar .search-filter [data-text] {
+    .theme-dark .search .search-bar span[class*="searchFilter-"] [data-text] {
       font-weight: bold; }
-  .theme-dark .search .search-bar .search-answer {
-    background-color: var(--dark-secondary);
+  .theme-dark .search .search-bar span[class*="searchAnswer-"] {
+    background-color: var(--dark-primary);
     padding-left: 0; }
-    .theme-dark .search .search-bar .search-answer [data-text] {
+    .theme-dark .search .search-bar span[class*="searchAnswer-"] [data-text] {
       font-weight: lighter; }
 .theme-dark .search-popout {
   background-color: var(--dark-highlight); }
@@ -2756,28 +2761,40 @@ div[class*="attachPopout-"] {
   .theme-dark .search-results-wrap .channel-separator .channel-name {
     margin-left: 15px; }
 .theme-dark .react-datepicker {
-  background-color: var(--dark-highlight);
-  color: #fff; }
-  .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .react-datepicker .react-datepicker .react-datepicker__day:hover {
-    background-color: var(--dark-highlight);
-    color: #fff; }
-  .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--selected, .theme-dark .react-datepicker .react-datepicker .react-datepicker__day {
-    background-color: var(--dark-secondary); }
-  .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .react-datepicker .react-datepicker .react-datepicker__day.react-datepicker__day--disabled:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    color: #808080; }
-  .theme-dark .react-datepicker .react-datepicker__day--disabled, .theme-dark .react-datepicker .react-datepicker .react-datepicker__day--outside-month {
-    background-color: var(--dark-secondary);
-    color: #fff; }
-  .theme-dark .react-datepicker .react-datepicker__day, .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--selected {
-    color: #fff; }
+  background-color: var(--dark-primary) !important; }
+  .theme-dark .react-datepicker .react-datepicker__day {
+    background-color: var(--dark-secondary) !important;
+    border-color: #000 !important;
+    color: #fff !important; }
+    .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--selected:hover, .theme-dark .react-datepicker .react-datepicker__day:hover {
+      background-color: #242424 !important;
+      color: #fff !important; }
+    .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--selected {
+      background-color: var(--dark-secondary) !important; }
+    .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--outside-month {
+      background-color: var(--dark-highlight) !important;
+      color: var(--dark-secondary) !important; }
+    .theme-dark .react-datepicker .react-datepicker__day.react-datepicker__day--disabled:not(.react-datepicker__day--outside-month) {
+      background-color: var(--dark-primary) !important;
+      color: #555 !important; }
+    .theme-dark .react-datepicker .react-datepicker__day .react-datepicker__day-name {
+      color: #fff; }
+  .theme-dark .react-datepicker .react-datepicker__current-month,
   .theme-dark .react-datepicker .react-datepicker__day-name {
-    color: #fff; }
-  .theme-dark .react-datepicker .react-datepicker .react-datepicker__current-month {
-    color: #fff; }
+    color: #fff !important;
+    border-color: #fff !important; }
   .theme-dark .react-datepicker .react-datepicker__header {
-    background-color: var(--dark-highlight);
-    color: #fff; }
+    background-color: var(--dark-primary) !important; }
+  .theme-dark .react-datepicker .react-datepicker__navigation {
+    border-color: transparent !important;
+    -webkit-filter: brightness(2);
+    filter: brightness(2); }
+.theme-dark .date-picker {
+  border-top: none;
+  background-color: var(--dark-primary); }
+  .theme-dark .date-picker .hint-value {
+    background-color: var(--dark-highlight) !important;
+    font-weight: lighter !important; }
 
 .private-channels .search-bar {
   background-color: var(--dark-highlight);
@@ -3128,7 +3145,6 @@ div[class*="userSettingsAccount-"] div[class*="cardPrimary-"] {
 .search-bar-light .search-bar-icon .icon.icon-search-bar-eye-glass {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgaWQ9InN2ZzIiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogPG1ldGFkYXRhIGlkPSJtZXRhZGF0YTEyIj4KICA8cmRmOlJERj4KICAgPGNjOldvcmsgcmRmOmFib3V0PSIiPgogICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICA8ZGM6dHlwZSByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIi8+CiAgICA8ZGM6dGl0bGUvPgogICA8L2NjOldvcms+CiAgPC9yZGY6UkRGPgogPC9tZXRhZGF0YT4KIDxwYXRoIGlkPSJwYXRoNCIgZmlsbD0iIzgwODA4MCIgZD0ibTE1LjUgMTRoLTAuNzlsLTAuMjgtMC4yN2MwLjk4LTEuMTQgMS41Ny0yLjYyIDEuNTctNC4yMyAwLTMuNTktMi45MS02LjUtNi41LTYuNXMtNi41IDIuOTEtNi41IDYuNSAyLjkxIDYuNSA2LjUgNi41YzEuNjEgMCAzLjA5LTAuNTkgNC4yMy0xLjU3bDAuMjcgMC4yOHYwLjc5bDUgNC45OSAxLjQ5LTEuNDktNC45OS01em0tNiAwYy0yLjQ5IDAtNC41LTIuMDEtNC41LTQuNXMyLjAxLTQuNSA0LjUtNC41IDQuNSAyLjAxIDQuNSA0LjUtMi4wMSA0LjUtNC41IDQuNXoiLz4KIDxwYXRoIGlkPSJwYXRoNiIgZD0ibTAgMGgyNHYyNGgtMjR6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
   background-size: 100%; }
-
 .search-bar-light .search-bar-icon .icon.icon-search-bar-clear {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgaWQ9InN2ZzIiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogPG1ldGFkYXRhIGlkPSJtZXRhZGF0YTEyIj4KICA8cmRmOlJERj4KICAgPGNjOldvcmsgcmRmOmFib3V0PSIiPgogICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICA8ZGM6dHlwZSByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIi8+CiAgICA8ZGM6dGl0bGUvPgogICA8L2NjOldvcms+CiAgPC9yZGY6UkRGPgogPC9tZXRhZGF0YT4KIDxwYXRoIGlkPSJwYXRoNCIgZmlsbD0iIzgwODA4MCIgZD0ibTEyIDJjLTUuNTMgMC0xMCA0LjQ3LTEwIDEwczQuNDcgMTAgMTAgMTAgMTAtNC40NyAxMC0xMC00LjQ3LTEwLTEwLTEwem01IDEzLjU5bC0xLjQxIDEuNDEtMy41OS0zLjU5LTMuNTkgMy41OS0xLjQxLTEuNDEgMy41OS0zLjU5LTMuNTktMy41OSAxLjQxLTEuNDEgMy41OSAzLjU5IDMuNTktMy41OSAxLjQxIDEuNDEtMy41OSAzLjU5IDMuNTkgMy41OXoiLz4KIDxwYXRoIGlkPSJwYXRoNiIgZD0ibTAgMGgyNHYyNGgtMjR6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
   background-size: 100%; }
@@ -3144,28 +3160,22 @@ div[class*="userSettingsAccount-"] div[class*="cardPrimary-"] {
 
 .theme-dark .popout section {
   background-color: var(--dark-secondary); }
-
 .theme-dark .ui-color-picker-custom {
   background: var(--dark-primary); }
-
 .theme-dark .ui-search-bar {
   background-color: var(--dark-primary); }
-
 .theme-dark .elevation-border-low {
   background: var(--dark-highlight); }
-
 .theme-dark .ui-selectable-item + .ui-flex > .flex-nowrap {
   background: transparent; }
-
 .theme-dark .ui-selectable-item:hover {
   background: var(--dark-secondary); }
 
 .webhook-modal-footer {
   background-color: var(--dark-secondary); }
 
-.ui-button .ui-button-contents > .file-input, .theme-light .ui-button.primary.outlined {
+.ui-button .ui-button-contents > .file-input, .ui-button .theme-light .ui-button.primary.outlined {
   color: #fff !important; }
-
 .ui-button.ghost {
   background-color: var(--accent);
   color: #fff; }
@@ -3182,6 +3192,40 @@ div[class*="userSettingsAccount-"] div[class*="cardPrimary-"] {
 
 .webhook-modal-body {
   background: var(--dark-primary); }
+
+.notice-region {
+  padding: 0 !important;
+  margin-left: 10%; }
+  .notice-region div[class*="container-"] {
+    background-color: var(--dark-highlight) !important;
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+    height: 100px;
+    margin-bottom: -48px;
+    transition: all 200s ease-in-out;
+    -webkit-transition: all 200s ease-in-out;
+    -ms-transition: all 200s ease-in-out;
+    -moz-transition: all 200s ease-in-out;
+    -o-transition: all 200s ease-in-out; }
+    .notice-region div[class*="container-"] [style="background-color: rgba(240, 71, 71, 0.9);"] {
+      background-color: #700101 !important;
+      height: 120px;
+      transition: all 200s ease-in-out;
+      -webkit-transition: all 200s ease-in-out;
+      -ms-transition: all 200s ease-in-out;
+      -moz-transition: all 200s ease-in-out;
+      -o-transition: all 200s ease-in-out; }
+    .notice-region div[class*="container-"] > div[class*="flex-"]:before {
+      content: '';
+      background: url("https://i-need.discord.cards/3399bf.png") center center no-repeat;
+      background-size: contain;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 5px; }
+
+.app {
+  transform: none !important; }
 
 .ui-text-input .input:focus {
   border-color: var(--accent) !important; }
