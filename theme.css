@@ -2639,7 +2639,7 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   .theme-dark .screenshare-popout .ui-quick-select-popout-option:hover {
     background-color: var(--dark-secondary); }
 
-.attachButton-Di6YUh.popout-open {
+div[class*="attachButton-"].popout-open {
   -moz-transform: scale(1) !important;
   -o-transform: scale(1) !important;
   -ms-transform: scale(1) !important;
@@ -2649,7 +2649,7 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   margin: -6px -13px -4px 0;
   padding: 16px 13px 14px 10px; }
 
-.attachPopout-gjwHsr {
+div[class*="attachPopout-"] {
   animation: attach-popout 200ms ease-in-out;
   -webkit-animation: attach-popout 200ms ease-in-out;
   -ms-animation: attach-popout 200ms ease-in-out;
@@ -2665,32 +2665,32 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] div[class*="bgScale-
   margin-bottom: -10px;
   margin-left: 3px;
   padding: 0; }
-  .attachPopout-gjwHsr > g {
+  div[class*="attachPopout-"] > g {
     -moz-transform: scale(1.1) translate(-1px, -1px);
     -o-transform: scale(1.1) translate(-1px, -1px);
     -ms-transform: scale(1.1) translate(-1px, -1px);
     -webkit-transform: scale(1.1) translate(-1px, -1px);
     transform: scale(1.1) translate(-1px, -1px); }
-  .attachPopout-gjwHsr .attachPopoutRow-elxASe {
+  div[class*="attachPopout-"] div[class*="attachPopoutRow-"] {
     border-radius: 0;
     padding: 0 15px 0 0; }
-    .attachPopout-gjwHsr .attachPopoutRow-elxASe:hover {
+    div[class*="attachPopout-"] div[class*="attachPopoutRow-"]:hover {
       background-color: var(--dark-primary) !important; }
-      .attachPopout-gjwHsr .attachPopoutRow-elxASe:hover .attachPopoutIcon-37fHgm {
+      div[class*="attachPopout-"] div[class*="attachPopoutRow-"]:hover div[class*="attachPopoutIcon-"] {
         transition: background-color 200s ease-in-out !important;
         -webkit-transition: background-color 200s ease-in-out !important;
         -ms-transition: background-color 200s ease-in-out !important;
         -moz-transition: background-color 200s ease-in-out !important;
         -o-transition: background-color 200s ease-in-out !important;
         background-color: rgba(0, 0, 0, 0.2); }
-    .attachPopout-gjwHsr .attachPopoutRow-elxASe .attachPopoutIcon-37fHgm {
+    div[class*="attachPopout-"] div[class*="attachPopoutRow-"] div[class*="attachPopoutIcon-"] {
       transition: background-color 200s ease-in-out;
       -webkit-transition: background-color 200s ease-in-out;
       -ms-transition: background-color 200s ease-in-out;
       -moz-transition: background-color 200s ease-in-out;
       -o-transition: background-color 200s ease-in-out;
       padding: 8px 12px; }
-    .attachPopout-gjwHsr .attachPopoutRow-elxASe .attachPopoutRowText-3YWM_W {
+    div[class*="attachPopout-"] div[class*="attachPopoutRow-"] div[class*="attachPopoutRowText-"] {
       margin-left: 13px; }
 
 .theme-dark .search .search-bar {

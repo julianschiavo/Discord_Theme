@@ -920,14 +920,14 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
 
 // Attachment Popout
 
-.attachButton-Di6YUh.popout-open {
+div[class*="attachButton-"].popout-open {
   @include transform(scale(1) !important);
   background-color: var(--dark-highlight) !important;
   margin: -6px -13px -4px 0;
   padding: 16px 13px 14px 10px;
 }
 
-.attachPopout-gjwHsr {
+div[class*="attachPopout-"] {
   @include animation(attach-popout 200ms ease-in-out);
   @include transition(background-color 200s ease-in-out);
   background-color: var(--dark-highlight) !important;
@@ -940,26 +940,24 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
     @include transform(scale(1.1) translate(-1px, -1px));
   }
 
-  .attachPopoutRow-elxASe {
+  div[class*="attachPopoutRow-"] {
     border-radius: 0;
     padding: 0 15px 0 0;
 
     &:hover {
       background-color: var(--dark-primary) !important;
 
-      .attachPopoutIcon-37fHgm {
+      div[class*="attachPopoutIcon-"] {
         @include transition(background-color 200s ease-in-out !important);
         background-color: rgba(0, 0, 0, .2);
       }
     }
 
-    .attachPopoutIcon-37fHgm {
+    div[class*="attachPopoutIcon-"] {
       @include transition(background-color 200s ease-in-out);
       padding: 8px 12px;
     }
 
-    .attachPopoutRowText-3YWM_W {
-      margin-left: 13px;
-    }
+    div[class*="attachPopoutRowText-"] { margin-left: 13px; }
   }
 }
