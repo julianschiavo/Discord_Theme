@@ -2356,7 +2356,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' ≡ƒÄÇ'; }
+      content: ' 🎀'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
@@ -2781,17 +2781,16 @@ div[class*="attachPopout-"] {
       color: #fff; }
   .theme-dark .react-datepicker .react-datepicker__current-month,
   .theme-dark .react-datepicker .react-datepicker__day-name {
-    color: #fff !important;
-    border-color: #fff !important; }
+    border-color: #fff !important;
+    color: #fff !important; }
   .theme-dark .react-datepicker .react-datepicker__header {
     background-color: var(--dark-primary) !important; }
   .theme-dark .react-datepicker .react-datepicker__navigation {
     border-color: transparent !important;
-    -webkit-filter: brightness(2);
     filter: brightness(2); }
 .theme-dark .date-picker {
-  border-top: none;
-  background-color: var(--dark-primary); }
+  background-color: var(--dark-primary);
+  border-top: 0; }
   .theme-dark .date-picker .hint-value {
     background-color: var(--dark-highlight) !important;
     font-weight: lighter !important; }
@@ -3194,35 +3193,35 @@ div[class*="userSettingsAccount-"] div[class*="cardPrimary-"] {
   background: var(--dark-primary); }
 
 .notice-region {
-  padding: 0 !important;
-  margin-left: 10%; }
+  margin-left: 10%;
+  padding: 0 !important; }
   .notice-region div[class*="container-"] {
-    background-color: var(--dark-highlight) !important;
-    border-radius: 5px 5px 0 0;
-    box-shadow: none;
-    height: 100px;
-    margin-bottom: -48px;
     transition: all 200s ease-in-out;
     -webkit-transition: all 200s ease-in-out;
     -ms-transition: all 200s ease-in-out;
     -moz-transition: all 200s ease-in-out;
-    -o-transition: all 200s ease-in-out; }
+    -o-transition: all 200s ease-in-out;
+    background-color: var(--dark-highlight) !important;
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+    height: 100px;
+    margin-bottom: -48px; }
     .notice-region div[class*="container-"] [style="background-color: rgba(240, 71, 71, 0.9);"] {
-      background-color: #700101 !important;
-      height: 120px;
       transition: all 200s ease-in-out;
       -webkit-transition: all 200s ease-in-out;
       -ms-transition: all 200s ease-in-out;
       -moz-transition: all 200s ease-in-out;
-      -o-transition: all 200s ease-in-out; }
-    .notice-region div[class*="container-"] > div[class*="flex-"]:before {
-      content: '';
+      -o-transition: all 200s ease-in-out;
+      background-color: #700101 !important;
+      height: 120px; }
+    .notice-region div[class*="container-"] > div[class*="flex-"]::before {
       background: url("https://i-need.discord.cards/3399bf.png") center center no-repeat;
       background-size: contain;
+      content: '';
       display: inline-block;
-      width: 18px;
       height: 18px;
-      margin-right: 5px; }
+      margin-right: 5px;
+      width: 18px; }
 
 .app {
   transform: none !important; }

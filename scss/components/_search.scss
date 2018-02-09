@@ -117,8 +117,8 @@
 
     .react-datepicker__current-month,
     .react-datepicker__day-name {
-      color: #fff !important;
       border-color: #fff !important;
+      color: #fff !important;
     }
 
     .react-datepicker__header {
@@ -132,8 +132,8 @@
   }
 
   .date-picker {
-    border-top: none;
     background-color: var(--dark-primary);
+    border-top: 0;
 
     .hint-value {
       background-color: var(--dark-highlight) !important;
