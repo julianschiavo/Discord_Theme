@@ -173,6 +173,6 @@
 }
 
 @include keyframes(attach-popout) {
-  from { transform: scaleY(0); margin-bottom: -50px; opacity: 0; }
-  to { transform: scaleY(1); margin-bottom: -10px; opacity: 1; }
+  from { margin-bottom: -50px; opacity: 0; transform: scaleY(0); }
+  to { margin-bottom: -10px; opacity: 1; transform: scaleY(1); }
 }

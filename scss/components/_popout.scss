@@ -921,20 +921,20 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
 // Attachment Popout
 
 .attachButton-Di6YUh.popout-open {
-  background-color: var(--dark-highlight) !important;
-  padding: 16px 13px 14px 10px;
-  margin: -6px -13px -4px 0;
   @include transform(scale(1) !important);
+  background-color: var(--dark-highlight) !important;
+  margin: -6px -13px -4px 0;
+  padding: 16px 13px 14px 10px;
 }
 
 .attachPopout-gjwHsr {
-  margin-left: 3px;
-  margin-bottom: -10px;
+  @include animation(attach-popout 200ms ease-in-out);
+  @include transition(background-color 200s ease-in-out);
   background-color: var(--dark-highlight) !important;
   border-radius: 0;
+  margin-bottom: -10px;
+  margin-left: 3px;
   padding: 0;
-  @include transition(background-color 200s ease-in-out);
-  @include animation(attach-popout 200ms ease-in-out);
 
   > g {
     @include transform(scale(1.1) translate(-1px, -1px));
@@ -948,14 +948,14 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
       background-color: var(--dark-primary) !important;
 
       .attachPopoutIcon-37fHgm {
-        background-color: rgba(0, 0, 0, 0.2);
         @include transition(background-color 200s ease-in-out !important);
+        background-color: rgba(0, 0, 0, .2);
       }
     }
 
     .attachPopoutIcon-37fHgm {
-      padding: 8px 12px;
       @include transition(background-color 200s ease-in-out);
+      padding: 8px 12px;
     }
 
     .attachPopoutRowText-3YWM_W {

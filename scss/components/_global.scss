@@ -130,22 +130,22 @@ div[class*="modal-"] div[class*="header-"] {
 }
 
 // Game Invite
-.theme-dark {
-  .invite-CTGItT.game-invite-embed, .preview-1mYYph, .preview-1mYYph .header-ygd_5b {
-    background-color: var(--dark-primary) !important;
-    border-color: var(--dark-secondary) !important;
+.theme-dark div[class*="invite-"].game-invite-embed,
+.theme-dark div[class*="preview-"],
+.theme-dark div[class*="preview-"] div[class*="header-"] {
+  background-color: var(--dark-primary) !important;
+  border-color: var(--dark-secondary) !important;
 
-    .actionButton-2XHRWc {
-      background-color: var(--dark-secondary) !important;
-    }
+  div[class*="actionButton-"] {
+    background-color: var(--dark-secondary) !important;
   }
 
-  .preview-1mYYph {
-    + div + .channelTextAreaEnabled-c05Zpy {
+  div[class*="preview-"] {
+    + div + div[class*="channelTextAreaEnabled-"] {
       margin-bottom: 20px !important;
     }
 
-    + .subHeader-11w1JS {
+    + div[class*="subHeader-"] {
       margin-bottom: 5px !important;
     }
   }
