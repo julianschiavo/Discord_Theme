@@ -130,6 +130,7 @@ div[class*="modal-"] div[class*="header-"] {
 }
 
 // Game Invite
+
 .theme-dark div[class*="invite-"].game-invite-embed,
 .theme-dark div[class*="preview-"],
 .theme-dark div[class*="preview-"] div[class*="header-"] {
@@ -139,14 +140,14 @@ div[class*="modal-"] div[class*="header-"] {
   div[class*="actionButton-"] {
     background-color: var(--dark-secondary) !important;
   }
+}
 
-  div[class*="preview-"] {
-    + div + div[class*="channelTextAreaEnabled-"] {
-      margin-bottom: 20px !important;
-    }
+.theme-dark div[class*="preview-"] {
+  + div + div[class*="channelTextAreaEnabled-"] {
+    margin-bottom: 20px !important;
+  }
 
-    + div[class*="subHeader-"] {
-      margin-bottom: 5px !important;
-    }
+  + div[class*="subHeader-"] {
+    margin-bottom: 8px !important;
   }
 }

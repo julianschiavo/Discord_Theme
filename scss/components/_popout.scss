@@ -920,7 +920,7 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
 
 // Attachment Popout
 
-div[class*="attachButton-"].popout-open {
+svg[class*="attachButton-"].popout-open {
   @include transform(scale(1) !important);
   background-color: var(--dark-highlight) !important;
   margin: -6px -13px -4px 0;
@@ -947,13 +947,13 @@ div[class*="attachPopout-"] {
     &:hover {
       background-color: var(--dark-primary) !important;
 
-      div[class*="attachPopoutIcon-"] {
+      svg[class*="attachPopoutIcon-"] {
         @include transition(background-color 200s ease-in-out !important);
         background-color: rgba(0, 0, 0, .2);
       }
     }
 
-    div[class*="attachPopoutIcon-"] {
+    svg[class*="attachPopoutIcon-"] {
       @include transition(background-color 200s ease-in-out);
       padding: 8px 12px;
     }
