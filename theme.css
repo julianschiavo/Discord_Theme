@@ -2353,7 +2353,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ­ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
@@ -2404,18 +2404,11 @@ div[class*="regionSelectModal-"] {
 .avatar-uploader-inner {
   background-color: rgba(0, 0, 0, 0.01); }
 
-.message-reactions-modal {
-  background: transparent; }
-  .message-reactions-modal .message-reactions-reactors {
-    background-color: var(--dark-primary); }
-    .message-reactions-modal .message-reactions-reactors .reactor {
-      box-shadow: 0; }
-  .message-reactions-modal .message-reactions-reactors .reactor .name,
-  .message-reactions-modal .message-reactions-list-inner .reaction .count {
-    color: #fff; }
-  .message-reactions-modal .message-reactions-list .scroller, .message-reactions-modal .message-reactions-list-inner {
-    background-color: var(--dark-highlight);
-    border-radius: 0; }
+.theme-dark div[class*="container-"] div[class*="reactors"] {
+  background-color: var(--dark-primary); }
+.theme-dark div[class*="container-"] div[class*="sidebar"] {
+  background-color: var(--dark-highlight);
+  border-radius: 0; }
 
 .quickswitcher {
   animation: quickswitcher-menu 300ms ease-in-out;

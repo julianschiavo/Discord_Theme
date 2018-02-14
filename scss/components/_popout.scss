@@ -641,20 +641,9 @@ div[class*="regionSelectModal-"] {
 
 
 // Reactions
-.message-reactions-modal {
-  background: transparent;
-
-  .message-reactions-reactors {
-    background-color: var(--dark-primary);
-    .reactor { box-shadow: 0; }
-  }
-
-  .message-reactions-reactors .reactor .name,
-  .message-reactions-list-inner .reaction .count {
-    color: #fff;
-  }
-
-  .message-reactions-list .scroller, .message-reactions-list-inner {
+.theme-dark div[class*="container-"] {
+  div[class*="reactors"] { background-color: var(--dark-primary); }
+  div[class*="sidebar"] {
     background-color: var(--dark-highlight);
     border-radius: 0;
   }
