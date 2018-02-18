@@ -1,5 +1,5 @@
 ## About theme
-***Discord_Theme*** theme is made by **AlexFlipnote#0021** & **CyberRonin#5517**<br>
+***Discord_Theme*** theme is made by **AlexFlipnote#0001** & **CyberRonin#5517**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins (almost, depends if the import URL is custom made for 1 theme).
 
 Do you need more help? Join my server! **[Discord Invite](https://discord.gg/DpxkY3x)**
