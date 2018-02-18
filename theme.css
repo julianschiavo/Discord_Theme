@@ -22,10 +22,6 @@
 .divider.divider-red + .divider {
   display: none; }
 
-.theme-dark div[class*="title-"] {
-  background: var(--dark-primary);
-  box-shadow: none; }
-
 .theme-dark div[class*="info-"] div[class*="title-"] {
   background: transparent; }
 
@@ -2406,7 +2402,7 @@ div[class*="regionSelectModal-"] {
 
 .theme-dark div[class*="container-"] div[class*="reactors"] {
   background-color: var(--dark-primary); }
-.theme-dark div[class*="container-"] div[class*="sidebar"] {
+.theme-dark div[class*="container-"] div[class*="sidebar-"] {
   background-color: var(--dark-highlight);
   border-radius: 0; }
 
@@ -2833,6 +2829,8 @@ div[class*="attachPopout-"] {
 
 div[class*="header-"] {
   text-transform: none; }
+  div[class*="header-"] div[class*="sidebar-"] {
+    background: transparent; }
 
 .theme-dark .ui-hover-card::before {
   background: transparent;

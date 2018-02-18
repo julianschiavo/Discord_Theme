@@ -30,10 +30,6 @@
 
 // Chat Messages
 .divider.divider-red + .divider { display: none; }
-.theme-dark div[class*="title-"] {
-  background: var(--dark-primary);
-  box-shadow: none;
-}
 
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
 .theme-dark div[class*="headerBar-"] {

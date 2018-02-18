@@ -36,7 +36,10 @@
   color: #fff;
 }
 
-div[class*="header-"] { text-transform: none; }
+div[class*="header-"] {
+  text-transform: none;
+  div[class*="sidebar-"] { background: transparent; }
+}
 
 .theme-dark .ui-hover-card::before {
   background: transparent;
