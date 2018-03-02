@@ -144,11 +144,20 @@
 
 
 // Private Message Search
-.private-channels .search-bar {
-  background-color: var(--dark-highlight);
-  border-radius: 0;
-  padding-bottom: 4px;
-  padding-top: 4px;
+.private-channels {
+  div[class*="scroller-"] { padding-top: 0 !important; }
+
+  .search-bar {
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+    .search-bar-inner {
+      background: var(--dark-highlight);
+      border: 0;
+    }
+  }
 }
 
 .search-bar .search-bar-inner { background: rgba(47, 47, 47, .9); }

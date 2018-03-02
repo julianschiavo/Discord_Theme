@@ -2349,7 +2349,7 @@ div[class*="regionSelectModal-"] {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' ­ƒÄÇ'; }
+      content: ' 🎀'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {
@@ -2781,11 +2781,16 @@ div[class*="attachPopout-"] {
     background-color: var(--dark-highlight) !important;
     font-weight: lighter !important; }
 
+.private-channels div[class*="scroller-"] {
+  padding-top: 0 !important; }
 .private-channels .search-bar {
-  background-color: var(--dark-highlight);
   border-radius: 0;
+  box-shadow: none;
   padding-bottom: 4px;
   padding-top: 4px; }
+  .private-channels .search-bar .search-bar-inner {
+    background: var(--dark-highlight);
+    border: 0; }
 
 .search-bar .search-bar-inner {
   background: rgba(47, 47, 47, 0.9); }
