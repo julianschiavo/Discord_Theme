@@ -271,7 +271,7 @@ div[class*="autocomplete-"] {
   border-radius: 4px;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.3)); }
 
-.theme-dark div[class*="image-"] {
+.theme-dark div[class*="nsfw-"] div[class*="image-"] {
   background-image: url("https://i.alexflipnote.xyz/c2472b.png"); }
 
 .ui-guild-nsfw > .flex-nowrap {
@@ -363,8 +363,12 @@ div[class*="autocomplete-"] {
     .private-channels.selected::before {
       border-left: 2px solid var(--accent); }
 
+#friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+  background: #27ae60; }
+#friends div[class*="headerBar-"] {
+  background: var(--dark-secondary); }
 #friends .friends-table {
-  background: var(--dark-highlight);
+  background: var(--dark-secondary);
   border: 0;
   margin-top: 0;
   padding-top: 4px; }
@@ -375,11 +379,19 @@ div[class*="autocomplete-"] {
   box-shadow: none;
   height: 57px; }
 
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+  background-color: #2ecc71;
+  transition: all 400ms ease; }
+  .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+    background-color: #27ae60; }
+  .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+    color: #36393e; }
+.theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
+  background-color: var(--dark-primary);
+  transition: all 400ms ease; }
 .theme-dark #friends .friends-header {
   background-color: var(--dark-highlight);
   border: 0; }
-  .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
-    background-color: var(--accent); }
 
 div[class*="container-"] header[class*="header-"] {
   box-shadow: none; }
@@ -2565,7 +2577,7 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   .alert.form .form-inner .cancel:hover {
     background-color: #c0392b; }
 
-video[autoplay] {
+div[class*="content-"] video[autoplay] {
   display: none; }
 
 div[class*="autocomplete-"] {
@@ -2789,8 +2801,9 @@ div[class*="attachPopout-"] {
   padding-bottom: 4px;
   padding-top: 4px; }
   .private-channels .search-bar .search-bar-inner {
-    background: var(--dark-highlight);
-    border: 0; }
+    background: transparent;
+    border: 0;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(32, 34, 37, 0.6); }
 
 .search-bar .search-bar-inner {
   background: rgba(47, 47, 47, 0.9); }

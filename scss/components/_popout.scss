@@ -824,7 +824,7 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
   }
 }
 
-video[autoplay] { display: none; }
+div[class*="content-"] video[autoplay] { display: none; }
 
 
 // Upload area

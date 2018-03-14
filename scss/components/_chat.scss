@@ -297,7 +297,7 @@ div[class*="autocomplete-"] {
 
 
 // NSFW Filter
-.theme-dark div[class*="image-"] { background-image: url('https://i.alexflipnote.xyz/c2472b.png'); }
+.theme-dark div[class*="nsfw-"] div[class*="image-"] { background-image: url('https://i.alexflipnote.xyz/c2472b.png'); }
 .ui-guild-nsfw > .flex-nowrap { background: transparent; }
 .theme-dark .chat > .content > .flex-justify-center {
   background-color: var(--dark-primary);
@@ -390,8 +390,13 @@ div[class*="autocomplete-"] {
 }
 
 #friends {
+  .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+    background: #27ae60;
+  }
+
+  div[class*="headerBar-"] { background: var(--dark-secondary); }
   .friends-table {
-    background: var(--dark-highlight);
+    background: var(--dark-secondary);
     border: 0;
     margin-top: 0;
     padding-top: 4px;
@@ -406,12 +411,22 @@ div[class*="autocomplete-"] {
   }
 }
 
-.theme-dark #friends .friends-header {
-  background-color: var(--dark-highlight);
-  border: 0;
-
+.theme-dark #friends {
   .tab-bar .tab-bar-item.tab-bar-item-primary {
-    background-color: var(--accent);
+    background-color: #2ecc71;
+    transition: all 400ms ease;
+    &:hover:not(.selected) { background-color: #27ae60; }
+    &.selected { color: #36393e; }
+  }
+
+  .tab-bar .tab-bar-item:hover:not(.selected) {
+    background-color: var(--dark-primary);
+    transition: all 400ms ease;
+  }
+
+  .friends-header {
+    background-color: var(--dark-highlight);
+    border: 0;
   }
 }
 
