@@ -97,7 +97,7 @@
   background: var(--dark-primary);
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
 
-  div[class*="filename-"], a[class*="filenameLink-"] { color: var(--accent); font-weight: bold; }
+  div[class*="filename-"], a[class*="fileNameLink-"] { color: var(--accent); font-weight: bold; }
   div[class*="metadata-"], svg[class*="downloadButton-"], svg[class*="cancelButton-"] { color: #fff; }
   div[class*="size-"] { color: #ccc; }
   div[class*="progressBar-"] {
