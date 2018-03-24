@@ -474,10 +474,12 @@ div[class*="container-"] div[class*="wrapperUnreadText-"] div[class*="unread-"] 
   background: var(--dark-secondary); }
 .channel-members-wrap .channel-members {
   background: var(--dark-secondary); }
-  .channel-members-wrap .channel-members .member:hover {
-    background: var(--dark-primary); }
-  .channel-members-wrap .channel-members .member.popout-open {
-    background: var(--dark-primary); }
+  .channel-members-wrap .channel-members div[class*="member-"] div[class*="content-"] {
+    background: var(--dark-secondary); }
+    .channel-members-wrap .channel-members div[class*="member-"] div[class*="content-"]:hover {
+      background: var(--dark-primary); }
+    .channel-members-wrap .channel-members div[class*="member-"] div[class*="content-"].popout-open {
+      background: var(--dark-primary); }
 
 div[class*="titleWrapper-"] div[class*="title-"] {
   background: var(--dark-secondary);
@@ -2357,11 +2359,13 @@ div[class*="regionSelectModal-"] {
   background-color: var(--dark-highlight); }
   .create-guild-container .form.deprecated .form-inner, .create-guild-container.deprecated .form.deprecated .form-inner {
     background-color: transparent; }
+  .create-guild-container .join-server .link-container input, .create-guild-container.deprecated .join-server .link-container input {
+    color: #fff; }
   .create-guild-container.deprecated.create-or-join header, .create-guild-container .create-or-join header, .create-guild-container.deprecated.deprecated.create-or-join header, .create-guild-container.deprecated .create-or-join header {
     color: #fff;
     text-transform: none; }
     .create-guild-container.deprecated.create-or-join header::after, .create-guild-container .create-or-join header::after, .create-guild-container.deprecated.deprecated.create-or-join header::after, .create-guild-container.deprecated .create-or-join header::after {
-      content: ' 🎀'; }
+      content: ' ­ƒÄÇ'; }
   .create-guild-container.deprecated.create-or-join .actions .or, .create-guild-container .create-or-join .actions .or, .create-guild-container.deprecated.deprecated.create-or-join .actions .or, .create-guild-container.deprecated .create-or-join .actions .or {
     display: none; }
   .create-guild-container.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.create-or-join .form, .create-guild-container .create-or-join .form-inner, .create-guild-container .create-or-join .form, .create-guild-container.deprecated.deprecated.create-or-join .form-inner, .create-guild-container.deprecated.deprecated.create-or-join .form, .create-guild-container.deprecated .create-or-join .form-inner, .create-guild-container.deprecated .create-or-join .form {

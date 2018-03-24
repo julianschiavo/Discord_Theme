@@ -500,7 +500,8 @@ div[class*="container-"] {
   .channel-members {
     background: var(--dark-secondary);
 
-    .member {
+    div[class*="member-"] div[class*="content-"] {
+      background: var(--dark-secondary);
       &:hover { background: var(--dark-primary); }
       &.popout-open { background: var(--dark-primary); }
     }

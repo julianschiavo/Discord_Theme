@@ -564,7 +564,9 @@ div[class*="regionSelectModal-"] {
 .create-guild-container, .create-guild-container.deprecated {
   @include animation(server-create-enter 500ms ease-in-out);
   background-color: var(--dark-highlight);
+
   .form.deprecated .form-inner { background-color: transparent; }
+  .join-server .link-container input { color: #fff; }
 
   &.deprecated.create-or-join, .create-or-join {
     header {
