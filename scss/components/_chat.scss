@@ -433,7 +433,11 @@ div[class*="autocomplete-"] {
 
 // Channel section
 div[class*="container-"] {
-  header[class*="header-"] { box-shadow: none; }
+  header[class*="header-"] {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
+    height: 49px;
+  }
+
   div[class*="containerDefault-"] div[class*="content-"]:hover {
     @include transition(all .5 ease-in-out);
     transform: translateX(.5em);
@@ -508,6 +512,12 @@ div[class*="container-"] {
   }
 }
 
+.theme-dark div[class*="membersWrap-"] {
+  div[class*="members-"] { background-color: var(--dark-secondary); }
+  div[class*="content"] { background-color: var(--dark-secondary); }
+  div[class*="memberOnline-"]:hover, div[class*="memberOffline-"]:hover { background-color: var(--dark-primary); }
+}
+
 div[class*="titleWrapper-"] div[class*="title-"] {
   background: var(--dark-secondary);
   box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
@@ -540,9 +550,11 @@ div[class*="wrapperHovered-"] > svg { @include arrow-hover(180deg); }
 div[class*="wrapperCollapsed-"] > svg { @include arrow-hover(90deg); }
 div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
 
-div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
-  padding-left: 23px;
-  & > svg > path { display: none; }
+div[class*="channels-"] {
+  div[class*="container-"] div[class*="cursorPointer-"] {
+    padding-left: 23px;
+    & > svg > path { display: none; }
+  }
 }
 
 
