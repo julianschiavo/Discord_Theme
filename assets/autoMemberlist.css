@@ -3,7 +3,7 @@
   Github: https://gist.github.com/Ratismal
 */
 
-.channel-members-wrap {
+div[class*="membersWrap"] {
 	position: absolute !important;
 	right: -150px;
 	height: 100%;
@@ -13,23 +13,25 @@
 	z-index: 1;
 }
 
-.channel-members-wrap .member .member-inner,
-.channel-members-wrap .channel-members h2 {
+div[class*="membersWrap"] div[class*="memberInner-"],
+div[class*="membersWrap"] div[class*="membersGroup-"] {
 	animation: fadeout 1s;
 	-webkit-animation-fill-mode: forwards;
 }
 
-.channel-members-wrap:hover {
+div[class*="membersWrap"]:hover {
  	transition: 0.5s;
 	right: 0px;
 	background: rgba(0, 0, 0, 0.3);
 }
 
-.channel-members-wrap:hover .member .member-inner,
-.channel-members-wrap:hover .channel-members h2 {
+div[class*="membersWrap"]:hover div[class*="memberInner-"],
+div[class*="membersWrap"]:hover div[class*="membersGroup-"] {
 	animation: fadein 0.5s;
 	-webkit-animation-fill-mode: forwards;
 }
+
+.chat:not(.private) .content { padding-right: 90px; }
 
 @keyframes fadein {
 	from {opacity: 0}
@@ -38,8 +40,4 @@
 
 @keyframes fadeout {
 	to {opacity: 0}
-}
-
-.chat:not(.private) .content {
-	padding-right: 90px;
 }

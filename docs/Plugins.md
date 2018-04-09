@@ -148,12 +148,6 @@ Better Animations, with huge animation improvement.
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/statusPopout.css";
 ```
 
-### [BETA] your language
-[Preview](https://i.alexflipnote.xyz/dce9ea.png)
-```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/assets/disccord.css";
-```
-
 ### Remove blocked messages
 ```css
 .message-group-blocked-btn { display: none; }
