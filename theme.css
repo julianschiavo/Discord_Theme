@@ -2720,31 +2720,35 @@ div[class*="attachPopout-"] {
     padding-left: 0; }
     .theme-dark .search .search-bar span[class*="searchAnswer-"] [data-text] {
       font-weight: lighter; }
-.theme-dark .search-popout {
+.theme-dark div[class*="searchPopout-"] {
   background-color: var(--dark-highlight); }
-  .theme-dark .search-popout .option.search-query {
+  .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] {
     background-color: #111;
     border: 0; }
-    .theme-dark .search-popout .option.search-query.selected {
-      background-color: var(--dark-primary); }
-    .theme-dark .search-popout .option.search-query + .results-group::before {
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] + div[class*="selected-"] {
+      background-color: var(--dark-primary) !important; }
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] + div[class*="resultsGroup-"]::before {
       display: none; }
-    .theme-dark .search-popout .option.search-query .keybind-shortcut.dim span {
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] + div[class*="searchQuery-"] {
+      background-color: var(--dark-primary); }
+      .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] + div[class*="searchQuery-"] + div[class*="selected-"] {
+        background-color: var(--dark-highlight) !important; }
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] .keybind-shortcut.dim span {
       background-color: var(--dark-secondary);
       border: 1px solid var(--dark-secondary);
       box-shadow: inset 0 -4px 0 var(--dark-highlight);
       color: #000; }
-      .theme-dark .search-popout .option.search-query .keybind-shortcut.dim span:active {
+      .theme-dark div[class*="searchPopout-"] div[class*="option-"] div[class*="searchQuery-"] .keybind-shortcut.dim span:active {
         box-shadow: inset 0 -2px 0 var(--dark-highlight); }
-  .theme-dark .search-popout .option::after {
+  .theme-dark div[class*="searchPopout-"] div[class*="option-"]::after {
     background: var(--dark-highlight); }
-  .theme-dark .search-popout .option.selected {
-    background-color: var(--dark-secondary); }
-    .theme-dark .search-popout .option.selected strong, .theme-dark .search-popout .option.selected .displayed-nick {
+  .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="selected-"], .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="searchOption-"] div[class*="selected-"] {
+    background-color: var(--dark-secondary) !important; }
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="selected-"] strong, .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="selected-"] .displayed-nick, .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="searchOption-"] div[class*="selected-"] strong, .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="searchOption-"] div[class*="selected-"] .displayed-nick {
       color: #fff; }
-    .theme-dark .search-popout .option.selected .filter {
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="selected-"] span[class*="filter-"], .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="searchOption-"] div[class*="selected-"] span[class*="filter-"] {
       color: #fff; }
-    .theme-dark .search-popout .option.selected::after {
+    .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="selected-"]::after, .theme-dark div[class*="searchPopout-"] div[class*="option-"] + div[class*="searchOption-"] div[class*="selected-"]::after {
       background: linear-gradient(90deg, rgba(242, 242, 242, 0) 0, var(--dark-secondary) 50%); }
 .theme-dark .search-results-wrap {
   background: var(--dark-highlight); }
