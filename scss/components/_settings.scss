@@ -74,6 +74,11 @@ div[class*="side-"] div[class*="item-"]:hover { transform: translateX(.4em); }
   .custom-scroller>div {
     z-index: 2;
   }
+
+  div[class*="auditLog-"] {
+    border: 0;
+    div[class*="headerDefault-"], div[class*="headerClickable-"] { background: var(--dark-secondary); }
+  }
 }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {

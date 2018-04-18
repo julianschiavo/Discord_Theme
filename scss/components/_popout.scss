@@ -74,7 +74,16 @@ div[class*="userPopout-"] {
   }
 
   div[class*="bodyAlignCenter-"], div[class*="bodyNormal-"] { background: transparent; border-bottom: 0; }
-  div[class*="footer-"] { background: var(--dark-secondary); }
+
+  div[class*="footer-"] {
+    background: var(--dark-secondary);
+
+    input[class*="quickMessage-"] {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
   div[class*="content-"] { background-color: transparent; }
 
   div[class*="avatarWrapperNormal-"] {
@@ -306,23 +315,31 @@ div[class*="root-"] {
 
 
 // Emoji picker
-.emoji-picker {
-  .sticky-header {
+div[class*="emojiPicker-"] {
+  background: transparent;
+  border: 0;
+
+  div[class*="header-"] {
+    background-color: var(--dark-highlight);
+    .search-bar-light { background: transparent; }
+  }
+
+  div[class*="stickyHeader-"] {
+    background-color: var(--dark-primary);
     left: 0;
     width: 100%;
   }
 
-  .header { background-color: var(--dark-highlight); }
   div[class*="scrollerWrap-"] { background: var(--dark-secondary); }
 
-  .category {
+  div[class*="category-"] {
     color: var(--accent);
     font-size: 13px;
     font-weight: bold;
     padding-left: 1em;
   }
 
-  .categories {
+  div[class*="categories-"] {
     background: var(--dark-primary);
     border-top: 0;
     margin: 0;
@@ -330,7 +347,7 @@ div[class*="root-"] {
     .item.selected { border-bottom-color: var(--accent); }
   }
 
-  .dimmer { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
+  div[class*="dimmer-"] { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
 }
 
 .theme-dark .popout {
@@ -451,9 +468,9 @@ div[class*="popoutTopLeft-"], div[class*="popoutBottom-"] {
     color: #fff;
 
     div[class*="item-"] {
-      div[class*="label-"] { color: #fff; }
       @include transition(all 250ms ease);
-  
+      div[class*="label-"] { color: #fff; }
+
       &:hover {
         background-color: var(--dark-secondary);
         color: #fff;
@@ -571,6 +588,7 @@ div[class*="regionSelectModal-"] {
   @include animation(server-create-enter 500ms ease-in-out);
   background-color: var(--dark-highlight);
 
+  input[type=text] { color: #fff !important; }
   .form.deprecated .form-inner { background-color: transparent; }
   .join-server .link-container input { color: #fff; }
 
@@ -579,7 +597,7 @@ div[class*="regionSelectModal-"] {
       color: #fff;
       text-transform: none;
 
-      &::after { content: ' 🎀'; }
+      &::after { content: ' <3'; }
     }
 
     .actions .or { display: none; }
