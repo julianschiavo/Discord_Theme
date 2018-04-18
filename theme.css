@@ -2214,7 +2214,7 @@ div[class*="wrapper-"] {
 .popout-menu {
   border-radius: 0; }
 
-.status-picker .popout-menu-item {
+div[class*="popoutTopLeft-"] div[class*="menu-"], div[class*="popoutBottom-"] div[class*="menu-"] {
   transition: all 250ms ease;
   -webkit-transition: all 250ms ease;
   -ms-transition: all 250ms ease;
@@ -2222,15 +2222,18 @@ div[class*="wrapper-"] {
   -o-transition: all 250ms ease;
   background-color: var(--dark-primary);
   color: #fff; }
-  .status-picker .popout-menu-item:hover {
+  div[class*="popoutTopLeft-"] div[class*="menu-"] div[class*="item-"], div[class*="popoutBottom-"] div[class*="menu-"] div[class*="item-"] {
     transition: all 250ms ease;
     -webkit-transition: all 250ms ease;
     -ms-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    background-color: var(--dark-secondary);
-    color: #fff;
-    padding-left: 20px; }
+    -o-transition: all 250ms ease; }
+    div[class*="popoutTopLeft-"] div[class*="menu-"] div[class*="item-"] div[class*="label-"], div[class*="popoutBottom-"] div[class*="menu-"] div[class*="item-"] div[class*="label-"] {
+      color: #fff; }
+    div[class*="popoutTopLeft-"] div[class*="menu-"] div[class*="item-"]:hover, div[class*="popoutBottom-"] div[class*="menu-"] div[class*="item-"]:hover {
+      background-color: var(--dark-secondary);
+      color: #fff;
+      padding-left: 20px; }
 
 .small-popout-box {
   background: var(--dark-highlight);

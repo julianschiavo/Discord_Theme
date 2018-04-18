@@ -444,16 +444,22 @@ div[class*="wrapper-"] {
 
 .popout-menu { border-radius: 0;}
 
-.status-picker .popout-menu-item {
-  @include transition(all 250ms ease);
-  background-color: var(--dark-primary);
-  color: #fff;
-
-  &:hover {
+div[class*="popoutTopLeft-"], div[class*="popoutBottom-"] {
+  div[class*="menu-"] {
     @include transition(all 250ms ease);
-    background-color: var(--dark-secondary);
+    background-color: var(--dark-primary);
     color: #fff;
-    padding-left: 20px;
+
+    div[class*="item-"] {
+      div[class*="label-"] { color: #fff; }
+      @include transition(all 250ms ease);
+  
+      &:hover {
+        background-color: var(--dark-secondary);
+        color: #fff;
+        padding-left: 20px;
+      }
+    }
   }
 }
 
