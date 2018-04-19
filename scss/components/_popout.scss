@@ -937,7 +937,6 @@ div[class*="uploadModalIn-"] div[class*="uploadDropModal-"] {
 }
 
 // Attachment Popout
-
 svg[class*="attachButton-"].popout-open {
   @include transform(scale(1) !important);
   background-color: var(--dark-highlight) !important;

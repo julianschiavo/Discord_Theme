@@ -73,6 +73,7 @@
 
 .theme-dark div[class*="attachment-"] {
   background: var(--dark-primary);
+  border-color: transparent;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.15)); }
   .theme-dark div[class*="attachment-"] div[class*="filename-"], .theme-dark div[class*="attachment-"] a[class*="fileNameLink-"] {
     color: var(--accent);

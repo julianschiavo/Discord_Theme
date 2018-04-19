@@ -91,6 +91,7 @@
 // Discord Attachment
 .theme-dark div[class*="attachment-"] {
   background: var(--dark-primary);
+  border-color: transparent;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
 
   div[class*="filename-"], a[class*="fileNameLink-"] { color: var(--accent); font-weight: bold; }
