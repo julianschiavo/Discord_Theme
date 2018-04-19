@@ -787,37 +787,40 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 
 
 // Pin message
-.themed-popout .header { background: var(--dark-highlight) !important; }
-
-.theme-dark .messages-popout-wrap {
+.theme-dark div[class*="messagesPopoutWrap-"] {
   background: var(--dark-primary) !important;
   border: 0 !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .3) !important;
   max-height: 541px !important;
 
-  .comment {
-    background: rgba(0, 0, 0, 0);
-    border-radius: 0 3px 3px !important;
-    padding: 4px 7px 10px 10px !important;
+  div[class*="header"] { background: var(--dark-highlight) !important; }
 
-    &::before {
-      border-color: transparent rgba(0, 0, 0, .3) transparent transparent;
-      left: -20px;
-      top: -4px;
+  div[class*="messagesPopout-"] {
+    .message-group, .message-group:hover {
+      background: transparent !important;
+      border: 0 !important;
+
+      div[class*="actionButtons-"] {
+        background-color: transparent;
+        box-shadow: none;
+        transition: background-color .1s ease-in-out;
+        &:hover { box-shadow: none; }
+        div[class*="jumpButton-"] { background-color: var(--dark-secondary); }
+      }
     }
-  }
 
-  .messages-popout .message-group, .messages-popout .message-group:hover {
-    background: transparent !important;
-    border: 0 !important;
+    .comment {
+      background: rgba(0, 0, 0, 0);
+      border-radius: 0 3px 3px !important;
+      padding: 4px 7px 10px 10px !important;
 
-    .action-buttons {
-      background-color: transparent;
-      box-shadow: none;
-      transition: background-color .1s ease-in-out;
-      &:hover { box-shadow: none; }
-      .jump-button { background-color: var(--dark-secondary); }
+      &::before {
+        border-color: transparent rgba(0, 0, 0, .3) transparent transparent;
+        left: -20px;
+        top: -4px;
+      }
     }
+
   }
 }
 

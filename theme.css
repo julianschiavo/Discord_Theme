@@ -681,7 +681,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 
 .theme-dark .ui-standard-sidebar-view .sidebar div[class*="header-"]:nth-child(1)::before, .theme-light .ui-standard-sidebar-view .sidebar div[class*="header-"]:nth-child(1)::before {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.37';
+  content: 'Theme version: 1.0.6.39';
   font-size: 16px;
   font-weight: bold;
   position: absolute;
@@ -2552,33 +2552,32 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   background-color: var(--dark-secondary);
   border-top: 0; }
 
-.themed-popout .header {
-  background: var(--dark-highlight) !important; }
-
-.theme-dark .messages-popout-wrap {
+.theme-dark div[class*="messagesPopoutWrap-"] {
   background: var(--dark-primary) !important;
   border: 0 !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
   max-height: 541px !important; }
-  .theme-dark .messages-popout-wrap .comment {
-    background: rgba(0, 0, 0, 0);
-    border-radius: 0 3px 3px !important;
-    padding: 4px 7px 10px 10px !important; }
-    .theme-dark .messages-popout-wrap .comment::before {
-      border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
-      left: -20px;
-      top: -4px; }
-  .theme-dark .messages-popout-wrap .messages-popout .message-group, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover {
+  .theme-dark div[class*="messagesPopoutWrap-"] div[class*="header"] {
+    background: var(--dark-highlight) !important; }
+  .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group, .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group:hover {
     background: transparent !important;
     border: 0 !important; }
-    .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {
+    .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group div[class*="actionButtons-"], .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group:hover div[class*="actionButtons-"] {
       background-color: transparent;
       box-shadow: none;
       transition: background-color .1s ease-in-out; }
-      .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons:hover, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons:hover {
+      .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group div[class*="actionButtons-"]:hover, .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group:hover div[class*="actionButtons-"]:hover {
         box-shadow: none; }
-      .theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button, .theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons .jump-button {
+      .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group div[class*="actionButtons-"] div[class*="jumpButton-"], .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .message-group:hover div[class*="actionButtons-"] div[class*="jumpButton-"] {
         background-color: var(--dark-secondary); }
+  .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .comment {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0 3px 3px !important;
+    padding: 4px 7px 10px 10px !important; }
+    .theme-dark div[class*="messagesPopoutWrap-"] div[class*="messagesPopout-"] .comment::before {
+      border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
+      left: -20px;
+      top: -4px; }
 
 .user-popout-banned-video {
   display: none; }
