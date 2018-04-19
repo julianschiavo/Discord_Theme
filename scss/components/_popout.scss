@@ -705,6 +705,7 @@ div[class*="regionSelectModal-"] {
 
 div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { background: var(--dark-primary); }
 .theme-dark div[class*="quickswitcher-"] {
+  @include animation(quickswitcher-menu 300ms ease-in-out);
   background: var(--dark-primary);
   div[class*="resultFocused-"] { background: var(--dark-highlight); }
   input[class*="input-"] {
@@ -788,6 +789,7 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 
 // Top Popups (Pins, Mentions, etc)
 .theme-dark div[class*="messagesPopoutWrap-"] {
+  @include animation(popout-content 400ms ease-in-out);
   background: var(--dark-primary) !important;
   border: 0 !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .3) !important;

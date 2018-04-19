@@ -682,7 +682,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 
 .theme-dark .ui-standard-sidebar-view .sidebar div[class*="header-"]:nth-child(1)::before, .theme-light .ui-standard-sidebar-view .sidebar div[class*="header-"]:nth-child(1)::before {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.39';
+  content: 'Theme version: 1.0.6.40';
   font-size: 16px;
   font-weight: bold;
   position: absolute;
@@ -2477,6 +2477,11 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   background: var(--dark-primary); }
 
 .theme-dark div[class*="quickswitcher-"] {
+  animation: quickswitcher-menu 300ms ease-in-out;
+  -webkit-animation: quickswitcher-menu 300ms ease-in-out;
+  -ms-animation: quickswitcher-menu 300ms ease-in-out;
+  -moz-animation: quickswitcher-menu 300ms ease-in-out;
+  -o-animation: quickswitcher-menu 300ms ease-in-out;
   background: var(--dark-primary); }
   .theme-dark div[class*="quickswitcher-"] div[class*="resultFocused-"] {
     background: var(--dark-highlight); }
@@ -2554,6 +2559,11 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   border-top: 0; }
 
 .theme-dark div[class*="messagesPopoutWrap-"] {
+  animation: popout-content 400ms ease-in-out;
+  -webkit-animation: popout-content 400ms ease-in-out;
+  -ms-animation: popout-content 400ms ease-in-out;
+  -moz-animation: popout-content 400ms ease-in-out;
+  -o-animation: popout-content 400ms ease-in-out;
   background: var(--dark-primary) !important;
   border: 0 !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
