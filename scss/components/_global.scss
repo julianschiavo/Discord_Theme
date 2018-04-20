@@ -1,11 +1,11 @@
 .theme-dark, .theme-light {
-  .ui-standard-sidebar-view .sidebar div[class*="header-"]:nth-child(1)::before {
+  div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.0.6.40';
-    font-size: 16px;
+    content: 'Theme version: 1.0.6.41';
+    font-size: 18px;
     font-weight: bold;
     position: absolute;
-    top: 2em;
+    top: 2.1em;
   }
 }
 
