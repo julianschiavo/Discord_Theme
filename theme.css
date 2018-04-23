@@ -18,6 +18,12 @@
 .divider.divider-red + .divider {
   display: none; }
 
+.theme-dark .message-group .message {
+  animation: fadein-message .4s forwards; }
+  .theme-dark .message-group .message.message-sending {
+    animation: none;
+    opacity: 0; }
+
 .theme-dark div[class*="info-"] div[class*="title-"] {
   background: transparent; }
 
@@ -972,6 +978,66 @@ div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
     -webkit-transform: translate(0, -65px);
     transform: translate(0, -65px);
     opacity: 0; } }
+@-webkit-keyframes fadein-message {
+  0% {
+    -moz-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@-moz-keyframes fadein-message {
+  0% {
+    -moz-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@-o-keyframes fadein-message {
+  0% {
+    -moz-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes fadein-message {
+  0% {
+    -moz-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
 @-webkit-keyframes pin-icon {
   from {
     -moz-transform: translate(0, 0);

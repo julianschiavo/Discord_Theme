@@ -27,6 +27,16 @@
 // Chat Messages
 .divider.divider-red + .divider { display: none; }
 
+// WIP Testing
+.theme-dark .message-group .message {
+  animation: fadein-message .4s forwards;
+
+  &.message-sending {
+    animation: none;
+    opacity: 0;
+  }
+}
+
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
 .theme-dark div[class*="headerBar-"] {
   background: var(--dark-highlight);

@@ -13,6 +13,18 @@
   }
 }
 
+@include keyframes(fadein-message) {
+  0% {
+    @include transform(translateX(-50px));
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
 @include keyframes(pin-icon) {
   from { @include transform(translate(0, 0)); }
   to { @include transform(translate(0, 65px)); }
