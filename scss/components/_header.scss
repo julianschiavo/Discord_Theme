@@ -55,4 +55,5 @@ div[class*="modal-"] {
 
 div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
   background: var(--dark-primary);
+  margin-bottom: 0;
 }

@@ -170,13 +170,6 @@
   margin: 0;
 }
 
-div[class*="typing-"] {
-  bottom: 100%;
-  left: 10px;
-  position: absolute;
-  width: auto;
-}
-
 div[class*="autocomplete-"] {
   border: 0 !important;
   border-bottom: 0;
@@ -214,7 +207,18 @@ div[class*="autocomplete-"] {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
-  div[class*="typing-"] { background-color: rgba(48, 48, 48, .9); padding-left: 10px; padding-right: 10px; }
+
+  div[class*="typing-"] {
+    background-color: rgba(48, 48, 48, .9);
+    //background-color: red;
+    bottom: 100%;
+    left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: -27px;
+    width: auto;
+  }
 }
 
 .theme-dark #autocomplete-popout {
@@ -548,6 +552,8 @@ div[class*="wrapperCollapsed-"] > svg { @include arrow-hover(90deg); }
 div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
 
 div[class*="channels-"] {
+  background: var(--dark-primary);
+
   div[class*="container-"] div[class*="cursorPointer-"] {
     padding-left: 23px;
     & > svg > path { display: none; }

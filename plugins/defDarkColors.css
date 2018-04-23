@@ -1,49 +1,44 @@
-/*
-Error: Invalid CSS after "  --nsfw-image: ": expected "}", was "url("https://i...."
-        on line 14 of scss/plugins/defDarkColors.scss
+/* Plugin Made by Discord User @ .JS#2125
+   also on Github @ https://github.com/wwdc17 */
+/* PM .JS for support */
+:root {
+  /*--<var>: <value>*/
+  --rednotif: #FF0000;
+  --notif: #7289DA;
+  --accent: #7289DA;
+  --dark-primary: #23272A;
+  --dark-secondary: #2C2F33;
+  --dark-highlight: #23272A;
+  --dark-highlight-guildlist: #23272A;
+  --nsfw-image: url(https://i.alexflipnote.xyz/c2472b.png); }
 
-9:   --accent: #7289DA;
-10:   --dark-primary: #23272A;
-11:   --dark-secondary: #2C2F33;
-12:   --dark-highlight: #23272A;
-13:   --dark-highlight-guildlist: #23272A;
-14:   --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
-15: }
-16: 
-17: /* Server Section *\/
-18: /* BOTH *\/
-19: .guilds-wrapper { background: var(--dark-highlight-guildlist); }
+/* Server Section */
+/* BOTH */
+.guilds-wrapper {
+  background: var(--dark-highlight-guildlist); }
 
-Backtrace:
-scss/plugins/defDarkColors.scss:14
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:679:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  --nsfw-image: \": expected \"}\", was \"url(\"https://i....\"\A         on line 14 of scss/plugins/defDarkColors.scss\A \A 9:   --accent: #7289DA;\A 10:   --dark-primary: #23272A;\A 11:   --dark-secondary: #2C2F33;\A 12:   --dark-highlight: #23272A;\A 13:   --dark-highlight-guildlist: #23272A;\A 14:   --nsfw-image: url(\"https://i.alexflipnote.xyz/c2472b.png\");\A 15: }\A 16: \A 17: /* Server Section */\A 18: /* BOTH */\A 19: .guilds-wrapper { background: var(--dark-highlight-guildlist); }"; }
+/* End Server Section */
+/* Notifications */
+.badge {
+  background-color: var(--rednotif); }
+
+.new-messages-indicator.new-messages-indicator-mention {
+  background-color: var(--rednotif); }
+
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.selected.unread:before,
+.guilds-wrapper .guilds .guild.unread:before {
+  z-index: 100;
+  background: var(--notif);
+  height: 12px;
+  width: 12px;
+  margin-top: 0px;
+  margin-top: 35px !important;
+  margin-left: -30px !important;
+  border-radius: 50%;
+  border: 0.5px solid black; }
+
+/* End Notifications */
+/* THANKS FOR USING DEFDARKCOLORS.CSS */
+
+/*# sourceMappingURL=defDarkColors.css.map */

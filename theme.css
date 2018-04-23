@@ -149,12 +149,6 @@
   border: 0;
   margin: 0; }
 
-div[class*="typing-"] {
-  bottom: 100%;
-  left: 10px;
-  position: absolute;
-  width: auto; }
-
 div[class*="autocomplete-"] {
   border: 0 !important;
   border-bottom: 0;
@@ -193,8 +187,13 @@ div[class*="autocomplete-"] {
   color: #fff; }
   .theme-dark .chat form div[class*="typing-"] {
     background-color: rgba(48, 48, 48, 0.9);
+    bottom: 100%;
+    left: 10px;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    position: absolute;
+    top: -27px;
+    width: auto; }
 
 .theme-dark #autocomplete-popout .row {
   transition: all 50ms ease;
@@ -547,10 +546,12 @@ div[class*="wrapperDefault-"] > svg {
   transform: rotate(180deg);
   width: 15px; }
 
-div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
-  padding-left: 23px; }
-  div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
-    display: none; }
+div[class*="channels-"] {
+  background: var(--dark-primary); }
+  div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
+    padding-left: 23px; }
+    div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
+      display: none; }
 
 .theme-dark .channel-notices .channel-notice {
   background-color: var(--dark-highlight); }
@@ -682,7 +683,7 @@ div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.41';
+  content: 'Theme version: 1.0.6.46';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
@@ -862,7 +863,8 @@ div[class*="modal-"] div[class*="scroller-"] > div[class*="primary-"] {
   padding-top: 5px; }
 
 div[class*="channels-"] div[class*="container-"] + div[class*="container-"] {
-  background: var(--dark-primary); }
+  background: var(--dark-primary);
+  margin-bottom: 0; }
 
 @-webkit-keyframes pulse {
   0% {
