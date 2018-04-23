@@ -16,7 +16,7 @@ div[class*="membersWrap"] {
 div[class*="membersWrap"] div[class*="memberInner-"],
 div[class*="membersWrap"] div[class*="membersGroup-"] {
 	animation: fadeout 1s;
-	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
 div[class*="membersWrap"]:hover {
@@ -28,7 +28,7 @@ div[class*="membersWrap"]:hover {
 div[class*="membersWrap"]:hover div[class*="memberInner-"],
 div[class*="membersWrap"]:hover div[class*="membersGroup-"] {
 	animation: fadein 0.5s;
-	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
 .chat:not(.private) .content { padding-right: 90px; }

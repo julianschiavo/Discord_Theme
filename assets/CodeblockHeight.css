@@ -1,19 +1,19 @@
-:root{
+:root {
 	--code-max-height: 150px;
 }
 
-code{
+code {
 	max-height: var(--code-max-height);
 	overflow: hidden;
 }
 
-code:hover{
+code:hover {
 	max-height: initial;
 	overflow: initial;
 	display: initial;
 }
 
-pre:not(:hover)::after{
+pre:not(:hover)::after {
     display: inline-block;
     position: relative;
     content: " ..." !important;
@@ -22,11 +22,6 @@ pre:not(:hover)::after{
 }
 
 @keyframes bounce{
-    0%, 10%, 100%{
-        bottom: 0px;
-    }
-
-    5%{
-        bottom: 10px;
-    }
+	0%, 10%, 100% { bottom: 0px; }
+	5% { bottom: 10px; }
 }

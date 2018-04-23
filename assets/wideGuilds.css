@@ -10,13 +10,8 @@
   left: 6px;
 }
 
-.guilds-wrapper {
-  width: 135px !important;
-}
-
-.guilds-wrapper .scroller-wrap {
-  width: 170px;
-}
+.guilds-wrapper { width: 135px !important; }
+.guilds-wrapper .scroller-wrap { width: 170px; }
 
 .guilds-wrapper .guilds {
   display: flex;
@@ -31,15 +26,12 @@
   margin: auto;
 }
 
-.guilds-wrapper .guilds .guild::not(.dms):nth-child(2)
-{
+.guilds-wrapper .guilds .guild::not(.dms):nth-child(2) {
   position: relative;
   bottom: -20px !important;
 }
 
-.guilds-wrapper .guilds .guild+.guild {
-  margin-top: 0px;
-}
+.guilds-wrapper .guilds .guild+.guild { margin-top: 0px; }
 
 .guilds-wrapper .guilds .dms {
   width: 100%;
@@ -48,15 +40,15 @@
 }
 
 .dms .guild:not(.guilds-add):first-child {
-    margin-bottom: 0px!important;
-    left: -10px;
-    position: relative;
+  margin-bottom: 0px!important;
+  left: -10px;
+  position: relative;
 }
 
 .dms .guild:not(.guilds-add):nth-child(2) {
-    margin-bottom: 0px!important;
-    left: -25px;
-    position: relative;
+  margin-bottom: 0px!important;
+  left: -25px;
+  position: relative;
 }
 
 .guilds-wrapper .guilds .friends-icon {
@@ -96,20 +88,17 @@
   visibility: hidden;
 }
 
-.new-messages-indicator {
-    display:none;
-}
+.new-messages-indicator { display:none; }
 
-.dms .guild .badge,
-.guilds .guild.unread .badge {
-    -webkit-transform: translate(-4px, -34px)!important;
-    transform: translate(-4px, -34px)!important;
-    z-index: 100;
+.dms .guild .badge, .guilds .guild.unread .badge {
+  -webkit-transform: translate(-4px, -34px)!important;
+  transform: translate(-4px, -34px)!important;
+  z-index: 100;
 }
 
 .guilds-wrapper .guild.guilds-add {
-    position: relative !important;
-    left: 12px !important;
+  position: relative !important;
+  left: 12px !important;
 }
 
 #bd-pub-button { display: none; }
