@@ -186,7 +186,7 @@ div[class*="autocomplete-"] {
   border: 0;
   color: #fff; }
   .theme-dark .chat form div[class*="typing-"] {
-    background-color: rgba(48, 48, 48, 0.9);
+    background-color: var(--dark-secondary);
     bottom: 100%;
     left: 10px;
     padding-left: 10px;
