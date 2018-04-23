@@ -209,8 +209,7 @@ div[class*="autocomplete-"] {
   color: #fff;
 
   div[class*="typing-"] {
-    background-color: rgba(48, 48, 48, .9);
-    //background-color: red;
+    background-color: var(--dark-secondary);
     bottom: 100%;
     left: 10px;
     padding-left: 10px;
