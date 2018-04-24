@@ -1,5 +1,8 @@
 scss_files: 'scss/*.scss'
 
+indentation:
+  size: tab
+
 linters:
   ColorVariable:
     enabled: false

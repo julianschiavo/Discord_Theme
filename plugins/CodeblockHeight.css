@@ -4,22 +4,21 @@
 code {
   max-height: var(--code-max-height);
   overflow: hidden; }
-
-code:hover {
-  max-height: initial;
-  overflow: initial;
-  display: initial; }
+  code:hover {
+    display: initial;
+    max-height: initial;
+    overflow: initial; }
 
 pre:not(:hover)::after {
-  display: inline-block;
-  position: relative;
+  animation: bounce 4s 0s infinite alternate;
   content: " ..." !important;
+  display: inline-block;
   margin-top: 10px;
-  animation: bounce 4s 0s infinite alternate; }
+  position: relative; }
 
 @keyframes bounce {
   0%, 10%, 100% {
-    bottom: 0px; }
+    bottom: 0; }
   5% {
     bottom: 10px; } }
 
