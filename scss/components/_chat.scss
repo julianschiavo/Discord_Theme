@@ -434,6 +434,7 @@ div[class*="autocomplete-"] {
 // Channel section
 div[class*="container-"] {
   header[class*="header-"] {
+    border-radius: 0;
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
     height: 49px;
   }
