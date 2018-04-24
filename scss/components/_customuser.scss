@@ -1,0 +1,10 @@
+@mixin targetuser($id, $avatar) {
+  .avatar-small[style*="avatars/#{$id}"],
+  .avatar-large[style*="avatars/#{$id}"],
+  div[class*="image-"][style*="avatars/#{$id}"] {
+    background-image: url(#{$avatar}) !important;
+  }
+}
+
+// Kromatic#0420
+@include targetuser(180093157554388993, 'https://i.alexflipnote.xyz/224cf7.jpg');
