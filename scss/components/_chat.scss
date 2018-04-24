@@ -34,7 +34,11 @@
   padding-top: 3px;
 }
 
-.chat .jump-to-present-bar { left: inherit; }
+.chat {
+  .new-messages-bar { background-color: var(--accent); }
+  .jump-to-present-bar { left: inherit; }
+}
+
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
   color: #fff;
 

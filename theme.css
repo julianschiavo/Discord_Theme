@@ -26,6 +26,8 @@
   padding-bottom: 6px;
   padding-top: 3px; }
 
+.chat .new-messages-bar {
+  background-color: var(--accent); }
 .chat .jump-to-present-bar {
   left: inherit; }
 
@@ -2571,6 +2573,9 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   background-color: var(--dark-secondary);
   border-top: 0; }
 
+.theme-dark span[class*="iconBadge-"] {
+  background-color: var(--accent); }
+
 .theme-dark div[class*="messagesPopoutWrap-"] {
   animation: popout-content 400ms ease-in-out;
   -webkit-animation: popout-content 400ms ease-in-out;
@@ -2913,12 +2918,18 @@ div[class*="header-"] {
 div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
   background: transparent; }
 
-div[class*="side-"] div[class*="item-"], div[class*="side-"] div[class*="item-"]:hover {
+div[class*="side-"] div[class*="itemSelected-"] {
+  background-color: var(--accent); }
+div[class*="side-"] div[class*="item-"] {
   transition: all 200ms ease; }
+  div[class*="side-"] div[class*="item-"]:hover {
+    transform: translateX(0.4em); }
 
-div[class*="side-"] div[class*="item-"]:hover {
-  transform: translateX(0.4em); }
+.theme-dark div[class*="slider-"] div[class*="barFill-"] {
+  background-color: var(--accent); }
 
+.ui-standard-sidebar-view button[class*="lookFilled-"], .ui-standard-sidebar-view div[class*="valueChecked-"] {
+  background-color: var(--accent); }
 .ui-standard-sidebar-view div[class*="itemDefaultSelected-"] {
   background: var(--accent);
   transform: translateX(0.4em); }
@@ -2938,6 +2949,14 @@ div[class*="side-"] div[class*="item-"]:hover {
     background: var(--dark-secondary); }
   .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="headerExpanded-"], .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="changeDetails-"] {
     background: var(--dark-highlight); }
+
+.theme-dark div[class*="cardPrimaryEditable-"][style*="background-color: rgb(114, 137, 218);"] {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important; }
+  .theme-dark div[class*="cardPrimaryEditable-"][style*="background-color: rgb(114, 137, 218);"] div[class*="checkbox-"] {
+    border-color: var(--accent) !important; }
+    .theme-dark div[class*="cardPrimaryEditable-"][style*="background-color: rgb(114, 137, 218);"] div[class*="checkbox-"] polyline {
+      stroke: var(--accent) !important; }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {
   background: var(--dark-highlight);

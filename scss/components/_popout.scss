@@ -788,6 +788,8 @@ div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { backgr
 
 
 // Top Popups (Pins, Mentions, etc)
+.theme-dark span[class*="iconBadge-"] { background-color: var(--accent); }
+
 .theme-dark div[class*="messagesPopoutWrap-"] {
   @include animation(popout-content 400ms ease-in-out);
   background: var(--dark-primary) !important;
