@@ -350,7 +350,7 @@ div[class*="emojiPicker-"] {
   div[class*="dimmer-"] { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
 }
 
-.theme-dark .popout {
+.theme-dark div[class*="popout-"] {
   box-shadow: none;
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }

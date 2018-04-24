@@ -683,7 +683,7 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.46';
+  content: 'Theme version: 1.0.6.47';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
@@ -2119,22 +2119,22 @@ div[class*="emojiPicker-"] {
     div[class*="emojiPicker-"] div[class*="dimmer-"].visible {
       background: rgba(0, 0, 0, 0.5); }
 
-.theme-dark .popout {
+.theme-dark div[class*="popout-"] {
   box-shadow: none; }
-  .theme-dark .popout div[class*="popoutList-"] {
+  .theme-dark div[class*="popout-"] div[class*="popoutList-"] {
     background: var(--dark-highlight); }
-  .theme-dark .popout div[class*="searchBar-"] {
+  .theme-dark div[class*="popout-"] div[class*="searchBar-"] {
     background: var(--dark-primary); }
-  .theme-dark .popout div[class*="emojiPicker-"] {
+  .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] {
     animation: emoji-picker 300ms;
     background: var(--dark-primary) !important;
     border: 1px solid var(--dark-primary);
     border-radius: 0 0 3px 3px !important; }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="stickyHeader-"] {
+    .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="stickyHeader-"] {
       background: var(--dark-primary); }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] {
+    .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="scrollerWrap-"] {
       background: transparent !important; }
-      .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="emojiItem-"] {
+      .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="emojiItem-"] {
         transition: all 100ms ease;
         -webkit-transition: all 100ms ease;
         -ms-transition: all 100ms ease;
@@ -2143,26 +2143,26 @@ div[class*="emojiPicker-"] {
         background-position: 50% !important;
         background-repeat: no-repeat !important;
         background-size: contain !important; }
-      .theme-dark .popout div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="selected-"] {
+      .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="scrollerWrap-"] div[class*="selected-"] {
         background: var(--dark-secondary); }
-    .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] {
+    .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="header-"] {
       background-color: var(--dark-highlight);
       border-bottom: 0; }
-      .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar {
+      .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="header-"] .search-bar {
         background-color: var(--dark-highlight) !important; }
-        .theme-dark .popout div[class*="emojiPicker-"] div[class*="header-"] .search-bar .search-bar-inner {
+        .theme-dark div[class*="popout-"] div[class*="emojiPicker-"] div[class*="header-"] .search-bar .search-bar-inner {
           background: transparent;
           font-weight: bolder; }
-  .theme-dark .popout.no-shadow .emoji-picker {
+  .theme-dark div[class*="popout-"].no-shadow .emoji-picker {
     background: var(--dark-primary) !important;
     border: 0;
     border-radius: 0 !important;
     margin-bottom: -14px !important;
     margin-right: 14px; }
-  .theme-dark .popout div[class*="menu-"] {
+  .theme-dark div[class*="popout-"] div[class*="menu-"] {
     background: var(--dark-highlight);
     border-radius: 10px; }
-    .theme-dark .popout div[class*="menu-"] div[class*="item-"] {
+    .theme-dark div[class*="popout-"] div[class*="menu-"] div[class*="item-"] {
       transition: all 200ms ease-in-out;
       -webkit-transition: all 200ms ease-in-out;
       -ms-transition: all 200ms ease-in-out;
@@ -2170,7 +2170,7 @@ div[class*="emojiPicker-"] {
       -o-transition: all 200ms ease-in-out;
       color: #fff;
       padding: 10px 30px 10px 20px; }
-      .theme-dark .popout div[class*="menu-"] div[class*="item-"]:hover {
+      .theme-dark div[class*="popout-"] div[class*="menu-"] div[class*="item-"]:hover {
         transition: all 200ms ease-in-out;
         -webkit-transition: all 200ms ease-in-out;
         -ms-transition: all 200ms ease-in-out;
@@ -2182,7 +2182,7 @@ div[class*="emojiPicker-"] {
         -webkit-transform: translateX(0.5em);
         transform: translateX(0.5em);
         background: transparent; }
-    .theme-dark .popout div[class*="menu-"] div[class*="separator-"] {
+    .theme-dark div[class*="popout-"] div[class*="menu-"] div[class*="separator-"] {
       display: none; }
 
 div[class*="wrapper-"] {
@@ -2921,8 +2921,12 @@ div[class*="side-"] div[class*="item-"]:hover {
   z-index: 2; }
 .ui-standard-sidebar-view div[class*="auditLog-"] {
   border: 0; }
+  .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="divider-"] {
+    height: 0; }
   .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="headerDefault-"], .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="headerClickable-"] {
     background: var(--dark-secondary); }
+  .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="headerExpanded-"], .ui-standard-sidebar-view div[class*="auditLog-"] div[class*="changeDetails-"] {
+    background: var(--dark-highlight); }
 
 .theme-dark div[class*="cardPrimaryEditable-"] {
   background: var(--dark-highlight);
