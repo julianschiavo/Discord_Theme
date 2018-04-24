@@ -687,6 +687,11 @@ div[class*="channels-"] {
 div[class*="image-"][style*="avatars/180093157554388993"] {
   background-image: url(https://i.alexflipnote.xyz/224cf7.jpg) !important; }
 
+.avatar-small[style*="avatars/273976207257763840"],
+.avatar-large[style*="avatars/273976207257763840"],
+div[class*="image-"][style*="avatars/273976207257763840"] {
+  background-image: url(https://i.alexflipnote.xyz/224cf7.jpg) !important; }
+
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
   content: 'Theme version: 1.0.6.47';
