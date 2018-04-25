@@ -65,6 +65,11 @@ div[class*="side-"] {
   }
 }
 
+.theme-dark div[class*="select-"] {
+  .Select-menu-outer { background: var(--dark-highlight); }
+  .Select-option.is-focused, .Select-option.is-focused:hover { background: var(--dark-primary) !important; }
+}
+
 .theme-dark div[class*="slider-"] div[class*="barFill-"] { background-color: var(--accent); }
 
 .ui-standard-sidebar-view {

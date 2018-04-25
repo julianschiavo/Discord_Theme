@@ -2479,8 +2479,21 @@ div[class*="regionSelectModal-"] {
     -moz-transition: all 200ms ease;
     -o-transition: all 200ms ease; }
 
+.theme-dark div[class*="popoutList-"] {
+  background: var(--dark-highlight); }
+  .theme-dark div[class*="popoutList-"] div[class*="searchBar-"] {
+    background: var(--dark-primary); }
+
 div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] {
   background: var(--dark-primary); }
+
+div[class*="backdrop-"] + div[class*="modal-"] div[class*="modal-"] {
+  background: var(--dark-highlight); }
+div[class*="backdrop-"] + div[class*="modal-"] div[class*="countryButton-"] {
+  background: var(--dark-secondary); }
+div[class*="backdrop-"] + div[class*="modal-"] div[class*="phoneField-"], div[class*="backdrop-"] + div[class*="modal-"] input[class*="inputField-"] {
+  background: var(--dark-primary);
+  box-shadow: none; }
 
 .theme-dark div[class*="quickswitcher-"] {
   animation: quickswitcher-menu 300ms ease-in-out;
@@ -2915,6 +2928,11 @@ div[class*="side-"] div[class*="item-"] {
   transition: all 200ms ease; }
   div[class*="side-"] div[class*="item-"]:hover {
     transform: translateX(0.4em); }
+
+.theme-dark div[class*="select-"] .Select-menu-outer {
+  background: var(--dark-highlight); }
+.theme-dark div[class*="select-"] .Select-option.is-focused, .theme-dark div[class*="select-"] .Select-option.is-focused:hover {
+  background: var(--dark-primary) !important; }
 
 .theme-dark div[class*="slider-"] div[class*="barFill-"] {
   background-color: var(--accent); }

@@ -703,7 +703,21 @@ div[class*="regionSelectModal-"] {
   }
 }
 
+.theme-dark div[class*="popoutList-"] {
+  background: var(--dark-highlight);
+  div[class*="searchBar-"] { background: var(--dark-primary); }
+}
+
 div[class*="modal-"] div[class*="quickswitcher-"] div[class*="header-"] { background: var(--dark-primary); }
+div[class*="backdrop-"] + div[class*="modal-"] {
+  div[class*="modal-"] { background: var(--dark-highlight); }
+  div[class*="countryButton-"] { background: var(--dark-secondary); }
+  div[class*="phoneField-"], input[class*="inputField-"] {
+    background: var(--dark-primary);
+    box-shadow: none;
+  }
+}
+
 .theme-dark div[class*="quickswitcher-"] {
   @include animation(quickswitcher-menu 300ms ease-in-out);
   background: var(--dark-primary);
