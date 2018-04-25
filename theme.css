@@ -27,9 +27,12 @@
   padding-top: 3px; }
 
 .chat .new-messages-bar {
-  background-color: var(--accent); }
+  background-color: var(--notif); }
 .chat .jump-to-present-bar {
   left: inherit; }
+.chat form {
+  border: 0;
+  margin: 0; }
 
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
   color: #fff; }
@@ -146,10 +149,6 @@
   border: 0;
   margin-bottom: 14px;
   margin-top: 14px; }
-
-.chat form {
-  border: 0;
-  margin: 0; }
 
 div[class*="autocomplete-"] {
   border: 0 !important;
@@ -407,9 +406,9 @@ div[class*="container-"] div[class*="contentSelectedText-"] svg[class*="colorSel
 div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSelectedText-"] {
   color: #fff; }
 div[class*="container-"] div[class*="contentUnreadText-"] svg[class*="colorUnreadText-"] path {
-  fill: var(--accent); }
+  fill: var(--notif); }
 div[class*="container-"] div[class*="contentUnreadText-"] div[class*="nameUnreadText-"] {
-  color: var(--accent); }
+  color: var(--notif); }
 div[class*="container-"] div[class*="wrapperUnreadText-"] div[class*="unread-"] {
   background: var(--accent);
   border-radius: 6px;

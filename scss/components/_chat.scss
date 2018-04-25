@@ -35,8 +35,13 @@
 }
 
 .chat {
-  .new-messages-bar { background-color: var(--accent); }
+  .new-messages-bar { background-color: var(--notif); }
   .jump-to-present-bar { left: inherit; }
+
+  form {
+    border: 0;
+    margin: 0;
+  }
 }
 
 #app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
@@ -167,11 +172,6 @@
   border: 0;
   margin-bottom: 14px;
   margin-top: 14px;
-}
-
-.chat form {
-  border: 0;
-  margin: 0;
 }
 
 div[class*="autocomplete-"] {
@@ -454,8 +454,8 @@ div[class*="container-"] {
   }
 
   div[class*="contentUnreadText-"] {
-    svg[class*="colorUnreadText-"] path { fill: var(--accent); }
-    div[class*="nameUnreadText-"] { color: var(--accent); }
+    svg[class*="colorUnreadText-"] path { fill: var(--notif); }
+    div[class*="nameUnreadText-"] { color: var(--notif); }
   }
 
   div[class*="wrapperUnreadText-"] div[class*="unread-"] {
