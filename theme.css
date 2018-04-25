@@ -52,6 +52,9 @@
 .theme-dark .chat > .content, .theme-dark .messages-wrapper {
   background-color: var(--dark-secondary) !important; }
 
+.theme-dark .chat .jump-to-present-bar {
+  background: var(--accent); }
+
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
   background: var(--dark-primary); }
 .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn, .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
@@ -67,7 +70,10 @@
 
 .theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
-  background-color: #303030; }
+  background-color: var(--dark-secondary); }
+
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
+  background-color: var(--dark-highlight); }
 
 .comment div[class*="wrapper-"] {
   background: var(--dark-primary);
@@ -485,7 +491,7 @@ div[class*="container-"] div[class*="wrapperUnreadText-"] div[class*="unread-"] 
 .theme-dark div[class*="membersWrap-"] div[class*="content"] {
   background-color: var(--dark-secondary); }
 .theme-dark div[class*="membersWrap-"] div[class*="memberOnline-"]:hover, .theme-dark div[class*="membersWrap-"] div[class*="memberOffline-"]:hover {
-  background-color: var(--dark-primary); }
+  background-color: var(--dark-highlight); }
 
 div[class*="titleWrapper-"] div[class*="title-"] {
   background: var(--dark-secondary);
