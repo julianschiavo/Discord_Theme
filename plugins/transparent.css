@@ -118,6 +118,9 @@ div[class*="container-"], div[class*="content-"]:not(.content-region),
   background: rgba(255, 255, 255, 0.3);
   color: #000; }
 
+.theme-dark div[class*="membersWrap-"] div[class*="members-"] {
+  background: transparent !important; }
+
 .theme-dark .channel-members-loading, .theme-dark .channel-members-loading .background,
 .theme-light .channel-members-loading, .theme-light .channel-members-loading .background {
   background: transparent; }
@@ -180,6 +183,9 @@ div[class*="channels-"] {
 div[class*="wrapper-"] div[class*="contentSelectedText-"] {
   background-color: rgba(0, 0, 0, 0.75) !important;
   border-radius: 0; }
+
+div[class*="root-"] div[class*="scrollerWrap-"] {
+  background-color: var(--dark-secondary) !important; }
 
 @keyframes opacity {
   0% {

@@ -556,9 +556,9 @@ div[class*="wrapperDefault-"] > svg {
 
 div[class*="channels-"] {
   background: var(--dark-primary); }
-  div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] {
+  div[class*="channels-"] div[class*="container-"] div[class*="horizontal-"] {
     padding-left: 23px; }
-    div[class*="channels-"] div[class*="container-"] div[class*="cursorPointer-"] > svg > path {
+    div[class*="channels-"] div[class*="container-"] div[class*="horizontal-"] > svg > path {
       display: none; }
 
 .theme-dark .channel-notices .channel-notice {

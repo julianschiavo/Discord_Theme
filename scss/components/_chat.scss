@@ -564,7 +564,7 @@ div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
 div[class*="channels-"] {
   background: var(--dark-primary);
 
-  div[class*="container-"] div[class*="cursorPointer-"] {
+  div[class*="container-"] div[class*="horizontal-"] {
     padding-left: 23px;
     & > svg > path { display: none; }
   }
