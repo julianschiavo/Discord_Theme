@@ -148,7 +148,7 @@ Just simply more animations everywhere
 
 ### Remove blocked messages
 ```css
-.message-group-blocked-btn { display: none; }
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/blocked.css";
 ```
 
 ### Restore the status picker from before the rewrite
