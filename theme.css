@@ -398,8 +398,7 @@ div[class*="autocomplete-"] {
 
 div[class*="container-"] header[class*="header-"] {
   border-radius: 0;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 3px 0 rgba(0, 0, 0, 0.06);
-  height: 49px; }
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 3px 0 rgba(0, 0, 0, 0.06); }
 div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"] {
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -694,7 +693,7 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.47';
+  content: 'Theme version: 1.0.6.49';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
