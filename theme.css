@@ -400,13 +400,14 @@ div[class*="container-"] header[class*="header-"] {
   border-radius: 0;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 3px 0 rgba(0, 0, 0, 0.06);
   height: 49px; }
-div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"]:hover {
-  transition: all 0.5 ease-in-out;
-  -webkit-transition: all 0.5 ease-in-out;
-  -ms-transition: all 0.5 ease-in-out;
-  -moz-transition: all 0.5 ease-in-out;
-  -o-transition: all 0.5 ease-in-out;
-  transform: translateX(0.5em); }
+div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"] {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out; }
+  div[class*="container-"] div[class*="containerDefault-"] div[class*="content-"]:hover {
+    transform: translateX(0.5em); }
 div[class*="container-"] div[class*="contentSelectedText-"] svg[class*="colorSelectedText-"] path {
   fill: #fff; }
 div[class*="container-"] div[class*="contentSelectedText-"] div[class*="nameSelectedText-"] {
@@ -556,6 +557,8 @@ div[class*="wrapperDefault-"] > svg {
 
 div[class*="channels-"] {
   background: var(--dark-primary); }
+  div[class*="justifyStart-"] div[class*="channels-"] div[class*="container-"] {
+    background: transparent; }
   div[class*="channels-"] div[class*="container-"] div[class*="horizontal-"] {
     padding-left: 23px; }
     div[class*="channels-"] div[class*="container-"] div[class*="horizontal-"] > svg > path {
