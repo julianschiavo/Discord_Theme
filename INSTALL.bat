@@ -2,7 +2,6 @@
 
 :: Settings
 set Update=0
-set Canary=0
 
 
 :: Do not change anything under this line
@@ -11,7 +10,6 @@ set Canary=0
 cls
 echo Welcome to BeautifulDiscord install tool
 echo --------------------------------------------------
-set Download=https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
 if {%Update%}=={1} (
   cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && wget https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.css
@@ -21,10 +19,6 @@ if {%Update%}=={1} (
   echo ---------------------
   pause
   exit
-)
-
-if {%Canary%}=={1} (
-  set Download=https://github.com/leovoel/BeautifulDiscord/archive/canary.zip
 )
 
 :CheckAdmin
@@ -84,7 +78,7 @@ if {%Canary%}=={1} (
   echo   - Dicord Theme        Waiting...
   echo   - Inserting themed    Waiting...
   echo --------------------------------------------------
-  pip install -U %Download%
+  pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
 
   :: wget
   cls
