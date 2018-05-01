@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.0.6.49';
+    content: 'Theme version: 1.0.6.51';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -130,6 +130,22 @@ div[class*="modal-"] div[class*="header-"] {
     background-color: var(--dark-primary) !important;
     border-radius: 0;
     padding-top: 5px;
+  }
+}
+
+// Popouts
+.theme-dark .themed-popout {
+  div[class*="header-"] { background-color: var(--dark-highlight); }
+  div[class*="footer-"] { background-color: var(--dark-secondary); }
+  .body {
+    background-color: var(--dark-primary);
+
+    .friend {
+      background: transparent;
+      transition: all 250ms ease;
+
+      &.selected, &:hover { background-color: var(--dark-highlight); }
+    }
   }
 }
 

@@ -199,7 +199,7 @@ div[class*="autocomplete-"] {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    top: -27px;
+    top: -26px;
     width: auto; }
 
 .theme-dark #autocomplete-popout .row {
@@ -693,7 +693,7 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.49';
+  content: 'Theme version: 1.0.6.51';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
@@ -799,6 +799,18 @@ div[class*="modal-"] div[class*="header-"] {
     background-color: var(--dark-primary) !important;
     border-radius: 0;
     padding-top: 5px; }
+
+.theme-dark .themed-popout div[class*="header-"] {
+  background-color: var(--dark-highlight); }
+.theme-dark .themed-popout div[class*="footer-"] {
+  background-color: var(--dark-secondary); }
+.theme-dark .themed-popout .body {
+  background-color: var(--dark-primary); }
+  .theme-dark .themed-popout .body .friend {
+    background: transparent;
+    transition: all 250ms ease; }
+    .theme-dark .themed-popout .body .friend.selected, .theme-dark .themed-popout .body .friend:hover {
+      background-color: var(--dark-highlight); }
 
 .theme-dark div[class*="invite-"].game-invite-embed,
 .theme-dark div[class*="preview-"],
