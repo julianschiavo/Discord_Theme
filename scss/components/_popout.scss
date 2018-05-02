@@ -721,7 +721,23 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 .theme-dark div[class*="quickswitcher-"] {
   @include animation(quickswitcher-menu 300ms ease-in-out);
   background: var(--dark-primary);
-  div[class*="resultFocused-"] { background: var(--dark-highlight); }
+
+  div[class*="resultDefault-"] {
+    div[class*="content-"] {
+      transition: all 400ms ease;
+      &:hover { transform: translateX(0); }
+    }
+  }
+
+  div[class*="resultFocused-"] {
+    background: var(--dark-highlight);
+
+    div[class*="content-"] {
+      transition: all 400ms ease;
+      &:hover { transform: translateX(.6em); }
+    }
+  }
+
   input[class*="input-"] {
     background: var(--dark-secondary);
     box-shadow: 0;

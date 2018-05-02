@@ -693,7 +693,7 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.51';
+  content: 'Theme version: 1.0.6.52';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
@@ -710,8 +710,6 @@ div[class*="channels-"] {
   --light-secondary: #ecf0f1;
   --notif: #7a78bd; }
 
-.theme-dark div[class*="content-"] {
-  background-color: var(--dark-primary); }
 .theme-dark div[class*="footer-"] {
   background-color: var(--dark-secondary); }
 .theme-dark .messages-wrapper .messages .divider span {
@@ -2521,8 +2519,16 @@ div[class*="backdrop-"] + div[class*="modal-"] div[class*="phoneField-"], div[cl
   -moz-animation: quickswitcher-menu 300ms ease-in-out;
   -o-animation: quickswitcher-menu 300ms ease-in-out;
   background: var(--dark-primary); }
+  .theme-dark div[class*="quickswitcher-"] div[class*="resultDefault-"] div[class*="content-"] {
+    transition: all 400ms ease; }
+    .theme-dark div[class*="quickswitcher-"] div[class*="resultDefault-"] div[class*="content-"]:hover {
+      transform: translateX(0); }
   .theme-dark div[class*="quickswitcher-"] div[class*="resultFocused-"] {
     background: var(--dark-highlight); }
+    .theme-dark div[class*="quickswitcher-"] div[class*="resultFocused-"] div[class*="content-"] {
+      transition: all 400ms ease; }
+      .theme-dark div[class*="quickswitcher-"] div[class*="resultFocused-"] div[class*="content-"]:hover {
+        transform: translateX(0.6em); }
   .theme-dark div[class*="quickswitcher-"] input[class*="input-"] {
     background: var(--dark-secondary);
     box-shadow: 0; }
