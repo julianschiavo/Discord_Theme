@@ -14,7 +14,6 @@ Do you need more help? Join my server! **[Discord Invite](https://discord.gg/Dpx
 - chocolatey (To download Python)
 - Python (To use BeautifulDiscord)
   - Python/BeautifulDiscord
-- wget (To get the theme)
 - Make a folder in **Documents\DiscordTheme**
 - Reboot Discord to install theme
 
