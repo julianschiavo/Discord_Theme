@@ -712,6 +712,8 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="footer-"] {
   background-color: var(--dark-secondary); }
+  .theme-dark div[class*="footer-"] div[class*="content-"] {
+    background: var(--dark-secondary); }
 .theme-dark .messages-wrapper .messages .divider span {
   background-color: transparent; }
 
