@@ -693,7 +693,7 @@ div[class*="channels-"] {
 
 .theme-dark div[class*="userSettingsAccount-"]::after, .theme-light div[class*="userSettingsAccount-"]::after {
   color: var(--accent);
-  content: 'Theme version: 1.0.6.54';
+  content: 'Theme version: 1.0.6.55';
   font-size: 18px;
   font-weight: bold;
   position: absolute;
@@ -799,6 +799,8 @@ div[class*="modal-"] div[class*="header-"] {
     background-color: var(--dark-primary) !important;
     border-radius: 0;
     padding-top: 5px; }
+    div[class*="modal-"] div[class*="header-"] + div[class*="scrollerWrap-"] div[class*="message-"] {
+      background: transparent; }
 
 .theme-dark .themed-popout div[class*="header-"] {
   background-color: var(--dark-highlight); }

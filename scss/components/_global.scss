@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.0.6.54';
+    content: 'Theme version: 1.0.6.55';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -135,6 +135,8 @@ div[class*="modal-"] {
       background-color: var(--dark-primary) !important;
       border-radius: 0;
       padding-top: 5px;
+
+      div[class*="message-"] { background: transparent; }
     }
   }
 }
