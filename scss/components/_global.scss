@@ -121,6 +121,19 @@ div[class*="nameHoveredCollapsed"] {
 
 
 // Modal
+.theme-dark div[class*="inner-"] form[class*="modal-"] {
+  background: var(--dark-highlight);
+
+  button[class*="colorBrand-"] { background: var(--accent); }
+  h2[class*="title-"] {
+    color: #e74c3c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+}
+
 .modal .modal-inner > .flex-nowrap { background: transparent; }
 .modal-content {
   background-color: transparent;
