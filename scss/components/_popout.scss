@@ -828,6 +828,7 @@ div[class*="backdrop-"] + div[class*="modal-"] {
   max-height: 541px !important;
 
   div[class*="header"] { background: var(--dark-highlight) !important; }
+  div[class*="footer"] { background: var(--dark-secondary) !important; }
 
   div[class*="messagesPopout-"] {
     .message-group, .message-group:hover {
