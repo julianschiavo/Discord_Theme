@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.0.6.56';
+    content: 'Theme version: 1.0.6.58';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -49,10 +49,13 @@
   color: #fff;
 }
 
-#app-mount div[class*="titleBar-"] {
-  background: var(--dark-highlight);
-  margin-top: 0;
-  padding-top: 4px;
+#app-mount {
+  div[class*="titleBar-"] {
+    background: var(--dark-highlight);
+    margin-top: 0;
+    padding-top: 4px;
+    z-index: 1;
+  }
 }
 
 .scroller-wrap {

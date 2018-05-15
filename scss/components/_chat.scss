@@ -563,7 +563,12 @@ div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
 div[class*="channels-"] {
   background: var(--dark-primary);
 
-  div[class*="justifyStart-"] & div[class*="container-"] { background: transparent; }
+  div[class*="titleWrapper-"] { z-index: 1; }
+
+  div[class*="justifyStart-"] & div[class*="container-"] {
+    background: transparent;
+    z-index: 1;
+  }
 
   div[class*="container-"] div[class*="horizontal-"] {
     padding-left: 23px;
