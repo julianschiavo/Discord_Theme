@@ -301,6 +301,18 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   }
 }
 
+.edit-message .edit-container-inner {
+  div[class*="channelTextArea-"] div[class*="inner-"] {
+    animation: quickswitcher-menu 450ms ease-in-out;
+    transition: all 450ms ease;
+
+    textarea {
+      background: var(--dark-primary);
+      border-radius: 5px;
+    }
+  }
+}
+
 .theme-brand div[class*="inner-"] {
   background: var(--dark-highlight);
 }
