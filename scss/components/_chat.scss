@@ -287,13 +287,18 @@ div[class*="autocomplete-"] {
 
 .theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] { background: transparent; }
 
-.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
+.theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
+div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
 .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
   background-color: var(--dark-secondary);
   border-radius: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
   padding-top: 5px;
+
+  div[class*="emojiButton"] {
+    top: 15px;
+  }
 }
 
 .theme-brand div[class*="inner-"] {
