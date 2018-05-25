@@ -148,6 +148,7 @@ div[class*="pictureInPicture-"] {
 // Everyone ping popout
 .theme-dark form[class*="everyonePopout-"] {
   background: var(--dark-highlight);
+  box-shadow: 0 2px 10px 0 rgba(28, 36, 43, .8);
 
   div[class*="content-"] {
     div[class*="header-"] { color: #e74c3c; }
@@ -155,9 +156,9 @@ div[class*="pictureInPicture-"] {
     button[type="submit"] { background: var(--accent); }
   }
 
-  div[class*="body-"] { background: var(--dark-primary); }
+  div[class*="body-"] { background: var(--dark-highlight); }
   div[class*="footer-"] {
-    background: var(--dark-secondary);
+    background: var(--dark-highlight);
     div { color: #fff; }
   }
 }
