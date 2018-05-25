@@ -145,6 +145,24 @@ div[class*="pictureInPicture-"] {
 }
 
 
+// Everyone ping popout
+.theme-dark form[class*="everyonePopout-"] {
+  background: var(--dark-highlight);
+
+  div[class*="content-"] {
+    div[class*="header-"] { color: #e74c3c; }
+    button[type="button"] { color: var(--accent); }
+    button[type="submit"] { background: var(--accent); }
+  }
+
+  div[class*="body-"] { background: var(--dark-primary); }
+  div[class*="footer-"] {
+    background: var(--dark-secondary);
+    div { color: #fff; }
+  }
+}
+
+
 // Download Modal
 .callout-backdrop { background-color: rgba(0, 0, 0, .8) !important; opacity: 1 !important; }
 .download-apps {
