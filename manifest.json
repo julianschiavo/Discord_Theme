@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "AlexFlipnote/Discord_Theme",
+  "version": "0.0.1",
+  "description": "The theme from Discord_Theme",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
+  "content_scripts": [{
+    "js": ["assets/inserttheme.js"],
+    "matches": [
+      "https://discordapp.com/channels/*", "https://*.discordapp.com/channels/*",
+      "https://discordapp.com/login", "https://*.discordapp.com/login",
+      "https://discordapp.com/app", "https://*.discordapp.com/app"
+    ]
+  }],
+
+  "icons": {
+    "128": "assets/logo.png",
+    "48": "assets/logo.png",
+    "32": "assets/logo.png",
+    "16": "assets/logo.png"
+  },
+
+  "browser_action": {
+    "default_icon": "assets/logo.png",
+    "default_popup": "assets/information.html"
+  }
+
+}
