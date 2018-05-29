@@ -3,7 +3,7 @@
 
   "name": "AlexFlipnote/Discord_Theme",
   "version": "0.0.1",
-  "description": "The theme from Discord_Theme",
+  "description": "A theme that changes the Discordapp theme to AlexFlipnote/Discord_Theme",
   "update_url": "https://clients2.google.com/service/update2/crx",
 
   "content_scripts": [{
