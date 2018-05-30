@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "AlexFlipnote/Discord_Theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A theme that changes the Discordapp theme to AlexFlipnote/Discord_Theme",
 
   "content_scripts": [{
@@ -21,9 +21,18 @@
     "16": "assets/logo.png"
   },
 
+  "permissions": [
+    "storage"
+  ],
+
   "browser_action": {
     "default_icon": "assets/logo.png",
     "default_popup": "assets/information.html"
+  },
+
+  "options_ui": {
+    "page": "assets/options.html",
+    "open_in_tab": true
   }
 
 }
