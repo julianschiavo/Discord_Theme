@@ -5,6 +5,10 @@ This was made to let everyone who wants, able to have a more good-looking style.
 Do you need more help? Join my server! **[Discord Invite](https://discord.gg/DpxkY3x)**
 
 ## Installing
+### Chrome
+You can install a Chrome plugin to have the theme directly implemented for you.<br>
+Click  [here](https://chrome.google.com/webstore/detail/doapcadhkfkjlpkgkoddmmcknkhmmbeo) to download it
+
 #### Windows
 - Use the **INSTALL.bat** file
 - Remember to keep Discord open while installing!
