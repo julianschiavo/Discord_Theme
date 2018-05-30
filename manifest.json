@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "AlexFlipnote/Discord_Theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A theme that changes the Discordapp theme to AlexFlipnote/Discord_Theme",
 
   "content_scripts": [{
@@ -10,7 +10,8 @@
     "matches": [
       "https://discordapp.com/channels/*", "https://*.discordapp.com/channels/*",
       "https://discordapp.com/login", "https://*.discordapp.com/login",
-      "https://discordapp.com/app", "https://*.discordapp.com/app"
+      "https://discordapp.com/app", "https://*.discordapp.com/app",
+      "https://discordapp.com/invite/*", "https://*.discordapp.com/invite/*"
     ]
   }],
 

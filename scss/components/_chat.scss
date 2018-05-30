@@ -374,6 +374,10 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   div[class*="video-"] { background-color: transparent; }
 }
 
+.theme-dark div[class*="noChannel-"] {
+  background: var(--dark-secondary);
+}
+
 .private-channels {
   background-color: var(--dark-primary);
 
