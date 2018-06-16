@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.0.6.61';
+    content: 'Theme version: 1.0.6.63';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -144,8 +144,12 @@ div[class*="nameHoveredCollapsed"] {
 }
 
 div[class*="modal-"] {
-  div[class*="header-"] {
+  div[class*="header-"], div[class*="contentWrapper-"] {
     background-color: var(--dark-highlight);
+
+    div[class*="pill-"] { background: var(--dark-primary); }
+    div[class*="subTitle-"] { color: #fff; }
+    button[class*="lookFilled-"] { background: var(--accent); }
 
     + div[class*="scrollerWrap-"] {
       background-color: var(--dark-primary) !important;
