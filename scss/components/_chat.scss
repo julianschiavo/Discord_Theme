@@ -254,11 +254,11 @@ div[class*="autocomplete-"] {
     box-shadow: none;
   }
 
-  .embed {
+  div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
     border-color: rgba(0, 0, 0, 0);
 
-    .embed-content-inner { background-color: transparent; }
+    div[class*="embedInner-"] { background-color: transparent; }
   }
 
   .comment .markup {
