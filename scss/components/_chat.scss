@@ -468,6 +468,14 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
     button[class*="colorBrand-"] { background: var(--accent); }
   }
 
+  div[class*="paginationItem-"] {
+    transition: all 350ms ease;
+
+    &:hover {
+      transform: scale(.95);
+    }
+  }
+
   div[class*="card-"] {
     background: var(--dark-highlight);
     filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .1));
@@ -488,7 +496,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
       button:hover { background: var(--accent); }
 
-      a[class*="news-"], a[class*="newsLink-"] {
+      div[class*="news-"], a[class*="news-"], a[class*="newsLink-"] {
         background: transparent;
         transition: all 350ms ease;
 
