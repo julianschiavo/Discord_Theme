@@ -686,6 +686,17 @@ div[class*="channels-"] {
 
   .guilds {
     .friends-icon { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg'); }
+    // Friends icon was replaced with Hub channel at Canary, remove later
+
+    a[href="/activity"] {
+      background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 32px;
+
+      svg { display: none; }
+    }
+
     .guild .guild-inner { background: transparent !important; }
     .guild.audio .guild-inner::after { top: 30px; }
     .friends-online { display: none; }
