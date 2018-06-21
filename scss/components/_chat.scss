@@ -476,6 +476,8 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
       background: var(--dark-secondary);
       transition: all 300ms ease;
 
+      div[class*="header-"] { background: transparent; }
+
       &:hover {
         background: var(--dark-primary);
       }
