@@ -506,6 +506,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
   div[class*="body-"] {
     background: var(--dark-primary);
+
     div[class*="info-"], a[class*="news-"],
     div[class*="news-"], div[class*="body-"] { background: transparent; }
   }
