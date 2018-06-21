@@ -688,7 +688,7 @@ div[class*="channels-"] {
     .friends-icon { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg'); }
     // Friends icon was replaced with Hub channel at Canary, remove later
 
-    a[href="/activity"] {
+    a[href="/activity"], a[href*="/channels/@me"] {
       background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_forum_white_24px.svg');
       background-position: center;
       background-repeat: no-repeat;
