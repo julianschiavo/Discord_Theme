@@ -26,6 +26,10 @@
   background-color: transparent !important;
 }
 
+.theme-dark div[class*="activityFeed-"] {
+  background: transparent;
+}
+
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
 div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
 .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"] {
