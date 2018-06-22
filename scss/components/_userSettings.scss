@@ -5,7 +5,14 @@
 .guild-settings-modal-emoji .no-emoji p { color: #808080; }
 .user-settings-games .now-playing-add .link:hover { color: var(--accent); }
 
-.ui-standard-sidebar-view { .content-column, .custom-column { max-width: 100%; } }
+.ui-standard-sidebar-view {
+  .content-column, .custom-column {
+    max-width: 100%;
+  }
+
+  .sidebar-region { flex: 1 0 0; }
+}
+
 .ui-sidebar-scrollable+.ui-content { max-width: 100%; }
 
 .ui-tab-bar.SIDE .ui-tab-bar-item {
