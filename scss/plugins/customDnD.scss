@@ -1,51 +1,78 @@
-// WIP
-
-:root{
-    --status-online-title: "Online";
-    --status-idle-title: "Idle";
-    --status-dnd: "Signifies that you are playing Dungeons and Dragons.";
-    --status-dnd-title: "Dungeons and Dragons";
-    --status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
-    --status-invis-title: "Invisible";
+:root {
+  --status-dnd: "Signifies that you are playing Dungeons and Dragons.";
+  --status-dnd-title: "Dungeons and Dragons";
+  --status-idle-title: "Idle";
+  --status-invis: "No one likes you so you decide to turn invisible because people don't notice you anyway.";
+  --status-invis-title: "Invisible";
+  --status-online-title: "Online";
 }
 
-/* Hide old text */
-.status-online ~ .status-text,
-.status-idle ~ .status-text,
-.status-dnd ~ .status-text,
-.status-invisible ~ .status-text,
-.status-picker .popout-menu-item:nth-child(4) .helper,
-.status-picker .popout-menu-item:nth-child(5) .helper {
-    font-size: 0;
-}
+div[class*="popout-"] div[class*="item-"] {
+  // Default settings
+  $status-size: 15px;
+  $status-hint-size: 11px;
 
-/* Online */
-.status-online ~ .status-text::after {
-    content: var(--status-online-title);
-    font-size: 15px;
-}
-/* Idle */
-.status-idle ~ .status-text::after {
-    content: var(--status-idle-title);
-    font-size: 15px;
-}
-/* DnD */
-.status-dnd ~ .status-text::after {
-    content: var(--status-dnd-title);
-    font-size: 15px;
-}
-.status-picker .popout-menu-item:nth-child(4) .helper::after{
-    content: var(--status-dnd) !important;
-    font-size: 12px;
-}
+  @mixin shownewtext() {
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
 
+  // Hide old text
+  @for $x from 1 through 5 {
+    &:nth-child(#{$x}) {
+      div[class*="helper-"], div[class*="statusIconText-"] div + div {
+        line-height: 0;
+        text-indent: -9999px;
+      }
+    }
+  }
 
-/* Invisible */
-.status-invisible ~ .status-text::after {
-    content: var(--status-invis-title);
-    font-size: 15px;
-}
-.status-picker .popout-menu-item:nth-child(5) .helper::after{
-    content: var(--status-invis) !important;
-    font-size: 12px;
+  // Online
+  &:nth-child(1) {
+    div[class*="statusIconText-"] div + div::after {
+      @include shownewtext();
+      content: var(--status-online-title);
+      font-size: $status-size;
+    }
+  }
+
+  // Idle
+  &:nth-child(3) {
+    div[class*="statusIconText-"] div + div::after {
+      @include shownewtext();
+      content: var(--status-idle-title);
+      font-size: $status-size;
+    }
+  }
+
+  // Do Not Disturb
+  &:nth-child(4) {
+    div[class*="statusIconText-"] div + div::after {
+      @include shownewtext();
+      content: var(--status-dnd-title);
+      font-size: $status-size;
+    }
+
+    div[class*="helper-"]::after {
+      @include shownewtext();
+      content: var(--status-dnd) !important;
+      font-size: $status-hint-size;
+    }
+  }
+
+  // Invisible
+  &:nth-child(5) {
+    div[class*="statusIconText-"] div + div::after {
+      @include shownewtext();
+      content: var(--status-invis-title);
+      font-size: $status-size;
+    }
+
+    div[class*="helper-"]::after {
+      @include shownewtext();
+      content: var(--status-invis) !important;
+      font-size: $status-hint-size;
+    }
+  }
 }
