@@ -2,39 +2,38 @@
 // Github: https://gist.github.com/Ratismal
 
 div[class*="membersWrap"] {
-	background: rgba(0, 0, 0, 0);
-	height: 100%;
-	margin-left: 100%;
-	position: absolute !important;
-	right: -150px;
-	transition: 2s;
-	z-index: 1;
+  background: rgba(0, 0, 0, 0);
+  height: 100%;
+  margin-left: 100%;
+  position: absolute !important;
+  right: -150px;
+  transition: 2s;
+  z-index: 1;
 
-	div[class*="memberInner-"], div[class*="membersGroup-"] {
-		animation: fadeout 1s;
-		animation-fill-mode: forwards;
+  div[class*="memberInner-"], div[class*="membersGroup-"] {
+    animation: fadeout 1s;
+    animation-fill-mode: forwards;
 	}
 
-	&:hover {
-		background: rgba(0, 0, 0, .3);
-		right: 0;
-		transition: .5s;
+  &:hover {
+    background: rgba(0, 0, 0, .3);
+    right: 0;
+    transition: .5s;
 
-		div[class*="memberInner-"], div[class*="membersGroup-"] {
-			animation: fadein .5s;
-			animation-fill-mode: forwards;
+    div[class*="memberInner-"], div[class*="membersGroup-"] {
+      animation: fadein .5s;
+      animation-fill-mode: forwards;
 		}
 	}
 }
 
-
 .chat:not(.private) .content { padding-right: 90px; }
 
 @keyframes fadein {
-	from {opacity: 0; }
-	to {opacity: 1; }
+  from {opacity: 0; }
+  to {opacity: 1; }
 }
 
 @keyframes fadeout {
-	to {opacity: 0; }
+  to {opacity: 0; }
 }
