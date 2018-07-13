@@ -146,13 +146,13 @@
 .private-channels {
   div[class*="scroller-"] { padding-top: 0 !important; }
 
-  div[class*="searchBar-"] {
+  div[class*="searchBar-"], .search-bar {
     background: transparent;
     border-radius: 0;
     box-shadow: none;
     padding-bottom: 4px;
 
-    div[class*="searchBarInner-"] {
+    div[class*="searchBarInner-"], .search-bar-inner {
       background: transparent;
       border: 0;
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2),
@@ -162,4 +162,4 @@
   }
 }
 
-div[class*="searchBar-"] div[class*="searchBarInner-"] { background: rgba(47, 47, 47, .9); }
+.search-bar .search-bar-inner { background: rgba(47, 47, 47, .9); }
