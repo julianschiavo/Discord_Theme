@@ -65,7 +65,17 @@ div[class*="userPopout-"] {
   .footer { background: var(--dark-secondary); border-top: 0; }
 
   div[class*="headerNormal-"] { background: var(--dark-highlight); }
-  div[class*="headerPlaying-"] { background: var(--dark-highlight); }
+
+  div[class*="headerPlaying-"] {
+    background: var(--dark-highlight);
+
+    div[class*="headerText-"] {
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: none;
+    }
+  }
+
   div[class*="body-"] {
     background: var(--dark-primary);
     border-bottom: 0;
