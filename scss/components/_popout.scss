@@ -69,7 +69,7 @@ div[class*="userPopout-"] {
   div[class*="headerPlaying-"] {
     background: var(--dark-highlight);
 
-    div[class*="headerText-"] {
+    div[class*="activity-"] div[class*="headerText-"] {
       font-size: 14px;
       letter-spacing: 1px;
       text-transform: none;
