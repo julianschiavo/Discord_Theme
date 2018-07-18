@@ -652,9 +652,15 @@ div[class*="channels-"] {
     z-index: 1;
   }
 
-  div[class*="container-"] div[class*="horizontal-"] {
-    padding-left: 23px;
-    & > svg > path { display: none; }
+  div[class*="container-"] {
+    div[class*="containerDefault-"]:nth-child(1) {
+      padding-top: 15px;
+    }
+
+    div[class*="horizontal-"] {
+      padding-left: 23px;
+      & > svg > path { display: none; }
+    }
   }
 }
 
