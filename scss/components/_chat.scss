@@ -105,6 +105,13 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 }
 
 
+// Spotify invite
+.theme-dark div[class*="invite-"] {
+  background-color: var(--dark-primary);
+  border-color: transparent;
+}
+
+
 // Discord Attachment
 .theme-dark div[class*="attachment-"] {
   background: var(--dark-primary);
@@ -262,7 +269,9 @@ div[class*="autocomplete-"] {
 
   div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
-    border-color: rgba(0, 0, 0, 0);
+    border-color: transparent;
+    border-radius: 0 5px 5px 0;
+    margin: 7px 0;
 
     div[class*="embedInner-"] { background-color: transparent; }
   }
