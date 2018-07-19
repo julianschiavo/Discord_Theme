@@ -856,12 +856,13 @@ div[class*="backdrop-"] + div[class*="modal-"] {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .3) !important;
   max-height: 541px !important;
 
-  div[class*="header"] { background: var(--dark-highlight) !important; }
-  div[class*="footer"] { background: var(--dark-secondary) !important; }
+  div[class*="header-"] { background: var(--dark-highlight) !important; }
+  div[class*="footer-"] { background: var(--dark-secondary) !important; }
 
   div[class*="messagesPopout-"] {
-    .message-group, .message-group:hover {
-      background: transparent !important;
+
+    div[class*="messageGroupWrapper-"], div[class*="messageGroupWrapper-"]:hover {
+      background: var(--dark-primary) !important;
       border: 0 !important;
 
       div[class*="actionButtons-"] {
