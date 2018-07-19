@@ -248,7 +248,7 @@ div[class*="autocomplete-"] {
 
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
 
-.theme-dark .message-group {
+.theme-dark div[class*="containerCozy-"] {
   &.is-local-bot-message {
     background-image: none;
     box-shadow: none;
@@ -261,7 +261,11 @@ div[class*="autocomplete-"] {
     div[class*="embedInner-"] { background-color: transparent; }
   }
 
-  .comment .markup {
+  div[class*="messageCozy-"] {
+    margin-bottom: 0;
+  }
+
+  div[class*="message-"] div[class*="markup-"] {
     color: hsla(0, 0%, 100%, .7) !important;
 
     pre {
