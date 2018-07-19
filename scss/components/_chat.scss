@@ -92,11 +92,11 @@
 
 
 // Discord Invites
-div[class*="containerCozy-"] div[class*="wrapper-"] {
+div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   background: var(--dark-primary);
   border-style: none;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
-  margin-bottom: 10px;
+  margin: 5px 0;
 
   h5[class*="h5-"] {
     color: #fff;
@@ -251,6 +251,8 @@ div[class*="autocomplete-"] {
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
 
 .theme-dark div[class*="containerCozy-"] {
+  margin-bottom: 0;
+
   &.is-local-bot-message {
     background-image: none;
     box-shadow: none;
