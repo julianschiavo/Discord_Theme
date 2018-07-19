@@ -92,9 +92,11 @@
 
 
 // Discord Invites
-.comment div[class*="wrapper-"] {
+div[class*="containerCozy-"] div[class*="wrapper-"] {
   background: var(--dark-primary);
+  border-style: none;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
+  margin-bottom: 10px;
 
   h5[class*="h5-"] {
     color: #fff;
