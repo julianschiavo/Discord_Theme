@@ -265,7 +265,9 @@ div[class*="autocomplete-"] {
     box-shadow: none;
   }
 
-  &:last-of-type { margin-bottom: 15px !important; }
+  &:last-of-type { margin-bottom: 20px !important; }
+
+  div[class*="isMentioned-"] { padding: 0; }
 
   div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
