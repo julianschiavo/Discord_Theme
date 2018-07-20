@@ -257,7 +257,7 @@ div[class*="autocomplete-"] {
 
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
 
-.theme-dark div[class*="containerCozy-"] {
+.theme-dark .containerCozy-jafyvG {
   margin-bottom: 0;
 
   &.is-local-bot-message {
@@ -265,7 +265,7 @@ div[class*="autocomplete-"] {
     box-shadow: none;
   }
 
-  &:last-of-type { margin-bottom: 20px !important; }
+  &:last-of-type { margin-bottom: 15px !important; }
 
   div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
