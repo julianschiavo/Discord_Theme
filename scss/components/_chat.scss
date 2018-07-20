@@ -234,7 +234,7 @@ div[class*="autocomplete-"] {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    top: -26px;
+    top: -27px;
     width: auto;
   }
 }
@@ -259,13 +259,14 @@ div[class*="autocomplete-"] {
 
 .theme-dark .containerCozy-jafyvG {
   margin-bottom: 0;
+  padding: 17px 0;
 
   &.is-local-bot-message {
     background-image: none;
     box-shadow: none;
   }
 
-  &:last-of-type { margin-bottom: 20px !important; }
+  &:last-of-type { margin-bottom: 17px !important; }
 
   div[class*="isMentioned-"] { padding: 0; }
 
@@ -273,9 +274,12 @@ div[class*="autocomplete-"] {
     background-color: rgba(0, 0, 0, .2);
     border-color: transparent;
     border-radius: 0 5px 5px 0;
-    margin: 4px 0;
 
-    div[class*="embedInner-"] { background-color: transparent; }
+    div[class*="embedInner-"] {
+      background-color: transparent;
+
+      div[class*="markup-"] { font-size: .94rem; }
+    }
   }
 
   div[class*="messageCozy-"] {
