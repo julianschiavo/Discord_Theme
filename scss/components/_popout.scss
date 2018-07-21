@@ -428,6 +428,8 @@ div[class*="emojiPicker-"] {
     background: var(--dark-highlight);
     border-radius: 10px;
 
+    div[class*="invite-"] { background: transparent; }
+
     div[class*="item-"] {
       @include transition(all 200ms ease-in-out);
       color: #fff;
