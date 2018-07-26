@@ -257,14 +257,12 @@ div[class*="autocomplete-"] {
 .theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
 
 .theme-dark .containerCozy-jafyvG {
-  margin-bottom: 0;
-
   &.is-local-bot-message {
     background-image: none;
     box-shadow: none;
   }
 
-  &:last-of-type { margin-bottom: 17px !important; }
+  &:last-of-type { margin-bottom: 37px !important; }
 
   div[class*="isMentioned-"] { padding: 0; }
 
