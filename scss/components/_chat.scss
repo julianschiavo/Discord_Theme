@@ -262,9 +262,7 @@ div[class*="autocomplete-"] {
     box-shadow: none;
   }
 
-  &:last-of-type { margin-bottom: 37px !important; }
-
-  div[class*="isMentioned-"] { padding: 0; }
+  &:last-of-type { margin-bottom: 35px !important; }
 
   div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
@@ -276,10 +274,6 @@ div[class*="autocomplete-"] {
 
       div[class*="markup-"] { font-size: .94rem; }
     }
-  }
-
-  div[class*="messageCozy-"] {
-    margin-bottom: 0;
   }
 
   div[class*="channelTextArea-"] div[class*="inner-"] {
