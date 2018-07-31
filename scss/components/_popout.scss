@@ -920,7 +920,7 @@ div[class*="backdrop-"] + div[class*="modal-"] {
   }
 }
 
-div[class*="content-"] video[autoplay] { display: none; }
+div[class*="modal-"] div[class*="content-"] video[autoplay] { display: none; }
 
 
 // Upload area
