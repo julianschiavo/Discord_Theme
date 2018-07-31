@@ -448,7 +448,7 @@ div[class*="emojiPicker-"] {
   }
 }
 
-div[class*="wrapper-"] {
+div[class*="modal-"] div[class*="wrapper-"] {
   background: transparent;
 
   form[class*="instantInviteModal-"] {

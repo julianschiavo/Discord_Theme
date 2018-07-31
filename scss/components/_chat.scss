@@ -695,24 +695,24 @@ div[class*="channels-"] {
 
 
 // Servers section
-.badge, div[class*="iconSpacing-"] div[class*="wrapper-"] { background-color: var(--notif); }
+div[class*="badge-"], div[class*="iconSpacing-"] div[class*="wrapper-"] { background-color: var(--notif); }
 .new-messages-indicator.new-messages-indicator-mention { background-color: var(--notif); }
 
-.dms .guild .badge,
-.guilds .guild.unread .badge,
-.guilds .guild .badge {
+div[class*="dms-"] div[class*="guild-"] div[class*="badge-"],
+div[class*="guilds-"] div[class*="guild-"] div[class*="badge-"],
+div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"] {
   @include transform(translate(-4px, -34px) !important);
   z-index: 100;
 }
 
-.guilds-wrapper {
+.theme-dark div[class*="guildsWrapper-"] {
   background: var(--dark-highlight);
 
-  .guilds {
+  div[class*="guilds-"] {
     .friends-icon { background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg'); }
     // Friends icon was replaced with Hub channel at Canary, remove later
 
-    a[href="/activity"], a[href*="/channels/@me"] {
+    a[href="/activity"], a[href*="/channels/@me"]:not(.avatar-small) {
       background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
       background-position: center;
       background-repeat: no-repeat;
@@ -721,13 +721,14 @@ div[class*="channels-"] {
       svg { display: none; }
     }
 
-    .guild .guild-inner { background: transparent !important; }
-    .guild.audio .guild-inner::after { top: 30px; }
-    .friends-online { display: none; }
-    .guild.selected {
+    div[class*="guild-"] div[class*="guildInner-"] { background: transparent !important; }
+    div[class*="guild-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
+    div[class*="friendsOnline"] { display: none; }
+
+    div[class*="guild-"][class*="selected-"] {
       background: transparent;
 
-      &.unread::before {
+      & div[class*="unread-"]::before {
         @include transform(translate(35px, 5px) scale(1.2));
         visibility: visible !important;
       }
@@ -745,14 +746,11 @@ div[class*="channels-"] {
         z-index: 100;
       }
 
-      .guild-inner {
-        background-color: transparent !important;
-      }
     }
 
-    .guild.selected::before,
-    .guild.selected.unread::before,
-    .guild.unread::before {
+    div[class*="guild-"][class*="selected-"]::before,
+    div[class*="guild-"][class*="selected-"][class*="unread-"]::before,
+    div[class*="guild-"][class*="unread-"]::before {
       @include transform(translate(50px, -20px) scale(1.2));
       background: var(--notif);
       border-radius: 50%;
@@ -763,12 +761,12 @@ div[class*="channels-"] {
       z-index: 100;
     }
 
-    .guild.selected.unread::before { // scss-lint:disable MergeableSelector
+    div[class*="guild-"][class*="selected-"][class*="unread-"]::before { // scss-lint:disable MergeableSelector
       @include transform(translate(35px, 5px) scale(1.2));
       visibility: visible !important;
     }
 
-    .guild-separator {
+    div[class*="guildSeperator-"] {
       left: -5px;
       margin: 0;
       padding-bottom: 10px;
