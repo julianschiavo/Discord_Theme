@@ -25,7 +25,14 @@
 
 
 // Chat Messages
-.divider.divider-red + .divider { display: none; }
+.theme-dark div[class*="divider-"],
+.theme-dark div[class*="dividerRed-"] {
+  span {
+    background-color: var(--dark-secondary);
+    border-radius: 0;
+    text-transform: none;
+  }
+}
 
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
 .theme-dark div[class*="headerBar-"] {
@@ -34,9 +41,9 @@
   padding-top: 3px;
 }
 
-.chat {
-  .new-messages-bar { background-color: var(--notif); }
-  .jump-to-present-bar { left: inherit; }
+div[class*="chat-"] {
+  div[class*="newMessagesBar-"] { background-color: var(--notif); }
+  div[class*="jumpToPresentBar-"] { left: inherit; }
 
   form {
     border: 0;
@@ -67,10 +74,10 @@
   background: var(--dark-highlight) !important;
 }
 
-.theme-dark .chat>.content, .theme-dark .messages-wrapper { background-color: var(--dark-secondary) !important; }
+.theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"] { background-color: var(--dark-secondary) !important; }
 .theme-dark .chat .jump-to-present-bar { background: var(--accent); }
 
-.theme-dark .messages-wrapper .messages .message-group-blocked {
+.theme-dark div[class*="messagesWrapper-"] .messages .message-group-blocked {
   &.revealed { background: var(--dark-primary); }
   .message-group-blocked-btn, .message-group-blocked-btn:hover {
     @include transition(all 250ms ease);
@@ -82,7 +89,7 @@
 }
 
 .theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
-.theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
+.theme-dark div[class*="messagesWrapper-"] .messages .divider::before, .theme-dark div[class*="messagesWrapper-"] .messages .divider span {
   background-color: var(--dark-secondary);
 }
 
@@ -221,7 +228,7 @@ div[class*="autocomplete-"] {
   .channel-textarea-upload:hover { background-color: transparent; }
 }
 
-.theme-dark .chat form {
+.theme-dark div[class*="chat-"] form {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
@@ -305,7 +312,11 @@ div[class*="autocomplete-"] {
 }
 
 .theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
-.channel-text-area-default, div[class*="channelTextArea-"] { margin: 0; }
+
+.channel-text-area-default, div[class*="channelTextArea-"] {
+  margin: 0;
+  padding-top: 0;
+}
 
 .theme-dark textarea[class*="textArea-"], .theme-dark div[class*="inner-"] { background: transparent; }
 

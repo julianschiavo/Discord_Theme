@@ -1,18 +1,18 @@
 // This is just a mess, but works! o.o
-.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title, .theme-dark .chat form,
-.guild-header, .chat .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
+.search-bar, .friends-header, div[class*="chat-"]>.title-wrap, div[class*="chat-"]>.title-wrap>.title, .theme-dark div[class*="chat-"] form,
+.guild-header, div[class*="chat-"] .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
 .channel-members .member.popout-open, .private-channels .channel.selected, .private-channels .channel.selected a, .guild-channels .channel-text.selected,
-.theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
-.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper,
+.theme-dark div[class*="messagesWrapper-"], .guild-channels, .theme-dark div[class*="chat-"] .title-wrap,
+.theme-dark div[class*="chat-"]>.content, .theme-dark .friends-table, .theme-dark div[class*="messagesWrapper-"],
 .private-channels, .channel-members, .channel-members, .channel-textarea, .theme-dark .channel-textarea-inner,
 #friends, .account .btn-group, #friends .friends-table .friends-table-header,
-#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages, .guild-header header,
-.friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
+#friends .friends-table, .flex-horizontal>.flex-spacer, div[class*="chat-"] .messages, .guild-header header,
+.friends-table .messages .message-group:not(.has-divider), div[class*="messagesWrapper-"] .messages .message-group:not(.has-divider),
 #rtc-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
 .channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
-.channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
-.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form div[class*="typing-"]:hover, div[class*="typing-"] .text,
-.chat form div[class*="typing-"], .theme-dark .chat .private-channel-call,
+.channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, div[class*="chat-"]>.title-wrap>.title, div[class*="chat-"] .title-wrap,
+div[class*="chat-"] div[class*="messagesWrapper-"], div[class*="chat-"] div[class*="messagesWrapper-"] .scroller-wrap, div[class*="chat-"] form div[class*="typing-"]:hover, div[class*="typing-"] .text,
+div[class*="chat-"] form div[class*="typing-"], .theme-dark div[class*="chat-"] .private-channel-call,
 .theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers,
 .theme-dark div[class*="headerBar-"], .theme-light div[class*="headerBar-"] {
   background: transparent !important;
@@ -22,7 +22,7 @@
   opacity: 1;
 }
 
-.theme-dark .chat>.content, .theme-dark .channel-text-area-default div[class*="inner-"] {
+.theme-dark div[class*="chat-"]>.content, .theme-dark .channel-text-area-default div[class*="inner-"] {
   background-color: transparent !important;
 }
 
@@ -55,24 +55,24 @@ div[class*="container-"] div[class*="scrollerWrap-"] div[class*="scroller"] {
 
 .theme-dark .friends-table .messages .divider::before,
 .theme-dark .friends-table .messages .divider span,
-.theme-dark .messages-wrapper .messages .divider::before,
-.theme-dark .messages-wrapper .messages .divider span {
+.theme-dark div[class*="messagesWrapper-"] .messages .divider::before,
+.theme-dark div[class*="messagesWrapper-"] .messages .divider span {
   background-color: transparent;
 }
 
-.channel-textarea-inner textarea, .chat .title-wrap .topic, .theme-dark .search-results-wrap .search-result .hit {
+.channel-textarea-inner textarea, div[class*="chat-"] .title-wrap .topic, .theme-dark .search-results-wrap .search-result .hit {
   color: rgba(255, 255, 255, .8) !important;
 }
 
 div[class*="container-"], div[class*="content-"]:not(.content-region),
-.theme-dark .chat > .content > .flex-justify-center, .ui-flex > .flex-nowrap,
+.theme-dark div[class*="chat-"] > .content > .flex-justify-center, .ui-flex > .flex-nowrap,
 #rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
   background: transparent !important;
   border: 0;
   box-shadow: none;
 }
 
-.theme-dark .chat .private-channel-call {
+.theme-dark div[class*="chat-"] .private-channel-call {
   border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
@@ -108,7 +108,7 @@ div[class*="container-"], div[class*="content-"]:not(.content-region),
 .theme-dark .search-results-wrap .scroller-wrap .scroller { background-color: transparent; }
 
 // Had to rework for the new styles
-.theme-dark .chat form, .account {
+.theme-dark div[class*="chat-"] form, .account {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: none;
 }
@@ -173,14 +173,14 @@ div[class*="container-"], div[class*="content-"]:not(.content-region),
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAAyCAYAAADm1uYqAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAIGNIUk0AAHonAACAgwAA+mQAAIDSAAB2hgAA7OkAADmeAAAV/sZ+0zoAAAOrSURBVHja7N1NaxVXHMfx75irSUylQVwK+g7ULgLtwlKwaa2J4gtwIQrqplgXUtS22lYtFVQoKoIPC1+BJmqNuNBNwEUfyAuwghuhWMWHPJh0XJypoCVmMpl750z4fmBWN3Pn3HP/+d07d845k6RpiiTVwQK7QJKBJUkGliQDS5IMLEkqRyPGRq1a01N014+BhcBa4MO3HpsETgFjwAjw0LdfM/nz97t2goFVut4srHZmgbXkHYE2CQwDt4HTwGPLQPKUsFVBdSPb9gFL3xFWAJ3Z473AYeAecBDothQkA6tZuoHBLKh65/g832XB1W85SAZW2dYDfwEbSg7AK8CAJSEZWGWG1TXg/SY9fx9w3bKQDKyywqrZPm/RcSTN08D6oMUhsp7wG5kkA2sGyRtbAzhfQSs2ABstEcnAmo3vgdUVHfsysNgykQys6aWvt2Wk7K24Nd9YJpKBlcdXQFsEbeiyVKTqxTw1ZynwZQTtaAf2EkbEl7U86xJLL8rv9c/sBgOrqK3Ae5G0ZQ/wI/Byjs+zj3AFcpWlF2VgXSCMwxuyOwys/BLagBXEs9x8B2Gw6t8F9/8UOMT/V5BQXHZn2yCwmTBRXhGJ9Uf3taRsiSzYdxTctzP7xDas6qOPMMdUBlYu7dk/ekyKnJ4m2Tcr1c/XwHK7wcDKYxKYiKxNYwX26SKOCwcq9q16u91gYOXRFmHbGgVfR2KZ1Va7XWBgSdK8Cqwp4N8IT1OLvA5vrV1f43aBgZX39GtRZG3qKLDPc+AXy6yWJoBzdoOBlfeTbTSyNhUZBZ0C31pmtXQUeGA3GFgzS7hDwqXITgfPFtx3lLDu/LDlVhs/E25SoghPveKTMgXcj6hFY8CTOex/M9ucmhMvp+YYWHNykTDhOIb5hMcpZ5rGkWxz8nOcgeXkZwOrsEfASeBAxe0YB45R7tW+p5aeNHuxj8M6TvWXlk/4ySsZWHn8A/xUcRt+sEwkAyuvw8AfFR17E/DCMpEMrLxeAtsqOO5Vwt2gJRlYs/Ib8EULj3edsCaSJAOrcIi0IrR+bXE4SpqHgfVfaK2jeaPGBwkDOyUZWKW4BXxE+I2pLE8Id3nutyQkA6sZ+oDPCNMoit7N5hFhCeOVwIDlIMWtUfP2D2XbcmAXsBNYyPRTX8YJy4YMA2eyfR22IBlYLfUA2E+YYNwAPgF63vqbqSykngMjwEPffqlekjR1QUxJ9eCa7pIMLEkysCQZWJJkYElSSV4BAAD//wMApoKZxcqbQ9oAAAAASUVORK5CYII=');
 }
 
-div[class*="appMount-"], .theme-dark .chat, .theme-dark div[class*="title-"],
+div[class*="appMount-"], .theme-dark div[class*="chat-"], .theme-dark div[class*="title-"],
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"] {
   background: transparent;
 }
 
 .private-channels .channel:hover a { background: rgba(0, 0, 0, .1); }
 
-.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+.theme-dark div[class*="messagesWrapper-"] .messages .message-group-blocked .message-group-blocked-btn {
   background: rgba(0, 0, 0, .5);
 }
 
