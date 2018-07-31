@@ -2,6 +2,7 @@
 
 :: Settings
 set Theme="https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.css"
+set BDLink="https://github.com/AlexFlipnote/BeautifulDiscord/archive/master.zip"
 
 
 :: Do not change anything under this line
@@ -45,7 +46,7 @@ set line=----------------------------------------
     echo   - Updating BeautifulDiscord    Updating...
     echo   - Updating Discord_Theme       Waiting...
     echo %line%
-    pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip --upgrade
+    pip install -U %BDLink% --upgrade
     cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && powershell -Command "Invoke-WebRequest %Theme% -OutFile autotheme.css"
 
     cls
@@ -127,7 +128,7 @@ set line=----------------------------------------
   echo   - Discord Theme       Waiting...
   echo   - Inserting themed    Waiting...
   echo %line%
-  pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
+  pip install -U %BDLink%
 
   :: Download theme
   cls
