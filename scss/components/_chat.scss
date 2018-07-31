@@ -403,6 +403,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   background-color: var(--dark-primary);
 
   + div[class*="container-"] { background-color: var(--dark-primary); }
+  div[class*="wrapper-"] { background-color: var(--notif); }
 
   .channel {
     padding-left: -25px;
@@ -442,6 +443,8 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
     background: #27ae60;
   }
+
+  div[class*="wrapper-"] { background-color: var(--notif); }
 
   div[class*="headerBar-"] { background: var(--dark-secondary); }
   .friends-table {

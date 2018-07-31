@@ -200,7 +200,7 @@ div[class*="titleBar-"] {
 
 div[class*="titleWrapper-"] div[class*="title-"] { background: transparent; }
 div[class*="channels-"] { background: rgba(0, 0, 0, .3); border-radius: 0; }
-.guilds-wrapper { background: rgba(0, 0, 0, .5) !important; }
+.guilds-wrapper, div[class*="guildsWrapper-"] { background: rgba(0, 0, 0, .5) !important; }
 .channel-members-wrap div[class*="scroller-"] { background: transparent; }
 
 div[class*="wrapper-"] div[class*="contentSelectedText-"] {
