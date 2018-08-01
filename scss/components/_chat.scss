@@ -77,14 +77,17 @@ div[class*="chat-"] {
 .theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"] { background-color: var(--dark-secondary) !important; }
 .theme-dark .chat .jump-to-present-bar { background: var(--accent); }
 
-.theme-dark div[class*="messagesWrapper-"] .messages .message-group-blocked {
-  &.revealed { background: var(--dark-primary); }
-  .message-group-blocked-btn, .message-group-blocked-btn:hover {
+.theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"] {
+  background: var(--dark-primary);
+
+  div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover {
     @include transition(all 250ms ease);
     background: var(--dark-primary);
     border: 0;
     box-shadow: transparent;
     color: #ccc;
+    font-size: 14px;
+    text-transform: none;
   }
 }
 
