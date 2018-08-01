@@ -2,7 +2,7 @@
 
 :: Settings
 set Theme="https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.css"
-set BDLink="https://github.com/AlexFlipnote/BeautifulDiscord/archive/master.zip"
+set BDLink="https://github.com/leovoel/BeautifulDiscord/archive/master.zip"
 
 
 :: Do not change anything under this line
