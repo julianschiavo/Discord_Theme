@@ -26,7 +26,8 @@
 
 // Chat Messages
 .theme-dark div[class*="divider-"],
-.theme-dark div[class*="dividerRed-"] {
+.theme-dark div[class*="dividerRed-"],
+.theme-dark .divider, .theme-dark .divider.divider-red {
   span {
     background-color: var(--dark-secondary);
     border-radius: 0;
@@ -82,10 +83,13 @@ div[class*="chat-"] {
 .theme-dark .chat .jump-to-present-bar { background: var(--accent); }
 
 .theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"],
-.theme-dark .messages-wrapper div[class*="messageGroupBlocked-"] {
+.theme-dark .messages-wrapper .messages .message-group-blocked {
   background: var(--dark-primary);
 
-  div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover {
+  &.revealed { background: var(--dark-primary); }
+
+  div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover,
+  .message-group-blocked-btn, .message-group-blocked-btn:hover {
     @include transition(all 250ms ease);
     background: var(--dark-primary);
     border: 0;
@@ -237,10 +241,12 @@ div[class*="autocomplete-"] {
   .channel-textarea-upload:hover { background-color: transparent; }
 }
 
-.theme-dark div[class*="chat-"] form {
+.theme-dark div[class*="chat-"] form,
+.theme-dark .chat form {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
+  margin: 0;
 
   div[class*="typing-"] {
     background-color: var(--dark-secondary);
