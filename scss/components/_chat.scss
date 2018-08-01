@@ -74,10 +74,15 @@ div[class*="chat-"] {
   background: var(--dark-highlight) !important;
 }
 
-.theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"] { background-color: var(--dark-secondary) !important; }
+.theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"],
+.theme-dark .messages-wrapper {
+  background-color: var(--dark-secondary) !important;
+}
+
 .theme-dark .chat .jump-to-present-bar { background: var(--accent); }
 
-.theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"] {
+.theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"],
+.theme-dark .messages-wrapper div[class*="messageGroupBlocked-"] {
   background: var(--dark-primary);
 
   div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover {
@@ -92,7 +97,8 @@ div[class*="chat-"] {
 }
 
 .theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
-.theme-dark div[class*="messagesWrapper-"] .messages .divider::before, .theme-dark div[class*="messagesWrapper-"] .messages .divider span {
+.theme-dark div[class*="messagesWrapper-"] .messages .divider::before, .theme-dark div[class*="messagesWrapper-"] .messages .divider span,
+.theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
   background-color: var(--dark-secondary);
 }
 

@@ -33,13 +33,13 @@ div[class*="appMount-"] { background: transparent; }
   div[class*="guildsWrapper-"] { background: $transparent-highlight; }
   div[class*="videoHeight-"] { background: $transparent-secondary; }
 
-  div[class*="messagesWrapper-"] {
+  div[class*="messagesWrapper-"], .messages-wrapper {
     background: $transparent-secondary !important;
-  }
 
-  div[class*="membersWrap-"] div[class*="members-"] {
-    background: $transparent-secondary;
-    div[class*="content-"] { background: transparent; }
+    div[class*="members-"] {
+      background: $transparent-secondary;
+      div[class*="content-"] { background: transparent; }
+    }
   }
 }
 
