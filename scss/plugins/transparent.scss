@@ -7,8 +7,16 @@ div[class*="appMount-"] { background: transparent; }
 .theme-dark {
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
-  .private-channels {
+  div[class*="activityFeed-"], .private-channels {
     background: transparent;
+  }
+
+  #friends {
+    background: transparent;
+
+    div[class*="headerBar-"], .friends-table, div[class*="scrollerWrap-"] {
+      background: transparent;
+    }
   }
 
   .ui-standard-sidebar-view {
@@ -32,6 +40,11 @@ div[class*="appMount-"] { background: transparent; }
 
   div[class*="guildsWrapper-"] { background: $transparent-highlight; }
   div[class*="videoHeight-"] { background: $transparent-secondary; }
+
+  div[class*="membersWrap-"] {
+    div[class*="content-"] { background: transparent; }
+    div[class*="members-"] { background: $transparent-secondary; }
+  }
 
   div[class*="messagesWrapper-"], .messages-wrapper {
     background: $transparent-secondary !important;
