@@ -1,6 +1,6 @@
 $transparent-highlight: rgba(#000, .5);
-$transparent-primary: rgba(#000, .35);
-$transparent-secondary: rgba(#000, .2);
+$transparent-primary: rgba(#000, .4);
+$transparent-secondary: rgba(#000, .3);
 
 div[class*="appMount-"] { background: transparent; }
 
@@ -17,6 +17,11 @@ div[class*="appMount-"] { background: transparent; }
     div[class*="headerBar-"], .friends-table, div[class*="scrollerWrap-"] {
       background: transparent;
     }
+  }
+
+  div[class*="chat-"] form div[class*="typing-"],
+  .chat form div[class*="typing-"] {
+    background: $transparent-secondary;
   }
 
   .ui-standard-sidebar-view {
