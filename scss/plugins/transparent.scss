@@ -59,6 +59,10 @@ div[class*="appMount-"] { background: transparent; }
       div[class*="content-"] { background: transparent; }
     }
   }
+
+  div[class*="isMentioned-"] {
+    background: rgba(250, 166, 26, .1) !important;
+  }
 }
 
 div[class*="channelTextAreaEnabledNoAttach"],
