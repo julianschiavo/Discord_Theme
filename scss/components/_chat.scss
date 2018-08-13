@@ -514,6 +514,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   background: var(--dark-secondary);
 
   div[class*="article-"] { background: var(--dark-primary); }
+  div[class*="headerBar-"] { background: var(--dark-secondary); }
 
   div[class*="personalizationNotice-"] {
     background: var(--dark-primary);
@@ -659,7 +660,23 @@ div[class*="container-"] {
 .theme-dark div[class*="membersWrap-"] {
   div[class*="members-"] { background-color: var(--dark-secondary); }
   div[class*="content"] { background-color: var(--dark-secondary); }
-  div[class*="memberOnline-"]:hover, div[class*="memberOffline-"]:hover { background-color: var(--dark-highlight); }
+
+  div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
+  div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
+
+  div[class*="membersGroup-"] {
+    font-size: 13px;
+    text-transform: none;
+  }
+
+  div[class*="memberOnline-"], div[class*="memberOffline-"] {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: translateX(-.4em);
+      white-space: nowrap;
+    }
+  }
 }
 
 div[class*="titleWrapper-"] div[class*="title-"] {
