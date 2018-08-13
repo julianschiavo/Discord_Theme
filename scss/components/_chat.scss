@@ -214,6 +214,8 @@ div[class*="autocomplete-"] {
   border-radius: 0;
   box-shadow: 0;
 
+  div[class*="content-"] { background: transparent; }
+
   &::after { border: 0; }
   header {
     border-bottom: 0;
@@ -368,7 +370,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 
 // NSFW Filter
-.theme-dark div[class*="chat-"] div[class*="content-"] {
+.theme-dark div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"] {
   background-color: var(--dark-secondary);
 
   div[class*="image-"] {
