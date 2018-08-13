@@ -368,11 +368,12 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 
 // NSFW Filter
-.theme-dark div[class*="nsfw-"] div[class*="image-"] { background-image: url('https://i.alexflipnote.xyz/c2472b.png'); }
-.ui-guild-nsfw > .flex-nowrap { background: transparent; }
-.theme-dark .chat > .content > .flex-justify-center {
-  background-color: var(--dark-primary);
-  > .ui-guild-nsfw { background: transparent; }
+.theme-dark div[class*="chat-"] div[class*="content-"] {
+  background-color: var(--dark-secondary);
+
+  div[class*="image-"] {
+    background-image: url('https://i.alexflipnote.xyz/c2472b.png');
+  }
 }
 
 
