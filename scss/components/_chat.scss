@@ -675,7 +675,7 @@ div[class*="container-"] {
     transition: all .2s ease-in-out;
 
     &:hover {
-      transform: translateX(-.4em);
+      transform: translateX(.4em);
       white-space: nowrap;
     }
   }
