@@ -300,6 +300,8 @@ div[class*="autocomplete-"] {
     }
   }
 
+  code.inline { background: var(--dark-primary); }
+
   div[class*="channelTextArea-"] div[class*="inner-"] {
     textarea {
       background: var(--dark-primary);
