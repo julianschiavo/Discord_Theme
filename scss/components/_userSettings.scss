@@ -10,6 +10,8 @@
     max-width: 100%;
   }
 
+  div[class*="footer-"] { background: transparent; }
+
   .sidebar-region { flex: 1 0 0; }
 }
 
@@ -73,6 +75,15 @@
 
     &:hover { background-color: var(--accent); }
   }
+}
+
+div[class*="paymentHistory-"] {
+  div[class*="paymentPane-"], div[class*="paginator-"], div[class*="payment-"] {
+    background: transparent;
+  }
+
+  div[class*="hoverablePayment-"]:hover { background: var(--dark-secondary); }
+  div[class*="expandedInfo-"] { background: var(--dark-secondary); }
 }
 
 .theme-dark {
