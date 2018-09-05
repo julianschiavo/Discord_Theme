@@ -47,7 +47,7 @@ set line=----------------------------------------
     echo   - Updating Discord_Theme       Waiting...
     echo %line%
     pip install -U %BDLink% --upgrade
-    cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && wget %Theme%
+    cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && powershell -Command "Invoke-WebRequest %Theme% -OutFile autotheme.css"
 
     cls
     echo Update list:
@@ -99,7 +99,6 @@ set line=----------------------------------------
   cls
   echo Install list:
   echo   - choco               Downloading and Installing...
-  echo   - wget                Waiting...
   echo   - Python              Waiting...
   echo   - BeautifulDiscord    Waiting...
   echo   - Discord Theme       Waiting...
@@ -109,23 +108,10 @@ set line=----------------------------------------
   :: Disabling annoying confirm
   choco feature enable -n allowGlobalConfirmation
 
-  :: wget
-  cls
-  echo Install list:
-  echo   - choco               Complete!
-  echo   - wget                Downloading and Installing...
-  echo   - Python              Waiting...
-  echo   - BeautifulDiscord    Waiting...
-  echo   - Discord Theme       Waiting...
-  echo   - Inserting themed    Waiting...
-  echo %line%
-  choco install wget
-
   :: Python
   cls
   echo Install list:
   echo   - choco               Complete!
-  echo   - wget                Complete!
   echo   - Python              Downloading and Installing...
   echo   - BeautifulDiscord    Waiting...
   echo   - Discord Theme       Waiting...
@@ -137,7 +123,6 @@ set line=----------------------------------------
   cls
   echo Install list:
   echo   - choco               Complete!
-  echo   - wget                Complete!
   echo   - Python              Complete!
   echo   - BeautifulDiscord    Downloading and Installing...
   echo   - Discord Theme       Waiting...
@@ -149,19 +134,17 @@ set line=----------------------------------------
   cls
   echo Install list:
   echo   - choco               Complete!
-  echo   - wget                Complete!
   echo   - Python              Complete!
   echo   - BeautifulDiscord    Complete!
   echo   - Discord Theme       Downloading and Installing...
   echo   - Inserting themed    Waiting...
   echo %line%
-  cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && wget %Theme%
+  cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && powershell -Command "Invoke-WebRequest %Theme% -OutFile autotheme.css"
 
   :: Insert Theme
   cls
   echo Install list:
   echo   - choco               Complete!
-  echo   - wget                Complete!
   echo   - Python              Complete!
   echo   - BeautifulDiscord    Complete!
   echo   - Discord Theme       Complete!
@@ -172,7 +155,6 @@ set line=----------------------------------------
   cls
   echo You have now installed the following:
   echo    - chocolatey (Used to install Python)
-  echo    - wget (Used to download the theme file)
   echo    - Python [ Latest ]
   echo    - BeautifulDiscord (To use a theme)
   echo    - AlexFlipnote/Discord_Theme (The theme)
