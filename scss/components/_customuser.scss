@@ -1,9 +1,0 @@
-@mixin targetuser($id, $avatar) {
-  .avatar-small[style*="avatars/#{$id}"],
-  .avatar-large[style*="avatars/#{$id}"],
-  div[class*="image-"][style*="avatars/#{$id}"] {
-    background-image: url(#{$avatar}) !important;
-  }
-}
-
-// Waiting for something...

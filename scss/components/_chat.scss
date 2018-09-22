@@ -678,9 +678,13 @@ div[class*="container-"] {
   }
 }
 
-div[class*="titleWrapper-"] div[class*="title-"] {
-  background: var(--dark-secondary);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
+div[class*="titleWrapper-"] {
+  div[class*="headerBar-"] {
+    background: var(--dark-secondary);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
+  }
+
+  div[class*="titleCall-"] { background: var(--dark-primary); }
 }
 
 .guild-header header {
