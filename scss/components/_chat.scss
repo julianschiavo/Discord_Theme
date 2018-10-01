@@ -476,6 +476,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   }
 
   div[class*="wrapper-"] { background-color: var(--notif); }
+  .friends-empty div[class*="wrapper-"] { background-color: var(--dark-secondary); }
 
   div[class*="headerBar-"] { background: var(--dark-secondary); }
   .friends-table {
