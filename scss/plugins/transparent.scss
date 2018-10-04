@@ -79,4 +79,6 @@ div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
 
 div[class*="titleWrapper-"] div[class*="title-"] {
   background: $transparent-secondary;
+
+  div[class*="title-"] { background: transparent; }
 }
