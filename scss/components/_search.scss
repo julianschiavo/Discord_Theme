@@ -2,17 +2,19 @@
 
 div[class*="popouts-"] {
   div[class*="container-"] {
-    background: var(--dark-highlight);
+    background: var(--dark-primary);
+
+    div[class*="queryContainer-"] { background: var(--dark-highlight); }
 
     span[class*="searchFilter-"] {
-      background-color: var(--dark-highlight);
+      background-color: var(--dark-primary);
       padding: 0 5px;
 
       [data-text] { font-weight: bold; }
     }
 
     span[class*="searchAnswer-"] {
-      background-color: var(--dark-primary);
+      background-color: var(--dark-secondary);
       padding-left: 0;
 
       [data-text] { font-weight: lighter; }
@@ -20,7 +22,7 @@ div[class*="popouts-"] {
   }
 
   div[class*="resultsGroup-"] {
-    background-color: var(--dark-highlight);
+    background-color: var(--dark-primary);
 
     div[class*="selected-"] {
       background-color: var(--dark-secondary);
