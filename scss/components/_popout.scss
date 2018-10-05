@@ -869,6 +869,8 @@ div[class*="backdrop-"] + div[class*="modal-"] {
       background: var(--dark-primary) !important;
       border: 0 !important;
 
+      div[class*="container-"] { background: transparent !important; }
+
       div[class*="actionButtons-"] {
         background-color: transparent;
         box-shadow: none;
