@@ -165,7 +165,9 @@ div[class*="privateChannels-"] {
   }
 }
 
-.search-bar {
+.theme-dark .search .search-bar {
+  background: transparent;
+  box-shadow: 0;
+
   span[class*="searchFilter-"], span[class*="searchAnswer-"] { background: var(--dark-primary); }
-  .search-bar-inner { background: rgba(47, 47, 47, .9); }
 }
