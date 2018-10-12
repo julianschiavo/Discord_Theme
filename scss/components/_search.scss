@@ -30,6 +30,10 @@ div[class*="popouts-"] {
     }
 
     div[class*="option-"] {
+      &::after {
+        background: transparent;
+      }
+
       & div[class*="searchQuery-"] {
         background-color: #111;
         border: 0;
