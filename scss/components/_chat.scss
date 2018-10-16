@@ -43,7 +43,7 @@
     padding-top: 3px;
   }
 
-  div[class*="homeWrapper-"], div[class*="gameLibrary-"] {
+  div[class*="homeWrapper-"], div[class*="gameLibrary-"], div[class*="applicationStore-"] {
     div[class*="headerBar-"] { background: var(--dark-secondary); }
   }
 }
