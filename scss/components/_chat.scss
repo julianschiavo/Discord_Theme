@@ -36,10 +36,16 @@
 }
 
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
-.theme-dark div[class*="headerBar-"] {
-  background: var(--dark-highlight);
-  padding-bottom: 6px;
-  padding-top: 3px;
+.theme-dark {
+  div[class*="headerBar-"] {
+    background: var(--dark-highlight);
+    padding-bottom: 6px;
+    padding-top: 3px;
+  }
+
+  div[class*="homeWrapper-"], div[class*="gameLibrary-"] {
+    div[class*="headerBar-"] { background: var(--dark-secondary); }
+  }
 }
 
 div[class*="chat-"] {

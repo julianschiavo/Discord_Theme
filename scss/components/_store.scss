@@ -1,0 +1,42 @@
+div[class*="emptyStateLarge-"] { background: var(--dark-secondary); }
+
+.theme-dark input[class*="browseSearchInput-"],
+.theme-dark input[class*="libraryFilterInput-"] {
+  background: transparent;
+}
+
+div[class*="homeWrapper-"] {
+  div[class*="home-"] { background: var(--dark-secondary); }
+
+  div[class*="tileWrapper-"] {
+    background: var(--dark-primary);
+    &:hover { background: var(--dark-highlight); }
+  }
+
+  button[class*="viewAllGamesButton"] { margin: 20px auto 0; }
+  footer[class*="footer-"] {
+    background-color: var(--dark-secondary);
+    margin-top: 0;
+    padding-top: 40px;
+  }
+}
+
+div[class*="listing-"] {
+  background: var(--dark-secondary);
+
+  div[class*="root-"], div[class*="row-"],
+  div[class*="card-"], div[class*="bodySection-"] {
+    background: var(--dark-primary);
+  }
+}
+
+.theme-dark div[class*="gameLibrary-"] {
+  background: var(--dark-secondary);
+
+  div[class*="gameUpdates-"] { background: var(--dark-primary); }
+  div[class*="header-"] { background: var(--dark-secondary); }
+  button[class*="actionButton"] { background: var(--dark-highlight); }
+  div[class*="rowWrapperActive-"] {
+    background-color: var(--dark-primary);
+  }
+}
