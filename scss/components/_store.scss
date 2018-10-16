@@ -40,3 +40,14 @@ div[class*="listing-"] {
     background-color: var(--dark-primary);
   }
 }
+
+.theme-dark div[class*="applicationStore-"] {
+  background: var(--dark-secondary);
+
+  div[class*="tileWrapper-"] {
+    background: var(--dark-primary);
+    &:hover { background: var(--dark-highlight); }
+  }
+
+  div[class*="searchBox-"] { background: var(--dark-primary); }
+}

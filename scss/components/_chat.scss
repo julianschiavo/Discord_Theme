@@ -772,7 +772,8 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
     .friends-icon { background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg'); }
     // Friends icon was replaced with Hub channel at Canary, remove later
 
-    a[href="/activity"], a[href*="/channels/@me"]:not(.avatar-small) {
+    a[href="/activity"], a[href*="/store"], a[href*="/library"],
+    a[href*="/channels/@me"]:not(.avatar-small) {
       background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
       background-position: center;
       background-repeat: no-repeat;
