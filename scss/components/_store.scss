@@ -13,6 +13,10 @@ div[class*="homeWrapper-"] {
     &:hover { background: var(--dark-highlight); }
   }
 
+  div[class*="itemBackground-"] {
+    &::before { background-image: linear-gradient(transparent, var(--dark-secondary)); }
+  }
+
   button[class*="viewAllGamesButton"] { margin: 20px auto 0; }
   footer[class*="footer-"] {
     background-color: var(--dark-secondary);
@@ -25,7 +29,8 @@ div[class*="listing-"] {
   background: var(--dark-secondary);
 
   div[class*="root-"], div[class*="row-"],
-  div[class*="card-"], div[class*="bodySection-"] {
+  div[class*="card-"], div[class*="bodySection-"],
+  div[class*="guildInvite"] div[class*="content-"] {
     background: var(--dark-primary);
   }
 }
