@@ -1,3 +1,8 @@
+// Get all assets first
+@import 'assets/animation';
+@import 'assets/browser';
+
+// Everything else
 @import 'components/chat';
 @import 'components/global';
 @import 'components/header';

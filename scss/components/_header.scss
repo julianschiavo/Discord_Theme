@@ -1,6 +1,3 @@
-@import '../assets/browser';
-@import '../assets/animation';
-
 .private-channel-recipients-invite,
 .messages-popout-wrap {
   @include animation(popout-content 400ms cubic-bezier(.3, .3, 0, 1));

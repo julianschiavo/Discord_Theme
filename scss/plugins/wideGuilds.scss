@@ -118,3 +118,12 @@ div[class*="guildsWrapper-"] {
 
 div[class*="guildSeparator-"] { width: 140px; }
 .new-messages-indicator { display: none; }
+
+// This shit is needed to fix the stupid notification ;-;
+.theme-dark div[class*="guildsWrapper-"] div[class*="guilds-"] div[class*="guild-"][class*="unread-"]::before {
+  transform: translate(60px, -20px) scale(1.2);
+}
+
+.theme-dark div[class*="guildsWrapper-"] div[class*="guilds-"] div[class*="guild-"][class*="selected-"][class*="unread-"]::before {
+  transform: translate(45px, 4px) scale(1.2);
+}

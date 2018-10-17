@@ -2,6 +2,11 @@
 [Click here for preview](https://i.alexflipnote.xyz/9a565b.png)
 ```css
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/transparent.css";
+:root {
+  --transparent-highlight: rgba(0, 0, 0, .6);
+  --transparent-primary: rgba(0, 0, 0, .4);
+  --transparent-secondary: rgba(0, 0, 0, .2);
+}
 /* Settings */
 .app { background: rgba(0, 0, 0, 0.75); }
 body {
@@ -34,7 +39,6 @@ You can also change the background image in NSFW channels. Enjoy!
   --light-secondary: #ecf0f1;
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
-  --nsfw-image: url("https://i.alexflipnote.xyz/c2472b.png");
 }
 ```
 

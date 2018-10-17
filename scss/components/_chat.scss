@@ -1,5 +1,3 @@
-@import '../assets/animation';
-
 // Title Section
 .theme-dark .chat .title-wrap {
   background-color: var(--dark-highlight);
@@ -378,7 +376,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 
 // NSFW Filter
-.theme-dark div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"] {
+.theme-dark div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"], div[class*="gatedContent-"] {
   background-color: var(--dark-secondary);
 
   div[class*="image-"] {
@@ -435,7 +433,7 @@ div[class*='privateChannels-'] {
     padding-right: 8px;
 
     &::-webkit-scrollbar {
-      display: none!important;
+      display: none !important;
     }
   }
 

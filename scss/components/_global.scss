@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.1.0.2';
+    content: 'Theme version: 1.2.0.1';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -23,25 +23,20 @@
   --notif: #7a78bd;
 }
 
-.theme-dark {
-  // div[class*="content-"] { background-color: var(--dark-primary); }
-  div[class*="footer-"] {
-    background-color: var(--dark-secondary);
-    div[class*="content-"] { background: var(--dark-secondary); }
-  }
+.theme-dark div[class*="footer-"] {
+  background-color: var(--dark-secondary);
+  div[class*="content-"] { background: var(--dark-secondary); }
+}
 
-  .messages-wrapper .messages .divider span {
-    background-color: transparent;
-  }
+.theme-dark .messages-wrapper .messages .divider span {
+  background-color: transparent;
 }
 
 
 .mention {
   background-color: rgba(115, 139, 215, .2);
 
-  &:hover {
-    background-color: rgba(115, 139, 215, .7);
-  }
+  &:hover { background-color: rgba(115, 139, 215, .7); }
 }
 
 ::selection {

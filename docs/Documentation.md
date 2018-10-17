@@ -3,23 +3,6 @@
 
 ---
 
-## Contributing on theme
-Template for each object
-> Some stuff between dark and light theme can't be separated, like Server Settings.
-
-```css
-/* Target */
-/* BOTH */
-.stuff
-/* DARK */
-.theme-dark .stuff
-/* LIGHT */
-.theme-light .stuff
-/* END: Target */
-```
-
----
-
 ## Installing plugins
 To install plugins to **autotheme.css**, you must use **@import**.
 More information can be found [Here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)

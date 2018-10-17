@@ -1,5 +1,3 @@
-@import '../assets/animation';
-
 @include keyframes(pulse) {
   0% { @include transform(scale(1)); }
   50% { @include transform(scale(1.1)); }
