@@ -48,6 +48,12 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/wideGuilds.css";
 ```
 
+### No animations
+Removes most heavily noticeable and custom animations from the theme
+```css
+@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/noAnimation.css";
+```
+
 ### Use Default Discord Dark Theme Colors and Notifications (Community made)
 [Click here for preview](https://i.alexflipnote.xyz/cf921f.png)
 ```css
