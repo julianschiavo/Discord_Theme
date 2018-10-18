@@ -34,13 +34,29 @@ set line=----------------------------------------
   echo %line%
   echo Choose an option
   echo 1 - Install BeautifulDiscord and Theme
-  echo 2 - Update BeautifulDiscord and Theme (Requires that you've already installed)
-  echo 3 - Enable theme after update (Sometimes discord removes theme after you've updated)
-  echo 4 - Uninstall Theme from Discord
+  echo 2 - Update BeautifulDiscord (In case the theme does not want to apply at all)
+  echo 3 - Update BeautifulDiscord and Theme (Requires that you've already installed)
+  echo 4 - Enable theme after update (Sometimes discord removes theme after you've updated)
+  echo 5 - Uninstall Theme from Discord
   echo %line%
 
   set /p target="> "
+
+:TheOptions
   if {%target%}=={2} (
+    cls
+    echo Update list:
+    echo   - Updating BeautifulDiscord    Updating...
+    echo %line%
+    pip install -U %BDLink% --upgrade
+    cls
+    echo Successfully Updated!
+    echo %line%
+    pause
+    exit
+  )
+
+  if {%target%}=={3} (
     cls
     echo Update list:
     echo   - Updating BeautifulDiscord    Updating...
@@ -62,7 +78,7 @@ set line=----------------------------------------
     exit
   )
 
-  if {%target%}=={3} (
+  if {%target%}=={4} (
     cls
     echo Update list:
     echo   - Inserting Discord_Theme      Inserting...
@@ -75,7 +91,7 @@ set line=----------------------------------------
     exit
   )
 
-  if {%target%}=={4} (
+  if {%target%}=={5} (
     cls
     echo Uninstall list:
     echo   - Reverte Discord_Theme        Unintalling...
