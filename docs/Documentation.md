@@ -12,7 +12,7 @@ More information can be found [Here](https://github.com/AlexFlipnote/Discord_The
 ---
 
 ## Making a plugin
-By making a plugin to **AlexFlipnote/Discord_Theme**, you agree that your file will be used and *owned* by **Discord_Theme**, you can by any will, add credits to your work. All plugins have to be in **.css** format, meaning you're not allowed to use anything else (We might support more like **SCSS** and **LESS**)
+By making a plugin to **AlexFlipnote/Discord_Theme**, you agree that your file will be used and *owned* by **Discord_Theme**, you can by any will, add credits to your work. All plugins have to be in **.scss** format, meaning you're not allowed to use anything else, that includes just normal **.css**
 
 Remember that everything you make **must** be documented in [Plugins.md](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md) to provide easier access for users who wish to use either our or your creation.
 
