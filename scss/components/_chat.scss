@@ -445,6 +445,7 @@ div[class*='privateChannels-'] {
       width: 25%;
 
       div[class*="wrapper-"] {
+        background: var(--notif);
         position: absolute;
         right: 0;
         top: 0;
