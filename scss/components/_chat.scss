@@ -444,6 +444,12 @@ div[class*='privateChannels-'] {
       position: relative;
       width: 25%;
 
+      div[class*="wrapper-"] {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
       a[href="/activity"], a[href*="/library"], a[href*="/store"], a[href="/channels/@me"] {
         &:hover div[class*='name'] {
           @include animation(tooltip-bottom-anim 200ms ease-in-out);
