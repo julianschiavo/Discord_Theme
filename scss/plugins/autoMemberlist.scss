@@ -27,7 +27,10 @@ div[class*="membersWrap"] {
 	}
 }
 
-.chat:not(.private) .content { padding-right: 90px; }
+div[class*="chat-"] div[class*="content-"] {
+  padding-right: 90px;
+  div[class*="content-"] { padding-right: 0; }
+}
 
 @keyframes fadein {
   from {opacity: 0; }
