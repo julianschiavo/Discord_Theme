@@ -7,6 +7,16 @@
 div[class*="appMount-"] { background: transparent; }
 
 .theme-dark {
+  // User account
+  div[class*="cardPrimaryEditable-"], div[class*="authedApp-"] {
+    background: var(--transparent-primary);
+  }
+
+  div[class*="userSettingsAccount-"], .ui-standard-sidebar-view {
+    div[class*="cardPrimary-"] { background: var(--transparent-primary); }
+  }
+
+  // A bunch of transparent shit
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
   div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"],
