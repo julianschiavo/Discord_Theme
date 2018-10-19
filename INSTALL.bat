@@ -48,7 +48,7 @@ set line=----------------------------------------
     echo Update list:
     echo   - Updating BeautifulDiscord    Updating...
     echo %line%
-    pip install -U %BDLink% --upgrade
+    python -m pip install -U %BDLink% --upgrade
     cls
     echo Successfully Updated!
     echo %line%
@@ -62,7 +62,7 @@ set line=----------------------------------------
     echo   - Updating BeautifulDiscord    Updating...
     echo   - Updating Discord_Theme       Waiting...
     echo %line%
-    pip install -U %BDLink% --upgrade
+    python -m pip install -U %BDLink% --upgrade
     cd %UserProfile%\Documents && mkdir DiscordTheme && cd DiscordTheme && powershell -Command "Invoke-WebRequest %Theme% -OutFile autotheme.css"
 
     cls
@@ -144,7 +144,7 @@ set line=----------------------------------------
   echo   - Discord Theme       Waiting...
   echo   - Inserting themed    Waiting...
   echo %line%
-  pip install -U %BDLink%
+  python -m pip install -U %BDLink%
 
   :: Download theme
   cls
