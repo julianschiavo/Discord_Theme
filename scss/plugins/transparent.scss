@@ -30,6 +30,8 @@ div[class*="appMount-"] { background: transparent; }
     div[class*="headerBar-"], .friends-table, div[class*="scrollerWrap-"] {
       background: transparent;
     }
+
+    .friends-empty div[class*="wrapper-"] { background: transparent; }
   }
 
   div[class*="homeWrapper-"], div[class*="gameLibrary-"], div[class*="applicationStore-"] {
@@ -138,8 +140,9 @@ div[class*="homeWrapper-"] {
 div[class*="listing-"] {
   background: var(--transparent-secondary);
 
-  div[class*="root-"], div[class*="row-"],
-  div[class*="card-"], div[class*="bodySection-"],
+  div[class*="row-"] { background: transparent; }
+
+  div[class*="root-"], div[class*="card-"], div[class*="bodySection-"],
   div[class*="guildInvite"] div[class*="content-"] {
     background: var(--transparent-primary);
   }
