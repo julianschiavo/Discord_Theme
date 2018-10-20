@@ -1,7 +1,7 @@
 ### Discord Background
 [Click here for preview](https://i.alexflipnote.xyz/9a565b.png)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/transparent.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/transparent.css";
 :root {
   --transparent-highlight: rgba(0, 0, 0, .6);
   --transparent-primary: rgba(0, 0, 0, .4);
@@ -20,7 +20,7 @@ body {
 ### DiscordInjections Support
 [Click here to know more](https://github.com/DiscordInjections/Plugins)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/DiscordInjections.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/DiscordInjections.css";
 ```
 
 ### Changing colours
@@ -45,36 +45,36 @@ You can also change the background image in NSFW channels. Enjoy!
 ### 2 Guilds/Line (Community made)
 [Click here for preview](https://i.alexflipnote.xyz/60b9cb.png)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/wideGuilds.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/wideGuilds.css";
 ```
 
 ### No animations
 Removes most heavily noticeable and custom animations from the theme
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/noAnimation.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/noAnimation.css";
 ```
 
 ### Use Default Discord Dark Theme Colors and Notifications (Community made)
 [Click here for preview](https://i.alexflipnote.xyz/cf921f.png)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/defDarkColors.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/defDarkColors.css";
 ```
 
 ### [Early Access] More Animations
 Just simply more animations everywhere
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/animations.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/animations.css";
 ```
 
 ### Auto-hide Member list in Guilds
 [Click here for preview](https://i.alexflipnote.xyz/cc78b7.gif)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/autoMemberlist.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/autoMemberlist.css";
 ```
 
 ### Customize codeblocks
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/highlightJS.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/highlightJS.css";
 :root {
   --code-font: firacode;
   --code-bg: #1D1F21;
@@ -124,13 +124,13 @@ Just simply more animations everywhere
 ### [BETA] Small codeblocks
 [Click here for preview](https://cdn.discordapp.com/attachments/298834205180166145/299626124017664000/preview.gif)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/CodeblockHeight.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/CodeblockHeight.css";
 ```
 
 ### Custom Status Picker
 [Click here for preview](https://light-theme-hurts.my-ey.es/0245f1.png)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/customDnD.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/customDnD.css";
 :root {
   /* Status names */
   --status-online-title: "Online";
@@ -147,22 +147,22 @@ Just simply more animations everywhere
 ### Hidden search bar
 [Preview](https://i.alexflipnote.xyz/ec15b8.gif)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/hideSearch.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/hideSearch.css";
 ```
 
 ### [BETA] Status Popout
 [Preview](https://light-theme-hurts.my-ey.es/2fe518.png)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/statusPopout.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/statusPopout.css";
 ```
 
 ### Remove blocked messages
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/blocked.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/blocked.css";
 ```
 
 ### Restore the status picker from before the rewrite
 [Click here for preview](http://i.imgur.com/PjKdIla.gif)
 ```css
-@import "https://rawgit.com/AlexFlipnote/Discord_Theme/master/plugins/minimalStatusPicker.css";
+@import "https://discordtheme.alexflipnote.xyz/plugins/minimalStatusPicker.css";
 ```
