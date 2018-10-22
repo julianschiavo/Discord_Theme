@@ -9,6 +9,15 @@ More information can be found [Here](https://github.com/AlexFlipnote/Discord_The
 <br>Example:<br>
 ![Preview](https://i.alexflipnote.xyz/b8f707.png)
 
+You can also install the theme by using the **INSTALL.bat** that is located in the root folder.
+By using it, you agree to it installing all needed things listed below:
+- Chocolately
+- Python (latest)
+  - beautifuldiscord
+
+The installer will also make a new folder in your **Documents** called **DiscordTheme**.
+Inside there you will find a new file called **autotheme.css**
+You can customize the file however you want, save it and see the changes happen instantly to your Discord client.
 ---
 
 ## Making a plugin
