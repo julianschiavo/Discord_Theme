@@ -180,6 +180,8 @@ div[class*="modal-"] {
       background-color: var(--accent);
       filter: brightness(75%);
     }
+
+    div[class*="contents-"] { color: #fff; }
   }
 
   div[class*="headerName-"], div[class*="headerOption-"] { background: transparent; }
