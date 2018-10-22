@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.2.0.4';
+    content: 'Theme version: 1.2.0.6';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -122,6 +122,18 @@ div[class*="nameHoveredCollapsed"] {
   }
 }
 
+// Checkmarks and sliders
+div[class*="checkbox-"][class*="checked-"] {
+  background: var(--accent);
+  svg path, svg polyline { stroke: #fff !important; }
+
+  &[style*="background-color: rgba(67, 181, 129, 0.15);"] { background: var(--accent) !important; }
+}
+
+div[class*="valueChecked-"][class*="switchEnabled-"] {
+  background: var(--accent);
+}
+
 
 // Modal
 .theme-dark div[class*="inner-"] form[class*="modal-"] {
@@ -159,6 +171,18 @@ div[class*="modal-"] {
       div[class*="message-"] { background: transparent; }
     }
   }
+
+  button[class*="colorBrand-"] {
+    background-color: var(--accent);
+    transition: filter .25s ease;
+
+    &:hover {
+      background-color: var(--accent);
+      filter: brightness(75%);
+    }
+  }
+
+  div[class*="headerName-"], div[class*="headerOption-"] { background: transparent; }
 }
 
 // Popouts

@@ -100,12 +100,15 @@ div[class*="side-"] {
   }
 }
 
-.theme-dark div[class*="cardPrimaryEditable-"][style*="background-color: rgb(114, 137, 218);"] {
-  background-color: var(--accent) !important;
-  border-color: var(--accent) !important;
+.theme-dark div[class*="cardPrimaryEditable-"] {
+  &[style*="background-color: rgb(114, 137, 218);"] {
+    background-color: var(--accent) !important;
+    border-color: transparent !important;
+  }
 
-  div[class*="checkbox-"] {
-    border-color: var(--accent) !important;
+  div[class*="checkbox-"][class*="checked-"] {
+    background: #fff !important;
+    border-color: transparent !important;
     polyline { stroke: var(--accent) !important; }
   }
 }

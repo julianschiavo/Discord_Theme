@@ -801,7 +801,7 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 
 // Help popout | F1 Key
 .need-help-modal {
-  a, ul li { color: #fff; }
+  a, ul li { color: var(--accent); }
   .header {
     background-color: var(--dark-highlight);
     border-radius: 0;
@@ -841,7 +841,8 @@ div[class*="backdrop-"] + div[class*="modal-"] {
   }
 
   // Splitted with Deprecated
-  &.deprecated {
+  &.form.deprecated {
+    a, ul li { color: var(--accent); }
     .header {
       background-color: var(--dark-highlight);
 

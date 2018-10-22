@@ -3,7 +3,11 @@
 .ui-text-input .input:focus { border-color: var(--accent) !important; }
 .ui-switch-checkbox:checked+.ui-switch { background: var(--accent); }
 .guild-settings-modal-emoji .no-emoji p { color: #808080; }
-.user-settings-games .now-playing-add .link:hover { color: var(--accent); }
+
+.user-settings-games {
+  .now-playing-add .link:hover { color: var(--accent); }
+  div[class*="contents-"] { color: var(--accent); }
+}
 
 .ui-standard-sidebar-view {
   .content-column, .custom-column {
@@ -104,23 +108,11 @@ div[class*="paymentHistory-"] {
   .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: var(--accent); }
 }
 
-// Light theme
-.theme-light {
-  .ui-standard-sidebar-view {
-    .sidebar-region .scroller { background-color: var(--light-primary); }
-    .content-region .scroller { background-color: var(--light-secondary); }
-  }
+div[role="progressbar"] {
+  circle[class*="foreground-"] { stroke: var(--accent); }
+}
 
-  .ui-tab-bar.SIDE {
-    .ui-tab-bar-item.brand { color: #9b59b6; }
-    .ui-tab-bar-header { color: #000; }
-  }
-
-  .ui-card-primary {
-    background: transparent;
-    background-color: transparent;
-    border-color: transparent;
-  }
-
-  .ui-tab-bar-item:hover { background-color: var(--dark-secondary); color: var(--light-primary); }
+div[class*="notificationSettings-"] {
+  div[class*="wrapper-"] { border: 2px solid var(--accent); }
+  label[class*="selected-"] { background: var(--accent); }
 }
