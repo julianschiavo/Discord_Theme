@@ -50,8 +50,15 @@ div[class*="appMount-"] { background: transparent; }
   div[class*="standardSidebarView-"] {
     background: transparent;
 
-    div[class*="sidebarRegion-"] { background: var(--transparent-highlight); }
-    div[class*="contentRegion-"] { background: var(--transparent-primary); }
+    div[class*="sidebarRegion-"] {
+      background: transparent;
+      div[class*="scroller-"] { background: var(--transparent-highlight); }
+    }
+
+    div[class*="contentRegion-"] {
+      background: transparent;
+      div[class*="scroller-"] { background: var(--transparent-primary); }
+    }
   }
 
   div[class*="channels-"] {
