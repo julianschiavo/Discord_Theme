@@ -140,6 +140,7 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
   background: var(--dark-highlight);
 
   button[class*="colorBrand-"] { background: var(--accent); }
+
   h2[class*="title-"] {
     color: #e74c3c;
     font-weight: bold;
@@ -175,6 +176,8 @@ div[class*="modal-"] {
   button[class*="colorBrand-"] {
     background-color: var(--accent);
     transition: filter .25s ease;
+
+    &[class*="emojiButton-"] { background-color: transparent; }
 
     &:hover {
       background-color: var(--accent);
