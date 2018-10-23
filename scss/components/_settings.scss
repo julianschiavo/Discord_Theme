@@ -70,10 +70,8 @@ div[class*="side-"] {
 
 .theme-dark div[class*="slider-"] div[class*="barFill-"] { background-color: var(--accent); }
 
-.ui-standard-sidebar-view {
+div[class*="standardSidebarView-"] {
   button[class*="lookFilled-"], div[class*="valueChecked-"] { background-color: var(--accent); }
-
-
 
   div[class*="itemDefaultSelected-"] {
     background: var(--accent);
@@ -92,7 +90,7 @@ div[class*="side-"] {
     z-index: 2;
   }
 
-  div[class*="auditLog-"] {
+  div[class*="auditLog-"], .guild-settings-audit-logs {
     border: 0;
     div[class*="divider-"] { height: 0; }
     div[class*="headerDefault-"], div[class*="headerClickable-"] { background: var(--dark-secondary); }
@@ -287,31 +285,14 @@ div[class*="userSettingsAccount-"] {
   }
 }
 
-.guild-settings-modal-emoji {
-  .emoji-uploader .emoji-uploader-username { color: #fff; }
-  .guild-settings-modal-emoji-header p { color: rgba(255, 255, 255, .6); }
-  .emoji-row {
-    border-bottom: 0;
+.emoji-uploader .emoji-uploader-username { color: #fff; }
+.guild-settings-modal-emoji-header p { color: rgba(255, 255, 255, .6); }
+.emoji-row {
+  border-bottom: 0;
 
-    .emoji-name {
-      background-color: var(--dark-primary);
-      color: #fff;
-    }
-  }
-}
-
-.guild-settings-modal-members {
-  background-color: var(--dark-secondary);
-  h6 { color: #808080; }
-  .guild-settings-modal-members-header { border-bottom: 0; }
-  .guild-settings-modal-members-footer {
-    border-top: 1px solid #808080;
-    a { color: var(--accent); }
-  }
-
-  .guild-settings-modal-list {
-    .member .member-username { color: #808080; }
-    .member+.member { border-top: 0; }
+  .emoji-name {
+    background-color: var(--dark-primary);
+    color: #fff;
   }
 }
 
@@ -453,17 +434,14 @@ div[class*="userSettingsAccount-"] {
 .webhook-modal-body { background: var(--dark-primary); }
 
 // Change Notice
-
-.notice-region {
+div[class*="noticeRegion-"] {
   margin-left: 10%;
-  padding: 0 !important;
 
   div[class*="container-"] {
     @include transition(all 200s ease-in-out);
-    background-color: var(--dark-highlight) !important;
+    background: var(--dark-highlight) !important;
     border-radius: 5px 5px 0 0;
     box-shadow: none;
-    height: 100px;
     margin-bottom: -48px;
 
     // On screen shake

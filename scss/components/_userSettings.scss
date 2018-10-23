@@ -9,14 +9,14 @@
   div[class*="contents-"] { color: var(--accent); }
 }
 
-.ui-standard-sidebar-view {
+div[class*="standardSidebarView-"] {
   .content-column, .custom-column {
     max-width: 100%;
   }
 
   div[class*="footer-"] { background: transparent; }
 
-  .sidebar-region { flex: 1 0 0; }
+  div[class*="sidebarRegion-"] { flex: 1 0 0; }
 }
 
 .ui-sidebar-scrollable+.ui-content { max-width: 100%; }
@@ -92,17 +92,20 @@ div[class*="paymentHistory-"] {
 
 .theme-dark {
   div[class*="user-info-viewing cardPrimary-"] { background: transparent; border-color: transparent; }
-  .ui-card-primary {
+  div[class*="cardPrimary-"] {
     background: transparent;
     background-color: transparent;
     border-color: transparent;
-
-    &.editable { background: rgba(0, 0, 0, 0); }
   }
 
-  .ui-standard-sidebar-view {
-    .sidebar-region, .sidebar-region .scroller { background-color: var(--dark-highlight); }
-    .content-region, .content-region .scroller { background-color: var(--dark-primary); }
+  div[class*="cardPrimaryEditable-"] {
+    background: rgba(0, 0, 0, 0);
+    border-color: transparent;
+  }
+
+  div[class*="standardSidebarView-"] {
+    div[class*="sidebarRegion-"], div[class*="sidebarRegion-"] div[class*="scroller-"] { background-color: var(--dark-highlight); }
+    div[class*="contentRegion-"], div[class*="contentRegion-"] div[class*="scroller-"] { background-color: var(--dark-primary); }
   }
 
   .ui-tab-bar.SIDE .ui-tab-bar-item.brand { color: var(--accent); }

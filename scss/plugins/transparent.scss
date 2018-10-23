@@ -12,7 +12,7 @@ div[class*="appMount-"] { background: transparent; }
     background: var(--transparent-primary);
   }
 
-  div[class*="userSettingsAccount-"], .ui-standard-sidebar-view {
+  div[class*="userSettingsAccount-"], div[class*="standardSidebarView-"] {
     div[class*="cardPrimary-"] { background: var(--transparent-primary); }
   }
 
@@ -47,11 +47,11 @@ div[class*="appMount-"] { background: transparent; }
     background: var(--transparent-secondary);
   }
 
-  .ui-standard-sidebar-view {
+  div[class*="standardSidebarView-"] {
     background: transparent;
 
-    .sidebar-region { background: var(--transparent-highlight); }
-    .content-region { background: var(--transparent-primary); }
+    div[class*="sidebarRegion-"] { background: var(--transparent-highlight); }
+    div[class*="contentRegion-"] { background: var(--transparent-primary); }
   }
 
   div[class*="channels-"] {
