@@ -1,7 +1,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: 1.2.0.8';
+    content: 'Theme version: 1.2.0.9';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -178,6 +178,14 @@ div[class*="modal-"] {
     transition: filter .25s ease;
 
     &[class*="emojiButton-"] { background-color: transparent; }
+    &[class*="close-"] {
+      background: transparent;
+
+      &:hover {
+        background: transparent;
+        filter: none;
+      }
+    }
 
     &:hover {
       background-color: var(--accent);
