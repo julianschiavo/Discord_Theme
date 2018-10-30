@@ -57,7 +57,14 @@
 }
 
 div[class*="userPopout-"] {
+  // NOTE: Work on this more
   @include animation(user-popout-anim 350ms ease-in-out);
+  display: flex;
+  flex: 1 100%;
+  flex-direction: row;
+  flex-flow: column wrap;
+  // width: 350px;
+
   .body { background: var(--dark-primary); }
   .footer { background: var(--dark-secondary); border-top: 0; }
 
@@ -65,12 +72,6 @@ div[class*="userPopout-"] {
 
   div[class*="headerPlaying-"] {
     background: var(--dark-highlight);
-
-    div[class*="activity-"] div[class*="headerText-"] {
-      font-size: 14px;
-      letter-spacing: 1px;
-      text-transform: none;
-    }
   }
 
   div[class*="body-"] {
@@ -84,6 +85,7 @@ div[class*="userPopout-"] {
 
   div[class*="footer-"] {
     background: var(--dark-secondary);
+    flex-flow: row wrap;
 
     input[class*="quickMessage-"] {
       background-color: transparent;
@@ -101,6 +103,12 @@ div[class*="userPopout-"] {
       margin: 0;
     }
   }
+}
+
+.theme-dark div[class*="activity-"] div[class*="headerText-"] {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: none;
 }
 
 div[class*="avatarStatusNormal-"] { border: 0; }
