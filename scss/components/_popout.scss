@@ -740,7 +740,7 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 
 // Help popout | F1 Key
 div[class*="headerBar-"] svg[name="QuestionMark"] {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgMTRjLTEuNjYgMC0zIDEuMzQtMyAzIDAgMS4zMS0xLjE2IDItMiAyIC45MiAxLjIyIDIuNDkgMiA0IDIgMi4yMSAwIDQtMS43OSA0LTQgMC0xLjY2LTEuMzQtMy0zLTN6bTEzLjcxLTkuMzdsLTEuMzQtMS4zNGMtLjM5LS4zOS0xLjAyLS4zOS0xLjQxIDBMOSAxMi4yNSAxMS43NSAxNWw4Ljk2LTguOTZjLjM5LS4zOS4zOS0xLjAyIDAtMS40MXoiLz48L3N2Zz4=");
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgMTRjLTEuNjYgMC0zIDEuMzQtMyAzIDAgMS4zMS0xLjE2IDItMiAyIC45MiAxLjIyIDIuNDkgMiA0IDIgMi4yMSAwIDQtMS43OSA0LTQgMC0xLjY2LTEuMzQtMy0zLTN6bTEzLjcxLTkuMzdsLTEuMzQtMS4zNGMtLjM5LS4zOS0xLjAyLS4zOS0xLjQxIDBMOSAxMi4yNSAxMS43NSAxNWw4Ljk2LTguOTZjLjM5LS4zOS4zOS0xLjAyIDAtMS40MXoiLz48L3N2Zz4=');
 
   path {
     display: none;
@@ -749,22 +749,21 @@ div[class*="headerBar-"] svg[name="QuestionMark"] {
 
 .need-help-modal, .need-help-modal.form.deprecated {
   a, ul li { color: var(--accent); }
+
   .header {
     background-color: var(--dark-highlight);
-    height: 70px;
     border-radius: 0;
+    height: 70px;
 
-    input {
-      display: none;
-    }
+    input { display: none; }
 
     h1 {
-      text-align: center;
       font-size: 0;
       margin: 0;
+      text-align: center;
 
-      &:before {
-        content: "Discord_Theme";
+      &::before {
+        content: 'Discord_Theme';
         font-size: 22px;
       }
     }
@@ -778,39 +777,36 @@ div[class*="headerBar-"] svg[name="QuestionMark"] {
   }
 
   .form-inner {
-    padding: 15px 38px;
     align-items: initial;
     justify-content: initial;
     min-height: 120px;
+    padding: 15px 38px;
 
     li {
-      color: #ccc!important;
+      color: #ccc !important;
       text-align: center;
 
-      a {
-        display: none;
-      }
+      a { display: none; }
 
       &:nth-child(1) {
-        display: block;
-        color: #fff!important;
-        width: 100%;
-        padding-bottom: 10px;
         border-bottom: 1px var(--dark-secondary) solid;
+        color: #fff !important;
+        display: block;
         margin-bottom: 15px;
+        padding-bottom: 10px;
+        width: 100%;
       }
 
-      &:nth-child(1)::before {
-        content: "https://github.com/AlexFlipnote/Discord_Theme";
+      $helper-text: (
+        'https://github.com/AlexFlipnote/Discord_Theme',
+        'Made with 💙 by AlexFlipnote#0001 and contributors',
+        'Support server: https://discord.gg/DpxkY3x'
+      );
+
+      @for $x from 1 through length($helper-text) {
+        &:nth-child(#{$x})::before { content: nth($helper-text, $x); }
       }
 
-      &:nth-child(2)::before {
-        content: "Made with 💙 by AlexFlipnote#0001 and contributors"
-      }
-
-      &:nth-child(3)::before {
-        content: "Support server: https://discord.gg/DpxkY3x"
-      }
     }
   }
 
@@ -1033,15 +1029,15 @@ div[class*="attachPopout-"] {
 // RTC Popout
 div[class*="popout"] {
   header {
-    background-color: var(--dark-primary)!important;
+    background-color: var(--dark-primary) !important;
   }
 
   section {
-    background-color: var(--dark-secondary)!important;
-    a { color: var(--accent)!important; }
+    background-color: var(--dark-secondary) !important;
+    a { color: var(--accent) !important; }
   }
 
   &::after {
-    border-top-color: var(--dark-secondary)!important;
+    border-top-color: var(--dark-secondary) !important;
   }
 }
