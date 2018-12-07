@@ -36,7 +36,27 @@ div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
 }
 
 .theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
-.theme-dark {
+
+.theme-dark { // scss-lint:disable MergeableSelector
+  .chat .jump-to-present-bar { background: var(--accent); }
+
+  span[class*="spoiler-"] {
+    background: rgba(#000, .2);
+    padding: 0 .4em;
+
+    &[class*="hidden-"] {
+      background: var(--dark-highlight);
+      border-radius: 2px;
+
+      span { display: none; }
+      &::before { content: '[ Spoiler ]'; }
+    }
+  }
+
+  #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: var(--dark-highlight);
+  }
+
   div[class*="headerBar-"] {
     background: var(--dark-highlight);
     padding-bottom: 6px;
@@ -86,8 +106,6 @@ div[class*="chat-"] {
   background-color: var(--dark-secondary) !important;
 }
 
-.theme-dark .chat .jump-to-present-bar { background: var(--accent); }
-
 .theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"],
 .theme-dark .messages-wrapper .messages .message-group-blocked {
   background: var(--dark-primary);
@@ -112,11 +130,6 @@ div[class*="chat-"] {
   background-color: var(--dark-secondary);
 }
 
-.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
-  background-color: var(--dark-highlight);
-}
-
-
 // Discord Invites
 div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   background: var(--dark-primary);
@@ -131,14 +144,14 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
 
 // Spotify invite
-.theme-dark div[class*="invite-"] {
+.theme-dark div[class*="invite-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-primary);
   border-color: transparent;
 }
 
 
 // Discord Attachment
-.theme-dark div[class*="attachment-"] {
+.theme-dark div[class*="attachment-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-primary);
   border-color: transparent;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
@@ -196,7 +209,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   transition: all 300ms ease;
 }
 
-.theme-dark .channel-textarea-upload {
+.theme-dark .channel-textarea-upload { // scss-lint:disable MergeableSelector
   $file-upload: 'https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg';
   background: url($file-upload) 50% no-repeat;
   opacity: .5;
@@ -244,7 +257,7 @@ div[class*="autocomplete-"] {
 .invite-button { background: rgba(0, 0, 0, .2); border: 0; }
 .invite-button-header { color: #fff; }
 
-.theme-dark .channel-textarea-inner {
+.theme-dark .channel-textarea-inner { // scss-lint:disable MergeableSelector
   background-color: transparent;
   .channel-textarea-upload:hover { background-color: transparent; }
 }
@@ -268,13 +281,13 @@ div[class*="autocomplete-"] {
   }
 }
 
-.theme-dark #autocomplete-popout {
+.theme-dark #autocomplete-popout { // scss-lint:disable MergeableSelector
   .row { @include transition(all 50ms ease); }
   .row.selected, #autocomplete-popout .row:hover { background: #181818; }
   .scroller::-webkit-scrollbar { display: none; }
 }
 
-.theme-dark div[class*="autocomplete-"] {
+.theme-dark div[class*="autocomplete-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-primary) !important;
   header { background-color: var(--dark-highlight) !important; }
   ul { background-color: var(--dark-primary) !important; }
@@ -284,9 +297,12 @@ div[class*="autocomplete-"] {
   }
 }
 
-.theme-dark .invite-button { background-color: rgba(0, 0, 0, .2); border-color: rgba(0, 0, 0, 0); }
+.theme-dark .invite-button { // scss-lint:disable MergeableSelector
+  background-color: rgba(0, 0, 0, .2);
+  border-color: transparent;
+}
 
-.theme-dark .containerCozy-jafyvG {
+.theme-dark .containerCozy-jafyvG { // scss-lint:disable MergeableSelector
   &.is-local-bot-message {
     background-image: none;
     box-shadow: none;
@@ -336,7 +352,9 @@ div[class*="autocomplete-"] {
   div[class*="channelTextArea-"] { margin-top: 10px; }
 }
 
-.theme-dark .channel-text-area-default div[class*="autocomplete-"] { background: var(--dark-primary); }
+.theme-dark .channel-text-area-default div[class*="autocomplete-"] { // scss-lint:disable MergeableSelector
+  background: var(--dark-primary);
+}
 
 .channel-text-area-default, div[class*="channelTextArea-"] {
   margin: 0;
@@ -388,7 +406,9 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
 
 
 // Account information
-.theme-dark #rtc-connection-popout hr { border-color: var(--dark-primary); }
+.theme-dark #rtc-connection-popout hr { // scss-lint:disable MergeableSelector
+  border-color: var(--dark-primary);
+}
 
 .account {
   .btn { background: none; }
@@ -481,12 +501,12 @@ div[class*='privateChannels-'] {
 
 }
 
-.theme-dark div[class*="videoHeight-"] {
+.theme-dark div[class*="videoHeight-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight);
   div[class*="video-"] { background-color: transparent; }
 }
 
-.theme-dark div[class*="noChannel-"] {
+.theme-dark div[class*="noChannel-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-secondary);
 }
 
@@ -555,7 +575,7 @@ div[class*='privateChannels-'] {
   }
 }
 
-.theme-dark #friends {
+.theme-dark #friends { // scss-lint:disable MergeableSelector
   .tab-bar .tab-bar-item.tab-bar-item-primary {
     background-color: #2ecc71;
     transition: all 400ms ease;
@@ -575,7 +595,7 @@ div[class*='privateChannels-'] {
 }
 
 
-.theme-dark div[class*="activityFeed-"] {
+.theme-dark div[class*="activityFeed-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-secondary);
 
   div[class*="article-"] { background: var(--dark-primary); }
@@ -629,7 +649,7 @@ div[class*='privateChannels-'] {
   div[class*="emptyState-2-"] { background: var(--dark-primary); }
 }
 
-.theme-dark div[class*="gamePreview-"] {
+.theme-dark div[class*="gamePreview-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
 
   div[class*="body-"] {
@@ -722,7 +742,7 @@ div[class*="container-"] {
   }
 }
 
-.theme-dark div[class*="membersWrap-"] {
+.theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
   div[class*="members-"] { background-color: var(--dark-secondary); }
   div[class*="content"] { background-color: var(--dark-secondary); }
 
@@ -798,7 +818,7 @@ div[class*="channels-"] {
 
 
 // Channel notice
-.theme-dark .channel-notices .channel-notice {
+.theme-dark .channel-notices .channel-notice { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight);
 
   .message {
@@ -819,7 +839,7 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
   z-index: 100;
 }
 
-.theme-dark div[class*="guildsWrapper-"] {
+.theme-dark div[class*="guildsWrapper-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
 
   div[class*="guilds-"] {
@@ -935,7 +955,7 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
 
 // Channel Notices
 
-.theme-dark div[class*="channelNotice-"] {
+.theme-dark div[class*="channelNotice-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight) !important;
 
   button[class*="btn-"] {
