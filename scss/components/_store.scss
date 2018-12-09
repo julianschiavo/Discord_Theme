@@ -8,7 +8,7 @@ div[class*="emptyStateLarge-"] { background: var(--dark-secondary); }
 div[class*="homeWrapper-"] {
   div[class*="home-"] { background: var(--dark-secondary); }
 
-  div[class*="tileWrapper-"] {
+  a[class*="tileWrapper-"] {
     background: var(--dark-primary);
     &:hover { background: var(--dark-highlight); }
   }
@@ -35,6 +35,10 @@ div[class*="listing-"] {
   }
 }
 
+.theme-dark figure[class*="tileMedia-"] {
+  background: var(--dark-primary);
+}
+
 .theme-dark div[class*="gameLibrary-"] {
   background: var(--dark-secondary);
 
@@ -44,6 +48,10 @@ div[class*="listing-"] {
   div[class*="rowWrapperActive-"] {
     background-color: var(--dark-primary);
   }
+}
+
+.theme-dark div[class*="applicationTile-"] {
+  background: transparent;
 }
 
 .theme-dark div[class*="applicationStore-"] {
