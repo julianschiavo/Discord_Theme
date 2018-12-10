@@ -373,7 +373,8 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   padding-top: 4px;
 
   button[class*="emojiButton"] {
-    top: 15px;
+    top: 5px;
+    &:hover { background: transparent; }
   }
 }
 
