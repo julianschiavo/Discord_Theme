@@ -8,7 +8,7 @@ div[class*="emptyStateLarge-"] { background: var(--dark-secondary); }
 div[class*="homeWrapper-"] {
   div[class*="home-"] { background: var(--dark-secondary); }
 
-  a[class*="tileWrapper-"] {
+  div[class*="tileWrapper-"] {
     background: var(--dark-primary);
     &:hover { background: var(--dark-highlight); }
   }
@@ -35,10 +35,6 @@ div[class*="listing-"] {
   }
 }
 
-.theme-dark figure[class*="tileMedia-"] {
-  background: var(--dark-primary);
-}
-
 .theme-dark div[class*="gameLibrary-"] {
   background: var(--dark-secondary);
 
@@ -50,17 +46,20 @@ div[class*="listing-"] {
   }
 }
 
-.theme-dark div[class*="applicationTile-"] {
-  background: transparent;
+.theme-dark figure[class*="tileMedia-"],
+.theme-dark div[class*="tileMedia-"] {
+  background: var(--dark-primary);
 }
 
 .theme-dark div[class*="applicationStore-"] {
   background: var(--dark-secondary);
 
-  div[class*="tileWrapper-"] {
+  a[class*="tileWrapper-"] {
     background: var(--dark-primary);
     &:hover { background: var(--dark-highlight); }
   }
+
+  div[class*="applicationTile-"] { background: var(--dark-primary); }
 
   div[class*="searchBox-"] { background: var(--dark-primary); }
 }

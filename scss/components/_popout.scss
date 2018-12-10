@@ -62,14 +62,29 @@ div[class*="userPopout-"] {
   // NOTE: Work on this more
   @include animation(user-popout-anim 350ms ease-in-out);
   display: flex;
-  flex: 1 100%;
-  flex-direction: row;
-  flex-flow: column wrap;
-  // width: 350px;
+  width: 500px;
 
-  .body { background: var(--dark-primary); }
-  .footer { background: var(--dark-secondary); border-top: 0; }
+  div[class*="header-"] {
+    padding-bottom: 85px;
+    width: 250px;
 
+    div[class*="body-"] {
+      padding-bottom: 0;
+      width: auto;
+    }
+  }
+
+  div[class*="activity-"] {
+    background: transparent;
+
+    div[class*="headerText-"] {
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+
+  div[class*="bodyTitle-"] { text-transform: none; }
   div[class*="headerNormal-"] { background: var(--dark-highlight); }
 
   div[class*="headerPlaying-"] {
@@ -77,8 +92,10 @@ div[class*="userPopout-"] {
   }
 
   div[class*="body-"] {
-    background: var(--dark-primary);
+    background: var(--dark-highlight);
     border-bottom: 0;
+    padding-bottom: 85px;
+    width: 250px;
 
     div[class*="roleName-"] { font-weight: normal; }
   }
@@ -86,8 +103,10 @@ div[class*="userPopout-"] {
   div[class*="bodyAlignCenter-"], div[class*="bodyNormal-"] { background: transparent; border-bottom: 0; }
 
   div[class*="footer-"] {
-    background: var(--dark-secondary);
-    flex-flow: row wrap;
+    background: var(--dark-primary);
+    bottom: 0;
+    position: absolute;
+    width: 500px - 20px;
 
     input[class*="quickMessage-"] {
       background-color: transparent;
@@ -105,12 +124,6 @@ div[class*="userPopout-"] {
       margin: 0;
     }
   }
-}
-
-.theme-dark div[class*="activity-"] div[class*="headerText-"] {
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: none;
 }
 
 div[class*="avatarStatusNormal-"] { border: 0; }
@@ -327,16 +340,13 @@ div[class*="root-"] {
   }
 }
 
-// Keyboard Combos | by Archer (https://github.com/AmazingArcher23 , Discord archer#9341)
-.keyboard-shortcuts-modal {
+
+.theme-dark div[class*="keyboardShortcutsModal-"] {
   background-color: var(--dark-secondary);
   position: relative;
-
-  .modal-title { color: #fff; }
-  .keyboard-shortcut-list .keybind-group .keybind-description { color: #808080; }
 }
 
-.keybind-shortcut {
+.theme-dark div[class*="keybindShortcut-"] {
   color: #808080;
 
   &.dim span {
@@ -348,13 +358,13 @@ div[class*="root-"] {
   span {
     border: 1px solid var(--dark-secondary);
     box-shadow: inset 0 -4px 0 var(--dark-highlight);
-    color: #808080;
+    color: #fff;
 
     &:active {
       border: 1px solid var(--dark-secondary);
       box-shadow: inset 0 -2px 0 var(--dark-highlight);
-      color: #808080;
-      g { fill: #808080; }
+      color: #ccc;
+      g { fill: #ccc; }
     }
   }
 }

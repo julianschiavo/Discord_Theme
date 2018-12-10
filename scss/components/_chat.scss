@@ -1,7 +1,8 @@
 div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
 
 // Title Section
-.chat .title-wrap {
+.theme-dark .chat .title-wrap {
+  background-color: var(--dark-highlight);
   border: 0;
 }
 
@@ -13,32 +14,59 @@ div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
 }
 
 
+// Search results
+.theme-dark .search-results-wrap {
+  background: var(--dark-highlight);
+
+  .search-result.expanded {
+    background: var(--dark-secondary);
+  }
+}
+
+
 // Chat Messages
-div[class*="divider-"], div[class*="dividerRed-"],
-.divider, .divider.divider-red {
+.theme-dark div[class*="divider-"],
+.theme-dark div[class*="dividerRed-"],
+.theme-dark .divider, .theme-dark .divider.divider-red {
   span {
+    background-color: var(--dark-secondary);
     border-radius: 0;
     text-transform: none;
   }
 }
 
+.theme-dark div[class*="info-"] div[class*="title-"] { background: transparent; }
 
-span[class*="spoiler-"] {
-  padding: 0 .4em;
+.theme-dark { // scss-lint:disable MergeableSelector
+  .chat .jump-to-present-bar { background: var(--accent); }
 
-  &[class*="hidden-"] {
-    border-radius: 2px;
+  span[class*="spoiler-"] {
+    background: rgba(#000, .2);
+    padding: 0 .4em;
 
-    span { display: none; }
-    &::before { content: '[ Spoiler ]'; }
+    &[class*="hidden-"] {
+      background: var(--dark-highlight);
+      border-radius: 2px;
+
+      span { display: none; }
+      &::before { content: '[ Spoiler ]'; }
+    }
+  }
+
+  #friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: var(--dark-highlight);
+  }
+
+  div[class*="headerBar-"] {
+    background: var(--dark-highlight);
+    padding-bottom: 6px;
+    padding-top: 3px;
+  }
+
+  div[class*="homeWrapper-"], div[class*="gameLibrary-"], div[class*="applicationStore-"] {
+    div[class*="headerBar-"] { background: var(--dark-secondary); }
   }
 }
-
-div[class*="headerBar-"] {
-  padding-bottom: 6px;
-  padding-top: 3px;
-}
-
 
 div[class*="chat-"] {
   div[class*="newMessagesBar-"] { background-color: var(--notif); }
@@ -50,15 +78,47 @@ div[class*="chat-"] {
   }
 }
 
+#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
+  color: #fff;
+
+  pre {
+    background: #1a1c1f;
+    border: 2px solid #1a1c1f;
+    color: rgb(0, 0, 0);
+  }
+
+  > code {
+    background: var(--dark-highlight);
+
+    .hljs {
+      background: #1a1c1f;
+      color: #839496;
+    }
+  }
+}
+
 .confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline {
   background: var(--dark-highlight) !important;
 }
 
-div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"] {
-  div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover {
+.theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"],
+.theme-dark .messages-wrapper {
+  background-color: var(--dark-secondary) !important;
+}
+
+.theme-dark div[class*="messagesWrapper-"] div[class*="messageGroupBlocked-"],
+.theme-dark .messages-wrapper .messages .message-group-blocked {
+  background: var(--dark-primary);
+
+  &.revealed { background: var(--dark-primary); }
+
+  div[class*="messageGroupBlockedBtn-"], div[class*="messageGroupBlockedBtn-"]:hover,
+  .message-group-blocked-btn, .message-group-blocked-btn:hover {
     @include transition(all 250ms ease);
+    background: var(--dark-primary);
     border: 0;
     box-shadow: transparent;
+    color: #ccc;
     font-size: 14px;
     text-transform: none;
   }
@@ -84,17 +144,21 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
 
 // Spotify invite
-div[class*="invite-"] {
+.theme-dark div[class*="invite-"] { // scss-lint:disable MergeableSelector
+  background-color: var(--dark-primary);
   border-color: transparent;
 }
 
 
 // Discord Attachment
-div[class*="attachment-"] {
+.theme-dark div[class*="attachment-"] { // scss-lint:disable MergeableSelector
+  background: var(--dark-primary);
   border-color: transparent;
   filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
 
   div[class*="filename-"], a[class*="fileNameLink-"] { color: var(--accent); font-weight: bold; }
+  div[class*="metadata-"], svg[class*="downloadButton-"], svg[class*="cancelButton-"] { color: #fff; }
+  div[class*="size-"] { color: #ccc; }
   div[class*="progressBar-"] {
     @include transition(width .5s ease-out);
     background-color: var(--accent);
@@ -141,6 +205,22 @@ div[class*="attachment-"] {
   border: 0;
 }
 
+.theme-dark .channel-textarea-upload, .theme-dark .channel-textarea-upload:hover {
+  transition: all 300ms ease;
+}
+
+.theme-dark .channel-textarea-upload { // scss-lint:disable MergeableSelector
+  $file-upload: 'https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg';
+  background: url($file-upload) 50% no-repeat;
+  opacity: .5;
+
+  &:hover {
+    background: url($file-upload) 50% no-repeat;
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
   border: 0;
   margin-bottom: 14px;
@@ -177,13 +257,20 @@ div[class*="autocomplete-"] {
 .invite-button { background: rgba(0, 0, 0, .2); border: 0; }
 .invite-button-header { color: #fff; }
 
-div[class*="chat-"] form, .chat form {
+.theme-dark .channel-textarea-inner { // scss-lint:disable MergeableSelector
+  background-color: transparent;
+  .channel-textarea-upload:hover { background-color: transparent; }
+}
+
+.theme-dark div[class*="chat-"] form,
+.theme-dark .chat form {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
   margin: 0;
 
   div[class*="typing-"] {
+    background-color: var(--dark-secondary);
     bottom: 100%;
     left: 10px;
     padding-left: 10px;
@@ -194,9 +281,7 @@ div[class*="chat-"] form, .chat form {
   }
 }
 
-// NOTE: Rewrite stopped her
-
-.theme-dark #autocomplete-popout {
+.theme-dark #autocomplete-popout { // scss-lint:disable MergeableSelector
   .row { @include transition(all 50ms ease); }
   .row.selected, #autocomplete-popout .row:hover { background: #181818; }
   .scroller::-webkit-scrollbar { display: none; }
@@ -288,7 +373,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   padding-top: 4px;
 
   button[class*="emojiButton"] {
-    top: 4px;
+    top: 15px;
   }
 }
 

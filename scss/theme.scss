@@ -1,4 +1,4 @@
-$version: '1.2.1.45';
+$version: '1.2.1.46';
 
 // Get all assets first
 @import 'assets/animation';
@@ -15,17 +15,3 @@ $version: '1.2.1.45';
 @import 'components/settings';
 @import 'components/store';
 @import 'components/userSettings';
-
-// Now start getting those theme colours
-@import 'components/recolour';
-@include themecolours(
-  'theme-dark',
-  var(--dark-highlight), var(--dark-primary), var(--dark-secondary),
-  #fff, #ccc
-);
-
-@include themecolours(
-  'theme-light',
-  var(--light-highlight), var(--light-primary), var(--light-secondary),
-  #000, #404040
-);
