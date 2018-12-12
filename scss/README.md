@@ -7,6 +7,7 @@ Please follow the SCSS Lint as I heavily follow it myself to keep the source goo
 - 1 Install Ruby | https://rubyinstaller.org/
 - 2 Install SASS | `(sudo) gem install sass`
 - 3 Watch the files in SASS with CSS, either use the .scss-lint.bat or the command `sass --watch scss/.` in root folder
+- 4 Be sure to keep the code linter friendly ([sudo] gem install scss_lint)
 
 To always watch from Discord_Theme folder, use the command `sass --watch scss:.`
 
