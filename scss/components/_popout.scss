@@ -1,78 +1,8 @@
 @charset "utf-8";
 
 // Small profile popout
-.user-popout {
-  @include animation(user-popout-anim 350ms ease-in-out);
-  width: 450px;
-
-  .body {
-    background: var(--dark-primary);
-    display: flex;
-    padding-top: 14px;
-  }
-
-  .footer {
-    background: var(--dark-secondary);
-    border-top: 0;
-  }
-
-  .avatar-wrapper {
-    margin: 4px 0 14px -150px;
-    position: fixed;
-    .avatar-popout { background-color: rgba(0, 0, 0, .01); border: 0; }
-    .avatar-hint {
-      background: rgba(0, 0, 0, .5);
-      box-shadow: none;
-      margin: 0;
-    }
-  }
-
-  .username-wrapper {
-    .nickname { margin-bottom: 2px; }
-    .activity, .discord-tag, .nickname {
-      margin-left: 138px;
-      overflow: hidden;
-      text-align: left;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  }
-
-  .header {
-    background: var(--dark-highlight);
-    padding-top: 3em;
-
-    &.streaming {
-      padding-top: 2.15em;
-
-      .activity { padding: 0; }
-      .live-on-twitch {
-        border-radius: 3px;
-        border-top: 0 solid transparent;
-        margin-left: 129px;
-        padding: 4px 0;
-        text-decoration: none;
-        width: 150px;
-      }
-    }
-  }
-}
-
 div[class*="userPopout-"] {
-  // NOTE: Work on this more
   @include animation(user-popout-anim 350ms ease-in-out);
-  display: flex;
-  width: 500px;
-
-  div[class*="header-"] {
-    padding-bottom: 85px;
-    width: 250px;
-
-    div[class*="body-"] {
-      padding-bottom: 0;
-      width: auto;
-    }
-  }
 
   div[class*="activity-"] {
     background: transparent;
@@ -92,10 +22,8 @@ div[class*="userPopout-"] {
   }
 
   div[class*="body-"] {
-    background: var(--dark-highlight);
+    background: var(--dark-primary);
     border-bottom: 0;
-    padding-bottom: 85px;
-    width: 250px;
 
     div[class*="roleName-"] { font-weight: normal; }
   }
@@ -103,10 +31,7 @@ div[class*="userPopout-"] {
   div[class*="bodyAlignCenter-"], div[class*="bodyNormal-"] { background: transparent; border-bottom: 0; }
 
   div[class*="footer-"] {
-    background: var(--dark-primary);
-    bottom: 0;
-    position: absolute;
-    width: 500px - 20px;
+    background: var(--dark-secondary);
 
     input[class*="quickMessage-"] {
       background-color: transparent;
