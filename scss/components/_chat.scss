@@ -150,6 +150,12 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 }
 
 
+// Giftcard
+.theme-dark div[class*="applicationTile-"] { // scss-lint:disable MergeableSelector
+  background: var(--dark-highlight);
+}
+
+
 // Discord Attachment
 .theme-dark div[class*="attachment-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-primary);
