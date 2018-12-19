@@ -153,6 +153,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 // Giftcard
 .theme-dark div[class*="applicationTile-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
+  &:hover { background: var(--dark-primary); }
 }
 
 
