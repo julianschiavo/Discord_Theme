@@ -25,6 +25,15 @@ div[class*="homeWrapper-"] {
   }
 }
 
+.theme-dark div[class*="themeGhostHairline-"] div[class*="card-"] {
+  background: var(--dark-highlight);
+  div[class*="header-"] { background: transparent; }
+  div[class*="body-"] {
+    background: var(--dark-highlight);
+    div[class*="giftCodeRow-"] { background: transparent; }
+  }
+}
+
 div[class*="listing-"] {
   background: var(--dark-secondary);
 
