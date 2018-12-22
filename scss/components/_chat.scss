@@ -384,6 +384,11 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   }
 }
 
+div[class*="channelTextAreaEnabledNoAttach"] {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 .edit-message .edit-container-inner {
   div[class*="channelTextArea-"] div[class*="inner-"] {
     textarea {
