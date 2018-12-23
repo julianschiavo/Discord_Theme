@@ -331,11 +331,28 @@ div[class*="emojiPicker-"] {
   div[class*="dimmer-"] { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
 }
 
+div[class*="errorState-"][class*="noResults-"] {
+  padding: 20px 48px;
+}
+
 .theme-dark div[class*="popout-"] {
+  background: var(--dark-primary);
   box-shadow: none;
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }
-  div[class*="searchBar-"] { background: var(--dark-primary); }
+  div[class*="searchBar-"] {
+    background: var(--dark-primary);
+
+    .search-bar {
+      background: transparent;
+      border: 0;
+      .search-bar-inner { border: 0; }
+    }
+  }
+
+  div[class*="footerSeparator"] {
+    box-shadow: none;
+  }
 
   div[class*="emojiPicker-"] {
     animation: emoji-picker 300ms;
