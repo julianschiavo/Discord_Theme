@@ -332,11 +332,12 @@ div[class*="emojiPicker-"] {
 }
 
 div[class*="errorState-"][class*="noResults-"] {
+  background: var(--dark-primary);
+  margin: 0;
   padding: 20px 48px;
 }
 
 .theme-dark div[class*="popout-"] {
-  background: var(--dark-primary);
   box-shadow: none;
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }
@@ -352,6 +353,7 @@ div[class*="errorState-"][class*="noResults-"] {
 
   div[class*="footerSeparator"] {
     box-shadow: none;
+    display: none;
   }
 
   div[class*="emojiPicker-"] {
