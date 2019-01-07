@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 // Small profile popout
 div[class*="userPopout-"] {
   @include animation(user-popout-anim 350ms ease-in-out);
@@ -434,6 +432,17 @@ div[class*="errorState-"][class*="noResults-"] {
   }
 }
 
+.theme-dark div[class*="action-"] {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.theme-dark div[class*="or-"] {
+  background: transparent;
+  color: var(--accent);
+}
+
 div[class*="modal-"] div[class*="wrapper-"] {
   background: transparent;
 
@@ -708,94 +717,6 @@ div[class*="backdrop-"] + div[class*="modal-"] {
   &.tooltip-right { @include animation(tooltip-right-anim 200ms ease-in-out); }
   &.tooltip-left { @include animation(tooltip-left-anim 200ms ease-in-out); }
   &::after { opacity: 0; }
-}
-
-
-// Help popout | F1 Key
-div[class*="headerBar-"] svg[name="QuestionMark"] {
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgMTRjLTEuNjYgMC0zIDEuMzQtMyAzIDAgMS4zMS0xLjE2IDItMiAyIC45MiAxLjIyIDIuNDkgMiA0IDIgMi4yMSAwIDQtMS43OSA0LTQgMC0xLjY2LTEuMzQtMy0zLTN6bTEzLjcxLTkuMzdsLTEuMzQtMS4zNGMtLjM5LS4zOS0xLjAyLS4zOS0xLjQxIDBMOSAxMi4yNSAxMS43NSAxNWw4Ljk2LTguOTZjLjM5LS4zOS4zOS0xLjAyIDAtMS40MXoiLz48L3N2Zz4=');
-
-  path {
-    display: none;
-  }
-}
-
-.need-help-modal, .need-help-modal.form.deprecated {
-  a, ul li { color: var(--accent); }
-
-  .header {
-    background-color: var(--dark-highlight);
-    border-radius: 0;
-    height: 70px;
-
-    input { display: none; }
-
-    h1 {
-      font-size: 0;
-      margin: 0;
-      text-align: center;
-
-      &::before {
-        content: 'Discord_Theme';
-        font-size: 22px;
-      }
-    }
-  }
-
-  .footer {
-    background-color: var(--dark-secondary);
-    border-radius: 0;
-    border-top: 0;
-    font-size: 0;
-  }
-
-  .form-inner {
-    align-items: initial;
-    justify-content: initial;
-    min-height: 120px;
-    padding: 15px 38px;
-
-    li {
-      color: #ccc !important;
-      text-align: center;
-
-      a { display: none; }
-
-      &:nth-child(1) {
-        border-bottom: 1px var(--dark-secondary) solid;
-        color: #fff !important;
-        display: block;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-        width: 100%;
-      }
-
-      $helper-text: (
-        'https://github.com/AlexFlipnote/Discord_Theme',
-        'Made with 💙 by AlexFlipnote#0001 and contributors',
-        'Support server: https://discord.gg/DpxkY3x'
-      );
-
-      @for $x from 1 through length($helper-text) {
-        &:nth-child(#{$x})::before { content: nth($helper-text, $x); }
-      }
-
-    }
-  }
-
-  // Splitted with Deprecated
-  &.form.deprecated {
-    a, ul li { color: var(--accent); }
-    .header {
-      background-color: var(--dark-highlight);
-
-      input[type=text] {
-        background: transparent;
-        border-radius: 0;
-        box-shadow: none;
-      }
-    }
-  }
 }
 
 

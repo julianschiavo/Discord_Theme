@@ -1,18 +1,31 @@
-.theme-dark, .theme-light {
-  div[class*="userSettingsAccount-"]::after, .need-help-modal .footer::before {
-    content: 'Theme version: #{$version}';
-  }
+@charset "utf-8";
 
+.theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
+    content: 'Theme version: #{$version}';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
     top: 2.1em;
   }
 
-  .need-help-modal .footer::before {
-    font-size: 14px;
+  $credits-text: (
+    'https://github.com/AlexFlipnote/Discord_Theme',
+    'Made with 💙 by AlexFlipnote#0001 and contributors',
+    'Support server: https://discord.gg/DpxkY3x'
+  );
+
+  div[class*="userSettingsSecurity-"]::after {
+    $credit-placefolder: '';
+    @for $i from 1 through length($credits-text) {
+      $credit-placefolder: $credit-placefolder + nth($credits-text, $i) + '\A';
+    }
+    color: var(--accent);
+    content: $credit-placefolder;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: pre;
   }
 }
 
@@ -39,6 +52,7 @@
   background-color: transparent;
 }
 
+.theme-dark input[class*="inputDefault-"] { color: #fff; }
 
 .mention {
   background-color: rgba(115, 139, 215, .2);
