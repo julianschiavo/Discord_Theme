@@ -523,6 +523,7 @@ div[class*="privateChannels-"] {
   background-color: var(--dark-primary);
 
   div[class*="wrapper-"] { background-color: var(--notif); }
+  div[class*="avatar"] { background-color: transparent; }
 
   .channel {
     padding-left: -25px;
@@ -558,7 +559,21 @@ div[class*="privateChannels-"] {
   }
 }
 
-div[class*="container-"] div[class*="headerBar-"] { background: var(--dark-secondary); }
+div[class*="container-"] div[class*="headerBar-"] {
+  background: var(--dark-secondary);
+
+  div[class*="itemDefault-"] {
+    color: #fff;
+    transition: all 250ms ease;
+
+    &:hover { background: var(--dark-primary) !important; }
+  }
+
+  div[class*="itemSelected-"] {
+    background: var(--accent);
+    color: #fff;
+  }
+}
 
 #friends {
   .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
