@@ -1,4 +1,13 @@
 div[class*="popouts-"] {
+  div[class*="row-"] {
+    transition: all 250ms ease;
+
+    &[class*="selected-"] {
+      background: var(--dark-primary);
+      padding-left: 26px;
+    }
+  }
+
   div[class*="container-"] {
     background: var(--dark-primary);
 
