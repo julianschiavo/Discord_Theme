@@ -497,7 +497,16 @@ div[class*='privateChannels-'] {
 
 .theme-dark div[class*="videoHeight-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight);
-  div[class*="video-"] { background-color: transparent; }
+
+  div[class*="video-"] {
+    background-color: transparent;
+
+    div[class*="iconsWrapper-"] {
+      background: transparent !important;
+      border: 0 !important;
+      padding: 0;
+    }
+  }
 }
 
 .theme-dark div[class*="noChannel-"] { // scss-lint:disable MergeableSelector

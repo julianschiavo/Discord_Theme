@@ -1,0 +1,19 @@
+div[class*="splashBackground-"] {
+  background: var(--dark-highlight);
+
+  img[class*="image-"][class*="loaded-"], canvas { display: none; }
+
+  form[class*="authBox-"] {
+    background: var(--dark-primary);
+
+    div[class*="title-"] {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    button[type="submit"] { background-color: var(--accent); }
+    button[type="button"] { color: var(--accent); }
+    input:focus { border-color: var(--accent); }
+    span[class*="needAccount-"] { color: #ccc; }
+  }
+}
