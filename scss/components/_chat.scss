@@ -829,19 +829,23 @@ div[class*="channels-"] {
   div[class*="container-"] {
     background: transparent;
 
-    div[class*="horizontal-"] {
+    div[class*="containerDefault-"] div[class*="horizontal-"] {
       padding-left: 23px;
       & > svg > path { display: none; }
     }
   }
 
-  div[class*="container-1"] {
-    background: transparent;
-    border-bottom: 0;
-    z-index: 1;
-  }
+  div[class*="justifyStart"] {
+    & + div[class*="container-1"] {
+      background: transparent;
+      border-bottom: 0;
+      z-index: 1;
 
-  div[class*="container-2"] { border-top: 1px solid #36393f; }
+      & + div[class*="container-"] { border-top: 1px solid #36393f; }
+    }
+
+    & + div[class*="container-2"] { border-top: 1px solid #36393f; }
+  }
 }
 
 
