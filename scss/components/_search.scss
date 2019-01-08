@@ -57,35 +57,38 @@ div[class*="popouts-"] {
   }
 }
 
-.theme-dark .search-results-wrap {
+.theme-dark div[class*="searchResultsWrap-"] {
   background: var(--dark-highlight);
 
-  .search-result::before, .search-result::after, .channel-separator .channel-name { background: transparent; }
-  .search-header { background-color: var(--dark-highlight); }
-  .scroller-wrap .scroller { background-color: var(--dark-primary); }
-  .search-result {
-    .hit { box-shadow: none; }
-
-    &.expanded {
+  div[class*="searchResult-"]::before, div[class*="searchResult-"]::after { background: transparent; }
+  div[class*="searchHeader-"] { background-color: var(--dark-highlight); }
+  div[class*="scrollerWrap-"] div[class*="scroller-"] { background-color: var(--dark-primary); }
+  div[class*="searchResult-"] {
+    &[class*="expanded-"] {
       background: var(--dark-secondary);
       border: 0;
       border-radius: 0;
 
-      .search-result-message.hit {
+      div[class*="searchResultMessage-"][class*="hit-"] {
         background-color: var(--dark-primary);
         border-bottom: 0;
         border-top: 0;
       }
     }
 
-    .search-result-message.hit {
+    div[class*="searchResultMessage-"][class*="hit-"] {
       background-color: var(--dark-primary);
       border: 0;
       border-radius: 0;
+      box-shadow: none;
     }
   }
 
-  .channel-separator .channel-name { margin-left: 15px; }
+  div[class*="channelSeparator-"] span[class*="channelName-"] {
+    background: var(--dark-primary);
+    margin-left: 15px;
+    padding: 8px;
+  }
 }
 
 .react-datepicker {
@@ -167,7 +170,7 @@ div[class*="privateChannels-"] {
   }
 }
 
-.theme-dark .search .search-bar {
+.theme-dark div[class*="search-"] div[class*="searchBar-"] {
   background: transparent;
   box-shadow: 0;
 
