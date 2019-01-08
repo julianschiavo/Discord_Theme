@@ -438,7 +438,7 @@ div[class*="errorState-"][class*="noResults-"] {
   box-shadow: none;
 }
 
-.theme-dark div[class*="or-"] {
+.theme-dark div[class^="or-"] {
   background: transparent;
   color: var(--accent);
 }
@@ -802,6 +802,7 @@ div[class*="autocomplete-"] {
   background-color: var(--dark-secondary) !important;
 
   div[class*="content-"] { background: transparent; }
+  div[class*="selectorSelected-"] { background: var(--dark-secondary); }
 
   header {
     background-color: var(--dark-highlight) !important;
