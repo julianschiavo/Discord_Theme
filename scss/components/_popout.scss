@@ -324,8 +324,6 @@ div[class*="emojiPicker-"] {
     width: 100%;
   }
 
-  div[class*="scrollerWrap-"] { background: var(--dark-secondary); }
-
   div[class*="category-"] {
     color: var(--accent);
     font-size: 13px;
@@ -355,12 +353,11 @@ div[class*="errorState-"][class*="noResults-"] {
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }
   div[class*="searchBar-"] {
-    background: var(--dark-primary);
+    background: transparent;
 
-    .search-bar {
+    div[class*="searchBarInner-"] {
       background: transparent;
       border: 0;
-      .search-bar-inner { border: 0; }
     }
   }
 
