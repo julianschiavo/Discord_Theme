@@ -342,6 +342,7 @@ div[class*="autocomplete-"] {
 }
 
 .channel-text-area-default, div[class*="channelTextArea-"] {
+  border-top: $border-bottom-row !important;
   margin: 0;
   padding-top: 0;
 }
@@ -508,9 +509,11 @@ div[class*="privateChannels-"] {
 
   div[class*="wrapper-"] { background-color: var(--notif); }
 
-  & + div[class*="container-"] {
-    border-top: $border-top-bottom-row;
-    height: 51px;
+  & + div[class*="container-2"] { height: 51px; }
+  & + div[class*="container-1"] {
+    border-bottom: $border-bottom-row;
+    border-top: 0;
+    height: 32px;
   }
 
   div[class*="avatar"] {
@@ -852,10 +855,10 @@ div[class*="channels-"] {
       border-bottom: 0;
       z-index: 1;
 
-      & + div[class*="container-"] { border-top: $border-top-bottom-row; }
+      & + div[class*="container-"] { border-top: $border-bottom-row; }
     }
 
-    & + div[class*="container-2"] { border-top: $border-top-bottom-row; }
+    & + div[class*="container-2"] { border-top: $border-bottom-row; }
   }
 }
 
@@ -890,6 +893,7 @@ div[class*="base-"] { border-radius: 0; }
   position: relative;
 
   div[class*="unreadMentionsBar-"] { box-shadow: none; }
+  div[class*="unreadMentionsIndicatorBottom-"] { bottom: 53px; }
 
   div[class*="guilds-"] {
     position: relative;
@@ -976,7 +980,7 @@ div[class*="base-"] { border-radius: 0; }
     background: var(--dark-highlight);
     border: 0;
     border-radius: 0;
-    border-top: $border-top-bottom-row;
+    border-top: $border-bottom-row;
     bottom: 0;
     color: var(--accent);
     font-size: 40px;

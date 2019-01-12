@@ -75,6 +75,7 @@ div[class*="appMount-"] { background: transparent; }
 
   div[class*="guildsWrapper-"] { background: var(--transparent-highlight); }
   div[class*="videoHeight-"] { background: var(--transparent-secondary); }
+  button[class*="guildsAdd-"] { background: var(--transparent-highlight) !important; }
 
   div[class*="membersWrap-"] {
     div[class*="content-"] { background: transparent; }

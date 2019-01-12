@@ -104,15 +104,13 @@ div[class*="guildsWrapper-"] {
         z-index: 100;
       }
     }
+
+    button[class*="guildsAdd-"] { width: 135px; }
+    div[class*="guild-"]:last-of-type { margin-bottom: 60px; }
   }
 
   div[class*="scrollerWrap-"] {
     width: 170px;
-  }
-
-  div[class*="guild-"] div[class*="guildsAdd-"] {
-    left: 12px !important;
-    position: relative !important;
   }
 }
 
