@@ -876,16 +876,23 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
 
   div[class*="guilds-"] {
     .friends-icon { background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg'); }
-    // Friends icon was replaced with Hub channel at Canary, remove later
 
-    a[href="/activity"], a[href*="/store"], a[href*="/library"],
-    a[href*="/channels/@me"]:not(.avatar-small) {
+    // Friends icon was replaced with Hub channel at Canary, remove later
+    a[href="/activity"], a[href*="/store"], a[href*="/library"], a[href*="/channels/@me"] {
       background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 32px;
-
       svg { display: none; }
+    }
+
+    // Fix DM avatars too
+    div[class*="avatarSmall-"] a {
+      background-position: 50%;
+      background-size: 100% 100%;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%
     }
 
     div[class*="guild-"] div[class*="guildInner-"] { background: transparent !important; }
