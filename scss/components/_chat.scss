@@ -1,5 +1,3 @@
-div[class*="base-"], div[class*="guildsWrapper-"] { border-radius: 0; }
-
 // Title Section
 .theme-dark .chat .title-wrap {
   background-color: var(--dark-highlight);
@@ -510,6 +508,11 @@ div[class*="privateChannels-"] {
 
   div[class*="wrapper-"] { background-color: var(--notif); }
 
+  & + div[class*="container-"] {
+    border-top: $border-top-bottom-row;
+    height: 51px;
+  }
+
   div[class*="avatar"] {
     background-color: transparent;
     margin-top: 0;
@@ -849,10 +852,10 @@ div[class*="channels-"] {
       border-bottom: 0;
       z-index: 1;
 
-      & + div[class*="container-"] { border-top: 1px solid #36393f; }
+      & + div[class*="container-"] { border-top: $border-top-bottom-row; }
     }
 
-    & + div[class*="container-2"] { border-top: 1px solid #36393f; }
+    & + div[class*="container-2"] { border-top: $border-top-bottom-row; }
   }
 }
 
@@ -879,11 +882,17 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
   z-index: 100;
 }
 
+div[class*="base-"] { border-radius: 0; }
+
 .theme-dark div[class*="guildsWrapper-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
+  border-radius: 0;
+  position: relative;
+
+  div[class*="unreadMentionsBar-"] { box-shadow: none; }
 
   div[class*="guilds-"] {
-    .friends-icon { background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg'); }
+    position: relative;
 
     // Friends icon was replaced with Hub channel at Canary, remove later
     a[href="/activity"], a[href*="/store"], a[href*="/library"], a[href*="/channels/@me"] {
@@ -928,7 +937,6 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
         width: 4px;
         z-index: 100;
       }
-
     }
 
     div[class*="guild-"][class*="selected-"]::before,
@@ -959,29 +967,32 @@ div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"
     }
   }
 
-  .guilds-wrapper .guild.guilds-add::after,
-  .guilds-wrapper .guild.guilds-add:hover::after,
-  .guilds-wrapper .guilds .guild a:hover,
-  .guilds-wrapper .guilds .guild.selected .guild-inner,
-  .guilds-wrapper .guilds .guild.active .guild-inner {
-    background-color: transparent !important;
+  span[class*="dms-"] div[class*="guild-"] { margin-bottom: 0; }
+  div[class*="guild-"] {
+    &:last-of-type { margin-bottom: 55px; }
   }
 
-  .guild.guilds-add {
-    @include transition(border-color .25s ease, color .25s ease);
-    background: var(--dark-primary);
-    border: 1px dashed var(--accent);
-    border-radius: 50%;
+  button[class*="guildsAdd-"] {
+    background: var(--dark-highlight);
+    border: 0;
+    border-radius: 0;
+    border-top: $border-top-bottom-row;
+    bottom: 0;
     color: var(--accent);
     font-size: 40px;
     font-weight: 200;
-    height: 50px;
+    height: 53px;
     left: 0 !important;
     padding: 0;
-    position: relative !important;
+    position: fixed !important;
     text-align: center;
-    top: 4px;
-    width: 50px;
+    width: 70px;
+
+    &:hover span[class*="guildsAddInner-"] { opacity: .5; }
+    span[class*="guildsAddInner-"] {
+      font-weight: 500;
+      transition: all 250ms ease;
+    }
   }
 }
 

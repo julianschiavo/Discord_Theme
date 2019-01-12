@@ -71,8 +71,9 @@ span[class*="botTag"] {
 }
 
 #app-mount {
+  div[class*="wordmark-"] { display: none; }
   div[class*="titleBar-"] {
-    background: var(--dark-highlight);
+    background: #101010;
     margin-top: 0;
     padding-top: 4px;
     z-index: 1;

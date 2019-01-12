@@ -1,5 +1,5 @@
 // Version
-$version: '1.4.1';
+$version: '1.4.2';
 
 // Show the credits
 @import 'assets/credits';
@@ -7,6 +7,7 @@ $version: '1.4.1';
 // Get all assets first
 @import 'assets/animation';
 @import 'assets/browser';
+@import 'assets/defaults';
 
 // Everything else
 @import 'components/chat';
