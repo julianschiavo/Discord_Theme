@@ -916,7 +916,16 @@ div[class*="base-"] { border-radius: 0; }
       width: 100%
     }
 
-    div[class*="guild-"] div[class*="guildInner-"] { background: transparent !important; }
+    div[class*="guild-"] {
+      div[class*="guildInner-"] { background: transparent !important; }
+      &::after {
+        background-color: var(--dark-primary);
+        left: -5px;
+        right: 0;
+        top: -5px;
+      }
+    }
+
     div[class*="guild-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
     div[class*="friendsOnline"] { display: none; }
 
