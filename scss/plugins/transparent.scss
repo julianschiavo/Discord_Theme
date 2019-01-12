@@ -20,7 +20,7 @@ div[class*="appMount-"] { background: transparent; }
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
   div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"],
-  div[class*="activityFeed-"], .private-channels {
+  div[class*="activityFeed-"], div[class*="privateChannels-"] {
     background: transparent;
   }
 
@@ -101,6 +101,11 @@ div[class*="appMount-"] { background: transparent; }
     div[class*="scrollerWrap-"] {
       background-color: transparent;
     }
+  }
+
+  div[class*="channels-"] + div[class*="root-"] {
+    background: var(--transparent-secondary);
+    div[class*="headerBar-"] { background: transparent; }
   }
 
   // Game store

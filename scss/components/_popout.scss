@@ -175,7 +175,11 @@ div[class*="root-"] {
     color: #fff;
     transition: all 250ms ease;
 
-    &:hover { transform: translateY(-.3em); }
+    &:hover {
+      background: var(--accent);
+      filter: brightness(75%);
+      transform: translateY(-.3em);
+    }
   }
 
   div[class*="topSectionSpotify-"], div[class*="topSectionPlaying"], div[class*="content-"] {
@@ -725,16 +729,16 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 
 
 // Tool tip
-.tooltip {
-  background: rgba(22, 22, 22, .6);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .9);
+div[class*="tooltips-"] div[class*="tooltip-"] {
+  background: var(--dark-highlight);
+  box-shadow: 0 0 5px var(--dark-highlight);
   color: #fff;
 
-  &.tooltip-top { @include animation(tooltip-top-anim 200ms ease-in-out); }
-  &.tooltip-bottom { @include animation(tooltip-bottom-anim 200ms ease-in-out); }
-  &.tooltip-right { @include animation(tooltip-right-anim 200ms ease-in-out); }
-  &.tooltip-left { @include animation(tooltip-left-anim 200ms ease-in-out); }
-  &::after { opacity: 0; }
+  &[class*="top-"] { @include animation(tooltip-top-anim 200ms ease-in-out); }
+  &[class*="bottom-"] { @include animation(tooltip-bottom-anim 200ms ease-in-out); }
+  &[class*="right-"] { @include animation(tooltip-right-anim 200ms ease-in-out); }
+  &[class*="left-"] { @include animation(tooltip-left-anim 200ms ease-in-out); }
+  &::after { display: none; }
 }
 
 
