@@ -20,12 +20,16 @@ div[class*="appMount-"] { background: transparent; }
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
   div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"],
-  div[class*="activityFeed-"], div[class*="privateChannels-"] {
+  div[class*="privateChannels-"] {
     background: transparent;
   }
 
-  #friends {
-    background: transparent;
+  div[class*="activityFeed-"] {
+    background: var(--transparent-secondary);
+  }
+
+  div[class*="friendsTable-"] {
+    background: var(--transparent-secondary);
 
     div[class*="headerBar-"], .friends-table, div[class*="scrollerWrap-"] {
       background: transparent;
@@ -34,12 +38,12 @@ div[class*="appMount-"] { background: transparent; }
     .friends-empty div[class*="wrapper-"] { background: transparent; }
   }
 
-  div[class*="homeWrapper-"], div[class*="gameLibrary-"], div[class*="applicationStore-"] {
-    div[class*="headerBar-"] { background: var(--transparent-secondary); }
+  div[class*="container-"] div[class*="headerBar-"] {
+    background: var(--transparent-secondary);
   }
 
-  div[class*="activityFeed-"] {
-    div[class*="headerBar-"] { background: var(--transparent-secondary); }
+  div[class*="homeWrapper-"], div[class*="gameLibrary-"], div[class*="applicationStore-"], div[class*="activityFeed-"] {
+    div[class*="headerBar-"] { background: transparent; }
   }
 
   div[class*="chat-"] form div[class*="typing-"],

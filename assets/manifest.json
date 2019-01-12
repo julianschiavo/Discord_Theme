@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+
+  "name": "AlexFlipnote/Discord_Theme",
+  "version": "0.0.7",
+  "description": "A theme that changes the Discordapp theme to AlexFlipnote/Discord_Theme",
+
+  "content_scripts": [{
+    "js": ["inserttheme.js"],
+    "matches": [
+      "https://discordapp.com/channels/*", "https://*.discordapp.com/channels/*",
+      "https://discordapp.com/login", "https://*.discordapp.com/login",
+      "https://discordapp.com/app", "https://*.discordapp.com/app",
+      "https://discordapp.com/invite/*", "https://*.discordapp.com/invite/*",
+      "https://discordapp.com/store", "https://*.discordapp.com/store",
+      "https://discordapp.com/store/*", "https://*.discordapp.com/store/*",
+      "https://discordapp.com/library", "https://*.discordapp.com/library",
+      "https://discordapp.com/library/*", "https://*.discordapp.com/library/*",
+      "https://discordapp.com/activity", "https://*.discordapp.com/activity",
+      "https://discordapp.com/activity/*", "https://*.discordapp.com/activity/*"
+    ]
+  }],
+
+  "icons": {
+    "128": "logo128.png",
+    "48": "logo.png",
+    "32": "logo.png",
+    "16": "logo.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "information.html"
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+
+}
