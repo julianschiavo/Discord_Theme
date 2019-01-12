@@ -842,7 +842,12 @@ div[class*="uploadModal-"] {
     border: 0;
 
     div[class*="file-"] {
-      div[class*="icon-"] { border: 0; box-shadow: 0 0 0; }
+      div[class*="icon-"][class*="image-"] {
+        background-color: var(--dark-highlight);
+        border: 2px solid var(--accent);
+        box-shadow: 0 0 0;
+      }
+
       div[class*="description-"] div[class*="filename-"] { color: var(--accent); }
     }
 
@@ -850,7 +855,7 @@ div[class*="uploadModal-"] {
       div[class*="label-"] { font-size: 14px; }
       div[class*="channelTextArea-"] {
         background-color: var(--dark-secondary);
-        border-color: var(--dark-secondary);
+        border: 0 !important;
         margin-top: 10px;
       }
     }
