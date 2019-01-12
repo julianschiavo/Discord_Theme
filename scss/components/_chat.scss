@@ -177,28 +177,6 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
 
 // Message Text Area
-.message-group {
-  h2 strong { color: var(--light-dark-text); }
-  &:last-of-type { margin-bottom: 20px !important; }
-  .comment .message-text .markup { pre { color: #000; }}
-  .edit-message {
-    .channel-textarea-inner { border: 1px solid var(--accent); }
-    .edit-operation>a { color: var(--accent); }
-
-    .edit-container-inner {
-      .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
-      .theme-dark div[class*="channelTextAreaDisabled-"] div[class*="innerDisabled-"], div[class*="channelTextAreaEnabled-"] {
-        padding-top: 10px;
-
-        div[class*="inner-"] {
-          background-color: var(--dark-primary);
-          border-radius: 5px;
-        }
-      }
-    }
-  }
-}
-
 .channel-textarea-inner {
   .channel-textarea-upload { border-right-color: transparent; }
   textarea { background-color: transparent; &::-webkit-input-placeholder { color: rgba(128, 128, 128, .9) !important; }}
@@ -381,6 +359,7 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   padding-bottom: 4px;
   padding-top: 4px;
 
+  button[class*="attachButton-"] { height: 24px; }
   button[class*="emojiButton"] {
     &:hover { background: transparent; }
   }
@@ -443,6 +422,13 @@ div[class*="channelTextAreaEnabledNoAttach"] {
 // Friends section (needs optimization: makes settings panel laggy - Sometimes not laggy (like when in Gift Inventory)
 div[class*='privateChannels-'] {
   overflow-x: visible;
+
+  header {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: none;
+    padding-left: 10px;
+  }
 
   div[class*='scroller-'] {
     overflow-x: visible;
@@ -523,21 +509,26 @@ div[class*="privateChannels-"] {
   background-color: var(--dark-primary);
 
   div[class*="wrapper-"] { background-color: var(--notif); }
-  div[class*="avatar"] { background-color: transparent; }
 
-  .channel {
+  div[class*="avatar"] {
+    background-color: transparent;
+    margin-top: 0;
+  }
+
+  div[class*="channel-"][style*="height: 42px;"] {
     padding-left: -25px;
 
-    &.selected {
+    &[class*="selected-"] {
       &::before {
         @include animation(current-channel 300ms ease-in-out);
         border-left: 8px solid var(--accent);
         content: ' ';
-        height: 100%;
+        height: 40px;
         left: 0;
         opacity: 1 !important;
         position: absolute;
         top: 0;
+        transition: all 250ms ease;
       }
 
       a {
@@ -547,12 +538,18 @@ div[class*="privateChannels-"] {
     }
 
     a {
+      border-radius: 0;
+      margin: 0 0 0 8px;
       transition: all 200ms ease;
-      &:hover { padding-left: 15px; transition: all 200ms ease; }
+
+      &:hover {
+        padding-left: 15px;
+        background: var(--dark-secondary);
+      }
     }
   }
 
-  &.selected {
+  &[class*="selected-"] {
     background: var(--dark-secondary);
     .icon-friends { background-color: transparent; }
     &::before { border-left: 2px solid var(--accent); }
@@ -694,10 +691,14 @@ div[class*="container-"] {
 
   div[class*="containerDefault-"] div[class*="content-"] {
     @include transition(all .2s ease-in-out);
-    &:hover { transform: translateX(.5em); }
+    &:hover {
+      background: var(--dark-secondary);
+      padding-left: 16px;
+    }
   }
 
   div[class*="contentSelectedText-"] {
+    background: var(--dark-secondary);
     svg[class*="colorSelectedText-"] path { fill: #fff; }
     div[class*="nameSelectedText-"] { color: #fff; }
   }
@@ -768,6 +769,7 @@ div[class*="container-"] {
 
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
   div[class*="members-"] { background-color: var(--dark-secondary); }
+  h2[class*="membersGroup-"] { text-transform: none; }
 
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
@@ -778,7 +780,13 @@ div[class*="container-"] {
   }
 
   div[class*="memberOnline-"], div[class*="memberOffline-"] {
+    transition: all 300ms ease;
     &:hover { background-color: var(--dark-primary); }
+
+    div[class*="content-"] {
+      transition: all 300ms ease;
+      &:hover { transform: translateX(.45em); }
+    }
   }
 }
 

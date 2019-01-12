@@ -178,6 +178,7 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
 }
 
 div[class*="modal-"] {
+  div[class*="slideBody-"] { background: transparent; }
   div[class*="header-"], div[class*="contentWrapper-"] {
     background-color: var(--dark-highlight);
 
@@ -193,6 +194,17 @@ div[class*="modal-"] {
       div[class*="message-"] { background: transparent; }
     }
   }
+
+  div[class^="action-"] {
+    background: var(--dark-primary);
+    border: 0;
+    box-shadow: none;
+
+    div[class*="actionHeader-"] { text-transform: none; }
+  }
+
+  div[class^="or-"] { display: none; }
+  header { text-transform: none; }
 
   button[class*="colorBrand-"] {
     background-color: var(--accent);
