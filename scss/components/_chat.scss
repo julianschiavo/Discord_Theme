@@ -897,6 +897,7 @@ div[class*="base-"] { border-radius: 0; }
 
   div[class*="guilds-"] {
     position: relative;
+    margin-bottom: 53px;
 
     // Friends icon was replaced with Hub channel at Canary, remove later
     a[href="/activity"], a[href*="/store"], a[href*="/library"], a[href*="/channels/@me"] {
@@ -978,11 +979,6 @@ div[class*="base-"] { border-radius: 0; }
       position: relative;
       width: 90%;
     }
-  }
-
-  span[class*="dms-"] div[class*="guild-"] { margin-bottom: 0; }
-  div[class*="guild-"] {
-    &:last-of-type { margin-bottom: 55px; }
   }
 
   button[class*="guildsAdd-"] {
