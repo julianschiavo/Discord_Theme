@@ -509,9 +509,12 @@ div[class*="privateChannels-"] {
 
   div[class*="wrapper-"] { background-color: var(--notif); }
 
-  & + div[class*="container-2"] { height: 51px; }
+  & + div[class*="container-2"] {
+    height: 51px;
+    border-top: $border-bottom-row;
+  }
+
   & + div[class*="container-1"] {
-    border-bottom: $border-bottom-row;
     border-top: 0;
     height: 32px;
   }
