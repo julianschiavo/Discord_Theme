@@ -157,12 +157,6 @@ Just simply more animations everywhere
 @import "https://discordtheme.alexflipnote.xyz/plugins/hideSearch.css";
 ```
 
-### [BETA] Status Popout
-[Preview](https://light-theme-hurts.my-ey.es/2fe518.png)
-```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/statusPopout.css";
-```
-
 ### Remove blocked messages
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/blocked.css";
