@@ -4,10 +4,37 @@
   --transparent-highlight: rgba(0, 0, 0, .6);
   --transparent-primary: rgba(0, 0, 0, .4);
   --transparent-secondary: rgba(0, 0, 0, .2);
+  --transparent-blur: 0px;
+  --transparent-overlay: rgba(0, 0, 0, .75);
+}
+
+body {
+  background-attachment: fixed;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    background-attachment: fixed;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    filter: blur(var(--transparent-blur));
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 #app-mount div[class*="titleBar-"] { background: rgba(0, 0, 0, .9); }
 div[class*="appMount-"] { background: transparent; }
+
+div[class*="app-"]:first-child { background: var(--transparent-overlay); }
 
 .theme-dark {
   // User account

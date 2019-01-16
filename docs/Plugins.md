@@ -6,10 +6,12 @@
   --transparent-highlight: rgba(0, 0, 0, .6);
   --transparent-primary: rgba(0, 0, 0, .4);
   --transparent-secondary: rgba(0, 0, 0, .2);
+  --transparent-overlay: rgba(0, 0, 0, .75);
+  --transparent-blur: 3px; /* Don't include this line if you do not wish to have blur background */
 }
+
 /* Settings */
-div[class*="app-"]:first-child { background: rgba(0, 0, 0, 0.75); }
-body {
+body:before {
   background: url("https://i.alexflipnote.xyz/1f9a3d.jpg");
   /* Advanced settings */
   background-size: cover; background-attachment: fixed;
