@@ -468,7 +468,15 @@ div[class*='privateChannels-'] {
 
         div[class^='name'] { display: none; }
         svg { margin: 0; }
+
+        div[class*="wrapper-"] {
+          position: absolute;
+          right: -1em;
+          top: 0;
+        }
+
       }
+
     }
   }
 
