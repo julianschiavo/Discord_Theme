@@ -497,9 +497,20 @@ div[class*='privateChannels-'] {
     background-color: transparent;
 
     div[class*="iconsWrapper-"] {
-      background: transparent !important;
-      border: 0 !important;
-      padding: 0;
+      background: var(--dark-primary) !important;
+      border-radius: 5px !important;
+
+      &:nth-child(2) {
+        padding: 0 .5em;
+        border: 0;
+      }
+    }
+
+    button[class*="exitButton-"] {
+      background: var(--accent);
+      border-radius: 0;
+      margin: 4px;
+      text-transform: none;
     }
   }
 }
