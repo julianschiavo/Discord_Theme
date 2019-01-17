@@ -576,14 +576,14 @@ div[class*="contextMenu-"] {
 
     &[class*="itemSlider-"] { padding: 9px 15px; }
 
+    &:first-of-type { border-radius: 2px 2px 0 0; }
+    &:last-of-type { border-radius: 0 0 2px 2px; }
+
     &:active {
       @include transition(all 0ms);
       background: rgba(225, 225, 225, .1) !important;
     }
   }
-
-  div[class*="item-"]:first-of-type { border-radius: 2px 2px 0 0; }
-  div[class*="item-"]:last-of-type { border-radius: 0 0 2px 2px; }
 
   div[class*="itemSubMenu-"] {
     position: relative;
