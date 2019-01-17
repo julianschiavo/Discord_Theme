@@ -561,18 +561,20 @@ div[class*="contextMenu-"] {
   div[class*="item-"] {
     background: transparent !important;
     border-radius: 0;
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .5);
     cursor: pointer;
     margin: 0;
     padding: 9px 15px;
     transition: all 250ms ease;
 
     &:hover {
-      background: rgba(225, 225, 225, .03) !important;
-      color: rgba(255, 255, 255, .8);
+      background: var(--dark-primary) !important;
+      color: rgba(255, 255, 255, 1);
       padding-left: 22px;
       transition: all 250ms ease;
     }
+
+    &[class*="itemSlider-"] { padding: 9px 15px; }
 
     &:active {
       @include transition(all 0ms);
