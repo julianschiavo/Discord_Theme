@@ -546,12 +546,10 @@ div[class*="popoutTopLeft-"], div[class*="popoutBottom-"] {
 }
 
 .option-popout .btn-item:hover { background: var(--dark-secondary); color: #fff; }
-
 .theme-dark div[class*="contextMenu-"] .item-group { border-color: rgba(255, 255, 255, .03) !important; }
-div[class*="contextMenu-"], div[class*="contextMenu-"] div[class*="contextMenu-"] { @include animation(sub-contextmenu-anim 200ms ease-in-out); }
 
 div[class*="contextMenu-"] {
-  @include animation(opacity 100ms ease);
+  @include animation(sub-contextmenu-anim 200ms ease-in-out);
   @include crossbrowser(transform-origin, top left);
   background: var(--dark-highlight) !important;
   border-radius: 2px;
