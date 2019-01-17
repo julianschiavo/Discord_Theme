@@ -497,13 +497,11 @@ div[class*='privateChannels-'] {
     background-color: transparent;
 
     div[class*="iconsWrapper-"] {
-      background: var(--dark-primary) !important;
+      background: var(--dark-highlight) !important;
       border-radius: 5px !important;
+      border: 0;
 
-      &:nth-child(2) {
-        padding: 0 .5em;
-        border: 0;
-      }
+      &:nth-child(2) { padding: 0 .5em; }
     }
 
     button[class*="exitButton-"] {
