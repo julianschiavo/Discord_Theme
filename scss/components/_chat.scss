@@ -468,15 +468,19 @@ div[class*='privateChannels-'] {
 
         div[class^='name'] { display: none; }
         svg { margin: 0; }
-
-        div[class*="wrapper-"] {
-          position: absolute;
-          right: -1em;
-          top: 0;
-        }
-
       }
+    }
+  }
 
+  div[class*="channel-"] {
+    a[href="/activity"], a[href^="/library"], a[href^="/store"] {
+      div[class*="wrapper-"] {
+        position: absolute; right: -1em; top: 0;
+      }
+    }
+
+    a[href="/channels/@me"] div[class*="wrapper-"] {
+      position: absolute; right: 0; top: 0;
     }
   }
 
