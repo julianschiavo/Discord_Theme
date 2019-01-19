@@ -254,7 +254,7 @@ div[class*="autocomplete-"] {
   color: #fff;
   margin: 0;
 
-  div[class*="typing-"] {
+  div[class*="typing-"], div[class*="activityInviteEducation-"] {
     background-color: var(--dark-secondary);
     bottom: 100%;
     left: 10px;
