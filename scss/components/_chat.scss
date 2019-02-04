@@ -302,9 +302,10 @@ div[class*="autocomplete-"] {
 }
 
 .theme-dark .containerCozy-jafyvG { // scss-lint:disable MergeableSelector
-  &.is-local-bot-message {
+  &[class*="isLocalBot-"] {
     background-image: none;
     box-shadow: none;
+    padding: 20px 0;
   }
 
   &:last-of-type { margin-bottom: 10px !important; }
