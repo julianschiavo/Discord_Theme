@@ -68,25 +68,12 @@ div[class*="avatarStatusNormal-"] { border: 0; }
 
 .note textarea:focus { background: var(--dark-highlight); }
 
-.quick-message, .quick-message.isBlocked {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #fff;
-  border-radius: 0;
-  color: #fff;
+// Colour picker
+.theme-dark div[class*="colorPickerCustom-"] {
+  background: var(--dark-highlight);
+  border-color: var(--dark-primary);
+  border-radius: 5px;
 }
-
-.member-roles .member-role {
-  background-color: var(--dark-primary);
-  border: 1px solid var(--dark-primary);
-  color: #808080;
-}
-
-.section.roles { max-width: 250px; width: 250px; }
-.section.notes, .section.roles { margin-left: 15px; }
-.creation-date-wrapper { margin-left: -33px; }
-.bot-tag.bot-tag-invert { background-color: #7289da !important; color: #fff !important; }
-
 
 // Call popout
 div[class*="pictureInPicture-"] {

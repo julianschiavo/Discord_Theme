@@ -227,7 +227,10 @@ div[class*="autocomplete-"] {
   border-radius: 0;
   box-shadow: none;
 
-  div[class*="content-"] { background: transparent; }
+  div[class*="content-"] {
+    background: transparent;
+    div { color: #ccc; }
+  }
 
   &::after { border: 0; }
   header {
@@ -275,12 +278,6 @@ div[class*="autocomplete-"] {
   }
 }
 
-.theme-dark #autocomplete-popout { // scss-lint:disable MergeableSelector
-  .row { @include transition(all 50ms ease); }
-  .row.selected, #autocomplete-popout .row:hover { background: #181818; }
-  .scroller::-webkit-scrollbar { display: none; }
-}
-
 .theme-dark div[class*="autocomplete-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-primary) !important;
   header { background-color: var(--dark-highlight) !important; }
@@ -288,6 +285,14 @@ div[class*="autocomplete-"] {
   li {
     background-color: var(--dark-primary) !important;
     &.active { background-color: var(--dark-secondary) !important; }
+  }
+
+  div[class*="wrapper-"] {
+    background: transparent !important;
+    border-radius: 50% !important;
+    border-top: 0 !important;
+    height: 20px !important;
+    padding: 0 !important;
   }
 }
 
@@ -326,7 +331,8 @@ div[class*="autocomplete-"] {
   }
 
   div[class*="message-"] div[class*="markup-"] {
-    color: hsla(0, 0%, 100%, .7) !important;
+    color: hsla(0, 0%, 100%, .7);
+    &[class*="isFailed-"] { color: #f04747; }
 
     pre {
       background: rgba(0, 0, 0, .2);
@@ -337,7 +343,7 @@ div[class*="autocomplete-"] {
 }
 
 
-.upload-modal {
+div[class*="uploadModal-"] {
   div[class*="autocomplete-"] {
     background: var(--dark-primary);
     color: #fff;
@@ -357,6 +363,15 @@ div[class*="autocomplete-"] {
 }
 
 .theme-dark textarea[class*="textArea-"] { background: transparent; }
+
+div[class*="messagesWrapper-"] + form div[class*="wrapper-"] {
+  background: var(--dark-secondary);
+  border-radius: 0;
+  border-top: $border-bottom-row;
+  height: 52px;
+  margin: 0;
+  padding: 0 16px;
+}
 
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
 div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextAreaEnabledNoAttach"],
@@ -534,6 +549,11 @@ div[class*="friendsTable-"] {
   background: var(--dark-secondary);
   margin-top: 0;
   padding-top: 8px;
+
+  div[class*="friendsAction-"] {
+    background-color: transparent !important;
+    &[class*="friendsActionIgnore-"]:hover { background-color: var(--dark-primary) !important; }
+  }
 }
 
 div[class*="privateChannels-"] {
