@@ -527,8 +527,8 @@ div[class*='privateChannels-'] {
 
     div[class*="iconsWrapper-"] {
       background: var(--dark-highlight) !important;
-      border-radius: 5px !important;
       border: 0;
+      border-radius: 5px !important;
 
       &:nth-child(2) { padding: 0 .5em; }
     }
@@ -553,7 +553,8 @@ div[class*="friendsTable-"] {
 
   div[class*="friendsAction-"] {
     background-color: transparent !important;
-    &[class*="friendsActionIgnore-"]:hover { background-color: var(--dark-primary) !important; }
+    &:hover { background-color: var(--dark-primary) !important; }
+    &[class*="friendsActionIgnore-"]:hover { background-color: #f04747 !important; }
   }
 }
 
