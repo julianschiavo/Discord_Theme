@@ -222,35 +222,6 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   margin-top: 14px;
 }
 
-div[class*="autocomplete-"] {
-  border: 0 !important;
-  border-radius: 0;
-  box-shadow: none;
-
-  div[class*="content-"] {
-    background: transparent;
-    div { color: #ccc; }
-  }
-
-  &::after { border: 0; }
-  header {
-    border-bottom: 0;
-    margin-bottom: 5px;
-  }
-
-  ul {
-    border-bottom: 0 !important;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  li {
-    border-radius: 0;
-    margin-bottom: 2px;
-    .active { border-radius: 0; }
-  }
-}
-
 .invite-button { background: rgba(0, 0, 0, .2); border: 0; }
 .invite-button-header { color: #fff; }
 
@@ -280,11 +251,47 @@ div[class*="autocomplete-"] {
 
 .theme-dark div[class*="autocomplete-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-primary) !important;
-  header { background-color: var(--dark-highlight) !important; }
-  ul { background-color: var(--dark-primary) !important; }
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: none;
+
+  &::after { border: 0; }
+  div[class*="content-"] {
+    background: transparent;
+    div { color: #ccc; }
+  }
+
+  div[class*="searchBar-"] {
+    @include search-bar;
+
+    input {
+      @include search-bar-inner;
+      padding-left: .75em;
+    }
+  }
+
+  header {
+    background-color: var(--dark-highlight) !important;
+    border-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    background-color: var(--dark-primary) !important;
+    border-bottom: 0 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   li {
     background-color: var(--dark-primary) !important;
-    &.active { background-color: var(--dark-secondary) !important; }
+    border-radius: 0;
+    margin-bottom: 2px;
+
+    &.active {
+      background-color: var(--dark-secondary) !important;
+      border-radius: 0;
+    }
   }
 
   div[class*="wrapper-"] {
@@ -915,7 +922,10 @@ div[class*="channels-"] {
       & + div[class*="container-"] { border-top: $border-bottom-row; }
     }
 
-    & + div[class*="container-2"] { border-top: $border-bottom-row; }
+    & + div[class*="container-2"] {
+      border-top: $border-bottom-row;
+      button:hover { background-color: var(--dark-secondary); }
+    }
   }
 }
 

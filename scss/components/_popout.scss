@@ -66,7 +66,11 @@ div[class*="userPopout-"] {
 
 div[class*="avatarStatusNormal-"] { border: 0; }
 
-.note textarea:focus { background: var(--dark-highlight); }
+div[class*="note-"] textarea {
+  background: transparent;
+  border-radius: 0;
+  &:focus { background: var(--dark-highlight) !important; }
+}
 
 // Colour picker
 .theme-dark div[class*="colorPickerCustom-"] {
@@ -329,15 +333,19 @@ div[class*="emojiPicker-"] {
 
   div[class*="stickyHeader-"] {
     background-color: var(--dark-primary);
+    box-shadow: 0 0 10px 5px var(--dark-highlight);
     left: 0;
     width: 100%;
+
+    div[class*="category-"] { padding-left: 1em; }
   }
 
   div[class*="category-"] {
     color: var(--accent);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
-    padding-left: 1em;
+    padding-left: .4em;
+    text-transform: none;
   }
 
   div[class*="categories-"] {
@@ -345,7 +353,21 @@ div[class*="emojiPicker-"] {
     border-top: 0;
     margin: 0;
     padding: 0 12px;
-    .item.selected { border-bottom-color: var(--accent); }
+    div[class*="selected-"] { border-bottom-color: var(--accent); }
+  }
+
+  div[class*="popout-"] {
+    background: var(--dark-secondary);
+    border: 0;
+
+    div[class*="item"] {
+      transition: all 250ms ease;
+
+      &:hover {
+        background-color: transparent;
+        transform: scale(.85);
+      }
+    }
   }
 
   div[class*="dimmer-"] { border-radius: 0; &.visible { background: rgba(0, 0, 0, .5); }}
@@ -748,7 +770,7 @@ div[class*="tooltips-"] div[class*="tooltip-"] {
       background: var(--dark-primary) !important;
       border: 0 !important;
 
-      div[class*="container-"] { background: transparent !important; }
+      div[class*="isMentionedCozy-"] { @include mentioned; }
 
       div[class*="actionButtons-"] {
         background-color: transparent;
