@@ -835,10 +835,10 @@ div[class*="autocomplete-"] {
   div[class*="content-"] { background: transparent; }
   div[class*="selectorSelected-"] { background: var(--dark-secondary); }
 
-  header {
-    background-color: var(--dark-highlight) !important;
+  header, div[class*="contentTitle-"] {
     color: var(--accent);
     font-size: 14px;
+    text-transform: none;
   }
 
   li, ul { background-color: var(--dark-secondary) !important; }
