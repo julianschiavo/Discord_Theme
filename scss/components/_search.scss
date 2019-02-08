@@ -73,6 +73,9 @@ div[class*="popouts-"] {
   div[class*="searchHeader-"] { background-color: var(--dark-highlight); }
   div[class*="scrollerWrap-"] div[class*="scroller-"] { background-color: var(--dark-primary); }
   div[class*="searchResult-"] {
+    // This is to fix the avatar cut
+    div[class*="avatar"] { margin: 0 20px 20px; }
+
     &[class*="expanded-"] {
       background: var(--dark-secondary);
       border: 0;
