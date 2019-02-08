@@ -41,6 +41,27 @@
 .theme-dark { // scss-lint:disable MergeableSelector
   .chat .jump-to-present-bar { background: var(--accent); }
 
+  div[class*="spoilerContainer-"] {
+    div[class*="spoilerWarning-"] {
+      background: var(--dark-primary);
+      border-radius: 3px;
+      color: rgba(#fff, .7);
+      font-size: 20px;
+      font-weight: normal;
+      padding: .2em 1.1em;
+      text-transform: none;
+      transition: all 250ms ease;
+
+      &::before, &::after {
+        padding: 0 .4em;
+        position: absolute;
+      }
+
+      &::before { content: '[ '; left: 0; }
+      &::after { content: ' ]'; right: 0; }
+    }
+  }
+
   span[class*="spoilerText-"] {
     background: transparent;
     border: 2px solid var(--dark-primary);
