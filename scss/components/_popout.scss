@@ -473,6 +473,11 @@ div[class*="errorState-"][class*="noResults-"] {
   }
 }
 
+.theme-dark div[class*="popoutContainer-"] div[class*="popout-"] {
+  background: var(--dark-highlight);
+  div[class*="memberListItem-"]:hover { background: var(--dark-primary); }
+}
+
 div[class*="modal-"] div[class*="wrapper-"] {
   background: transparent;
 

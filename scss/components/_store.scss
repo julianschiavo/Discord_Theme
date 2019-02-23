@@ -8,7 +8,7 @@ div[class*="emptyStateLarge-"] { background: var(--dark-secondary); }
 div[class*="homeWrapper-"] {
   div[class*="home-"] { background: var(--dark-secondary); }
 
-  div[class*="tileWrapper-"] {
+  div[class*="tile-"] {
     background: var(--dark-primary);
     &:hover { background: var(--dark-highlight); }
   }
