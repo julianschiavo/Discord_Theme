@@ -6,7 +6,7 @@ chrome.storage.sync.get({
   discordtheme: true
 },function(items) {
   if (items.discordtheme == true) {
-    document.querySelector('head').innerHTML += pluginURL("https://discordtheme.alexflipnote.xyz/theme.css");
+    document.querySelector('head').innerHTML += pluginURL("https://discordtheme.alexflipnote.dev/theme.css");
   }
 
   if (items.customcss.length > 2) {
