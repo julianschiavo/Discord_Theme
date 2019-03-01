@@ -1,5 +1,5 @@
 ### Discord Background
-[Click here for preview](https://i.alexflipnote.xyz/9a565b.png)
+[Click here for preview](https://i.alexflipnote.dev/9a565b.png)
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/transparent.css";
 :root {
@@ -12,7 +12,7 @@
 
 /* Settings */
 body:before {
-  background: url("https://i.alexflipnote.xyz/1f9a3d.jpg");
+  background: url("https://i.alexflipnote.dev/1f9a3d.jpg");
   /* Advanced settings */
   background-size: cover; background-attachment: fixed;
   background-position: center; background-repeat: no-repeat;
@@ -52,7 +52,7 @@ You can also change the background image in NSFW channels. Enjoy!
 ```
 
 ### 2 Guilds/Line (Community made)
-[Click here for preview](https://i.alexflipnote.xyz/60b9cb.png)
+[Click here for preview](https://i.alexflipnote.dev/60b9cb.png)
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/wideGuilds.css";
 ```
@@ -64,7 +64,7 @@ Removes most heavily noticeable and custom animations from the theme
 ```
 
 ### Use Default Discord Dark Theme Colors and Notifications (Community made)
-[Click here for preview](https://i.alexflipnote.xyz/cf921f.png)
+[Click here for preview](https://i.alexflipnote.dev/cf921f.png)
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/defDarkColors.css";
 ```
@@ -76,7 +76,7 @@ Just simply more animations everywhere
 ```
 
 ### Auto-hide Member list in Guilds
-[Click here for preview](https://i.alexflipnote.xyz/cc78b7.gif)
+[Click here for preview](https://i.alexflipnote.dev/cc78b7.gif)
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/autoMemberlist.css";
 ```
@@ -154,7 +154,7 @@ Just simply more animations everywhere
 ```
 
 ### Hidden search bar
-[Preview](https://i.alexflipnote.xyz/ec15b8.gif)
+[Preview](https://i.alexflipnote.dev/ec15b8.gif)
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/hideSearch.css";
 ```

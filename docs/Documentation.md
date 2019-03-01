@@ -7,7 +7,7 @@
 To install plugins to **autotheme.css**, you must use **@import**.
 More information can be found [Here](https://github.com/AlexFlipnote/Discord_Theme/blob/master/Plugins.md)
 <br>Example:<br>
-![Preview](https://i.alexflipnote.xyz/b8f707.png)
+![Preview](https://i.alexflipnote.dev/b8f707.png)
 
 You can also install the theme by using the **INSTALL.bat** that is located in the root folder.
 By using it, you agree to it installing all needed things listed below:
