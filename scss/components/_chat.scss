@@ -988,18 +988,9 @@ div[class*="channels-"] {
 
 // Servers section
 div[class*="badge-"], div[class*="iconSpacing-"] div[class*="wrapper-"] { background-color: var(--notif); }
-.new-messages-indicator.new-messages-indicator-mention { background-color: var(--notif); }
-
-div[class*="dms-"] div[class*="guild-"] div[class*="badge-"],
-div[class*="guilds-"] div[class*="guild-"] div[class*="badge-"],
-div[class*="guilds-"] div[class*="guild-"][class*="unread-"] div[class*="badge-"] {
-  @include transform(translate(-4px, -34px) !important);
-  z-index: 100;
-}
-
 div[class*="base-"] { border-radius: 0; }
 
-.theme-dark div[class*="guildsWrapper-"] { // scss-lint:disable MergeableSelector
+.theme-dark div[class*="wrapper-1R"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
   border-radius: 0;
   position: relative;
@@ -1007,11 +998,12 @@ div[class*="base-"] { border-radius: 0; }
   div[class*="unreadMentionsBar-"] { box-shadow: none; }
   div[class*="unreadMentionsIndicatorBottom-"] { bottom: 53px; }
 
-  div[class*="guilds-"] {
+  div[class*="systemPad-"] {
     margin-bottom: 53px;
     position: relative;
 
     // Friends icon was replaced with Hub channel at Canary, remove later
+    div[class*="homeButton-"] { background: transparent !important; }
     a[href="/activity"], a[href*="/store"], a[href*="/library"], a[href*="/channels/@me"] {
       background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
       background-position: center;
@@ -1029,8 +1021,14 @@ div[class*="base-"] { border-radius: 0; }
       width: 100%;
     }
 
-    div[class*="guild-"] {
-      div[class*="guildInner-"] { background: transparent !important; }
+    div[class*="container-"] div[class*="badge-"],
+    div[class*="container-"][class*="unread-"] div[class*="badge-"] {
+      @include transform(translate(-4px, -34px) !important);
+      z-index: 100;
+    }
+
+    div[class*="container-"] {
+      div[class*="dragfix"] div[class*="wrapper-"] { background: transparent !important; }
       &::after {
         background-color: var(--dark-primary);
         left: -5px;
@@ -1039,10 +1037,10 @@ div[class*="base-"] { border-radius: 0; }
       }
     }
 
-    div[class*="guild-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
+    div[class*="container-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
     div[class*="friendsOnline"] { display: none; }
 
-    div[class*="guild-"][class*="selected-"] {
+    div[class*="container-"][class*="selected-"] {
       background: transparent;
 
       & div[class*="unread-"]::before {
@@ -1065,9 +1063,9 @@ div[class*="base-"] { border-radius: 0; }
       }
     }
 
-    div[class*="guild-"][class*="selected-"]::before,
-    div[class*="guild-"][class*="selected-"][class*="unread-"]::before,
-    div[class*="guild-"][class*="unread-"]::before {
+    div[class*="container-"][class*="selected-"]::before,
+    div[class*="container-"][class*="selected-"][class*="unread-"]::before,
+    div[class*="container-"][class*="unread-"]::before {
       @include transform(translate(50px, -20px) scale(1.2));
       background: var(--notif);
       border-radius: 50%;
@@ -1079,7 +1077,7 @@ div[class*="base-"] { border-radius: 0; }
       z-index: 100;
     }
 
-    div[class*="guild-"][class*="selected-"][class*="unread-"]::before { // scss-lint:disable MergeableSelector
+    div[class*="container-"][class*="selected-"][class*="unread-"]::before { // scss-lint:disable MergeableSelector
       @include transform(translate(35px, 5px) scale(1.2));
       visibility: visible !important;
     }
@@ -1093,7 +1091,7 @@ div[class*="base-"] { border-radius: 0; }
     }
   }
 
-  button[class*="guildsAdd-"] {
+  div[class*="circleIconButton-"] {
     background: var(--dark-highlight);
     border: 0;
     border-radius: 0;
@@ -1102,16 +1100,17 @@ div[class*="base-"] { border-radius: 0; }
     color: var(--accent);
     font-size: 40px;
     font-weight: 200;
-    height: 53px;
+    height: 43px;
     left: 0 !important;
     padding: 0;
     position: fixed !important;
     text-align: center;
     width: 70px;
 
-    &:hover span[class*="guildsAddInner-"] { opacity: .5; }
-    span[class*="guildsAddInner-"] {
+    &:hover span[class*="plus-"] { opacity: .5; }
+    span[class*="plus-"] {
       font-weight: 500;
+      top: 4px;
       transition: all 250ms ease;
     }
   }
