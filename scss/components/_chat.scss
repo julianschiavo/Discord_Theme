@@ -553,6 +553,7 @@ div[class*='privateChannels-'] {
   div[class*="video-"] {
     background-color: transparent;
 
+    div[class*="wrapper-"] { background: transparent; }
     div[class*="iconsWrapper-"] {
       background: var(--dark-highlight) !important;
       border: 0;
