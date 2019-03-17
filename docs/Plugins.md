@@ -3,11 +3,11 @@
 ```css
 @import "https://discordtheme.alexflipnote.xyz/plugins/transparent.css";
 :root {
+  --transparent-blur: 3px; /* Don't include this line if you do not wish to have blur background */
   --transparent-highlight: rgba(0, 0, 0, .6);
+  --transparent-overlay: rgba(0, 0, 0, .75);
   --transparent-primary: rgba(0, 0, 0, .4);
   --transparent-secondary: rgba(0, 0, 0, .2);
-  --transparent-overlay: rgba(0, 0, 0, .75);
-  --transparent-blur: 3px; /* Don't include this line if you do not wish to have blur background */
 }
 
 /* Settings */

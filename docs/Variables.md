@@ -13,7 +13,9 @@
   --notif: #7a78bd;
 
   /* transparent.css */
+  --transparent-blur: 0px;
   --transparent-highlight: rgba(0, 0, 0, .6);
+  --transparent-overlay: rgba(0, 0, 0, .75);
   --transparent-primary: rgba(0, 0, 0, .4);
   --transparent-secondary: rgba(0, 0, 0, .2);
 
