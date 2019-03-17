@@ -11,7 +11,7 @@
 }
 
 /* Settings */
-body:before {
+body::before {
   background: url("https://i.alexflipnote.dev/1f9a3d.jpg");
   /* Advanced settings */
   background-size: cover; background-attachment: fixed;
