@@ -111,7 +111,15 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
 
   div[class*="wrapper-1R"] { background: var(--transparent-highlight); }
   div[class*="videoHeight-"] { background: var(--transparent-secondary); }
-  button[class*="guildsAdd-"] { background: var(--transparent-highlight) !important; }
+
+  div[class*="circleIconButton-"] {
+    background: var(--transparent-highlight) !important;
+    height: 53px !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 10px !important;
+  }
+
+  div[class*="container-11"] div[class*="circleIconButton-"] { background: transparent !important; }
 
   div[class*="membersWrap-"] {
     div[class*="content-"] { background: transparent; }
