@@ -712,6 +712,10 @@ div[class*="privateChannels-"] {
     }
   }
 
+  div[class*="card-"] {
+    div[class*="header-"], div[class*="body-"] { background: var(--dark-primary); }
+  }
+
   article { background-color: var(--dark-primary); }
   div[class*="separator-"] { display: none; }
   header[class*="header-"] {

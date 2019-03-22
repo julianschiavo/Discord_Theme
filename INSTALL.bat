@@ -37,7 +37,7 @@ set line=----------------------------------------
   echo 2 - Update BeautifulDiscord (In case the theme does not want to apply at all)
   echo 3 - Update BeautifulDiscord and Theme (Requires that you've already installed)
   echo 4 - Enable theme after update (Sometimes discord removes theme after you've updated)
-  echo 5 - Uninstall Theme from Discord
+  echo 5 - Uninstall theme from Discord
   echo %line%
 
   set /p target="> "
