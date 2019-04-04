@@ -58,6 +58,10 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     background: transparent;
   }
 
+  div[class*="listeningAlong-"] {
+    background: var(--transparent-primary);
+  }
+
   div[class*="friendsTable-"] {
     background: transparent;
 

@@ -174,10 +174,19 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 }
 
 
-// Spotify invite
+// Spotify
 .theme-dark div[class*="invite-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-primary);
   border-color: transparent;
+}
+
+.theme-dark div[class*="listeningAlong-"] { // scss-lint:disable MergeableSelector
+  background: var(--dark-primary);
+  border-left: $border-bottom-row;
+  border-radius: 0;
+  border-right: $border-bottom-row;
+  border-top: $border-bottom-row;
+  margin-bottom: -1px;
 }
 
 
@@ -391,7 +400,7 @@ div[class*="uploadModal-"] {
   padding-top: 0;
 }
 
-.theme-dark textarea[class*="textArea-"] { background: transparent; }
+.theme-dark textarea[class*="textArea-"] { background: transparent; } // scss-lint:disable MergeableSelector
 
 div[class*="messagesWrapper-"] + form div[class*="wrapper-"] {
   background: var(--dark-secondary);
@@ -491,6 +500,12 @@ div[class*='privateChannels-'] {
     }
   }
 
+  div[class*='channel-'] {
+    a { transition: all 250ms ease; }
+    &:hover a { background: var(--dark-secondary); }
+    &[class*="selected-"] a { background: var(--dark-highlight); }
+  }
+
   @for $i from 1 through 5 {
     div[class*='channel-']:nth-child(#{$i}) {
       display: inline-block;
@@ -528,12 +543,16 @@ div[class*='privateChannels-'] {
   div[class*="channel-"] {
     a[href="/activity"], a[href^="/library"], a[href^="/store"] {
       div[class*="wrapper-"] {
-        position: absolute; right: -1em; top: 0;
+        position: absolute;
+        right: -1em;
+        top: 0;
       }
     }
 
     a[href="/channels/@me"] div[class*="wrapper-"] {
-      position: absolute; right: 0; top: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
@@ -690,6 +709,10 @@ div[class*="privateChannels-"] {
     background-color: var(--dark-highlight);
     border: 0;
   }
+}
+
+.theme-dark div[class*="recentlyPlayedContainer-"] { // scss-lint:disable MergeableSelector
+  background: transparent;
 }
 
 .theme-dark div[class*="activityFeed-"] { // scss-lint:disable MergeableSelector
@@ -931,26 +954,27 @@ div[class*="titleWrapper-"] {
   &.popout-open header { background-color: var(--dark-secondary); }
 }
 
-@mixin arrow-hover($deg) {
+@mixin arrow-hover($deg, $invert: 50%) {
   background: url('https://cdn.discordapp.com/attachments/469030745692962836/469096603286896660/channel_arrow.png');
   background-size: contain;
-  filter: invert(50%);
+  filter: invert($invert);
   height: 15px;
   left: 4px;
   position: absolute;
-  top: 1px;
+  top: 2px;
   transition: all .3s;
   transform: rotate($deg);
   width: 15px;
 }
 
-div[class*="wrapperHoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
-div[class*="wrapperHovered-"] > svg { @include arrow-hover(180deg); }
-div[class*="wrapperCollapsed-"] > svg { @include arrow-hover(90deg); }
-div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
-
 div[class*="channels-"] {
   background: var(--dark-primary);
+
+  div[class*="wrapperHoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
+  div[class*="wrapperHovered-"] > svg { @include arrow-hover(180deg); }
+  div[class*="wrapperCollapsed-"] > svg { @include arrow-hover(90deg); }
+  div[class*="wrapperDefault-"] > svg { @include arrow-hover(180deg); }
+  div[class*="wrapperMuted"] > svg { @include arrow-hover(90deg, 30%); }
 
   div[class*="titleWrapper-"] { z-index: 1; }
 

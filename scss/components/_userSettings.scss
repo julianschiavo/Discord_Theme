@@ -1,17 +1,5 @@
 // Emotes: https://material.io/icons/
 
-.ui-text-input .input:focus {
-  border-color: var(--accent) !important;
-}
-
-.ui-switch-checkbox:checked + .ui-switch {
-  background: var(--accent);
-}
-
-.guild-settings-modal-emoji .no-emoji p {
-  color: #808080;
-}
-
 .user-settings-games {
   .now-playing-add .link:hover {
     color: var(--accent);
@@ -20,6 +8,24 @@
   div[class*="contents-"] {
     color: var(--accent);
   }
+}
+
+div[class*="contentColumn-"] div[class*="container-"] {
+  div[class*="search-"] {
+    @include search-bar-inner;
+    padding-right: 12px;
+  }
+}
+
+div[class*="avatarUploaderInner-"] { background-color: transparent; }
+
+.theme-dark div[class*="emptyUsers-"],
+.theme-dark div[class*="codeRedemptionRedirect-"],
+.theme-dark div[class*="attendeeCTA"] {
+  background-color: var(--dark-secondary) !important;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
 }
 
 div[class*="standardSidebarView-"] {
@@ -33,72 +39,6 @@ div[class*="standardSidebarView-"] {
 
   div[class*="sidebarRegion-"] {
     flex: 1 0 0;
-  }
-}
-
-.ui-sidebar-scrollable + .ui-content {
-  max-width: 100%;
-}
-
-.ui-tab-bar.SIDE .ui-tab-bar-item {
-  &::before {
-    margin-right: 10px;
-    vertical-align: -25%;
-  }
-
-  &.selected {
-    background-color: var(--accent);
-    color: #fff !important;
-  }
-}
-
-.ui-button {
-  .brand.filled, .green.filled {
-    background-color: var(--accent);
-
-    &:hover {
-      background-color: var(--accent);
-      opacity: .8;
-    }
-  }
-
-  .brand.outlined {
-    border-color: var(--accent);
-    color: var(--accent);
-
-    &:hover {
-      border-color: var(--accent);
-      opacity: .6;
-    }
-  }
-
-  &.link-color.link {
-    color: var(--accent);
-
-    &:not(:disabled):active .ui-button-contents, &:not(:disabled):hover .ui-button-contents {
-      background-image: none;
-      border-bottom: 1px solid var(--accent);
-    }
-  }
-}
-
-.ui-slider .slider-bar-fill {
-  background: var(--accent);
-  height: 100%;
-}
-
-.ui-checkbox-wrapper .ui-checkbox.round.checked.inverted {
-  background-color: var(--accent) !important;
-  border-color: var(--accent) !important;
-}
-
-.form {
-  .btn.green {
-    background-color: var(--accent);
-
-    &:hover {
-      background-color: var(--accent);
-    }
   }
 }
 
