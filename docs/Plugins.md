@@ -1,7 +1,7 @@
 ### Discord Background
 [Click here for preview](https://i.alexflipnote.dev/9a565b.png)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/transparent.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/transparent.css";
 :root {
   --transparent-blur: 3px; /* Don't include this line if you do not wish to have blur background */
   --transparent-highlight: rgba(0, 0, 0, .6);
@@ -22,14 +22,14 @@ body::before {
 ### Powercord Support
 [Click here to know more](https://github.com/Aetheryx/powercord)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/powercord.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/powercord.css";
 ```
 
 
 ### DiscordInjections Support
 [Click here to know more](https://github.com/DiscordInjections/Plugins)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/DiscordInjections.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/DiscordInjections.css";
 ```
 
 ### Changing colours
@@ -54,36 +54,36 @@ You can also change the background image in NSFW channels. Enjoy!
 ### 2 Guilds/Line (Community made)
 [Click here for preview](https://i.alexflipnote.dev/60b9cb.png)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/wideGuilds.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/wideGuilds.css";
 ```
 
 ### No animations
 Removes most heavily noticeable and custom animations from the theme
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/noAnimation.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/noAnimation.css";
 ```
 
 ### Use Default Discord Dark Theme Colors and Notifications (Community made)
 [Click here for preview](https://i.alexflipnote.dev/cf921f.png)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/defDarkColors.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/defDarkColors.css";
 ```
 
 ### [Early Access] More Animations
 Just simply more animations everywhere
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/animations.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/animations.css";
 ```
 
 ### Auto-hide Member list in Guilds
 [Click here for preview](https://i.alexflipnote.dev/cc78b7.gif)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/autoMemberlist.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/autoMemberlist.css";
 ```
 
 ### Customize codeblocks
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/highlightJS.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/highlightJS.css";
 :root {
   --code-font: firacode;
   --code-bg: #1D1F21;
@@ -133,13 +133,13 @@ Just simply more animations everywhere
 ### [BETA] Small codeblocks
 [Click here for preview](https://cdn.discordapp.com/attachments/298834205180166145/299626124017664000/preview.gif)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/CodeblockHeight.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/CodeblockHeight.css";
 ```
 
 ### Custom Status Picker
 [Click here for preview](https://light-theme-hurts.my-ey.es/0245f1.png)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/customDnD.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/customDnD.css";
 :root {
   /* Status names */
   --status-online-title: "Online";
@@ -156,16 +156,16 @@ Just simply more animations everywhere
 ### Hidden search bar
 [Preview](https://i.alexflipnote.dev/ec15b8.gif)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/hideSearch.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/hideSearch.css";
 ```
 
 ### Remove blocked messages
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/blocked.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/blocked.css";
 ```
 
 ### Restore the status picker from before the rewrite
 [Click here for preview](http://i.imgur.com/PjKdIla.gif)
 ```css
-@import "https://discordtheme.alexflipnote.xyz/plugins/minimalStatusPicker.css";
+@import "https://discordtheme.alexflipnote.dev/plugins/minimalStatusPicker.css";
 ```
