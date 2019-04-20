@@ -1,0 +1,311 @@
+@keyframes popout-left {
+  from {
+    transform: perspective(400px) translateX(-100px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes popout-right {
+  from {
+    transform: perspective(400px) translateX(-100px) rotate3d(0, 1, 0, 270deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes popout-bottom {
+  from {
+    transform: perspective(1000px) translate3d(-100%, -25%, 0px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes popup-top {
+  from {
+    transform: perspective(1000px) rotate3d(1, 0, 0, 270deg);
+    animation-timing-function: ease-out;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-small-right {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-small-left {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-small-bottom {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-small-top {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-tiny-top {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes flip-up {
+  from {
+    transform: perspective(600px) translateY(100px) rotate3d(1, 0, 0, -180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes list-item-icon-hover {
+  to {
+    margin-left: 10px;
+  }
+}
+
+@keyframes list-item-icon-hover-away {
+  from {
+    margin-left: 10px;
+  }
+}
+
+@keyframes ctx-item-hover {
+  to {
+    padding-left: 20px;
+  }
+}
+
+@keyframes ctx-item-hover-away {
+  from {
+    padding-left: 20px;
+  }
+}
+
+@keyframes reveal {
+  from {
+    height: 0;
+    padding: 0;
+  }
+}
+
+@keyframes tilt-in {
+  to {
+    transform: perspective(200px) rotate3d(0, 1, 0, 30deg);
+  }
+}
+
+@keyframes tilt-out {
+  from {
+    transform: perspective(200px) rotate3d(0, 1, 0, 30deg);
+  }
+}
+
+
+[class*="popoutLeft-"],
+[class*="popoutContainer-"]:hover [class*="popout-"] {
+    animation: popout-right .3s;
+}
+
+[class*="popoutRight-"] {
+    animation: popout-left .3s;
+}
+
+[class*="popoutBottom"] {
+    animation: popout-bottom .3s;
+}
+
+[class*="popoutTop"] {
+    animation: popout-top .3s;
+}
+
+[class*="autocomplete-"] {
+    animation: flip-up .2s;
+}
+
+[class*="messageGroupBlocked-"] [class*="container-"] {
+    animation: reveal .6s;
+}
+
+[class*="modal-"] {
+    animation: flip-up .5s;
+}
+
+.wrapper-2F3Zv8.popout-2fzvxG {
+    animation: fade-in-small-bottom .5s;
+}
+
+[class*="headerTop-"],
+[class*="activityUserPopout-"],
+[class*="contextMenu-"] {
+    overflow: hidden !important;
+}
+
+[class*="headerTop-"] [class*="headerText-"] {
+    animation: fade-in-small-top .5s;
+}
+
+[class*="profile-"] {
+    animation: fade-in-right .5s;
+}
+
+[class*="modal-"] [class*="header-"] [class*="nameTag-"] {
+    animation: fade-in-left .5s;
+}
+
+[class*="userPopout-"] [class*="header-"] [class*="nameTag-"],
+[class*="userPopout-"] [class*="header-"] [type="user_activity_play"] {
+    animation: fade-in-tiny-top .5s;
+}
+
+[class*="header-"] [class*="actionButton-"] {
+    animation: fade-in-small-right .5s;
+}
+
+[class*="header-"] [class*="additionalActionsIcon-"] {
+    animation: fade-in-small-left .5s;
+}
+
+[class*="modal-"] [class*="connectedAccount-"] {
+    animation: fade-in-tiny-top .3s;
+}
+
+[class*="modal-"] [class*="connectedAccount-"]:nth-child(odd) {
+    animation: fade-in-tiny-top .45s;
+}
+
+[class*='privateChannels-'] [class*='channel-']:nth-child(n+2):nth-child(-n+5) {
+    animation: fade-in-small-bottom .3s;
+}
+
+[class*='privateChannels-'] [class*='channel-']:nth-child(3) {
+    animation-duration: .35s !important;
+}
+
+[class*='privateChannels-'] [class*='channel-']:nth-child(4) {
+    animation-duration: .4s !important;
+}
+
+[class*='privateChannels-'] [class*='channel-']:nth-child(5) {
+    animation-duration: .45s !important;
+}
+
+[class*="modal-"] [class*="connectedAccount-"]:nth-child(n+3):nth-child(even) {
+    animation: fade-in-tiny-top .25s;
+}
+
+[class*="modal-"] [class*="connectedAccount-"]:nth-child(-n+5):nth-child(odd) {
+    animation: fade-in-tiny-top .32s;
+}
+
+[class*="profileBadgeWrapper-"]:nth-of-type(1) {
+    animation: fade-in-tiny-top .3s;
+}
+
+[class*="profileBadgeWrapper-"]:nth-of-type(2) {
+    animation: fade-in-tiny-top .35s;
+}
+
+[class*="profileBadgeWrapper-"]:nth-of-type(3) {
+    animation: fade-in-tiny-top .4s;
+}
+
+[class*="profileBadgeWrapper-"]:nth-of-type(4) {
+    animation: fade-in-tiny-top .45s;
+}
+
+[class*="listScroller-"] [class*="listRow-"]:hover [class*="icon-"],
+[class*="listScroller-"] [class*="listRow-"]:hover [class*="listAvatar-"] {
+    margin-left: 10px;
+    transition: margin-left .2s;
+}
+
+[class*="listScroller-"] [class*="listRow-"] [class*="icon-"],
+[class*="listScroller-"] [class*="listRow-"] [class*="listAvatar-"] {
+    margin-left: 0;
+    transition: margin-left .2s;
+}
+
+[class*="tabBar-"] [class*="item-"] {
+    animation: fade-in-small-left .4s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(2) {
+    animation: fade-in-small-left .45s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(3) {
+    animation: fade-in-small-left .5s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(4) {
+    animation: fade-in-small-left .55s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(5) {
+    animation: fade-in-small-left .6s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(6) {
+    animation: fade-in-small-left .65s;
+}
+
+[class*="tabBar-"] [class*="item-"]:nth-of-type(7) {
+    animation: fade-in-small-left .7s;
+}
+
+[class*="contextMenu-"] [class*="item-"] {
+    padding-left: 9px;
+    transition: padding-left .2s;
+    animation: fade-in-small-left .25s;
+}
+
+[class*="contextMenu-"] [class*="item-"]:hover {
+    padding-left: 20px;
+    transition: padding-left .2s;
+}
+
+[class*="headerBar-"] [class*="topic-"],
+[class*="headerBar-"] [class*="toolbar-"] {
+    animation: fade-in-small-left .4s;
+}
+
+[class*="headerBar-"] [class*="title-"] {
+    animation: fade-in-small-bottom .4s;
+}
+
+div[class*="wrapper-1R"] div[class*="systemPad-"] div[class*="container-"] {
+  animation: tilt-out 1s;
+}
+
+div[class*="wrapper-1R"] div[class*="systemPad-"] div[class*="container-"][class*="selected-"] {
+  animation: tilt-in 1s forwards;
+}

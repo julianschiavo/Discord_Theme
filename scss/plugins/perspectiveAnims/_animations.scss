@@ -1,0 +1,130 @@
+@keyframes popout-left {
+    from {
+        transform: perspective(400px) translateX(-100px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+
+@keyframes popout-right {
+    from {
+        transform: perspective(400px) translateX(-100px) rotate3d(0, 1, 0, 270deg);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+
+@keyframes popout-bottom {
+    from {
+        transform: perspective(1000px) translate3d(-100%, -25%, 0px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+
+@keyframes popup-top {
+    from {
+        transform: perspective(1000px) rotate3d(1, 0, 0, 270deg);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-small-right {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-small-left {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-small-bottom {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-small-top {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-tiny-top {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes flip-up {
+    from {
+        transform: perspective(600px) translateY(100px) rotate3d(1, 0, 0, -180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes list-item-icon-hover {
+    to {
+        margin-left: 10px;
+    }
+}
+
+@keyframes list-item-icon-hover-away {
+    from {
+        margin-left: 10px;
+    }
+}
+
+@keyframes ctx-item-hover {
+    to {
+        padding-left: 20px;
+    }
+}
+
+@keyframes ctx-item-hover-away {
+    from {
+        padding-left: 20px;
+    }
+}
+
+@keyframes reveal {
+    from {
+        height: 0;
+        padding: 0;
+    }
+}
+
+@keyframes tilt-in {
+    to {
+        transform: perspective(200px) rotate3d(0, 1, 0, 30deg);
+    }
+}
+
+@keyframes tilt-out {
+    from {
+        transform: perspective(200px) rotate3d(0, 1, 0, 30deg);
+    }
+}

@@ -169,3 +169,16 @@ Just simply more animations everywhere
 ```css
 @import "https://discordtheme.alexflipnote.dev/plugins/minimalStatusPicker.css";
 ```
+
+### [Beta] Perspective Animations
+Some good animations using perspective animation
+
+[List preview](https://i.imgur.com/6PZDqX3.gifv)
+[List preview 2](https://i.imgur.com/6jxdKDk.gifv)
+[User popout preview](https://i.imgur.com/zabeW8m.gifv)
+[Resent mentions preview](https://i.imgur.com/6unKdAv.gifv)
+```css
+@import "https://discordtheme.alexflipnote.dev/plugins/perspectiveAnims.css";
+/* For more animations (that might seem a bit too much) */
+@import "https://discordtheme.alexflipnote.dev/plugins/perspectiveAnimsPlus.css";
+```

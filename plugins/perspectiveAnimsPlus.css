@@ -1,0 +1,70 @@
+[class*="message-"]:not([class*="isSending"]) [class*="avatar-"] {
+    animation: fade-in-right .2s;
+}
+
+[class*="headerCozyMeta"] {
+    animation: fade-in-left .2s;
+}
+
+[class*="headerCozyMeta"], [class*="contentCozy"] div:not([class*="isSending"]),
+[class*="container-3-"] {
+    animation: fade-in-left .2s;
+}
+
+[class*="autocomplete-"] {
+    animation: flip-up .2s;
+}
+
+[class*="activityUserPopout-"] [class*="headerText-"],
+[class*="activityProfile-"] [class*="headerText-"],
+[class*="userInfoSectionHeader-"] {
+    animation: fade-in-small-left .5s;
+}
+
+[class*="activityUserPopout-"] [class*="body-"],
+[class*="activityProfile-"] [class*="body-"] {
+    animation: fade-in-small-right .5s;
+}
+
+[class*="userPopout-"] [class*="body-"] [class*="bodyTitle-"],
+[class*="userPopout-"] [class*="rolesList-"] [class*="addButton-"] {
+    animation: fade-in-small-left .5s;
+}
+
+[class*="userPopout-"] [class*="note-"],
+[class*="userInfoSection-"] [class*="note-"],
+[class*="userPopout-"] [class*="role-"] {
+    animation: fade-in-small-right .5s;
+}
+
+[class*="userPopout-"] [class*="role-"] {
+    animation: fade-in-small-right .5s;
+}
+
+[class*="protip-"],
+[class*="timeBarUserPopout-"] {
+    animation: fade-in-small-top .5s;
+}
+
+[class*="listScroller-"] {
+    animation: fade-in-small-left .45s;
+}
+
+[class*="membersWrap-"] {
+    animation: fade-in-small-left .4s;
+}
+
+[class*="codeRedemption-"],
+[class*="heroCarousel-"],
+[class*="friendsTableAdd-"],
+[class*="stickyHeader-"] {
+    animation: fade-in-small-bottom .4s;
+}
+
+[class*="codeRedemption-"] + [class*="root-"],
+[class*="heroCarousel-"] + [class*="homeBody-"],
+[class*="scrollerStore-"] [class*="rowWrapper-"],
+[class*="friendTableSuggestionsHeader-"],
+[class*="friendsTableBody-"] {
+    animation: fade-in-small-top .4s;
+}
