@@ -1,99 +1,70 @@
-div[class*="message-"]{
-    div[class*="avatar-"] {
-        animation: fade-in-right .2s;
-    }
-
-    div[class*="headerCozyMeta-"] {
-        animation: fade-in-left .2s;
-    }
+div[class*="message-"] {
+  div[class*="avatar-"] { animation: fade-in-right .2s; }
+  div[class*="headerCozyMeta-"] { animation: fade-in-left .2s; }
 }
 
-div[class*="container-3-"] {
-    animation: fade-in-left .2s;
-}
+div[class*="container-3-"] { animation: fade-in-left .2s; }
 
 div[class*="activityProfile-"] {
-    [class*="headerText-"] {
-        animation: fade-in-small-left .5s;
-    }
-
-    div[class*="body-"] {
-        animation: fade-in-small-right .5s;
-    }
+  [class*="headerText-"] { animation: fade-in-small-left .5s; }
+  div[class*="body-"] { animation: fade-in-small-right .5s; }
 }
 
 div[class*="userPopout-"] {
-    div[class*="body-"] div[class*="bodyTitle-"],
-    ul[class*="rolesList-"] button[class*="addButton-"] {
-        animation: fade-in-small-left .5s;
-    }
+  div[class*="body-"] div[class*="bodyTitle-"],
+  ul[class*="rolesList-"] button[class*="addButton-"] {
+    animation: fade-in-small-left .5s;
+  }
 
-    div[class*="protip-"],
-    div[class*="timeBarUserPopout-"] {
-        animation: fade-in-small-top .5s;
-    }
-    
-    li[class*="role-"], div[class*="note-"] {
-        animation: fade-in-small-right .5s;
-    }
+  div[class*="protip-"],
+  div[class*="timeBarUserPopout-"] {
+    animation: fade-in-small-top .5s;
+  }
 
-    div[class*="activityUserPopout-"] {
-        div[class*="headerText-"] {
-            animation: fade-in-small-left .5s;
-        }
-    
-        div[class*="body-"] {
-            animation: fade-in-small-right .5s;
-        }
-    }
+  li[class*="role-"], div[class*="note-"] {
+    animation: fade-in-small-right .5s;
+  }
+
+  div[class*="activityUserPopout-"] {
+    div[class*="headerText-"] { animation: fade-in-small-left .5s; }
+    div[class*="body-"] { animation: fade-in-small-right .5s; }
+  }
 }
 
 div[class*="userInfoSection-"] {
-    div[class*="userInfoSectionHeader-"] {
-        animation: fade-in-small-left .5s;
-    }
-
-    div[class*="note-"] {
-        animation: fade-in-small-right .5s;
-    }
+  div[class*="userInfoSectionHeader-"] { animation: fade-in-small-left .5s; }
+  div[class*="note-"] { animation: fade-in-small-right .5s; }
 }
 
 div[class*="listScroller-"],
 div[class*="membersWrap-"] {
-    animation: fade-in-small-left .4s;
+  animation: fade-in-small-left .4s;
 }
 
 div[class*="codeRedemption-"] {
-    animation: fade-in-small-bottom .4s;
+  animation: fade-in-small-bottom .4s;
 
-    & + div[class*="root-"] {
-        animation: fade-in-small-top .4s;
-    }
+  & + div[class*="root-"] {
+    animation: fade-in-small-top .4s;
+  }
 }
 
 div[class*="heroCarousel-"] {
-    animation: fade-in-small-bottom .4s;
+  animation: fade-in-small-bottom .4s;
 
-    & + div[class*="homeBody-"] {
-        animation: fade-in-small-top .4s;
-    }
+  & + div[class*="homeBody-"] {
+    animation: fade-in-small-top .4s;
+  }
 }
 
 div[class*="friendsTable-"] {
-    div[class*="friendsTableAdd-"] {
-        animation: fade-in-small-bottom .4s;
-    }
+  div[class*="friendsTableAdd-"] { animation: fade-in-small-bottom .4s; }
 
-    div[class*="friendTableSuggestionsHeader-"],
-    div[class*="friendsTableBody-"] {
-        animation: fade-in-small-top .4s;
-    }
-}
-
-div[class*="stickyHeader-"] {
-    animation: fade-in-small-bottom .4s;
-}
-
-div[class*="scrollerStore-"] div[class*="rowWrapper-"] {
+  div[class*="friendTableSuggestionsHeader-"],
+  div[class*="friendsTableBody-"] {
     animation: fade-in-small-top .4s;
+  }
 }
+
+div[class*="stickyHeader-"] { animation: fade-in-small-bottom .4s; }
+div[class*="scrollerStore-"] div[class*="rowWrapper-"] { animation: fade-in-small-top .4s; }

@@ -2,198 +2,143 @@
 
 div[class*="popoutLeft-"],
 div[class*="popoutContainer-"]:hover div[class*="popout-"] {
-    animation: popout-right .3s;
+  animation: popout-right .3s;
 }
 
-div[class*="popoutRight-"] {
-    animation: popout-left .3s;
-}
-
-div[class*="popoutBottom"] {
-    animation: popout-bottom .3s;
-}
-
-div[class*="popoutTop"] {
-    animation: popout-top .3s;
-}
-
-div[class*="autocomplete-"] {
-    animation: flip-up .2s;
-}
-
-div[class*="messageGroupBlocked-"] div[class*="container-"] {
-    animation: reveal .6s;
-}
-
-div.wrapper-2F3Zv8.popout-2fzvxG {
-    animation: fade-in-small-bottom .5s;
-}
-
-div[class*="activityUserPopout-"] {
-    overflow: hidden !important;
-}
-
-div[class*="profile-"] {
-    animation: fade-in-right .5s;
-}
+div[class*="popoutRight-"] { animation: popout-left .3s; }
+div[class*="popoutBottom"] { animation: popout-bottom .3s; }
+div[class*="popoutTop"] { animation: popout-top .3s; }
+div[class*="autocomplete-"] { animation: flip-up .2s; }
+div[class*="messageGroupBlocked-"] div[class*="container-"] { animation: reveal .6s; }
+div.wrapper-2F3Zv8.popout-2fzvxG { animation: fade-in-small-bottom .5s; }
+div[class*="activityUserPopout-"] { overflow: hidden !important; }
+div[class*="profile-"] { animation: fade-in-right .5s; }
 
 div[class*="userPopout-"] {
-    div[class*="header-"] {
-        div[class*="nameTag-"], button[class="lookOulined-"] {
-            animation: fade-in-tiny-top .5s;
-        }
+  div[class*="header-"] {
+    div[class*="nameTag-"], button[class="lookOulined-"] {
+      animation: fade-in-tiny-top .5s;
     }
+  }
 }
 
 div[class*="headerTop-"] {
-    overflow: hidden !important;
+  overflow: hidden !important;
 
-    [class*="headerText-"] {
-        animation: fade-in-small-top .5s;
-    }
+  [class*="headerText-"] {
+    animation: fade-in-small-top .5s;
+  }
 }
-  
-    
+
+
 div[class*="modal-"] {
-    animation: flip-up .5s;
+  animation: flip-up .5s;
 
-    div[class*="header-"] {
-        button[class*="actionButton-"] {
-            animation: fade-in-small-right .5s;
-        }
-
-        div[class*="additionalActionsIcon-"] {
-            animation: fade-in-small-left .5s;
-        }
-
-        div[class*="nameTag-"] {
-            animation: fade-in-left .5s;
-        }
-    }
-    
-    div[class*="connectedAccount-"] {
-        animation: fade-in-tiny-top .3s;
-
-        &:nth-child(odd) {
-            animation: fade-in-tiny-top .45s;
-        }
-
-        &:nth-child(n+3):nth-child(even) {
-            animation: fade-in-tiny-top .25s;
-        }
-        
-        &:nth-child(-n+5):nth-child(odd) {
-            animation: fade-in-tiny-top .32s;
-        }
-    }
-}
-  
-div[class*='privateChannels-'] div[class*='channel-'] {
-    &:nth-child(n+2):nth-child(-n+5) {
-        animation: fade-in-small-bottom .3s;
+  div[class*="header-"] {
+    button[class*="actionButton-"] {
+      animation: fade-in-small-right .5s;
     }
 
-    &:nth-child(3) {
-        animation-duration: .35s !important;
+    div[class*="additionalActionsIcon-"] {
+      animation: fade-in-small-left .5s;
     }
 
-    &:nth-child(4) {
-        animation-duration: .4s !important;
+    div[class*="nameTag-"] {
+      animation: fade-in-left .5s;
     }
+  }
 
-    &:nth-child(5) {
-        animation-duration: .45s !important;
-    }
-}
-  
-div[class*="profileBadgeWrapper-"] {
+  div[class*="connectedAccount-"] {
     animation: fade-in-tiny-top .3s;
 
-    &:nth-of-type(2) {
-        animation: fade-in-tiny-top .35s;
+    &:nth-child(odd) {
+      animation: fade-in-tiny-top .45s;
     }
 
-    &:nth-of-type(3) {
-        animation: fade-in-tiny-top .4s;
+    &:nth-child(n+3):nth-child(even) {
+      animation: fade-in-tiny-top .25s;
     }
 
-    &:nth-of-type(4) {
-        animation: fade-in-tiny-top .45s;
+    &:nth-child(-n+5):nth-child(odd) {
+      animation: fade-in-tiny-top .32s;
     }
+  }
 }
-  
+
+div[class*='privateChannels-'] div[class*='channel-'] {
+  &:nth-child(n+2):nth-child(-n+5) {
+    animation: fade-in-small-bottom .3s;
+  }
+
+  @for $i from 3 through 5 {
+    $num: $i - 2;
+    $start: .3s;
+    &:nth-of-type(#{$i}) { animation-duration: $start + ($num * 5 / 100) !important; }
+  }
+}
+
+div[class*="profileBadgeWrapper-"] {
+  animation: fade-in-tiny-top .3s;
+  @for $i from 2 through 4 {
+    $num: $i - 1;
+    $start: .3s;
+    &:nth-of-type(#{$i}) { animation: fade-in-tiny-top $start + ($num * 5 / 100); }
+  }
+}
+
 div[class*="tabBar-"], div[class*="topPill-"] {
-    div[class*="item-"] {
-        animation: fade-in-small-left .4s;
-
-        &:nth-of-type(2) {
-            animation: fade-in-small-left .45s;
-        }
-
-        &:nth-of-type(3) {
-            animation: fade-in-small-left .5s;
-        }
-
-        &:nth-of-type(4) {
-            animation: fade-in-small-left .55s;
-        }
-
-        &:nth-of-type(5) {
-            animation: fade-in-small-left .6s;
-        }
-
-        &:nth-of-type(6) {
-            animation: fade-in-small-left .65s;
-        }
-
-        &:nth-of-type(7) {
-            animation: fade-in-small-left .7s;
-        }
+  div[class*="item-"] {
+    animation: fade-in-small-left .4s;
+    @for $i from 2 through 7 {
+      $num: $i - 1;
+      $start: .4s;
+      &:nth-of-type(#{$i}) { animation: fade-in-small-left $start + ($num * 5 / 100); }
     }
+  }
 }
 
 div[class*="listScroller-"] div[class*="listRow-"] {
-    div[class*="icon-"], div[class*="listAvatar-"] {
-        margin-left: 0;
-        transition: margin-left .2s;
-    }
+  div[class*="icon-"], div[class*="listAvatar-"] {
+    margin-left: 0;
+    transition: margin-left .2s;
+  }
 
-    &:hover div[class*="icon-"],
-    &:hover div[class*="listAvatar-"] {
-        margin-left: 10px;
-        transition: margin-left .2s;
-    }
+  &:hover div[class*="icon-"],
+  &:hover div[class*="listAvatar-"] {
+    margin-left: 10px;
+    transition: margin-left .2s;
+  }
 }
 
 div[class*="contextMenu-"] {
-    overflow: hidden !important;
+  overflow: hidden !important;
 
-    div[class*="item-"] {
-        padding-left: 9px;
-        transition: padding-left .2s;
-        animation: fade-in-small-left .25s;
+  div[class*="item-"] {
+    animation: fade-in-small-left .25s;
+    padding-left: 9px;
+    transition: padding-left .2s;
 
-        &:hover {
-            padding-left: 20px;
-            transition: padding-left .2s;
-        }
+    &:hover {
+      padding-left: 20px;
+      transition: padding-left .2s;
     }
+  }
 }
 
 div[class*="headerBar-"] {
-    div[class*="topic-"], div[class*="toolbar-"] {
-        animation: fade-in-small-left .4s;
-    }
+  div[class*="topic-"], div[class*="toolbar-"] {
+    animation: fade-in-small-left .4s;
+  }
 
-    div[class*="title-"] {
-        animation: fade-in-small-bottom .4s;
-    }
+  div[class*="title-"] {
+    animation: fade-in-small-bottom .4s;
+  }
 }
-  
-div[class*="wrapper-1R"] div[class*="systemPad-"] div[class*="container-"] {
-    animation: tilt-out 1s;
 
-    &[class*="selected-"] {
-        animation: tilt-in 1s forwards;
-    }
+div[class*="wrapper-1R"] div[class*="systemPad-"] div[class*="container-"] {
+  animation: tilt-out 1s;
+
+  &[class*="selected-"] {
+    animation: tilt-in 1s forwards;
+  }
 }

@@ -604,6 +604,12 @@ div[class*="friendsTable-"] {
     &:hover { background-color: var(--dark-primary) !important; }
     &[class*="friendsActionIgnore-"]:hover { background-color: #f04747 !important; }
   }
+
+  div[class*="friendsRow-"]:hover {
+    background: var(--dark-primary) !important;
+    border: 0;
+    border-radius: 0;
+  }
 }
 
 div[class*="privateChannels-"] {
@@ -745,6 +751,8 @@ div[class*="privateChannels-"] {
     background: transparent !important;
     box-shadow: none;
   }
+
+  div[class*="container-"][class*="empty-"] { background: var(--dark-primary); }
 
   div[role="button"] {
     background: var(--dark-primary);
