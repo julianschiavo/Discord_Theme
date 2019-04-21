@@ -46,6 +46,11 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     div[class*="cardPrimary-"] { background: var(--transparent-primary); }
   }
 
+  div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-"] {
+    div[class*="container-"] { background: transparent !important; }
+    div[class*="container-1r"] { background: var(--transparent-secondary) !important; }
+  }
+
   // A bunch of transparent shit
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
