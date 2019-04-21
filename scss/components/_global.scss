@@ -47,6 +47,24 @@ div[class*="notice-"] {
   border-radius: 0;
 }
 
+div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
+div[class*="numberBadge-"] { background-color: var(--notif) !important; }
+
+div[class*="badge-"], div[class*="mentionsBadge-"] div[class*="numberBadge-"] {
+  background-clip: padding-box;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .25), inset 0 1px 0 hsla(0, 0%, 100%, .15);
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  padding: 3px 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+  text-transform: uppercase;
+}
+
+
 .theme-dark div[class*="footer-"] {
   background-color: var(--dark-secondary);
   div[class*="content-"] { background: var(--dark-secondary); }

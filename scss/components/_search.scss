@@ -168,7 +168,7 @@ div[class*="privateChannels-"] {
   div[class*="searchBar-"], .search-bar {
     @include search-bar;
 
-    div[class*="searchBarInner-"] {
+    div[class*="inner-"] {
       @include search-bar-inner;
     }
   }
@@ -177,6 +177,7 @@ div[class*="privateChannels-"] {
 .theme-dark div[class*="search-"] div[class*="searchBar-"] {
   background: transparent;
   box-shadow: 0;
+  transition: all 250ms ease;
 
   span[class*="searchFilter-"], span[class*="searchAnswer-"] { background: var(--dark-primary); }
 }
