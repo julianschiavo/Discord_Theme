@@ -846,6 +846,8 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
         svg[name="Nova_Pin"] path { d: path($svg-pin); }
         svg[name="Nova_People"] path { d: path($svg-people); }
         svg[name="Nova_At"] path { d: path($svg-mention); }
+        svg[name="Nova_CallJoin"] path { d: path($svg-phone); }
+        svg[name="Nova_CallVideo"] path { d: path($svg-camera); }
         svg[name="Nova_Help"] {
           margin-left: 7px;
           margin-top: 5px;
