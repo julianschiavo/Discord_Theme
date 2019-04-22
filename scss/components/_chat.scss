@@ -294,7 +294,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   div[class*="searchBar-"] {
     @include search-bar;
 
-    input {
+    div[class*="inner-"] {
       @include search-bar-inner;
       padding-left: .75em;
     }
@@ -1141,15 +1141,26 @@ div[class*="channels-"] {
     // Temp soultion to unread servers
     div[class*="listItem-"] {
       div[class*="pill-"] span[class*="item-"] {
-        background-color: var(--accent);
+        background-color: var(--notif);
         margin-left: -3px;
       }
     }
 
-    div[class*="container-"] div[class*="badge-"],
-    div[class*="container-"][class*="unread-"] div[class*="badge-"] {
-      @include transform(translate(-4px, -34px) !important);
-      z-index: 100;
+    div[class*="listItem-"] div[class*="pill-"] {
+      height: 48px;
+      width: 72px;
+    }
+
+    div[class*="listItem- BREAK"] {  // Still under work
+      @include transform(translate(49px, -17px) !important);
+      border-radius: 50% !important;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 hsla(0, 0%, 100%, .15) !important;
+      height: 14px !important;
+      margin-top: 0 !important;
+      opacity: 1 !important;
+      pointer-events: none !important;
+      width: 14px !important;
+      z-index: 100 !important;
     }
 
     div[class*="container-"] {

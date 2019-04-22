@@ -54,13 +54,10 @@ div[class="ui-tab-bar-item guild-role selected"] > .ui-flex > .flex-nowrap {
 }
 
 div[class*="side"] {
-  div[class*="itemSelected-"] { background-color: var(--accent); }
   div[class*="item-"] {
     transition: all 200ms ease;
-
-    &:hover {
-      transform: translateX(.4em);
-    }
+    &[class*="selected-"] { background-color: var(--accent) !important; }
+    &:hover { transform: translateX(.4em); }
   }
 }
 
