@@ -12,17 +12,17 @@
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
 
-  /* transparent.css */
+  /* Plugin: transparent.css */
   --transparent-blur: 0px;
   --transparent-highlight: rgba(0, 0, 0, .6);
   --transparent-overlay: rgba(0, 0, 0, .75);
   --transparent-primary: rgba(0, 0, 0, .4);
   --transparent-secondary: rgba(0, 0, 0, .2);
 
-  /* CodeblockHeight.css */
+  /* Plugin: CodeblockHeight.css */
   --code-max-height: 150px;
 
-  /* customDnD.css */
+  /* Plugin: customDnD.css */
   --status-dnd: "Signifies that you are playing Dungeons and Dragons.";
   --status-dnd-title: "Dungeons and Dragons";
   --status-idle-title: "Idle";
@@ -30,7 +30,7 @@
   --status-invis-title: "Invisible";
   --status-online-title: "Online";
 
-  /* highlightJS.css */
+  /* Plugin: highlightJS.css */
   --code-attr: #78D69E;
   --code-attribute: #40C762;
   --code-bg: #1D1F21;

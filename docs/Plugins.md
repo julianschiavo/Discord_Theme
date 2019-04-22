@@ -19,19 +19,6 @@ body::before {
 }
 ```
 
-### Powercord Support
-[Click here to know more](https://github.com/Aetheryx/powercord)
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/powercord.css";
-```
-
-
-### DiscordInjections Support
-[Click here to know more](https://github.com/DiscordInjections/Plugins)
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/DiscordInjections.css";
-```
-
 ### Changing colours
 You can actually change any colours of backgrounds and such by just implementing
 this into your autotheme.css, rgb(a), hex, anything.
@@ -49,6 +36,19 @@ You can also change the background image in NSFW channels. Enjoy!
   --light-highlight: #9E9E9E;
   --light-dark-text: #2e3136;
 }
+```
+
+### Powercord Support
+[Click here to know more](https://github.com/Aetheryx/powercord)
+```css
+@import "https://discordtheme.alexflipnote.dev/plugins/powercord.css";
+```
+
+
+### DiscordInjections Support
+[Click here to know more](https://github.com/DiscordInjections/Plugins)
+```css
+@import "https://discordtheme.alexflipnote.dev/plugins/DiscordInjections.css";
 ```
 
 ### 2 Guilds/Line (Community made)

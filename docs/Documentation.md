@@ -56,13 +56,14 @@ setTimeout(function(){debugger;}, 5000);
 ```
 With this, you don't have to worry about finding those things that disappears if you just click away for a second.
 
-## Source-Code Information
-This CSS code is 100% self-made, if you do wish to use this code for your creation, please do, just remember to give proper credits to this theme.
-
-Using this theme in any YouTube videos, Screenshots or any other sharing platforms is totally fine. We respect the ability to share experience with everyone else.
-
+## Discord version
 The CSS code is made to fit the current code of **Discord Canary**, which is an early version of **Discord**, if you wish to download Canary, click on one of these links:<br>
 [Windows](https://discordapp.com/api/download/canary?platform=win)
 [Mac](https://discordapp.com/api/download/canary?platform=osx)
 [Linux.deb](https://discordapp.com/api/download/canary?platform=linux&format=deb)
 [Linux.tar.gz](https://discordapp.com/api/download/canary?platform=linux&format=tar.gz)
+
+## Source-Code Information
+This CSS code is 100% self-made, if you do wish to use this code for your creation, please do, just remember to give proper credits to this theme.
+
+Using this theme in any YouTube videos, Screenshots or any other sharing platforms is totally fine. We respect the ability to share experience with everyone else.
