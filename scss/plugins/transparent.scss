@@ -144,10 +144,6 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     }
   }
 
-  div[class*="isMentioned-"] {
-    background: rgba(250, 166, 26, .1) !important;
-  }
-
   div[class^="root-"] {
     background-color: transparent;
 
@@ -220,3 +216,6 @@ div[class*="listing-"] {
   }
 }
 // END: Game store shit
+
+// Because Discord is bad, I added it here too
+div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
