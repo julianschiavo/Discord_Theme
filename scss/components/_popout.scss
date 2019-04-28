@@ -763,6 +763,7 @@ div[class*="tooltips-"] div[class*="tooltip-"] {
   @include animation(popout-content 400ms ease-in-out);
   background: var(--dark-primary) !important;
   border: 0 !important;
+  border-radius: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .3) !important;
   max-height: 541px !important;
 

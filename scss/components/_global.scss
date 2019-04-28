@@ -93,7 +93,40 @@ span[class*="botTag"] {
 }
 
 #app-mount {
-  div[class*="wordmark-"] { display: none; }
+  div[class*="wordmark-"] {
+    &::before {
+      $cross-colour-logo: #f22525;
+      background: linear-gradient(135deg, $cross-colour-logo 25%, transparent 25%) -20px 0,
+                  linear-gradient(225deg, $cross-colour-logo 25%, transparent 25%) -20px 0,
+                  linear-gradient(315deg, $cross-colour-logo 25%, transparent 25%),
+                  linear-gradient(45deg, $cross-colour-logo 25%, transparent 25%);
+      background-size: 40px 40px;
+      content: ' ';
+      display: block;
+      height: 4px;
+      left: 8px;
+      position: absolute;
+      top: 10px;
+      transform: rotate(-6deg);
+      width: 55px;
+      z-index: 10000000;
+    }
+
+    &::after {
+      color: var(--accent);
+      content: 'Discord_Theme #{$version}';
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      height: 25px;
+      left: 70px;
+      position: absolute;
+      top: 3px;
+      width: 200px;
+      z-index: 10000000;
+    }
+  }
+
   div[class*="titleBar-"] {
     background: #101010;
     margin-top: 0;

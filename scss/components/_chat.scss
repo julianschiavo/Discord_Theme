@@ -101,7 +101,20 @@
 
 div[class*="chat-"] {
   div[class*="newMessagesBar-"] { background-color: var(--notif); }
-  div[class*="jumpToPresentBar-"] { left: inherit; }
+  div[class*="jumpToPresentBar-"] {
+    border-radius: 0;
+    left: inherit;
+  }
+
+  div[class*="title-"] {
+    background: var(--dark-secondary);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
+  }
+
+  div[class*="titleCall-"] {
+    background: transparent;
+    box-shadow: none;
+  }
 
   form {
     border: 0;
@@ -832,29 +845,11 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
       svg[class*="icon-"] { height: 18px; width: 18px; }
     }
 
-    div[class*="toolbar-"] {
-      div[class*="iconWrapper-"] {
-        background-color: transparent !important;
-        height: 22px;
-        margin: 0 4px;
-        top: 0;
-
-        svg[class*="icon-"] { height: 24px; width: 24px; }
-
-        // scss-lint:disable PropertySpelling
-        svg[name="Nova_Bell"] path { d: path($svg-notification-bell); }
-        svg[name="Nova_Pin"] path { d: path($svg-pin); }
-        svg[name="Nova_People"] path { d: path($svg-people); }
-        svg[name="Nova_At"] path { d: path($svg-mention); }
-        svg[name="Nova_CallJoin"] path { d: path($svg-phone); }
-        svg[name="Nova_CallVideo"] path { d: path($svg-camera); }
-        svg[name="Nova_Help"] {
-          margin-left: 7px;
-          margin-top: 5px;
-          path { d: path($svg-question-mark); }
-        }
-        // scss-lint:enable PropertySpelling
-      }
+    div[class*="toolbar-"] div[class*="iconWrapper-"] {
+      background-color: transparent !important;
+      height: 22px;
+      margin: 0 4px;
+      top: 0;
     }
 
     div[class*="tabBar-"] div[class*="item-"] {
@@ -909,10 +904,28 @@ div[class*="container-"] {
   div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
     div[class*="content-"] {
       @include transition(all .2s ease-in-out);
+      border-radius: 0;
+
       svg[class*="icon-"] { height: 16px; width: 16px; }
+
       &:hover {
         background: var(--dark-secondary);
+        border-radius: 0;
         padding-left: 16px;
+      }
+    }
+
+    div[class*="list-"] { padding-left: 22px; }
+
+    div[class*="voiceUser-"][class*="selected-"] {
+      div[class*="content-"] { background: var(--dark-secondary) !important; }
+    }
+
+    div[class*="voiceUser-"] div[class*="content-"]:hover { padding-left: 0; }
+    div[class*="voiceUser-"], div[class*="voiceUser-"] div[class*="content-"] {
+      &:hover {
+        background: var(--dark-secondary);
+        border-radius: 0;
       }
     }
   }
@@ -1004,6 +1017,7 @@ div[class*="container-"] {
   }
 
   div[class*="memberOnline-"], div[class*="memberOffline-"] {
+    border-radius: 0;
     transition: all 300ms ease;
     &:hover { background-color: var(--dark-primary); }
 
@@ -1014,17 +1028,6 @@ div[class*="container-"] {
   }
 }
 
-div[class*="chat-"] {
-  div[class*="title-"] {
-    background: var(--dark-secondary);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
-  }
-
-  div[class*="titleCall-"] {
-    background: transparent;
-    box-shadow: none;
-  }
-}
 
 .guild-header header {
   background-color: var(--dark-highlight);
@@ -1059,6 +1062,19 @@ div[class*="channels-"] {
     div[class*="hovered-"] > svg { @include arrow-hover(180deg); }
     div[class*="collapsed-"] > svg { @include arrow-hover(90deg); }
     div[class*="muted"] > svg { @include arrow-hover(90deg, 30%); }
+  }
+
+  div[class*="userLimit-"] {
+    div[class*="wrapper-"] {
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    span[class*="users-"] { background-color: var(--dark-secondary); }
+    span[class*="total-"] {
+      background-color: var(--dark-highlight);
+      &::after { border-right-color: var(--dark-highlight); }
+    }
   }
 
   div[class*="titleWrapper-"] { z-index: 1; }
@@ -1142,15 +1158,19 @@ div[class*="channels-"] {
 
     // Temp soultion to unread servers
     div[class*="listItem-"] {
-      div[class*="pill-"] span[class*="item-"] {
-        background-color: var(--notif);
-        margin-left: -3px;
-      }
-    }
+      div[class*="pill-"] {
+        height: 48px;
+        width: 72px;
 
-    div[class*="listItem-"] div[class*="pill-"] {
-      height: 48px;
-      width: 72px;
+        span[class*="item-"] {
+          background-color: var(--notif);
+          margin-left: -3px;
+        }
+      }
+
+      div[class*="badgeWrapper-"] div[class*="iconBadge"] {
+        background-color: var(--dark-secondary);
+      }
     }
 
     div[class*="listItem- BREAK"] {  // Still under work

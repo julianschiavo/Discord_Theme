@@ -96,6 +96,12 @@ div[class*="standardSidebarView-"] {
   }
 }
 
+// Sidebar buttons
+.theme-dark div[class*="sidebarRegion-"] div[class*="sidebar-"] div[class*="item-"] {
+  border-radius: 0;
+  &:hover { background: var(--dark-primary); }
+}
+
 .theme-dark div[class*="cardPrimaryEditable-"] {
   background: var(--dark-highlight);
   border-radius: 5px;
