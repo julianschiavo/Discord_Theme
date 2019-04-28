@@ -36,11 +36,13 @@
   --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
+  --discord-logo: 1;
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
+  --theme-logo: 1;
 }
 
 div[class*="notice-"] {
@@ -94,6 +96,7 @@ span[class*="botTag"] {
 
 #app-mount {
   div[class*="wordmark-"] {
+    svg { opacity: var(--discord-logo); }
     &::before {
       $cross-colour-logo: #f22525;
       background: linear-gradient(135deg, $cross-colour-logo 25%, transparent 25%) -20px 0,
@@ -105,6 +108,7 @@ span[class*="botTag"] {
       display: block;
       height: 4px;
       left: 8px;
+      opacity: var(--discord-logo);
       position: absolute;
       top: 10px;
       transform: rotate(-6deg);
@@ -120,6 +124,7 @@ span[class*="botTag"] {
       font-weight: bold;
       height: 25px;
       left: 70px;
+      opacity: var(--theme-logo);
       position: absolute;
       top: 3px;
       width: 200px;

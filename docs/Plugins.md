@@ -26,15 +26,17 @@ You can also change the background image in NSFW channels. Enjoy!
 [Custom NSFW Preview](https://light-theme-hurts.my-ey.es/4bbd82.png)
 ```css
 :root {
-  --notif: #7A78BD;
-  --accent: #7A78BD;
+  --accent: #7a78bd;
+  --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
-  --dark-highlight: #181818;
+  --discord-logo: 1;
+  --light-dark-text: #2e3136;
+  --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
-  --light-highlight: #9E9E9E;
-  --light-dark-text: #2e3136;
+  --notif: #7a78bd;
+  --theme-logo: 1;
 }
 ```
 

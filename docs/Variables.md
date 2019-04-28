@@ -6,11 +6,13 @@
   --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
+  --discord-logo: 1;
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
+  --theme-logo: 1;
 
   /* Plugin: transparent.css */
   --transparent-blur: 0px;
