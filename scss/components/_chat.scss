@@ -1061,7 +1061,11 @@ div[class*="channels-"] {
     div[class*="hoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
     div[class*="hovered-"] > svg { @include arrow-hover(180deg); }
     div[class*="collapsed-"] > svg { @include arrow-hover(90deg); }
-    div[class*="muted"] > svg { @include arrow-hover(90deg, 30%); }
+
+    div[class*="muted"] > svg { @include arrow-hover(180deg, 30%); }
+    div[class*="muted"][class*="collapsed-"] > svg { @include arrow-hover(90deg, 30%); }
+
+    div[class*="muted"] div[class*="name-"] { color: #4f545c; }
   }
 
   div[class*="userLimit-"] {
