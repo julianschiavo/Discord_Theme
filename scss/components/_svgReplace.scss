@@ -8,13 +8,27 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
     svg[name="Nova_Bell"] path { d: path($svg-notification-bell); }
     svg[name="Nova_Pin"] path { d: path($svg-pin); }
     svg[name="Nova_People"] path { d: path($svg-people); }
-    svg[name="Nova_At"] path { d: path($svg-mention); }
     svg[name="Nova_CallJoin"] path { d: path($svg-phone); }
     svg[name="Nova_CallVideo"] path { d: path($svg-camera); }
+
+    svg[name="Nova_At"] {
+      transform: translateY(-1px);
+      path { d: path($svg-mention); }
+    }
+
     svg[name="Nova_Help"] {
       margin-left: 7px;
       margin-top: 5px;
       path { d: path($svg-question-mark); }
     }
+  }
+}
+
+div[class*="title-"][class*="container-"] div[class*="iconWrapper-"] {
+  svg[name="Nova_At"] {
+    height: 24px !important;
+    transform: translateY(-3px);
+    width: 24px !important;
+    path { d: path($svg-mention); }
   }
 }
