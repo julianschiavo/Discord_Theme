@@ -1,0 +1,49 @@
+div[class*="carouselRightGradientEdge-"], div[class*="carouselLeftGradientEdge-"] {
+  background: transparent !important;
+}
+
+span[class*="boostCount-"] {
+  background: var(--dark-secondary) !important;
+  border-radius: 0;
+  color: #fff !important;
+}
+
+div[class*="boost-"][class*="outer-"] {
+  background: var(--dark-secondary);
+  border-radius: 0;
+  filter: $filter-dropshadow;
+  margin-right: .25em;
+}
+
+div[class*="tier-"] {
+  background: transparent;
+  border-bottom: 0;
+  border-radius: 0;
+
+  svg[class*="tierLock-"] { color: var(--accent); }
+
+  div[class*="tierHeader"] {
+    background: var(--dark-highlight);
+    color: #fff;
+  }
+
+  div[class*="tierBody"] {
+    background: var(--dark-secondary);
+    color: #fff;
+  }
+}
+
+div[class*="tierMarkerContainer-"] {
+  div[class*="tierMarker-"] { background: transparent; }
+  div[class*="tierMarkerBackground-"] { background: var(--dark-secondary); }
+
+  div[class*="selectedTier-"] {
+    div[class*="tierMarkerBackground-"] { background: var(--dark-highlight); }
+    div[class*="tierMarker-"] { box-shadow: none; }
+  }
+}
+
+div[class*="progressBar-"] {
+  div[class*="barBackground-"] { background: var(--dark-secondary); }
+  div[class*="barForeground-"] { background: var(--accent); }
+}

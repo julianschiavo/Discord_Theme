@@ -82,7 +82,7 @@ div[class*="note-"] textarea {
 // Call popout
 div[class*="pictureInPicture-"] {
   div[class*="pictureInPictureWindow-"] {
-    filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, .5));
+    filter: $filter-dropshadow;
   }
 }
 

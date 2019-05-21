@@ -178,7 +178,7 @@ div[class*="chat-"] {
 div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   background: var(--dark-primary);
   border-style: none;
-  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
+  filter: $filter-dropshadow;
 
   h5[class*="h5-"] {
     color: #fff;
@@ -214,7 +214,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 .theme-dark div[class*="attachment-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-primary);
   border-color: transparent;
-  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .15));
+  filter: $filter-dropshadow;
 
   div[class*="filename-"], a[class*="fileNameLink-"] { color: var(--accent); font-weight: bold; }
   div[class*="metadata-"], svg[class*="downloadButton-"], svg[class*="cancelButton-"] { color: #fff; }
@@ -784,7 +784,7 @@ div[class*="privateChannels-"] {
 
   div[class*="interactive-"] {
     background-color: var(--dark-primary);
-    filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .1));
+    filter: $filter-dropshadow;
 
     &:hover { background-color: var(--dark-highlight); }
 

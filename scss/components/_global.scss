@@ -45,9 +45,7 @@
   --theme-logo: 1;
 }
 
-div[class*="notice-"] {
-  border-radius: 0;
-}
+div[class*="notice-"] { border-radius: 0; }
 
 div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
 div[class*="numberBadge-"] { background-color: var(--notif) !important; }
@@ -244,7 +242,9 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
 .theme-dark div[class*="inner-"] form[class*="modal-"] {
   background: var(--dark-highlight);
 
-  button[class*="colorBrand-"] { background: var(--accent); }
+  button[class*="colorBrand-"] {
+    background: var(--accent);
+  }
 
   h2[class*="title-"] {
     color: #e74c3c;
@@ -294,7 +294,11 @@ div[class*="modal-"] {
     background-color: var(--accent);
     transition: filter .25s ease;
 
-    &[class*="emojiButton-"] { background-color: transparent; }
+    &[class*="emojiButton-"], &[aria-label="Send a gift"] {
+      background-color: transparent;
+      &:hover { background-color: transparent; }
+    }
+
     &[class*="close-"] {
       background: transparent;
 
