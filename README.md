@@ -5,26 +5,21 @@ This was made to let everyone who wants, able to have a more good-looking style.
 Do you need more help? Join my server! **[Discord Invite](https://discord.gg/DpxkY3x)**
 
 # Installing
+### Windows
+I know that not everyone understands how to use commands,
+so I have made a nice [installer](https://github.com/AlexFlipnote/beautifuldiscord-installer/raw/master/beautifuldiscord.exe)
+
+If you're sceptical of what the .exe includes, don't hesitate to visit
+[the source code of the installer](https://github.com/AlexFlipnote/beautifuldiscord-installer)
+to verify that this installer is 100% safe.
+
+### Windows, Linux & Mac
+If you know how to do commands and want to do it manually, follow this:
+- https://github.com/DTinker/discord-resources/wiki/Installing-Modifications
+
 ### Chrome
 You can install a Chrome plugin to have the theme directly implemented for you.<br>
 Click  [here](https://chrome.google.com/webstore/detail/doapcadhkfkjlpkgkoddmmcknkhmmbeo) to download it
-
-### Windows
-- Use the **INSTALL.bat** file
-- Remember to keep Discord open while installing!
-
-**What will the Installer download or do to my PC:**
-- chocolatey (To download Python)
-- Python (To use BeautifulDiscord)
-  - Python/BeautifulDiscord
-- Make a folder in **Documents\DiscordTheme**
-- Reboot Discord to install theme
-
-**How does the installer look when done correctly?**<br>
-Watch here: https://www.youtube.com/watch?v=rmLyPUb4ifo
-
-### Linux and Mac
-- https://github.com/DTinker/discord-resources/wiki/Installing-Modifications
 
 # FAQ
 **What should I use, theme.css or autotheme.css?**<br>That really depends on you. If you are a developer and want
