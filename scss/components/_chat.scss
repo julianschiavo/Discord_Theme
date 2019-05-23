@@ -1280,7 +1280,7 @@ div[class*="channels-"] {
 
     div[class*="pill-"] { display: none; }
     div[class*="circleIconButton-"] {
-      background: var(--dark-highlight);
+      background: transparent;
       border: 0;
       border-radius: 0;
       color: var(--accent);

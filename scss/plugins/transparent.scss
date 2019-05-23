@@ -122,7 +122,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
   div[class*="videoHeight-"] { background: var(--transparent-secondary); }
 
   div[class*="circleIconButton-"] {
-    background: var(--transparent-highlight) !important;
+    background: transparent !important;
     height: 53px !important;
     margin-bottom: 0 !important;
     padding-bottom: 10px !important;
