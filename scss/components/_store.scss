@@ -34,6 +34,14 @@ div[class*="homeWrapper-"] {
   }
 }
 
+div[class*="modal-"] {
+  div[class*="price-"] { background: var(--accent); }
+}
+
+a[class*="anchor-"][class*="item-"] {
+  background-color: var(--dark-primary) !important;
+}
+
 div[class*="listing-"] {
   background: var(--dark-secondary);
 
@@ -41,6 +49,14 @@ div[class*="listing-"] {
   div[class*="card-"], div[class*="bodySection-"],
   div[class*="guildInvite"] div[class*="content-"] {
     background: var(--dark-primary);
+  }
+
+  div[class*="bodySection-"] {
+    div[class*="headerBar-"] { background: var(--dark-primary); }
+    a[class*="sku"] div[class*="price-"] {
+      background: var(--accent);
+      color: #fff;
+    }
   }
 }
 
@@ -61,8 +77,14 @@ div[class*="listing-"] {
   background: var(--dark-primary);
 }
 
+div[class*="applicationStore"], div[class*="libraryHeader-"] {
+  div[class*="children"]::after { background: transparent; }
+}
+
 .theme-dark div[class*="applicationStore"] {
   background: var(--dark-secondary);
+
+  div[class*="container-"] { background: transparent; }
 
   a[class*="tileWrapper-"] {
     background: var(--dark-primary);

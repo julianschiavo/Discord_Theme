@@ -24,6 +24,23 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
   }
 }
 
+div[class*="applicationStore-"], div[class*="libraryHeader-"] {
+  div[class*="toolbar-"] div[class*="iconWrapper-"] {
+    svg[name="Nova_At"] {
+      height: 28px !important;
+      transform: translateY(-2px);
+      width: 28px !important;
+      path { d: path($svg-mention); }
+    }
+
+    svg[name="Nova_Help"] {
+      margin-left: 4px;
+      margin-top: 8px;
+      path { d: path($svg-question-mark); }
+    }
+  }
+}
+
 div[class*="title-"][class*="container-"] div[class*="iconWrapper-"] {
   svg[name="Nova_At"] {
     height: 24px !important;

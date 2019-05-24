@@ -15,6 +15,21 @@ div[class*="boost-"][class*="outer-"] {
   margin-right: .25em;
 }
 
+div[class*="modal-"] {
+  div[class*="selectGuild-"]:hover { background: var(--dark-secondary); }
+}
+
+section[class*="guildSubscriptionSection-"] {
+  div[class*="guildSubscription-"] {
+    div[class*="info-"] { background: var(--dark-secondary); }
+    div[class*="guildGraphicContainer-"] { background-color: var(--dark-primary); }
+    div[class*="gemIndicatorContainer-"] { background-color: var(--dark-highlight); }
+    span[class*="placeholder"], div[class*="placeholder"] {
+      background-color: var(--dark-primary);
+    }
+  }
+}
+
 div[class*="tier-"] {
   background: transparent;
   border-bottom: 0;

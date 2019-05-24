@@ -175,6 +175,16 @@ div[class*="privateChannels-"] {
   }
 }
 
+div[class*="selectSearch-"] {
+  @include search-bar;
+
+  div[class*="inner-"] {
+    @include search-bar-inner;
+    margin: 0 .3em;
+    padding: 0;
+  }
+}
+
 .theme-dark div[class*="search-"] div[class*="searchBar-"], .theme-dark div[class*="searchBar-"] {
   background: transparent;
   box-shadow: 0;
