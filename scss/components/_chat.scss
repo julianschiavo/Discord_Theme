@@ -1099,19 +1099,17 @@ div[class*="channels-"] {
     }
   }
 
-  div[class*="justifyStart"] {
-    & + div[class*="container-1"] {
-      background: transparent;
-      border-bottom: 0;
-      z-index: 1;
+  div[class*="container-1"] {
+    background: transparent;
+    border-bottom: 0;
+    z-index: 1;
 
-      & + div[class*="container-"] { border-top: $border-bottom-row; }
-    }
+    & + div[class*="container-"] { border-top: $border-bottom-row; }
+  }
 
-    & + div[class*="container-2"] {
-      border-top: $border-bottom-row;
-      button:hover { background-color: var(--dark-secondary); }
-    }
+  div[class*="container-2T"] {
+    border-top: $border-bottom-row;
+    button:hover { background-color: var(--dark-secondary); }
   }
 }
 
