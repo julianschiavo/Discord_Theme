@@ -773,6 +773,8 @@ div[class*="privateChannels-"] {
     &:hover { background: var(--dark-highlight); }
   }
 
+  div[class*="iconWrapper-"] { background: transparent !important; }
+
   div[class*="popoutContainer-"] {
     background: var(--dark-primary);
     transition: all 250ms ease;
@@ -1140,7 +1142,7 @@ div[class*="channels-"] {
 
     // Friends icon was replaced with Hub channel at Canary, remove later
     div[class*="homeButton-"] { background: transparent !important; }
-    a[href="/activity"], a[href*="/store"], a[href*="/library"], a[href*="/channels/@me"] {
+    a[aria-label="Home"] {
       background-color: transparent;
       background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
       background-position: center;
