@@ -1055,6 +1055,10 @@ div[class*="container-"] {
   path { display: none; }
 }
 
+div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
+  border-radius: 0;
+}
+
 div[class*="channels-"] {
   background: var(--dark-primary);
 

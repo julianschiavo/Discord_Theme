@@ -19,14 +19,36 @@ div[class*="modal-"] {
   div[class*="selectGuild-"]:hover { background: var(--dark-secondary); }
 }
 
+div[class*="tierNoneContainer-"] {
+  background-color: transparent !important;
+}
+
 section[class*="guildSubscriptionSection-"] {
   div[class*="guildSubscription-"] {
+    div[class*="header-"] { background: var(--dark-highlight); }
     div[class*="info-"] { background: var(--dark-secondary); }
     div[class*="guildGraphicContainer-"] { background-color: var(--dark-primary); }
     div[class*="gemIndicatorContainer-"] { background-color: var(--dark-highlight); }
+
+    div[class*="subscriptionDuration-"] {
+      background-color: var(--dark-primary);
+      border-radius: 0;
+    }
+
     span[class*="placeholder"], div[class*="placeholder"] {
       background-color: var(--dark-primary);
     }
+  }
+}
+
+div[class*="selectPlan-"] {
+  div[class*="price-"] { background: transparent !important; }
+}
+
+div[class*="tier2HeaderBackground-"] {
+  div[class*="price-"] {
+    background: var(--dark-primary) !important;
+    color: #fff !important;
   }
 }
 
@@ -36,6 +58,12 @@ div[class*="tier-"] {
   border-radius: 0;
 
   svg[class*="tierLock-"] { color: var(--accent); }
+  div[class*="tierUnlocked-"] {
+    background: transparent;
+    color: var(--accent);
+    font-size: 16px;
+    text-transform: none;
+  }
 
   div[class*="tierHeader"] {
     background: var(--dark-highlight);
@@ -49,7 +77,7 @@ div[class*="tier-"] {
 }
 
 div[class*="tierMarkerContainer-"] {
-  div[class*="tierMarker-"] { background: transparent; }
+  div[class*="tierMarker-"] { background: transparent !important; }
   div[class*="tierMarkerBackground-"] { background: var(--dark-secondary); }
 
   div[class*="selectedTier-"] {
@@ -60,5 +88,14 @@ div[class*="tierMarkerContainer-"] {
 
 div[class*="progressBar-"] {
   div[class*="barBackground-"] { background: var(--dark-secondary); }
+  rect[class*="background-"] { color: var(--dark-secondary); }
+
   div[class*="barForeground-"] { background: var(--accent); }
+  rect[class*="foreground-"] { color: var(--accent); }
+}
+
+div[class*="progressWithSubscriptions-"] {
+  div[class*="tierInProgress-"] {
+    background: var(--dark-secondary);
+  }
 }
