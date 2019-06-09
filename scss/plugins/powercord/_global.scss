@@ -1,8 +1,12 @@
 // Hidden guilds list
 html body .pc-wrapper .powercord-guilds .pc-listItem.pc-guild {
-  position: initial !important;
+  border-top: 0;
   height: initial;
-  border-top: none;
+  position: relative !important;
+
+  .pc-pill {
+    display: flex !important;
+  }
 }
 
 // Spotify modal
