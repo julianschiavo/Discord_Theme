@@ -206,91 +206,6 @@ div[class*="root-"] {
   div[class*="profileBadgeBugHunter-"] { background-image: url('https://discordapp.com/assets/f61b8981e92feead854f52e5a1ba14f0.svg'); }
 }
 
-#user-profile-modal {
-  border-radius: 0;
-  .avatar-wrapper { background-color: transparent; }
-  .headerIconForeground-3KIzwH { fill: #fff; }
-
-  .assetsSmallImage-2F5lSV {
-    @include transform(scale(1.2) translate(-5px, -5px));
-    border: 0;
-  }
-
-  .header {
-    background-color: var(--dark-highlight);
-    background-image: none;
-    border-radius: 0;
-
-    .discord-tag, .activity { @include animation(profile-badge-info 500ms ease-in-out); }
-
-    &::after { display: none !important; }
-
-    .header-info {
-      margin-top: -30px;
-      .header-info-inner .discord-tag .username { color: #fff; }
-      .header-info-inner .discord-tag .discriminator { color: rgba(255, 255, 255, .7); }
-      .header-info-inner .activity { color: rgba(255, 255, 255, .5); }
-
-      .badge-premium, .badge-hypesquad, .badge-partner, .badge-staff { @include animation(profile-badge 500ms ease-in-out); }
-    }
-  }
-
-  .guilds {
-    .guild:hover { background: rgba(255, 255, 255, .1); color: #fff; }
-
-    .section {
-      .section-header { color: #fff; }
-      .connected-accounts {
-        margin-left: -10px;
-        margin-right: -10px;
-        padding: 0 10px;
-
-        .connected-account {
-          background: var(--dark-primary);
-          border: 0;
-          box-shadow: none;
-
-          a:hover .connected-account-open-icon { opacity: .8; }
-          .connected-account-name-inner .connected-account-name { color: #fff; font-weight: 600; }
-        }
-      }
-
-      .note textarea {
-        @include transition(all 100ms ease);
-        border-radius: 0;
-        padding: 5px;
-
-        &:focus, &:hover:focus { background: transparent; color: #fff; }
-      }
-    }
-  }
-
-  .scroller {
-    background: var(--dark-secondary);
-    border-bottom: 0;
-  }
-
-  .tab-bar {
-    margin-left: -185px;
-    margin-top: 0;
-
-    .tab-bar-item, .tab-bar-item.selected { color: #fff; }
-    .tab-bar-item.selected {
-      border-bottom-color: #fff;
-      font-weight: bold;
-    }
-  }
-
-  .tab-bar-container {
-    background-color: var(--dark-primary);
-    border-bottom: 0;
-  }
-
-  .empty {
-    background: var(--dark-secondary);
-  }
-}
-
 
 .theme-dark div[class*="keyboardShortcutsModal-"] {
   background-color: var(--dark-secondary);
@@ -983,5 +898,19 @@ div[class*="popout"] {
 
   &::after {
     border-top-color: var(--dark-secondary) !important;
+  }
+}
+
+// Quick role giver popout
+div[class*="container-"][class*="positionTop-"] {
+  header[class*="header-"] {
+    background-color: var(--dark-highlight);
+    border-radius: 0;
+  }
+
+  section[class*="sectionTag-"] {
+    background-color: var(--dark-primary);
+    border-radius: 0;
+    div[class*="row-"][class*="selected-"] { background: var(--dark-secondary); }
   }
 }
