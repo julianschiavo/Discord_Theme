@@ -1,6 +1,5 @@
 /* This will automatically update your theme to the latest release */
 @import "https://discordtheme.alexflipnote.dev/theme.css";
-/*
 
 /*
   How to add plugins? :D
@@ -22,3 +21,5 @@
   --notif: #7a78bd;
   --theme-logo: 1; /* Change this to 0 to remove the theme text + version */
 }
+
+/* Under the :root you can add whatever CSS you desire, be creative! */
