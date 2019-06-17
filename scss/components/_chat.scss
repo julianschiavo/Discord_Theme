@@ -909,11 +909,9 @@ div[class*="container-"] {
       border-radius: 0;
 
       svg[class*="icon-"] { height: 16px; width: 16px; }
-
       &:hover {
         background: var(--dark-secondary);
         border-radius: 0;
-        padding-left: 16px;
       }
     }
 
