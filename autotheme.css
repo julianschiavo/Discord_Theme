@@ -1,11 +1,21 @@
-/* This will automatically update your theme to the latest release */
+/* This will automatically update your theme to the latest release, do not remove it and keep it at top */
 @import "https://discordtheme.alexflipnote.dev/theme.css";
 
 /*
   How to add plugins? :D
-  1. Just add any @import from either my PLUGINS.md file or find some other @import stuff
-  2. Add them under this comment (above :root)
-  3. Enjoy some fun stuff :P
+    1. Just add any @import from either my PLUGINS.md file or any other @import URLs
+       [ Plugins.md = https://github.com/AlexFlipnote/Discord_Theme/blob/master/docs/Plugins.md ]
+    2. Add them under this comment (above :root)
+    3. Enjoy some fun stuff :P
+
+  :root config explanation:
+    #AABBCC               = HEX Colour (https://www.w3schools.com/colors/colors_picker.asp)
+    rgba(0, 255, 255, 1)  = RGB(A) Colour (https://www.w3schools.com/colors/colors_picker.asp)
+    "Text here"           = String text (You can type whatever you desire inside these)
+    3px                   = Pixel size (Replace '3' with whatever you want, entering 0 will disable it)
+    1/0                   = Enabled/Disabled, use this to turn things either on or off.
+
+  Note: It's safe to remove any of the text inside comments, this is just to help you get started.
 */
 
 :root {
@@ -13,13 +23,13 @@
   --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
-  --discord-logo: 1; /* Change this to 0 to remove the discord logo + the stripe */
+  --discord-logo: 1;
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
-  --theme-logo: 1; /* Change this to 0 to remove the theme text + version */
+  --theme-logo: 1;
 }
 
 /* Under the :root you can add whatever CSS you desire, be creative! */
