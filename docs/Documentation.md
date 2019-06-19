@@ -32,7 +32,7 @@ In our theme, we have a global variable called :root, it can be found similar to
 ```css
 :root {
   /*--<var>: <value>*/
-  --accent: mediumpurple;
+  --accent: #7a78bd;
   --dark-primary: #212121;
   --dark-secondary: #303030;
 }

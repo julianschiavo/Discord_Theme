@@ -31,6 +31,7 @@ You can also change the background image in NSFW channels. Enjoy!
   --dark-primary: #212121;
   --dark-secondary: #303030;
   --discord-logo: 1;
+  --discord-logo-line: 1;
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
