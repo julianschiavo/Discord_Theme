@@ -902,7 +902,7 @@ div[class*="popout"] {
 }
 
 // Quick role giver popout
-div[class*="container-"][class*="positionTop-"] {
+div[class*="container-"][class*="position"] {
   header[class*="header-"] {
     background-color: var(--dark-highlight);
     border-radius: 0;
