@@ -1,5 +1,5 @@
 ### Discord Background
-[Click here for preview](https://i.alexflipnote.dev/9a565b.png)
+[Click here for preview](https://i.alexflipnote.dev/4J2VYpq.png)
 ```css
 @import "https://discordtheme.alexflipnote.dev/plugins/transparent.css";
 :root {
@@ -41,6 +41,12 @@ You can also change the background image in NSFW channels. Enjoy!
 }
 ```
 
+### Settings modal
+[Click here for preview](https://i.alexflipnote.dev/7bvvSQw.png)
+```css
+@import "https://discordtheme.alexflipnote.dev/plugins/settingsModal.css";
+```
+
 ### Powercord Support
 [Click here to know more](https://github.com/Aetheryx/powercord)
 ```css
@@ -54,7 +60,7 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://discordtheme.alexflipnote.dev/plugins/DiscordInjections.css";
 ```
 
-### 2 Guilds/Line (Community made)
+### [Unstable] 2 Guilds/Line
 [Click here for preview](https://i.alexflipnote.dev/60b9cb.png)
 ```css
 @import "https://discordtheme.alexflipnote.dev/plugins/wideGuilds.css";
@@ -171,17 +177,4 @@ Just simply more animations everywhere
 [Click here for preview](http://i.imgur.com/PjKdIla.gif)
 ```css
 @import "https://discordtheme.alexflipnote.dev/plugins/minimalStatusPicker.css";
-```
-
-### [Beta] Perspective Animations
-Some good animations using perspective animation
-
-[List preview](https://i.imgur.com/6PZDqX3.gifv)
-[List preview 2](https://i.imgur.com/6jxdKDk.gifv)
-[User popout preview](https://i.imgur.com/zabeW8m.gifv)
-[Resent mentions preview](https://i.imgur.com/6unKdAv.gifv)
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/perspectiveAnims.css";
-/* For more animations (that might seem a bit too much) */
-@import "https://discordtheme.alexflipnote.dev/plugins/perspectiveAnimsPlus.css";
 ```
