@@ -35,7 +35,7 @@ to change stuff, download the **theme.css**, however if you wish for a theme tha
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
 # Screenshots
-![Preview 1](https://i.alexflipnote.dev/77ukxvb.png)
+![Preview 1](https://i.alexflipnote.dev/6c5Nb2e.png)
 
 ![Preview 2](https://i.alexflipnote.dev/7dEBUDA.png)
 
