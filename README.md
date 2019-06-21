@@ -5,6 +5,9 @@ This was made to let everyone who wants, able to have a more good-looking style.
 Do you need more help? Join my server! **[Discord Invite](https://discord.gg/DpxkY3x)**
 
 # Installing
+### BetterDiscord
+If you're one of the few people who use BetterDiscord, please download [this file](https://raw.githubusercontent.com/AlexFlipnote/Discord_Theme/master/autotheme.theme.css) and import it to your client.
+
 ### Windows
 I know that not everyone understands how to use commands,
 so I have made a nice [installer](https://github.com/AlexFlipnote/beautifuldiscord-installer/raw/master/beautifuldiscord.exe)
@@ -12,6 +15,8 @@ so I have made a nice [installer](https://github.com/AlexFlipnote/beautifuldisco
 If you're sceptical of what the .exe includes, don't hesitate to visit
 [the source code of the installer](https://github.com/AlexFlipnote/beautifuldiscord-installer)
 to verify that this installer is 100% safe.
+
+**Note:** If you have any other clients installed (BetterDiscord, Powercord, etc), chances are that this installer will break your Discord. Keep that in mind before you take usage.
 
 ### Windows, Linux & Mac
 If you know how to do commands and want to do it manually, follow this:
