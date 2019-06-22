@@ -1,22 +1,32 @@
 .theme-dark div[class*="wrapper-1R"] {
-  width: 135px !important;
+  width: 130px !important;
 
   div[class*="systemPad-"] {
     align-content: flex-start;
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 0;
     padding: 0;
 
-    div[class*="container-"] {
-      left: 6px;
+    div[class*="listItem"] {
+      left: 6px !important;
       padding-left: 6px;
       padding-right: 6px;
       padding-top: 4px;
+      width: auto;
 
       &:first-child {
         left: -7px;
         margin: auto;
         position: relative;
+        width: 90px;
+      }
+
+      &:nth-last-child(1), &:nth-last-child(2) {
+        border-top: 0;
+        height: auto;
+        position: relative !important;
+        width: 48px;
       }
 
       + div[class*="container-"] {
@@ -107,9 +117,6 @@
         z-index: 100;
       }
     }
-
-    div[class*="circleIconButton-"] { width: 135px; }
-    div[class*="container-"]:last-of-type { margin-bottom: 60px; }
   }
 
   div[class*="scrollerWrap-"] {
