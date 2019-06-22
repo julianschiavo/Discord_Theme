@@ -613,6 +613,10 @@ div[class*="friendsTable-"] {
   margin-top: 0;
   padding-top: 8px;
 
+  div[class*="friendTableAddHeader-"] {
+    background: transparent !important;
+  }
+
   div[class*="friendsAction-"] {
     background-color: transparent !important;
     &:hover { background-color: var(--dark-primary) !important; }
