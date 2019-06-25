@@ -19,6 +19,21 @@ div[class*="modal-"] {
   div[class*="selectGuild-"]:hover { background: var(--dark-secondary); }
 }
 
+div[class*="subscribers-"] {
+  div[class*="moreSubscribers-"] {
+    background-color: var(--dark-secondary);
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+div[class*="subscribersPopout-"] {
+  background: var(--dark-secondary) !important;
+  box-shadow: 0 0 15px var(--dark-highlight) !important;
+  div[class*="subscribersPopoutUser-"] { color: #fff; }
+}
+
 div[class*="tierNoneContainer-"] {
   background-color: transparent !important;
 }

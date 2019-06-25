@@ -909,7 +909,6 @@ div[class*="container-"] {
 
   div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
     div[class*="content-"] {
-      @include transition(all .2s ease-in-out);
       border-radius: 0;
 
       svg[class*="icon-"] { height: 16px; width: 16px; }
@@ -943,10 +942,12 @@ div[class*="container-"] {
   div[class*="containerDefault-"] div[class*="modeUnread-"] {
     svg[class*="icon-"] path { fill: var(--notif); }
     div[class*="name-"] { color: var(--notif); }
+    &:hover { background-color: transparent; }
   }
 
   div[class*="containerDefault-"] div[class*="name-"] {
     color: #72767d;
+    padding-left: 4px;
   }
 
   div[class*="containerDefault-"] div[class*="unread-"] {
@@ -1077,11 +1078,7 @@ div[class*="channels-"] {
   }
 
   div[class*="userLimit-"] {
-    div[class*="wrapper-"] {
-      border-radius: 5px;
-      color: #fff;
-    }
-
+    div[class*="wrapper-"] { color: #fff; }
     span[class*="users-"] { background-color: var(--dark-secondary); }
     span[class*="total-"] {
       background-color: var(--dark-highlight);
