@@ -913,6 +913,12 @@ div[class*="container-"] {
       border-radius: 0;
     }
 
+    &:hover div[class*="voiceUser-"] div[class*="content-"],
+    &:hover div[class*="modeConnected-"] div[class*="content-"] {
+      background-color: transparent;
+      border-radius: 0;
+    }
+
     div[class*="content-"] {
       border-radius: 0;
       svg[class*="icon-"] { height: 16px; width: 16px; }
@@ -925,8 +931,8 @@ div[class*="container-"] {
     }
 
     div[class*="voiceUser-"] div[class*="content-"]:hover { padding-left: 0; }
-    div[class*="voiceUser-"], div[class*="voiceUser-"] div[class*="content-"] {
-      &:hover {
+    div[class*="voiceUser-"], div[class*="voiceUser-"], div[class*="modeConnected-"] {
+      div[class*="content-"]:hover {
         background: var(--dark-secondary);
         border-radius: 0;
       }
