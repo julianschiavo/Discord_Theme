@@ -908,14 +908,14 @@ div[class*="container-"] {
   }
 
   div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
+    &:hover div[class*="content-"] {
+      background-color: var(--dark-secondary);
+      border-radius: 0;
+    }
+
     div[class*="content-"] {
       border-radius: 0;
-
       svg[class*="icon-"] { height: 16px; width: 16px; }
-      &:hover {
-        background: var(--dark-secondary);
-        border-radius: 0;
-      }
     }
 
     div[class*="list-"] { padding-left: 22px; }

@@ -1,15 +1,5 @@
 // Emotes: https://material.io/icons/
 
-.user-settings-games {
-  .now-playing-add .link:hover {
-    color: var(--accent);
-  }
-
-  div[class*="contents-"] {
-    color: var(--accent);
-  }
-}
-
 div[class*="contentColumn-"] div[class*="container-"] {
   div[class*="search-"] {
     @include search-bar-inner;
@@ -64,11 +54,6 @@ div[class*="paymentHistory-"] {
 
   div[class*="cardPrimary-"], div[class*="card-"]::before {
     background: transparent;
-    border-color: transparent;
-  }
-
-  div[class*="cardPrimaryEditable-"] {
-    background: rgba(0, 0, 0, 0);
     border-color: transparent;
   }
 
