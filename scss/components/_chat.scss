@@ -199,7 +199,8 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   border-radius: 0;
   border-right: $border-bottom-row;
   border-top: $border-bottom-row;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
+  z-index: 1000;
 }
 
 
