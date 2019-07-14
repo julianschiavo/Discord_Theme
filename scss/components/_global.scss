@@ -264,6 +264,11 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
 
 div[class*="modal-"] {
   div[class*="slideBody-"] { background: transparent; }
+  div[class*="tiles-"] {
+    background: transparent;
+    box-shadow: none;
+  }
+
   div[class*="header-"], div[class*="contentWrapper-"] {
     background-color: var(--dark-highlight);
 
