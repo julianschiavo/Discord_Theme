@@ -1304,6 +1304,24 @@ div[class*="channels-"] {
       }
     }
   }
+
+  div[class*="wrapper-21"] {
+    div[class*="folderIconWrapper-"] { background-color: var(--dark-primary) !important; }
+    span[class*="expandedFolderBackground-"] { background-color: var(--dark-secondary); }
+
+    div[class*="listItem-"] {
+      border-top: none;
+      height: 48px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      position: relative !important;
+    }
+
+    div[class*="expandedGuilds-"] {
+      div[class*="pill-"] { display: flex; }
+      div[class*="listItem-"] { padding-bottom: 8px; }
+    }
+  }
 }
 
 // Markdown

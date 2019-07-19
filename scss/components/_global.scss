@@ -341,6 +341,17 @@ div[class*="modal-"] {
   }
 }
 
+// Theme folder popout
+div[class*="root-"][role="dialog"] {
+  background-color: var(--dark-highlight);
+  div[class*="footer-"] button { margin: 0 .25em; }
+  div[class*="scrollerWrap-"] {
+    background: var(--dark-primary);
+    border-radius: 0;
+    padding-top: 10px;
+  }
+}
+
 // Game Invite
 .theme-dark div[class*="invite-"].game-invite-embed,
 .theme-dark div[class*="preview-"],
