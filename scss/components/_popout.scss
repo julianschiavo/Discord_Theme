@@ -437,7 +437,7 @@ div[class*="modal-"] div[class*="wrapper-"] {
 
 .popout-menu { border-radius: 0;}
 
-div[class*="popoutTopLeft-"], div[class*="popoutBottom-"] {
+div[class*="popoutTopLeft-"], div[class*="popoutBottom-"], div[id="popout_1"] {
   div[class*="menu-"] {
     @include transition(all 250ms ease);
     background-color: var(--dark-primary);
