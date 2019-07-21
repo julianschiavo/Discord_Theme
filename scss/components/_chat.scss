@@ -1318,7 +1318,10 @@ div[class*="channels-"] {
 
     div[class*="expandedGuilds-"] {
       div[class*="pill-"] { display: flex; }
-      div[class*="listItem-"] { padding-bottom: 8px; }
+      div[class*="listItem-"]:first-child {
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
     }
   }
 }
