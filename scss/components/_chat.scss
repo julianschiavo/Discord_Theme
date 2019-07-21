@@ -1310,9 +1310,8 @@ div[class*="channels-"] {
     span[class*="expandedFolderBackground-"] { background-color: var(--dark-secondary); }
 
     div[class*="listItem-"] {
-      border-top: none;
+      border-top: 0;
       height: 48px;
-      margin-bottom: 0;
       padding-bottom: 0;
       position: relative !important;
     }
