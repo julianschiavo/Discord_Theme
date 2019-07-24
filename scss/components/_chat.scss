@@ -1306,9 +1306,6 @@ div[class*="channels-"] {
   }
 
   div[class*="wrapper-21"] {
-    div[class*="folderIconWrapper-"] { background-color: var(--dark-primary) !important; }
-    span[class*="expandedFolderBackground-"] { background-color: var(--dark-secondary); }
-
     div[class*="listItem-"] {
       border-top: 0;
       height: 48px;
@@ -1316,8 +1313,8 @@ div[class*="channels-"] {
       position: relative !important;
     }
 
+    div[class*="pill-"] { display: flex !important; }
     div[class*="expandedGuilds-"] {
-      div[class*="pill-"] { display: flex; }
       div[class*="listItem-"]:first-child {
         margin-bottom: 8px;
         margin-top: 0;
