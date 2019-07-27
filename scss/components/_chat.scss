@@ -1313,6 +1313,10 @@ div[class*="channels-"] {
       position: relative !important;
     }
 
+    span[class*="expandedFolderBackground-"] {
+      background-color: var(--dark-primary) !important;
+    }
+
     div[class*="pill-"] { display: flex !important; }
     div[class*="expandedGuilds-"] {
       div[class*="listItem-"]:first-child {

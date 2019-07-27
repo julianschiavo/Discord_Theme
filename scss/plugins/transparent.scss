@@ -42,6 +42,10 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     background: var(--transparent-primary);
   }
 
+  span[class*="expandedFolderBackground-"] {
+    background-color: rgba(255, 255, 255, .1) !important;
+  }
+
   div[class*="userSettingsAccount-"], div[class*="standardSidebarView-"] {
     div[class*="cardPrimary-"] { background: var(--transparent-primary); }
   }
