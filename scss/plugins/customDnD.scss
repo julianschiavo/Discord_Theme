@@ -7,7 +7,7 @@
   --status-online-title: "Online";
 }
 
-div[class*="popout-"] div[class*="item-"] {
+div[class*="popout-"] div[class*="item-"], #popout_1 div[class*="item-"] {
   // Default settings
   $status-size: 15px;
   $status-hint-size: 11px;
@@ -21,7 +21,7 @@ div[class*="popout-"] div[class*="item-"] {
   // Hide old text
   @for $x from 1 through 5 {
     &:nth-child(#{$x}) {
-      div[class*="helper-"], div[class*="statusIconText-"] div + div {
+      div[class*="helper-"], div[class*="statusIconText-"] div:not([class*="status-"]) {
         line-height: 0;
         text-indent: -9999px;
       }
@@ -30,7 +30,7 @@ div[class*="popout-"] div[class*="item-"] {
 
   // Online
   &:nth-child(1) {
-    div[class*="statusIconText-"] div + div::after {
+    div[class*="statusIconText-"] div:not([class*="status-"])::after {
       @include shownewtext();
       content: var(--status-online-title);
       font-size: $status-size;
@@ -39,7 +39,7 @@ div[class*="popout-"] div[class*="item-"] {
 
   // Idle
   &:nth-child(3) {
-    div[class*="statusIconText-"] div + div::after {
+    div[class*="statusIconText-"] div:not([class*="status-"]) {
       @include shownewtext();
       content: var(--status-idle-title);
       font-size: $status-size;
@@ -48,7 +48,7 @@ div[class*="popout-"] div[class*="item-"] {
 
   // Do Not Disturb
   &:nth-child(4) {
-    div[class*="statusIconText-"] div + div::after {
+    div[class*="statusIconText-"] div:not([class*="status-"]) {
       @include shownewtext();
       content: var(--status-dnd-title);
       font-size: $status-size;
@@ -63,7 +63,7 @@ div[class*="popout-"] div[class*="item-"] {
 
   // Invisible
   &:nth-child(5) {
-    div[class*="statusIconText-"] div + div::after {
+    div[class*="statusIconText-"] div:not([class*="status-"]) {
       @include shownewtext();
       content: var(--status-invis-title);
       font-size: $status-size;
