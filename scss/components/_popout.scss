@@ -907,6 +907,12 @@ div[class*="animatorTop-"][class*="didRender"] {
   }
 }
 
+// Game activity popout
+div[class*="popout-"][role="dialog"] div[class*="addGamePopout-"] {
+  background-color: var(--dark-highlight);
+
+}
+
 // Quick role giver popout
 div[class*="container-"][class*="position"] {
   header[class*="header-"] {
