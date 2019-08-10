@@ -352,6 +352,13 @@ div[class*="root-"][role="dialog"] {
   }
 }
 
+// Activity colour
+div[class*="userPopout"] div[class*="header-"], div[class*="topSection"] {
+  rect[mask="url(#svg-mask-status-online)"] { fill: #43b581; }
+  rect[mask="url(#svg-mask-status-idle)"] { fill: #faa61a; }
+  rect[mask="url(#svg-mask-status-dnd)"] { fill: #f04747; }
+}
+
 // Game Invite
 .theme-dark div[class*="invite-"].game-invite-embed,
 .theme-dark div[class*="preview-"],
