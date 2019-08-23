@@ -1121,7 +1121,12 @@ div[class*="channels-"] {
 
   div[class*="container-3b"] {
     border-top: $border-bottom-row;
+    margin-bottom: 0;
     button:hover { background-color: var(--dark-secondary); }
+  }
+
+  div[class*="activityPanel-"] {
+    border-bottom: 0;
   }
 }
 

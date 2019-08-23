@@ -72,6 +72,11 @@ div[class*="note-"] textarea {
   &:focus { background: var(--dark-highlight) !important; }
 }
 
+// Stream preview popout
+div[class*="streamPreviewWrapper-"] {
+  div[class*="streamPreview"] { background-color: var(--dark-highlight); }
+}
+
 // Colour picker
 .theme-dark div[class*="colorPickerCustom-"] {
   background: var(--dark-highlight);
@@ -127,15 +132,9 @@ div[class*="root-"] {
   border-radius: 0;
 
   button[type="button"] {
-    background: var(--accent);
     color: #fff;
     transition: all 250ms ease;
-
-    &:hover {
-      background: var(--accent);
-      filter: brightness(75%);
-      transform: translateY(-.3em);
-    }
+    &:hover { filter: brightness(75%); }
   }
 
   div[class*="topSectionSpotify-"], div[class*="topSectionPlaying"], div[class*="content-"] {
@@ -260,6 +259,7 @@ div[class*="errorState-"][class*="noResults-"] {
 }
 
 .theme-dark div[class*="popout-"] {
+  background: var(--dark-primary);
   box-shadow: none;
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }
@@ -357,6 +357,8 @@ div[class*="errorState-"][class*="noResults-"] {
   background: var(--dark-highlight);
   div[class*="memberListItem-"]:hover { background: var(--dark-primary); }
 }
+
+.theme-dark div[class*="memberListItem-"]:not([class*="popoutDisabled-"]):hover { background-color: var(--dark-secondary); }
 
 div[class*="modal-"] div[class*="wrapper-"] {
   background: transparent;
