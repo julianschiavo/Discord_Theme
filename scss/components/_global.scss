@@ -64,6 +64,12 @@
   &:hover { background-color: transparent; }
 }
 
+div[class*="live-"] {
+  border-radius: 0;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
 div[class*="notice-"] { border-radius: 0; }
 
 div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }

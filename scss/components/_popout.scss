@@ -259,7 +259,6 @@ div[class*="errorState-"][class*="noResults-"] {
 }
 
 .theme-dark div[class*="popout-"] {
-  background: var(--dark-primary);
   box-shadow: none;
 
   div[class*="popoutList-"] { background: var(--dark-highlight); }

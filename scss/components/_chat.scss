@@ -946,6 +946,13 @@ div[class*="container-"] {
     div[class*="name-"] { color: #fff; font-weight: 600; }
   }
 
+  div[class*="containerDefault-"] div[class*="modeSelected-"] div[class*="content-"] {
+    background: var(--dark-secondary);
+    svg[class*="icon-"] path { fill: #fff; }
+    div[class*="name-"] { color: #fff; font-weight: 600; }
+    &:hover { background: var(--dark-secondary); }
+  }
+
   div[class*="containerDefault-"] div[class*="modeUnread-"] {
     svg[class*="icon-"] path { fill: var(--notif); }
     div[class*="name-"] { color: var(--notif); }
