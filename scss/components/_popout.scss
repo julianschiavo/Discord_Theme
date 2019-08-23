@@ -631,15 +631,15 @@ div[class*="backdrop-"] + div[class*="modal-"] {
 
 
 // Tool tip
-div[class*="tooltips-"] div[class*="tooltip-"] {
+div[class*="tooltip-"], div[class*="tooltip-"][class*="tooltipGrey-"] {
   background: var(--dark-highlight);
   box-shadow: 0 0 5px var(--dark-highlight);
   color: #fff;
 
-  &[class*="top-"] { @include animation(tooltip-top-anim 200ms ease-in-out); }
-  &[class*="bottom-"] { @include animation(tooltip-bottom-anim 200ms ease-in-out); }
-  &[class*="right-"] { @include animation(tooltip-right-anim 200ms ease-in-out); }
-  &[class*="left-"] { @include animation(tooltip-left-anim 200ms ease-in-out); }
+  &[class*="tooltipTop-"] { @include animation(tooltip-top-anim 200ms ease-in-out); }
+  &[class*="tooltipBottom-"] { @include animation(tooltip-bottom-anim 200ms ease-in-out); }
+  &[class*="tooltipRight-"] { @include animation(tooltip-right-anim 200ms ease-in-out); }
+  &[class*="tooltipLeft-"] { @include animation(tooltip-left-anim 200ms ease-in-out); }
   &::after { display: none; }
 }
 

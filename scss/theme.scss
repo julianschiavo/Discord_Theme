@@ -1,5 +1,5 @@
 // Version
-$version: '2.4.9';
+$version: '2.5.0';
 
 // Show the credits
 @import 'assets/credits';
@@ -11,6 +11,7 @@ $version: '2.4.9';
 @import 'assets/svgPaths';
 
 // Everything else
+@import 'components/brandColours';
 @import 'components/chat';
 @import 'components/global';
 @import 'components/header';

@@ -46,24 +46,6 @@
   --theme-logo: 1;
 }
 
-[class*="colorBrand-"], [class*="lookFilled-"][class*="colorBrand-"] {
-  background-color: var(--accent);
-  color: #fff;
-  transition: all 250ms ease;
-
-  &:hover {
-    background-color: var(--accent);
-    filter: brightness(75%);
-  }
-}
-
-[class*="lookBlank-"] {
-  background-color: transparent;
-  color: #fff;
-  transition: all 250ms ease;
-  &:hover { background-color: transparent; }
-}
-
 div[class*="live-"] {
   border-radius: 0;
   letter-spacing: 2px;

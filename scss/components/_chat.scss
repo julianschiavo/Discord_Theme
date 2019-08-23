@@ -596,12 +596,7 @@ div[class*='privateChannels-'] {
       &:nth-child(2) { padding: 0 .5em; }
     }
 
-    button[class*="exitButton-"] {
-      background: var(--accent);
-      border-radius: 0;
-      margin: 4px;
-      text-transform: none;
-    }
+    button[class*="exitButton-"] { text-transform: none; }
   }
 }
 
