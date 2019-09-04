@@ -288,7 +288,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    top: -25.7px;
+    top: -30px;
     width: auto;
   }
 }
@@ -359,7 +359,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
     padding: 20px 0;
   }
 
-  &:last-of-type { margin-bottom: 10px !important; }
+  &:last-of-type { margin-bottom: 12px !important; }
 
   div[class*="embed-"] {
     background-color: rgba(0, 0, 0, .2);
@@ -382,7 +382,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
     }
   }
 
-  div[class*="message-"] div[class*="markup-"] {
+  div[class*="markup-"] {
     color: hsla(0, 0%, 100%, .7);
     &[class*="isFailed-"] { color: #f04747; }
 
@@ -468,32 +468,6 @@ div[class*="channelTextAreaEnabledNoAttach"] {
   }
 }
 
-
-// Account information
-.account {
-  .btn { background: none; }
-  .btn-group { border: 0; }
-  .btn-settings { opacity: 1; }
-  .btn::after { background-size: 20px 20px; }
-  .btn-mute, .btn-deafen, .btn-settings {
-    border-right: 0;
-    box-shadow: none;
-    opacity: .25;
-    &:hover { opacity: 1; }
-  }
-
-  #rtc-connection {
-    background-color: var(--dark-highlight);
-    border: 0;
-  }
-
-  .btn-mute:hover::after, .account .btn-mute::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg'); }
-  .btn-mute.disabled:hover::after, .account .btn-mute.disabled::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg'); }
-  .btn-deafen:hover::after, .account .btn-deafen::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg'); }
-  .btn-deafen.disabled:hover::after, .account .btn-deafen.disabled::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg'); }
-  .btn-settings:hover::after, .account .btn-settings::after { background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_24px.svg'); }
-}
-
 // Friends section
 div[class*='privateChannels-'] {
   overflow-x: visible;
@@ -553,6 +527,39 @@ div[class*='privateChannels-'] {
         div[class^='name'] { display: none; }
       }
     }
+  }
+
+  a[class*='channel-']:first-child { margin-left: 8px; }
+  a[href="/activity"], a[href^="/library"], a[href^="/store"], a[href="/channels/@me"] {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    width: 23.5%;
+
+    div[class*="avatar-"] { margin-right: 6px; }
+    svg { color: #fff; margin: 0; opacity: .6; }
+
+    &:hover div[class^='name-'] {
+      @include animation(tooltip-bottom-anim 200ms ease-in-out);
+      background: var(--dark-highlight);
+      border-radius: 5px;
+      box-shadow: 0 0 5px var(--dark-highlight);
+      color: #fff;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      left: -5px;
+      line-height: 16px;
+      max-width: 190px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 105%;
+      z-index: 1002;
+    }
+
+    div[class^='name-'] { display: none; }
   }
 
   div[class*="channel-"] {
@@ -628,8 +635,6 @@ div[class*="friendsTable-"] {
 
 div[class*="privateChannels-"] {
   background-color: var(--dark-primary);
-
-  div[class*="wrapper-"] { background-color: var(--notif); }
 
   & + div[class*="container-3b"] {
     border-top: $border-bottom-row;
@@ -1026,7 +1031,7 @@ div[class*="container-"] {
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
 
   div[class*="membersGroup-"] {
-    font-size: 13px;
+    font-size: 14px;
     text-transform: none;
   }
 
@@ -1073,6 +1078,10 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
 
 div[class*="channels-"] {
   background: var(--dark-primary);
+
+  div[class*="panels-"] { background: transparent; }
+  div[class*="bannerBG-"] { background: transparent; }
+  div[class*="animatedContainer-"] { background: transparent; }
 
   div[class*="containerDefault-"] {
     div[class*="wrapper-"] > svg { @include arrow-hover(180deg); }
@@ -1165,6 +1174,8 @@ div[class*="channels-"] {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 32px;
+
+      div[class*="childWrapper-"] { background: transparent; }
       svg { display: none; }
     }
 
