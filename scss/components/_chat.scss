@@ -901,41 +901,48 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
 
 
 // Channel section
-div[class*="container-"] {
-  header[class*="header-"] {
+div[class*="channels-"] {
+  div[class*="hasDropdown-"] header[class*="header-"] {
     background: transparent;
     border-radius: 0;
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
   }
 
-  div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
-    &:hover div[class*="content-"] {
-      background-color: var(--dark-secondary);
-      border-radius: 0;
-    }
+  div[class*="hasDropdown-"][class*="bannerVisible-"] header[class*="header-"] {
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: none;
+  }
 
-    &:hover div[class*="voiceUser-"] div[class*="content-"],
-    &:hover div[class*="modeConnected-"] div[class*="content-"] {
-      background-color: transparent;
-      border-radius: 0;
-    }
-
-    div[class*="content-"] {
-      border-radius: 0;
-      svg[class*="icon-"] { height: 16px; width: 16px; }
-    }
-
-    div[class*="list-"] { padding-left: 22px; }
-
-    div[class*="voiceUser-"][class*="selected-"] {
-      div[class*="content-"] { background: var(--dark-secondary) !important; }
-    }
-
-    div[class*="voiceUser-"] div[class*="content-"]:hover { padding-left: 0; }
-    div[class*="voiceUser-"], div[class*="voiceUser-"], div[class*="modeConnected-"] {
-      div[class*="content-"]:hover {
-        background: var(--dark-secondary);
+  div[class*="container-"] {
+    div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
+      &:hover div[class*="content-"] {
+        background-color: var(--dark-secondary);
         border-radius: 0;
+      }
+
+      &:hover div[class*="voiceUser-"] div[class*="content-"],
+      &:hover div[class*="modeConnected-"] div[class*="content-"] {
+        background-color: transparent;
+        border-radius: 0;
+      }
+
+      div[class*="content-"] {
+        border-radius: 0;
+        svg[class*="icon-"] { height: 16px; width: 16px; }
+      }
+
+      div[class*="list-"] { padding-left: 22px; }
+
+      div[class*="voiceUser-"][class*="selected-"] {
+        div[class*="content-"] { background: var(--dark-secondary) !important; }
+      }
+
+      div[class*="voiceUser-"] div[class*="content-"]:hover { padding-left: 0; }
+      div[class*="voiceUser-"], div[class*="voiceUser-"], div[class*="modeConnected-"] {
+        div[class*="content-"]:hover {
+          background: var(--dark-secondary);
+          border-radius: 0;
+        }
       }
     }
   }
@@ -959,9 +966,8 @@ div[class*="container-"] {
     &:hover { background-color: transparent; }
   }
 
-  div[class*="containerDefault-"] div[class*="name-"] {
-    color: #72767d;
-    padding-left: 4px;
+  div[class*="containerDefault-"] div[class*="modeMuted-"] div[class*="name-"] {
+    color: #4f545c;
   }
 
   div[class*="containerDefault-"] div[class*="unread-"] {
@@ -1080,8 +1086,11 @@ div[class*="channels-"] {
   background: var(--dark-primary);
 
   div[class*="panels-"] { background: transparent; }
-  div[class*="bannerBG-"] { background: transparent; }
   div[class*="animatedContainer-"] { background: transparent; }
+  div[class*="bannerBG-"] {
+    background: transparent;
+    box-shadow: none;
+  }
 
   div[class*="containerDefault-"] {
     div[class*="wrapper-"] > svg { @include arrow-hover(180deg); }
