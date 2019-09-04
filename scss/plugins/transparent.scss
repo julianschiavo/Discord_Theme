@@ -42,6 +42,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     background: var(--transparent-primary);
   }
 
+  div[class*="base-"] { background: transparent; }
   span[class*="expandedFolderBackground-"] {
     background-color: rgba(255, 255, 255, .1) !important;
   }
