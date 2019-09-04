@@ -476,6 +476,7 @@ div[class*="contextMenu-"] {
       background: var(--dark-primary) !important;
       color: rgba(255, 255, 255, 1);
       transition: all 250ms ease;
+
       div[class*="label-"] {
         transform: translateX(6px);
         transition: transform 250ms ease;
