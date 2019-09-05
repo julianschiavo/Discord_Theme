@@ -1084,6 +1084,7 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
 
 div[class*="channels-"] {
   background: var(--dark-primary);
+  border-radius: 0;
 
   div[class*="panels-"] { background: transparent; }
   div[class*="animatedContainer-"] { background: transparent; }
