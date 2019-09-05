@@ -115,6 +115,11 @@ div[class*="chat-"] {
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
   }
 
+  div[class*="transparent-"] {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
   div[class*="titleCall-"] {
     background: transparent;
     box-shadow: none;
