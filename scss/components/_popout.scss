@@ -127,6 +127,11 @@ div[class*="pictureInPicture-"] {
   }
 }
 
+// Global menu seperator
+div[class*="separator-"] {
+  border-bottom: 2px solid var(--dark-secondary);
+}
+
 // User popout large
 div[class*="root-"] {
   border-radius: 0;
@@ -322,19 +327,14 @@ div[class*="errorState-"][class*="noResults-"] {
     div[class*="invite-"] { background: transparent; }
 
     div[class*="item-"] {
-      @include transition(all 200ms ease-in-out);
-      color: #fff;
-      padding: 10px 30px 10px 20px;
+      @include transition(all 250ms ease-in-out);
+      padding: 6px 20px;
 
       &:hover {
-        @include transition(all 200ms ease-in-out);
+        @include transition(all 250ms ease-in-out);
         @include transform(translateX(.5em));
         background: transparent;
       }
-    }
-
-    div[class*="separator-"] {
-      display: none;
     }
   }
 
@@ -406,17 +406,16 @@ div[class*="modal-"] div[class*="wrapper-"] {
 div[class*="popoutTopLeft-"], div[class*="popoutBottom-"], div[id="popout_1"] {
   div[class*="menu-"] {
     @include transition(all 250ms ease);
-    background-color: var(--dark-primary);
+    background-color: var(--dark-highlight);
     color: #fff;
 
-    div[class*="item-"] {
+    div[class*="itemBase-"] {
       @include transition(all 250ms ease);
-      div[class*="label-"] { color: #fff; }
 
       &:hover {
         background-color: var(--dark-secondary);
         color: #fff;
-        padding-left: 20px;
+        transform: translateX(.3em);
       }
     }
   }

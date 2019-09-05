@@ -100,7 +100,11 @@
 }
 
 div[class*="chat-"] {
-  div[class*="newMessagesBar-"] { background-color: var(--notif); }
+  div[class*="newMessagesBar-"] {
+    background-color: var(--notif);
+    border-radius: 0;
+  }
+
   div[class*="jumpToPresentBar-"] {
     border-radius: 0;
     left: inherit;
