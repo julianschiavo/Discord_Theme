@@ -467,19 +467,14 @@ div[class*="contextMenu-"] {
     color: rgba(255, 255, 255, .5);
     cursor: pointer;
     margin: 0;
-    padding: 4px 15px;
+    padding: 6px 15px;
     transition: all 250ms ease;
 
-    div[class*="label-"] { transition: transform 250ms ease; }
     &:hover {
       background: var(--dark-primary) !important;
       color: rgba(255, 255, 255, 1);
+      padding-left: 20px;
       transition: all 250ms ease;
-
-      div[class*="label-"] {
-        transform: translateX(6px);
-        transition: transform 250ms ease;
-      }
     }
 
     &[class*="itemSlider-"] { padding: 9px 15px; }
@@ -513,6 +508,11 @@ div[class*="contextMenu-"] {
   }
 
   div[class*="danger-"] { color: #f04747 !important; }
+}
+
+.theme-dark div[class*="contextMenu-"] div[class*="itemSubMenu-"]::after, div[class*="contextMenu-"].theme-dark div[class*="itemSubMenu-"]::after {	  div[class*="danger-"] { color: #f04747 !important; }
+  background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/470257176439554069/ic_keyboard_arrow_right_white_18px.svg');
+  transform: translateY(-7px);
 }
 
 
