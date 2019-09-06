@@ -328,7 +328,7 @@ div[class*="errorState-"][class*="noResults-"] {
 
     div[class*="item-"] {
       @include transition(all 250ms ease-in-out);
-      padding: 6px 20px;
+      padding: 8px 20px;
 
       &:hover {
         @include transition(all 250ms ease-in-out);
@@ -467,7 +467,7 @@ div[class*="contextMenu-"] {
     color: rgba(255, 255, 255, .5);
     cursor: pointer;
     margin: 0;
-    padding: 6px 15px;
+    padding: 8px 15px;
     transition: all 250ms ease;
 
     &:hover {
