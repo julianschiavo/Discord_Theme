@@ -538,6 +538,39 @@ div[class*='privateChannels-'] {
     }
   }
 
+  a[class*='channel-']:first-child { margin-left: 8px; }
+  a[href="/activity"], a[href^="/library"], a[href^="/store"], a[href="/channels/@me"] {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    width: 23.5%;
+
+    div[class*="avatar-"] { margin-right: 6px; }
+    svg { color: #fff; margin: 0; opacity: .6; }
+
+    &:hover div[class^='name-'] {
+      @include animation(tooltip-bottom-anim 200ms ease-in-out);
+      background: var(--dark-highlight);
+      border-radius: 5px;
+      box-shadow: 0 0 5px var(--dark-highlight);
+      color: #fff;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      left: -5px;
+      line-height: 16px;
+      max-width: 190px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 105%;
+      z-index: 1002;
+    }
+
+    div[class^='name-'] { display: none; }
+  }
+
   div[class*="channel-"] {
     a[href="/activity"], a[href^="/library"], a[href^="/store"] {
       div[class*="wrapper-"] {
