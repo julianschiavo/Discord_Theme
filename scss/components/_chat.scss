@@ -297,8 +297,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    top: -26px;
-    width: auto;
+    top: -30px;
   }
 }
 
@@ -549,6 +548,11 @@ div[class*='privateChannels-'] {
 
     div[class*="avatar-"] { margin-right: 6px; }
     svg { color: #fff; margin: 0; opacity: .6; }
+
+    div[class*="children-"] {
+      margin-bottom: 28px;
+      margin-left: -5px;
+    }
 
     &:hover div[class^='name-'] {
       @include animation(tooltip-bottom-anim 200ms ease-in-out);
