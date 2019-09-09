@@ -913,20 +913,40 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
 }
 
 
+@mixin arrow-hover($deg, $invert: 50%) {
+  background: url('https://cdn.discordapp.com/attachments/469030745692962836/469096603286896660/channel_arrow.png');
+  background-size: contain;
+  filter: invert($invert);
+  height: 15px;
+  left: 2px;
+  position: absolute;
+  top: 4px;
+  transition: all .3s;
+  transform: rotate($deg);
+  width: 15px;
+
+  path { display: none; }
+}
+
+
 // Channel section
-div[class*="channels-"] {
-  div[class*="hasDropdown-"] header[class*="header-"] {
+div[class*="base-"] div[class*="sidebar-"] {
+  background: var(--dark-primary) !important;
+
+  header[class*="header-"] {
     background: transparent;
     border-radius: 0;
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
   }
 
-  div[class*="hasDropdown-"][class*="bannerVisible-"] header[class*="header-"] {
+  div[class*="bannerVisible-"] header[class*="header-"] {
     background-color: rgba(0, 0, 0, .1);
     box-shadow: none;
   }
 
   div[class*="container-"] {
+    background: transparent;
+
     div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
       &:hover div[class*="content-"] {
         background-color: var(--dark-secondary);
@@ -993,6 +1013,70 @@ div[class*="channels-"] {
     position: absolute;
     top: 15px;
     width: 12px;
+  }
+
+  div[class*="panels-"] { background: transparent; }
+  div[class*="animatedContainer-"] { background: transparent; }
+  div[class*="bannerBG-"] {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  div[class*="containerDefault-"] {
+    div[class*="wrapper-"] > svg { @include arrow-hover(180deg); }
+    div[class*="hoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
+    div[class*="hovered-"] > svg { @include arrow-hover(180deg); }
+    div[class*="collapsed-"] > svg { @include arrow-hover(90deg); }
+
+    div[class*="muted"] > svg { @include arrow-hover(180deg, 30%); }
+    div[class*="muted"][class*="collapsed-"] > svg { @include arrow-hover(90deg, 30%); }
+
+    div[class*="muted"] div[class*="name-"] { color: #4f545c; }
+  }
+
+  div[class*="userLimit-"] {
+    div[class*="wrapper-"] { color: #fff; }
+    span[class*="users-"] { background-color: var(--dark-secondary); }
+    span[class*="total-"] {
+      background-color: var(--dark-highlight);
+      &::after { border-right-color: var(--dark-highlight); }
+    }
+  }
+
+  div[class*="titleWrapper-"] { z-index: 1; }
+  div[class*="name-I"] {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-left: 4px;
+    text-transform: none;
+  }
+
+  div[class*="container-"] {
+    background: transparent;
+
+    div[class*="containerDefault-"] div[class*="horizontal-"] {
+      padding-left: 23px;
+      & > svg > path { display: none; }
+    }
+  }
+
+  div[class*="container-1"] {
+    background: transparent;
+    border-bottom: 0;
+    z-index: 1;
+
+    & + div[class*="container-"] { border-top: $border-bottom-row; }
+  }
+
+  div[class*="container-3b"] {
+    border-top: $border-bottom-row;
+    margin-bottom: 0;
+    button:hover { background-color: var(--dark-secondary); }
+  }
+
+  div[class*="activityPanel-"] {
+    border-bottom: 0;
   }
 }
 
@@ -1076,92 +1160,8 @@ div[class*="channels-"] {
   &.popout-open header { background-color: var(--dark-secondary); }
 }
 
-@mixin arrow-hover($deg, $invert: 50%) {
-  background: url('https://cdn.discordapp.com/attachments/469030745692962836/469096603286896660/channel_arrow.png');
-  background-size: contain;
-  filter: invert($invert);
-  height: 15px;
-  left: 2px;
-  position: absolute;
-  top: 4px;
-  transition: all .3s;
-  transform: rotate($deg);
-  width: 15px;
-
-  path { display: none; }
-}
-
 div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
   border-radius: 0;
-}
-
-div[class*="channels-"] {
-  background: var(--dark-primary);
-  border-radius: 0;
-
-  div[class*="panels-"] { background: transparent; }
-  div[class*="animatedContainer-"] { background: transparent; }
-  div[class*="bannerBG-"] {
-    background: transparent;
-    box-shadow: none;
-  }
-
-  div[class*="containerDefault-"] {
-    div[class*="wrapper-"] > svg { @include arrow-hover(180deg); }
-    div[class*="hoveredCollapsed-"] > svg { @include arrow-hover(90deg); }
-    div[class*="hovered-"] > svg { @include arrow-hover(180deg); }
-    div[class*="collapsed-"] > svg { @include arrow-hover(90deg); }
-
-    div[class*="muted"] > svg { @include arrow-hover(180deg, 30%); }
-    div[class*="muted"][class*="collapsed-"] > svg { @include arrow-hover(90deg, 30%); }
-
-    div[class*="muted"] div[class*="name-"] { color: #4f545c; }
-  }
-
-  div[class*="userLimit-"] {
-    div[class*="wrapper-"] { color: #fff; }
-    span[class*="users-"] { background-color: var(--dark-secondary); }
-    span[class*="total-"] {
-      background-color: var(--dark-highlight);
-      &::after { border-right-color: var(--dark-highlight); }
-    }
-  }
-
-  div[class*="titleWrapper-"] { z-index: 1; }
-  div[class*="name-I"] {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 32px;
-    margin-left: 4px;
-    text-transform: none;
-  }
-
-  div[class*="container-"] {
-    background: transparent;
-
-    div[class*="containerDefault-"] div[class*="horizontal-"] {
-      padding-left: 23px;
-      & > svg > path { display: none; }
-    }
-  }
-
-  div[class*="container-1"] {
-    background: transparent;
-    border-bottom: 0;
-    z-index: 1;
-
-    & + div[class*="container-"] { border-top: $border-bottom-row; }
-  }
-
-  div[class*="container-3b"] {
-    border-top: $border-bottom-row;
-    margin-bottom: 0;
-    button:hover { background-color: var(--dark-secondary); }
-  }
-
-  div[class*="activityPanel-"] {
-    border-bottom: 0;
-  }
 }
 
 
@@ -1180,7 +1180,6 @@ div[class*="channels-"] {
 .theme-dark div[class*="wrapper-1R"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
   border-radius: 0;
-  position: relative;
 
   div[class*="unreadMentionsBar-"] { box-shadow: none; }
   div[class*="unreadMentionsIndicatorBottom-"] { bottom: 53px; }
