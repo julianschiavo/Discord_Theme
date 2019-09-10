@@ -1,3 +1,6 @@
+@import '../assets/discontinued';
+@include discontinued-layer('wideGuilds', 'Folders are now a thing, it breaks this plugin too much.');
+
 .theme-dark div[class*="wrapper-1R"] {
   width: 130px !important;
 

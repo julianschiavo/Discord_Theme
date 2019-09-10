@@ -1,0 +1,27 @@
+@mixin discontinued-layer($name, $reason) {
+  body::before {
+    animation: discontinued-notice ease-in-out 10s forwards;
+    background: var(--dark-highlight);
+    border: 3px solid var(--dark-primary);
+    color: #fff;
+    content: '#{$name} has been discontinued, please remove the plugin from your CSS file\aReason: #{$reason}';
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    padding: 1em .5em;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    white-space: pre;
+    z-index: 9999999;
+  }
+}
+
+@keyframes discontinued-notice {
+  0% { transform: translateY(2.5em); }
+  5% { opacity: 1; transform: translateY(-1em); }
+  10% { transform: translateY(0); }
+  90% { transform: translateY(0); }
+  95% { opacity: 1; transform: translateY(-1em); }
+  100% { opacity: 0; transform: translateY(2.5em); }
+}
