@@ -54,8 +54,16 @@ div[class*="live-"] {
 
 div[class*="notice-"] { border-radius: 0; }
 
+div[class*="mention-"] span[class*="text-"] {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
-div[class*="numberBadge-"] { background-color: var(--notif) !important; }
+div[class*="numberBadge-"], div[class*="mention-"] {
+  background-color: var(--notif) !important;
+}
 
 div[class*="badge-"], div[class*="mentionsBadge-"] div[class*="numberBadge-"] {
   background-clip: padding-box;
