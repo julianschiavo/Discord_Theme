@@ -1134,7 +1134,7 @@ div[class*="base-"] div[class*="sidebar-"] {
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
 
-  div[class*="membersGroup-"] {
+  header[class*="membersGroup-"] {
     font-size: 14px;
     text-transform: none;
   }
