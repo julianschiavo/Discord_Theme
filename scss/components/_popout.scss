@@ -661,6 +661,7 @@ div[class*="tooltip-"], div[class*="tooltip-"][class*="tooltipGrey-"] {
   div[class*="footer-"] { background: var(--dark-secondary) !important; }
 
   div[class*="messagesPopout-"] {
+    background: transparent;
 
     div[class*="messageGroupWrapper-"], div[class*="messageGroupWrapper-"]:hover {
       background: var(--dark-primary) !important;

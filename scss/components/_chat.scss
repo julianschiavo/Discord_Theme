@@ -425,13 +425,16 @@ div[class*="uploadModal-"] {
 
 .theme-dark textarea[class*="textArea-"] { background: transparent; } // scss-lint:disable MergeableSelector
 
-div[class*="messagesWrapper-"] + form div[class*="wrapper-"] {
-  background: var(--dark-secondary);
-  border-radius: 0;
-  border-top: $border-bottom-row;
-  height: 52px;
-  margin: 0;
-  padding: 0 16px;
+div[class*="messagesWrapper-"] {
+  div[class*="messages-"] { background: transparent; }
+  + form div[class*="wrapper-"] {
+    background: var(--dark-secondary);
+    border-radius: 0;
+    border-top: $border-bottom-row;
+    height: 52px;
+    margin: 0;
+    padding: 0 16px;
+  }
 }
 
 .theme-dark div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
@@ -482,13 +485,16 @@ div[class*='privateChannels-'] {
   overflow-x: visible;
 
   header {
-    font-size: 13px;
+    box-shadow: none !important;
+    font-size: 14px;
     letter-spacing: 1px;
+    margin-bottom: 5px;
     padding-left: 10px;
     text-transform: none;
   }
 
   div[class*='scroller-'] {
+    background: transparent;
     overflow-x: visible;
     padding-right: 8px;
 
@@ -1184,9 +1190,9 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
 
   div[class*="unreadMentionsBar-"] { box-shadow: none; }
   div[class*="unreadMentionsIndicatorBottom-"] { bottom: 53px; }
+  div[class*="scroller-"] { background: transparent; }
 
   div[class*="systemPad-"] {
-    margin-bottom: 53px;
     position: relative;
 
     // Friends icon was replaced with Hub channel at Canary, remove later
@@ -1316,33 +1322,6 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
     div[class*="circleIconButton-"] {
       background-color: transparent;
       svg { color: var(--accent); }
-    }
-  }
-
-  // Add new server
-  div[class*="listItem"]:nth-last-child(2) {
-    border-top: $border-bottom-row;
-    bottom: 0;
-    height: 44px;
-    left: 0 !important;
-    padding: 0;
-    position: fixed !important;
-    width: 72px;
-
-    div[class*="pill-"] { display: none; }
-    div[class*="circleIconButton-"] {
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      color: var(--accent);
-      text-align: center;
-
-      &:hover svg { opacity: .5; transform: scale(1.3); }
-      svg {
-        font-weight: 500;
-        top: 4px;
-        transition: all 250ms ease;
-      }
     }
   }
 
