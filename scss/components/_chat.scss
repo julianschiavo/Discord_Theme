@@ -636,7 +636,7 @@ div[class*="friendsTable-"] {
   margin-top: 0;
   padding-top: 8px;
 
-  div[class*="friendTableAddHeader-"] {
+  div[class*="friendTableAddHeader-"], div[class*="friendsTableBody-"] {
     background: transparent !important;
   }
 
