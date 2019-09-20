@@ -64,6 +64,7 @@ div[class*="listing-"] {
 .theme-dark div[class*="gameLibrary-"] {
   background: var(--dark-secondary);
 
+  div[class*="scroller-"] { background: transparent; }
   div[class*="gameUpdates-"] { background: var(--dark-primary); }
   div[class*="header-"] { background: var(--dark-secondary); }
   button[class*="actionButton"] { background: var(--dark-highlight); }
