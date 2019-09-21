@@ -23,6 +23,7 @@ div[class*="userPopout-"] {
     background: var(--dark-primary);
     border-bottom: 0;
 
+    div[class*="bodyInner-"] { background: transparent; }
     div[class*="roleName-"] { font-weight: normal; }
   }
 
@@ -146,7 +147,16 @@ div[class*="root-"] {
     background: transparent;
   }
 
-  header[class*="header-"], div[class*="activityProfile-"] { background-color: var(--dark-highlight); }
+  header[class*="header-"], div[class*="activityProfile-"] {
+    background-color: var(--dark-highlight);
+
+    button {
+      background: var(--dark-secondary);
+      &:hover { background: var(--dark-primary); }
+    }
+  }
+
+
   div[class*="topSectionNormal-"], div[class*="tabBarContainer-"] { background-color: var(--dark-primary); border-top: 0; }
   div[class*="scrollerWrap-"], div[class*="empty-"] { background-color: var(--dark-secondary); }
   div[class*="connectedAccount-"] {

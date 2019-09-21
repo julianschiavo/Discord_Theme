@@ -35,7 +35,7 @@ div[class*="homeWrapper-"] {
 }
 
 div[class*="modal-"] {
-  div[class*="price-"] { background: var(--accent); }
+  div[class*="price-"] { background: var(--accent); color: #fff; }
 }
 
 a[class*="anchor-"][class*="item-"] {
