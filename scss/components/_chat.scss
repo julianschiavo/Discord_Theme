@@ -1061,6 +1061,7 @@ div[class*="base-"] div[class*="sidebar-"] {
 
   div[class*="container-"] {
     background: transparent;
+    div[class*="moreUsers-"] { background-color: var(--dark-secondary); }
 
     div[class*="containerDefault-"] div[class*="horizontal-"] {
       padding-left: 23px;
