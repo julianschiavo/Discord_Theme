@@ -42,7 +42,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     background: var(--transparent-primary);
   }
 
-  div[class*="base-"] { background: transparent; }
+  div[class*="base-"], div[class*="bg-"] { background: transparent; }
   span[class*="expandedFolderBackground-"] {
     background-color: rgba(255, 255, 255, .1) !important;
   }
@@ -52,7 +52,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
   }
 
   div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-"] {
-    div[class*="container-"] { background: transparent !important; }
+    div[class*="container-"]:not([class*="isMentioned"]) { background: transparent !important; }
     div[class*="container-1r"] { background: var(--transparent-secondary) !important; }
   }
 
@@ -223,4 +223,4 @@ div[class*="listing-"] {
 // END: Game store shit
 
 // Because Discord is bad, I added it here too
-div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
+div[class*="isMentioned"] { background: rgba(250, 166, 26, .1) !important; }
