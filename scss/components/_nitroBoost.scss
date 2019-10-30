@@ -67,33 +67,39 @@ div[class*="tier2HeaderBackground-"] {
   }
 }
 
-div[class*="tier-"] {
-  background: transparent;
-  border-bottom: 0;
+div[class*="tierWrapper-"] {
   border-radius: 0;
 
-  svg[class*="tierLock-"] { color: var(--accent); }
-  div[class*="tierUnlocked-"] {
+  div[class*="tier-"] {
     background: transparent;
-    color: var(--accent);
-    font-size: 16px;
-    text-transform: none;
-  }
+    border-bottom: 0;
+    border-radius: 0;
 
-  div[class*="tierHeader"] {
-    background: var(--dark-highlight);
-    color: #fff;
-  }
+    svg[class*="tierLock-"] { color: var(--accent); }
+    div[class*="tierUnlocked-"] {
+      background: transparent;
+      color: var(--accent);
+      font-size: 16px;
+      text-transform: none;
+    }
 
-  div[class*="tierBody"] {
-    background: var(--dark-secondary);
-    color: #fff;
+    div[class*="tierHeader"] {
+      background: var(--dark-highlight);
+      border-radius: 0;
+      color: #fff;
+    }
+
+    div[class*="tierBody"] {
+      background: var(--dark-secondary);
+      border-radius: 0;
+      color: #fff;
+    }
   }
 }
 
 div[class*="tierMarkerContainer-"] {
   div[class*="tierMarker-"] { background: transparent !important; }
-  div[class*="tierMarkerBackground-"] { background: var(--dark-secondary); }
+  div[class*="tierMarkerBackground-"] { background: var(--dark-primary); }
 
   div[class*="selectedTier-"] {
     div[class*="tierMarkerBackground-"] { background: var(--dark-highlight); }
@@ -102,8 +108,8 @@ div[class*="tierMarkerContainer-"] {
 }
 
 div[class*="progressBar-"] {
-  div[class*="barBackground-"] { background: var(--dark-secondary); }
-  rect[class*="background-"] { color: var(--dark-secondary); }
+  div[class*="barBackground-"] { background: var(--dark-highlight); }
+  rect[class*="background-"] { color: var(--dark-highlight); }
 
   div[class*="barForeground-"] { background: var(--accent); }
   rect[class*="foreground-"] { color: var(--accent); }
@@ -113,4 +119,43 @@ div[class*="progressWithSubscriptions-"] {
   div[class*="tierInProgress-"] {
     background: var(--dark-secondary);
   }
+}
+
+.theme-dark div[class*="perksModal-"] {
+  background-color: var(--dark-secondary);
+
+  div[class*="ctaBar-"] {
+    background-color: var(--dark-highlight);
+    border-radius: 0;
+  }
+
+  li[class*="perk-"] {
+    background-color: var(--dark-primary);
+    border-radius: 0;
+  }
+}
+
+div[class*="guild-"] {
+  border-radius: 0;
+  div[class*="guildHeader-"] { background-color: var(--dark-highlight); }
+  div[class*="guildSubscriptionSlots"] { background-color: var(--dark-secondary); }
+}
+
+div[class*="guilds-"] {
+  div[class*="cardWrapper-"] {
+    background: var(--dark-highlight);
+    border-radius: 0;
+    transition: background 250ms ease;
+
+    &:hover {
+      background: var(--dark-primary);
+      border-radius: 0;
+      transition: background 250ms ease;
+    }
+  }
+}
+
+div[class*="subscribeTooltipWrapper-"] {
+  background-color: var(--accent);
+  &::after { border-bottom-color: var(--accent); }
 }
