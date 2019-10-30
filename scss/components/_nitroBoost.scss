@@ -159,3 +159,12 @@ div[class*="subscribeTooltipWrapper-"] {
   background-color: var(--accent);
   &::after { border-bottom-color: var(--accent); }
 }
+
+div[class*="planSelectStep-"] {
+  div[class*="actions-"] { border-radius: 0; }
+  div[class*="iconWrapper-"], div[class*="inputWrapper-"], input[type="text"] { background: var(--dark-secondary); }
+  div[class*="upsellFooter"] {
+    background: var(--dark-highlight);
+    border-radius: 0;
+  }
+}
