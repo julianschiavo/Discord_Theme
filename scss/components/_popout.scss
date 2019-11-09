@@ -220,6 +220,11 @@ div[class*="emojiPicker-"] {
   background: transparent;
   border: 0;
 
+  div[class*="dimmer-"][class*="visible-"] {
+    background-color: var(--dark-highlight);
+    opacity: .75;
+  }
+
   div[class*="header-"] {
     background-color: var(--dark-highlight);
     .search-bar-light { background: transparent; }
@@ -232,6 +237,11 @@ div[class*="emojiPicker-"] {
     width: 100%;
 
     div[class*="category-"] { padding-left: 1em; }
+  }
+
+  div[class*="infoBarWrapper-"] {
+    div[class*="infoBar-"] { background-color: var(--dark-secondary); }
+    div[class*="iconSizeSmaller-"] { height: 36px; width: 36px; }
   }
 
   div[class*="category-"] {
@@ -294,8 +304,9 @@ div[class*="errorState-"][class*="noResults-"] {
   div[class*="emojiPicker-"] {
     animation: emoji-picker 300ms;
     background: var(--dark-primary) !important;
-    border: 1px solid var(--dark-primary);
+    border: 0;
     border-radius: 0 0 3px 3px !important;
+    box-shadow: $box-shadow-standard;
 
     div[class*="stickyHeader-"] { background: var(--dark-primary); }
     div[class*="scrollerWrap-"] {

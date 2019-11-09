@@ -36,14 +36,11 @@
   --dark-highlight: #181818;
   --dark-primary: #212121;
   --dark-secondary: #303030;
-  --discord-logo: 1;
-  --discord-logo-line: 1;
   --light-dark-text: #2e3136;
   --light-highlight: #9e9e9e;
   --light-primary: #ddd;
   --light-secondary: #ecf0f1;
   --notif: #7a78bd;
-  --theme-logo: 1;
 }
 
 div[class*="live-"] {
@@ -108,43 +105,6 @@ span[class*="botTag"] {
 }
 
 #app-mount {
-  div[class*="wordmark-"] {
-    svg { opacity: var(--discord-logo); }
-    &::before {
-      $cross-colour-logo: #f22525;
-      background: linear-gradient(135deg, $cross-colour-logo 25%, transparent 25%) -20px 0,
-                  linear-gradient(225deg, $cross-colour-logo 25%, transparent 25%) -20px 0,
-                  linear-gradient(315deg, $cross-colour-logo 25%, transparent 25%),
-                  linear-gradient(45deg, $cross-colour-logo 25%, transparent 25%);
-      background-size: 40px 40px;
-      content: ' ';
-      display: block;
-      height: 4px;
-      left: 8px;
-      opacity: var(--discord-logo-line);
-      position: absolute;
-      top: 10px;
-      transform: rotate(-6deg);
-      width: 55px;
-      z-index: 10000000;
-    }
-
-    &::after {
-      color: var(--accent);
-      content: 'Discord_Theme #{$version}';
-      display: block;
-      font-size: 16px;
-      font-weight: bold;
-      height: 25px;
-      left: 70px;
-      opacity: var(--theme-logo);
-      position: absolute;
-      top: 4px;
-      width: 200px;
-      z-index: 10000000;
-    }
-  }
-
   div[class*="titleBar-"] {
     background: #101010;
     margin-top: 0;
