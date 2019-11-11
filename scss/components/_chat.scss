@@ -482,8 +482,6 @@ div[class*="channelTextAreaEnabledNoAttach"] {
 
 // Friends section
 div[class*='privateChannels-'] {
-  overflow-x: visible;
-
   header {
     box-shadow: none !important;
     font-size: 14px;
@@ -596,14 +594,6 @@ div[class*='privateChannels-'] {
       right: 0;
       top: 0;
     }
-  }
-
-  // this is not ideal, but works well
-  header,
-  header + div[class*='channel-'],
-  header + div[class*='channel-'] + div[class*='channel-'] {
-    display: block !important;
-    width: 100% !important;
   }
 }
 // END
