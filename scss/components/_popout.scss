@@ -250,9 +250,10 @@ div[class*="emojiPicker-"] {
     div[class*="category-"] { padding-left: 1em; }
   }
 
-  div[class*="infoBarWrapper-"] {
-    div[class*="infoBar-"] { background-color: var(--dark-secondary); }
-    div[class*="iconSizeSmaller-"] { height: 36px; width: 36px; }
+  div[class*="infoBar-"] {
+    background-color: var(--dark-secondary);
+    div[class*="infoBarEmoji-"] { height: 36px; width: 36px; }
+    div[class*="icon-"] { height: 36px; width: 36px; }
   }
 
   div[class*="category-"] {
