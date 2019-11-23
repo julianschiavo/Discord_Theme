@@ -777,8 +777,9 @@ div[class*="autocomplete-"] {
   }
 }
 
-div[class*="uploadModal-"] {
+.theme-dark div[class*="uploadModal-"] {
   background-color: var(--dark-highlight);
+  box-shadow: none;
 
   div[class*="inner-"] {
     border: 0;
