@@ -457,13 +457,9 @@ div[class*="channelTextAreaEnabledNoAttach"] {
   padding-top: 0;
 }
 
-.edit-message .edit-container-inner {
-  div[class*="channelTextArea-"] div[class*="inner-"] {
-    textarea {
-      background: var(--dark-primary);
-      border-radius: 5px;
-    }
-  }
+div[class*="textAreaEdit-"] {
+  background: var(--dark-primary);
+  border-radius: 0;
 }
 
 .theme-brand div[class*="inner-"] {
