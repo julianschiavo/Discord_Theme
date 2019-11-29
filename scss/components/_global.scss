@@ -57,10 +57,19 @@ div[class*="mention-"] span[class*="text-"] {
   text-transform: capitalize;
 }
 
+// Video/Audio stuff
+div[class*="audioMetadata-"] {
+  a[class*="metadataName-"] { color: var(--accent); }
+}
+
+div[class*="audioControls-"] { background-color: transparent; }
+a[class*="metadataDownload-"] svg[class*="metadataIcon-"] { color: #fff; }
+
 div[class*="isMentioned-"] { background: rgba(250, 166, 26, .1) !important; }
 div[class*="numberBadge-"], div[class*="mention-"] {
   background-color: var(--notif) !important;
 }
+// END: Video/Audio stuff
 
 div[class*="badge-"], div[class*="mentionsBadge-"] div[class*="numberBadge-"] {
   background-clip: padding-box;
