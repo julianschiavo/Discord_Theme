@@ -168,9 +168,10 @@ div[class*="privateChannels-"] {
   div[class*="searchBar-"], .search-bar {
     @include search-bar;
 
-    div[class*="searchBarComponent-"] {
+    button[class*="searchBarComponent-"] {
       @include search-bar-inner;
       padding: 0;
+      padding-left: .5em;
     }
   }
 }
