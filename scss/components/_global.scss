@@ -43,6 +43,10 @@
   --notif: #7a78bd;
 }
 
+span[class*="inlineCode-"] {
+  background-color: var(--dark-highlight);
+}
+
 div[class*="live-"] {
   border-radius: 0;
   letter-spacing: 2px;
