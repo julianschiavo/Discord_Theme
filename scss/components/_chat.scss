@@ -383,11 +383,12 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
   code.inline { background: var(--dark-primary); }
 
-  div[class*="channelTextArea-"] div[class*="inner-"] {
-    textarea {
-      background: var(--dark-primary);
-      border-radius: 5px;
-    }
+  div[class*="channelTextArea-"] {
+    background: var(--dark-primary);
+    border-radius: 0;
+    border-top: 0 !important;
+
+    div[class*="inner-"] { background: transparent }
   }
 
   div[class*="markup-"] {
