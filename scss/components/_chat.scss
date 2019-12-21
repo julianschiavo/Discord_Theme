@@ -1176,7 +1176,7 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
 
 
 // Servers section
-.theme-dark div[class*="wrapper-1R"] { // scss-lint:disable MergeableSelector
+.theme-dark nav[class*="wrapper-1R"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
   border-radius: 0;
 
