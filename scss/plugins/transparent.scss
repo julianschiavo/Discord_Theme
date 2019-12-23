@@ -130,7 +130,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     span { background: transparent; }
   }
 
-  div[class*="wrapper-1R"] { background: var(--transparent-highlight); }
+  nav[class*="wrapper-1R"] { background: var(--transparent-highlight); }
   div[class*="videoHeight-"] { background: var(--transparent-secondary); }
 
   div[class*="circleIconButton-"] {
