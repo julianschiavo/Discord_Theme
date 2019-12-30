@@ -36,6 +36,10 @@
   background: transparent;
 }
 
+div[class*="bumpBox-"] {
+  background-color: var(--dark-primary);
+  border-radius: 0;
+}
 
 .theme-dark { // scss-lint:disable MergeableSelector
   .chat .jump-to-present-bar { background: var(--accent); }
