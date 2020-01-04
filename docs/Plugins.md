@@ -54,13 +54,6 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://discordtheme.alexflipnote.dev/plugins/settingsModal.css";
 ```
 
-### Powercord Support
-[Click here to know more](https://github.com/Aetheryx/powercord)
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/powercord.css";
-```
-
-
 ### DiscordInjections Support
 [Click here to know more](https://github.com/DiscordInjections/Plugins)
 ```css
