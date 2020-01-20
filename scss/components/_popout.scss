@@ -109,6 +109,11 @@ div[class*="pictureInPicture-"] {
   }
 }
 
+div[class*="toolbar-"] {
+  background-color: var(--dark-highlight);
+  &::before { border-top: 8px solid var(--dark-highlight); }
+}
+
 
 // Everyone ping popout
 .theme-dark form[class*="everyonePopout-"] {
