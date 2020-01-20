@@ -109,7 +109,7 @@ div[class*="pictureInPicture-"] {
   }
 }
 
-div[class*="toolbar-"] {
+div[class*="layerContainer-"] div[class*="toolbar-"] {
   background-color: var(--dark-highlight);
   &::before { border-top: 8px solid var(--dark-highlight); }
 }
