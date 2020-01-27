@@ -245,8 +245,9 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
   .form-inner p { color: #fff; }
 }
 
-div[class*="modal-"] {
+div[class*="root-"][class*="fullscreenOnMobile-"] {
   div[class*="slideBody-"] { background: transparent; }
+  div[class*="wrapper-"] { border-radius: 0; }
   div[class*="tiles-"] {
     background: transparent;
     box-shadow: none;
@@ -267,6 +268,8 @@ div[class*="modal-"] {
       div[class*="message-"] { background: transparent; }
     }
   }
+
+  header[class*="header-"] { background: transparent !important; }
 
   div[class^="action-"] {
     background: var(--dark-primary);
