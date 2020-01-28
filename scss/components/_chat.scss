@@ -208,12 +208,13 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
 
 .theme-dark div[class*="listeningAlong-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-primary);
-  border-left: $border-bottom-row;
+  border-bottom: 0;
   border-radius: 0;
-  border-right: $border-bottom-row;
-  border-top: $border-bottom-row;
-  margin-bottom: -2px;
+  box-shadow: $box-shadow-top;
+  margin-bottom: -1px;
   z-index: 1000;
+
+  div[class*="container-"] { box-shadow: none !important; }
 }
 
 
@@ -1068,6 +1069,7 @@ div[class*="base-"] div[class*="sidebar-"] {
   div[class*="container-1"] {
     background: transparent;
     border-bottom: 0;
+    box-shadow: $box-shadow-top;
     z-index: 1;
 
     & + div[class*="container-"] { border-top: $border-bottom-row; }
@@ -1105,31 +1107,6 @@ div[class*="base-"] div[class*="sidebar-"] {
   border-radius: 0 5px 5px 0;
 }
 
-.guild-channels {
-  background-color: var(--dark-primary);
-  .channel .channel-name { @include transition(all 200ms ease); }
-  .channel:hover .channel-name { @include transform(translate(10px)); }
-
-  &.selected::before { border-left: 2px solid var(--accent); }
-  &:hover.channel-muted::before, .guild-channels .channel-text:hover:not(.unread)::before { border-left: 2px inset var(--accent); }
-
-  .channel-text.selected { background: var(--dark-secondary); }
-  .channel-text:hover { background: var(--dark-secondary); opacity: .75; }
-}
-
-.channel-members-wrap {
-  div[class*="scroller-"] { background: var(--dark-secondary); }
-  .channel-members {
-    background: var(--dark-secondary);
-
-    div[class*="member-"] div[class*="content-"] {
-      background: var(--dark-secondary);
-      &:hover { background: var(--dark-primary); }
-      &.popout-open { background: var(--dark-primary); }
-    }
-  }
-}
-
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
   div[class*="members-"] { background-color: var(--dark-secondary); }
   h2[class*="membersGroup-"] { text-transform: none; }
@@ -1152,16 +1129,6 @@ div[class*="base-"] div[class*="sidebar-"] {
       &:hover { transform: translateX(.45em); }
     }
   }
-}
-
-
-.guild-header header {
-  background-color: var(--dark-highlight);
-  box-shadow: none;
-  height: 57px;
-
-  &:hover { background-color: var(--dark-secondary); }
-  &.popout-open header { background-color: var(--dark-secondary); }
 }
 
 div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
