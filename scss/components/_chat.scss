@@ -134,6 +134,7 @@ div[class*="chat-"] {
   form {
     border: 0;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -361,7 +362,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
   border-color: transparent;
 }
 
-.theme-dark .containerCozy-jafyvG, .theme-dark div[class*="containerCompactBounded-"] { // scss-lint:disable MergeableSelector
+.theme-dark div[class*="message-"], .theme-dark div[class*="containerCompactBounded-"] { // scss-lint:disable MergeableSelector
   &[class*="isLocalBot-"] {
     background-image: none;
     box-shadow: none;
@@ -420,9 +421,12 @@ div[class*="uploadModal-"] {
 
 .channel-text-area-default, div[class*="channelTextArea-"] {
   background: var(--dark-secondary);
+  border-radius: 0;
   border-top: $border-bottom-row !important;
   margin: 0;
-  padding-top: 0;
+  margin-bottom: -1px;
+  margin-top: -1px;
+  padding-top: 1px;
 
   div[class*="scrollableContainer-"] {
     background: transparent;
