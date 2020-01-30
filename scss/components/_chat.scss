@@ -23,13 +23,15 @@
 
 
 // Chat Messages
-.theme-dark div[class*="dividerRed-"],
-.theme-dark .divider, .theme-dark .divider.divider-red {
+.theme-dark div[class*="isUnread-"] {
+  svg[class*="unreadPillCap-"] path { fill: var(--dark-secondary); }
   span {
     background-color: var(--dark-secondary);
     border-radius: 0;
     text-transform: none;
   }
+
+  span[class*="unreadPill-"] { text-transform: capitalize; }
 }
 
 .theme-dark div[class*="info-"] div[class*="title-"] {
@@ -179,12 +181,6 @@ div[class*="chat-"] {
     font-size: 14px;
     text-transform: none;
   }
-}
-
-.theme-dark .friends-table .messages .divider::before, .theme-dark .friends-table .messages .divider span,
-.theme-dark div[class*="messagesWrapper-"] .messages .divider::before, .theme-dark div[class*="messagesWrapper-"] .messages .divider span,
-.theme-dark .messages-wrapper .messages .divider::before, .theme-dark .messages-wrapper .messages .divider span {
-  background-color: var(--dark-secondary);
 }
 
 // Discord Invites
@@ -602,6 +598,12 @@ div[class*='privateChannels-'] {
       top: 0;
     }
   }
+}
+
+div[class*="base-"] div[class*="container-1D"] {
+  background-color: var(--dark-secondary);
+  div[class*="actionButton-"] { background: transparent; }
+  div[class*="themed-"], div[class*="nowPlayingColumn-"] { background-color: var(--dark-secondary); }
 }
 // END
 

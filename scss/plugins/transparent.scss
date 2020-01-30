@@ -69,6 +69,8 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
     background: transparent;
   }
 
+  div[class*="nowPlayingColumn-"] { background: transparent !important; }
+
   div[class*="activityFeed-"] {
     background: transparent;
   }

@@ -78,6 +78,15 @@ div[class*="streamPreviewWrapper-"] {
   div[class*="streamPreview"] { background-color: var(--dark-highlight); }
 }
 
+// Message reactions
+div[class*="message-"] div[class*="buttons-"] {
+  div[class*="button-"]:hover { background-color: var(--dark-primary); }
+  div[class*="wrapper-"] {
+    background-color: var(--dark-highlight);
+    border-radius: 0;
+  }
+}
+
 // Colour picker
 .theme-dark div[class*="colorPickerCustom-"] {
   background: var(--dark-highlight);
