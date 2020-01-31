@@ -185,14 +185,17 @@ div[class*="chat-"] {
 }
 
 // Discord Invites
-div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
+div[class*="message-"] div[class*="container-"] div[class*="wrapper-"] {
   background: var(--dark-primary);
   border-style: none;
   filter: $filter-dropshadow;
 
   h5[class*="h5-"] {
     color: #fff;
-    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: none;
   }
 }
 
@@ -390,7 +393,7 @@ div[class*="containerCozy-"] div[class*="container-"] div[class*="wrapper-"] {
     border-radius: 0;
     border-top: 0 !important;
 
-    div[class*="inner-"] { background: transparent }
+    div[class*="inner-"] { background: transparent; }
   }
 
   div[class*="markup-"] {
