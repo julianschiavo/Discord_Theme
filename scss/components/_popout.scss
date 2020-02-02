@@ -407,6 +407,11 @@ div[class*="errorState-"][class*="noResults-"] {
 
 .theme-dark div[class*="memberListItem-"]:not([class*="popoutDisabled-"]):hover { background-color: var(--dark-secondary); }
 
+div[class*="modal-"] div[class*="message-"] {
+  background: transparent;
+  box-shadow: none;
+}
+
 div[class*="modal-"] div[class*="wrapper-"] {
   background: transparent;
 

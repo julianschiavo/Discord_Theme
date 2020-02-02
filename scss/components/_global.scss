@@ -239,12 +239,6 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
   }
 }
 
-.modal .modal-inner > .flex-nowrap { background: transparent; }
-.modal-content {
-  background-color: transparent;
-  .form-inner p { color: #fff; }
-}
-
 div[class*="root-"][class*="fullscreenOnMobile-"] {
   div[class*="slideBody-"] { background: transparent; }
   div[class*="wrapper-"] { border-radius: 0; }
