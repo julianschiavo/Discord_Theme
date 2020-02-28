@@ -295,6 +295,8 @@ div[class*="message-"] div[class*="container-"] div[class*="wrapper-"] {
   color: #fff;
   margin: 0;
 
+  &::before { display: none; }
+
   div[class*="typing-"], div[class*="activityInviteEducation-"] {
     background-color: var(--dark-secondary);
     bottom: 100%;
