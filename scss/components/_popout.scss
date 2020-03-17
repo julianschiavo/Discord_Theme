@@ -314,6 +314,10 @@ div[class*="errorState-"][class*="noResults-"] {
 
   div[class*="container-"][role="menu"] { background-color: var(--dark-highlight); }
 
+  div[class*="modal-"] {
+    background: var(--dark-primary);
+  }
+
   div[class*="popoutList-"] { background: var(--dark-highlight); }
   div[class*="searchBar-"] {
     background: transparent;
