@@ -1,27 +1,3 @@
-// Title Section
-.theme-dark .chat .title-wrap {
-  background-color: var(--dark-highlight);
-  border: 0;
-}
-
-.chat>.title-wrap>.topic { color: rgba(128, 128, 128, .9); }
-.chat>.title-wrap {
-  background-color: var(--light-primary);
-  border: 0;
-  box-shadow: none;
-}
-
-
-// Search results
-.theme-dark .search-results-wrap {
-  background: var(--dark-highlight);
-
-  .search-result.expanded {
-    background: var(--dark-secondary);
-  }
-}
-
-
 // Chat Messages
 .theme-dark div[class*="isUnread-"] {
   svg[class*="unreadPillCap-"] path { fill: var(--dark-secondary); }
@@ -89,10 +65,6 @@ div[class*="bumpBox-"] {
     }
   }
 
-  #friends .friends-table .friends-row .friends-column-actions .friends-action {
-    background-color: var(--dark-highlight);
-  }
-
   div[class*="headerBar-"] {
     background: var(--dark-highlight);
     padding-bottom: 6px;
@@ -136,29 +108,6 @@ div[class*="chat-"] {
     margin: 0;
     padding: 0;
   }
-}
-
-#app-mount > div > div.modal-container > div.modal > div > form > div.form-inner > div > div.comment > div > div.body > div > div.markup {
-  color: #fff;
-
-  pre {
-    background: #1a1c1f;
-    border: 2px solid #1a1c1f;
-    color: rgb(0, 0, 0);
-  }
-
-  > code {
-    background: var(--dark-highlight);
-
-    .hljs {
-      background: #1a1c1f;
-      color: #839496;
-    }
-  }
-}
-
-.confirm-message-modal .form-inner .message-group.hide-overflow .comment .message-first .body .message-text .markup code.inline {
-  background: var(--dark-highlight) !important;
 }
 
 .theme-dark .chat>.content, .theme-dark div[class*="messagesWrapper-"],
@@ -609,6 +558,8 @@ div[class*='privateChannels-'] {
   }
 }
 
+div[class*="nowPlayingColumn-"] { display: none; } // Who the fuck uses this even..?
+
 div[class*="base-"] div[class*="container-1D"] {
   background-color: var(--dark-secondary);
   div[class*="actionButton-"] { background: transparent; }
@@ -927,7 +878,6 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
   }
 }
 
-
 @mixin arrow-hover($deg, $invert: 50%) {
   background: url('https://cdn.discordapp.com/attachments/469030745692962836/469096603286896660/channel_arrow.png');
   background-size: contain;
@@ -961,6 +911,13 @@ div[class*="base-"] div[class*="sidebar-"] {
 
   div[class*="container-"] {
     background: transparent;
+
+    div[class*="moreUsers-"] { background-color: var(--dark-secondary); }
+
+    div[class*="containerDefault-"] div[class*="horizontal-"] {
+      padding-left: 23px;
+      & > svg > path { display: none; }
+    }
 
     div[class*="containerDefault-"], div[class*="containerDefault-"][class*="selected-"] {
       &:hover div[class*="content-"] {
@@ -1001,35 +958,6 @@ div[class*="base-"] div[class*="sidebar-"] {
     div[class*="name-"] { color: #fff; font-weight: 600; }
   }
 
-  div[class*="containerDefault-"] div[class*="modeSelected-"] div[class*="content-"] {
-    background: var(--dark-secondary);
-    svg[class*="icon-"] path { fill: #fff; }
-    div[class*="name-"] { color: #fff; font-weight: 600; }
-    &:hover { background: var(--dark-secondary); }
-  }
-
-  div[class*="containerDefault-"] div[class*="modeUnread-"] {
-    svg[class*="icon-"] path { fill: var(--notif); }
-    div[class*="name-"] { color: var(--notif); }
-    &:hover { background-color: transparent; }
-  }
-
-  div[class*="containerDefault-"] div[class*="modeMuted-"] div[class*="name-"] {
-    color: #4f545c;
-  }
-
-  div[class*="containerDefault-"] div[class*="unread-"] {
-    background: var(--accent);
-    border-radius: 6px;
-    content: ' ';
-    height: 12px;
-    left: -10px;
-    opacity: 1;
-    position: absolute;
-    top: 15px;
-    width: 12px;
-  }
-
   div[class*="panels-"] { background: transparent; }
   div[class*="animatedContainer-"] { background: transparent; }
   div[class*="bannerBG-"] {
@@ -1047,6 +975,33 @@ div[class*="base-"] div[class*="sidebar-"] {
     div[class*="muted"][class*="collapsed-"] > svg { @include arrow-hover(90deg, 30%); }
 
     div[class*="muted"] div[class*="name-"] { color: #4f545c; }
+
+    div[class*="modeSelected-"] div[class*="content-"] {
+      background: var(--dark-secondary);
+      svg[class*="icon-"] path { fill: #fff; }
+      div[class*="name-"] { color: #fff; font-weight: 600; }
+      &:hover { background: var(--dark-secondary); }
+    }
+
+    div[class*="unread-"] {
+      background: var(--accent);
+      border-radius: 6px;
+      content: ' ';
+      height: 12px;
+      left: -10px;
+      opacity: 1;
+      position: absolute;
+      top: 15px;
+      width: 12px;
+    }
+
+    div[class*="modeUnread-"] {
+      svg[class*="icon-"] path { fill: var(--notif); }
+      div[class*="name-"] { color: var(--notif); }
+      &:hover { background-color: transparent; }
+    }
+
+    div[class*="modeMuted-"] div[class*="name-"] { color: #4f545c; }
   }
 
   div[class*="userLimit-"] {
@@ -1065,16 +1020,6 @@ div[class*="base-"] div[class*="sidebar-"] {
     line-height: 32px;
     margin-left: 4px;
     text-transform: none;
-  }
-
-  div[class*="container-"] {
-    background: transparent;
-    div[class*="moreUsers-"] { background-color: var(--dark-secondary); }
-
-    div[class*="containerDefault-"] div[class*="horizontal-"] {
-      padding-left: 23px;
-      & > svg > path { display: none; }
-    }
   }
 
   div[class*="container-1"] {
@@ -1098,25 +1043,10 @@ div[class*="base-"] div[class*="sidebar-"] {
   }
 }
 
-.container-RYiLUQ {
-  background-color: var(--dark-primary);
-  margin-top: -1px;
-}
-
 .channels-wrap > div[class*="container-"] {
   background-color: var(--dark-primary);
   border-bottom: 0;
   border-top: 1px solid rgba(255, 255, 255, .25);
-}
-
-.content-2mSKOj, .content-2mSKOj:hover { transition: all 250ms ease; }
-.content-2mSKOj:hover { background: var(--dark-secondary); }
-.container-37-TX2 { color: #ccc; }
-.wrapper-2xO9RX { background-color: var(--accent); }
-
-.contentSelectedText-3j5CXt {
-  background-color: var(--dark-secondary);
-  border-radius: 0 5px 5px 0;
 }
 
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
@@ -1145,17 +1075,6 @@ div[class*="base-"] div[class*="sidebar-"] {
 
 div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
   border-radius: 0;
-}
-
-
-// Channel notice
-.theme-dark .channel-notices .channel-notice { // scss-lint:disable MergeableSelector
-  background-color: var(--dark-highlight);
-
-  .message {
-    div { color: #fff; }
-    button { background-color: var(--dark-primary); }
-  }
 }
 
 
@@ -1322,22 +1241,7 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
   }
 }
 
-// Markdown
-.markdown-modal {
-  .markdown-modal-header { text-align: center; }
-  .scroller-wrap { background-color: var(--dark-primary); }
-  .markdown-modal-footer { background-color: var(--dark-secondary); border-top: 0; }
-}
-
-.markdown-modal, .markdown-modal .markdown-modal-header {
-  background-color: var(--dark-highlight);
-  border-bottom: 0;
-  border-radius: 0;
-  color: #fff;
-}
-
 // Channel Notices
-
 .theme-dark div[class*="channelNotice-"] { // scss-lint:disable MergeableSelector
   background-color: var(--dark-highlight) !important;
 

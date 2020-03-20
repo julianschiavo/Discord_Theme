@@ -507,6 +507,17 @@ div[class*="contextMenu-"] {
   box-shadow: 0 2px 10px rgba(0, 0, 0, .3) !important;
   padding: 0;
 
+  div[class*="wrapper-"] {
+    padding: 0;
+
+    div[class*="button-"] {
+      background: transparent;
+      border-radius: 0;
+
+      &:hover { background: var(--dark-primary); }
+    }
+  }
+
   input[class*="checkboxElement"] {
     &:checked + span {
       background-color: var(--accent) !important;
