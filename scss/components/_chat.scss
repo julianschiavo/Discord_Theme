@@ -88,7 +88,7 @@ div[class*="chat-"] {
     margin-bottom: 30px;
   }
 
-  div[class*="title-"] {
+  section[class*="title-"] {
     background: var(--dark-secondary);
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
   }
@@ -442,7 +442,7 @@ div[class*="textAreaEdit-"] {
 }
 
 // Friends section
-div[class*='privateChannels-'] {
+nav[class*='privateChannels-'] {
   header {
     box-shadow: none !important;
     font-size: 14px;
@@ -541,7 +541,7 @@ div[class*="friendsTable-"] {
   }
 }
 
-div[class*="privateChannels-"] {
+nav[class*="privateChannels-"] {
   background-color: var(--dark-primary);
 
   & + div[class*="container-3b"] {
@@ -750,7 +750,7 @@ div[class*="privateChannels-"] {
 div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
   div[class*="wrapper-"][class*="minimum-"] { background: var(--dark-highlight); }
 
-  div[class*="container-1r"] {
+  section[class*="container-1r"] {
     background: var(--dark-secondary);
 
     div[class*="iconWrapper-"] {
@@ -805,7 +805,7 @@ div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
       width: 100%;
     }
 
-    div[class*="children"]::after { display: none; }
+    div[class*="children-"]::after { display: none; }
   }
 }
 
@@ -840,7 +840,7 @@ div[class*="base-"] div[class*="sidebar-"] {
     box-shadow: none;
   }
 
-  div[class*="container-"] {
+  nav[class*="container-"] {
     background: transparent;
 
     div[class*="moreUsers-"] { background-color: var(--dark-secondary); }
@@ -889,7 +889,7 @@ div[class*="base-"] div[class*="sidebar-"] {
     div[class*="name-"] { color: #fff; font-weight: 600; }
   }
 
-  div[class*="panels-"] { background: transparent; }
+  section[class*="panels-"] { background: transparent; }
   div[class*="animatedContainer-"] { background: transparent; }
   div[class*="bannerBG-"] {
     background: transparent;
@@ -945,7 +945,7 @@ div[class*="base-"] div[class*="sidebar-"] {
   }
 
   div[class*="titleWrapper-"] { z-index: 1; }
-  header[class*="name-I"] {
+  h2[class*="name-I"] {
     font-size: 15px;
     font-weight: 600;
     line-height: 32px;
@@ -987,7 +987,7 @@ div[class*="base-"] div[class*="sidebar-"] {
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
 
-  header[class*="membersGroup-"] {
+  h2[class*="membersGroup-"] {
     font-size: 14px;
     text-transform: none;
   }
