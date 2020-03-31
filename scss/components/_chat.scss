@@ -10,7 +10,7 @@
   span[class*="unreadPill-"] { text-transform: capitalize; }
 }
 
-.theme-dark div[class*="info-"] section[class*="title-"] {
+.theme-dark div[class*="info-"] div[class*="title-"] {
   background: transparent;
 }
 
@@ -88,12 +88,12 @@ div[class*="chat-"] {
     margin-bottom: 30px;
   }
 
-  section[class*="title-"] {
+  div[class*="title-"] {
     background: var(--dark-secondary);
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
   }
 
-  div[class*="videoControls-"] section[class*="title-"] {
+  div[class*="videoControls-"] div[class*="title-"] {
     background: transparent !important;
     box-shadow: none !important;
   }
@@ -447,7 +447,7 @@ div[class*="textAreaEdit-"] {
 }
 
 // Friends section
-nav[class*='privateChannels-'] {
+div[class*='privateChannels-'] {
   header {
     box-shadow: none !important;
     font-size: 14px;
@@ -546,7 +546,7 @@ div[class*="friendsTable-"] {
   }
 }
 
-nav[class*="privateChannels-"] {
+div[class*="privateChannels-"] {
   background-color: var(--dark-primary);
 
   & + div[class*="container-3b"] {
@@ -755,7 +755,7 @@ nav[class*="privateChannels-"] {
 div[class*="chat-"], div[class*="activityFeed-"], div[class*="container-3g"] {
   div[class*="wrapper-"][class*="minimum-"] { background: var(--dark-highlight); }
 
-  section[class*="container-1r"] {
+  div[class*="container-1r"] {
     background: var(--dark-secondary);
 
     div[class*="iconWrapper-"] {
@@ -845,7 +845,7 @@ div[class*="base-"] div[class*="sidebar-"] {
     box-shadow: none;
   }
 
-  nav[class*="container-"] {
+  div[class*="container-"] {
     background: transparent;
 
     div[class*="moreUsers-"] { background-color: var(--dark-secondary); }
@@ -894,7 +894,7 @@ div[class*="base-"] div[class*="sidebar-"] {
     div[class*="name-"] { color: #fff; font-weight: 600; }
   }
 
-  section[class*="panels-"] { background: transparent; }
+  div[class*="panels-"] { background: transparent; }
   div[class*="animatedContainer-"] { background: transparent; }
   div[class*="bannerBG-"] {
     background: transparent;
@@ -950,7 +950,7 @@ div[class*="base-"] div[class*="sidebar-"] {
   }
 
   div[class*="titleWrapper-"] { z-index: 1; }
-  h2[class*="name-I"] {
+  header[class*="name-I"] {
     font-size: 15px;
     font-weight: 600;
     line-height: 32px;
@@ -987,12 +987,11 @@ div[class*="base-"] div[class*="sidebar-"] {
 
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
   div[class*="members-"] { background-color: var(--dark-secondary); }
-  h2[class*="membersGroup-"] { text-transform: none; }
 
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
 
-  h2[class*="membersGroup-"] {
+  header[class*="membersGroup-"] {
     font-size: 14px;
     text-transform: none;
   }
