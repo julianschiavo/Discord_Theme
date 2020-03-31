@@ -1135,12 +1135,6 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
     }
   }
 
-  // DM button
-  div[class*="listItem-"]:first-child {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-
   // Search for servers
   div[class*="listItem"]:last-child {
     div[class*="pill-"] { display: none; }
@@ -1163,12 +1157,6 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
     }
 
     div[class*="pill-"] { display: flex !important; }
-    div[class*="expandedGuilds-"] {
-      div[class*="listItem-"]:first-child {
-        margin-bottom: 8px;
-        margin-top: 0;
-      }
-    }
   }
 }
 

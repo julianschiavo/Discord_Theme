@@ -65,7 +65,7 @@ div[class*="app-"]:first-child { background: var(--transparent-overlay); }
   div[class*="layer-"], div[class*="layers-"], div[class*="container-"],
   div[class*="chat-"], div[class*="chat-"] form, div[class*="content-"],
   div[class*="chat-"] div[class*="titleWrapper-"] ~ div[class*="content-"],
-  div[class*="privateChannels-"] {
+  nav[class*="privateChannels-"] {
     background: transparent;
   }
 
@@ -196,10 +196,8 @@ div[class*="channelTextAreaEnabled-"] div[class*="inner-"],
   background: var(--transparent-secondary);
 }
 
-div[class*="titleWrapper-"] div[class*="headerBar-"] {
-  background: var(--transparent-secondary);
-
-  div[class*="title-"] { background: transparent; }
+div[class*="chat-"] {
+  section[class*="title-"] { background: transparent; }
 }
 
 
