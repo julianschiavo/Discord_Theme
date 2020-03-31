@@ -10,7 +10,7 @@
   span[class*="unreadPill-"] { text-transform: capitalize; }
 }
 
-.theme-dark div[class*="info-"] div[class*="title-"] {
+.theme-dark div[class*="info-"] section[class*="title-"] {
   background: transparent;
 }
 
@@ -91,6 +91,11 @@ div[class*="chat-"] {
   section[class*="title-"] {
     background: var(--dark-secondary);
     box-shadow: 0 2px 0 rgba(0, 0, 0, .2), 0 3px 0 rgba(0, 0, 0, .06);
+  }
+
+  div[class*="videoControls-"] section[class*="title-"] {
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   div[class*="transparent-"] {
