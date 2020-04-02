@@ -60,18 +60,6 @@ You can also change the background image in NSFW channels. Enjoy!
 @import "https://discordtheme.alexflipnote.dev/plugins/DiscordInjections.css";
 ```
 
-### [Unstable] 2 Guilds/Line
-[Click here for preview](https://i.alexflipnote.dev/60b9cb.png)
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/wideGuilds.css";
-```
-
-### No animations
-Removes most heavily noticeable and custom animations from the theme
-```css
-@import "https://discordtheme.alexflipnote.dev/plugins/noAnimation.css";
-```
-
 ### Use Default Discord Dark Theme Colors and Notifications (Community made)
 [Click here for preview](https://i.alexflipnote.dev/cf921f.png)
 ```css
