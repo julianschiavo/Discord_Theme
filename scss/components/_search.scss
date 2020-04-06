@@ -162,7 +162,7 @@ div[class*="layerContainer-"] div[id*="popout_"] {
 
 
 // Private Message Search
-div[class*="privateChannels-"] {
+nav[class*="privateChannels-"] {
   div[class*="scroller-"] { padding-top: 0 !important; }
 
   div[class*="searchBar-"], .search-bar {

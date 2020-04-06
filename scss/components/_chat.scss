@@ -497,7 +497,7 @@ div[class*="nowPlayingColumn-"] { display: none; } // Who the fuck uses this eve
 div[class*="base-"] div[class*="container-1D"] {
   background-color: var(--dark-secondary);
   div[class*="actionButton-"] { background: transparent; }
-  div[class*="themed-"], div[class*="nowPlayingColumn-"] { background-color: var(--dark-secondary); }
+  section[class*="themed-"], div[class*="nowPlayingColumn-"] { background-color: var(--dark-secondary); }
 }
 // END
 
