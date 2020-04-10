@@ -170,6 +170,7 @@ div[class*="root-"] {
     }
   }
 
+  div[class*="topSection"] + div[class*="body-"] { background: var(--dark-secondary); }
 
   div[class*="topSectionNormal-"], div[class*="tabBarContainer-"] { background-color: var(--dark-primary); border-top: 0; }
   div[class*="empty-"] { background-color: var(--dark-secondary); }
