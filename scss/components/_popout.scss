@@ -729,6 +729,24 @@ div[class*="tooltip-"], div[class*="tooltip-"][class*="tooltipGrey-"] {
   div[class*="header-"] { background: var(--dark-highlight) !important; }
   div[class*="footer-"] { background: var(--dark-secondary) !important; }
 
+  div[class*="container-"] {
+    padding: 0;
+    width: 100%;
+
+    div[class*="channelHeader-"] {
+      background: var(--dark-secondary);
+      height: auto;
+      padding: 6px 8px;
+
+      div[class*="button-"] { background: transparent; }
+    }
+
+    div[class*="messageContainer-"] {
+      background: transparent;
+      border-radius: 0;
+    }
+  }
+
   div[class*="messagesPopout-"] {
     background: transparent;
 
