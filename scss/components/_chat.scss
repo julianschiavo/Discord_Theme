@@ -399,7 +399,7 @@ div[class*="uploadModal-"] {
 
 div[class*="messagesWrapper-"] {
   div[class*="messages-"] { background: transparent; }
-  + form div[class*="wrapper-"] {
+  form div[class*="wrapper-"] {
     background: var(--dark-secondary);
     border-radius: 0;
     border-top: $border-bottom-row;

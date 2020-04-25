@@ -334,46 +334,6 @@ div[class*="errorState-"][class*="noResults-"] {
     display: none;
   }
 
-  div[class*="emojiPicker-"] {
-    animation: emoji-picker 300ms;
-    background: var(--dark-primary) !important;
-    border: 0;
-    border-radius: 0 0 3px 3px !important;
-    box-shadow: $box-shadow-standard;
-
-    div[class*="stickyHeader-"] { background: var(--dark-primary); }
-    div[class*="scrollerWrap-"] {
-      background: transparent !important;
-
-      div[class*="emojiItem-"] {
-        @include transition(all 100ms ease);
-        background-position: 50% !important;
-        background-repeat: no-repeat !important;
-        background-size: contain !important;
-      }
-
-      div[class*="selected-"] { background: var(--dark-secondary); }
-    }
-
-    div[class*="header-"] {
-      background-color: var(--dark-highlight);
-      border-bottom: 0;
-
-      .search-bar {
-        background-color: var(--dark-highlight) !important;
-        .search-bar-inner { background: transparent; font-weight: bolder; }
-      }
-    }
-  }
-
-  &.no-shadow .emoji-picker {
-    background: var(--dark-primary) !important;
-    border: 0;
-    border-radius: 0 !important;
-    margin-bottom: -14px !important;
-    margin-right: 14px;
-  }
-
   div[class*="menu-"] {
     background: var(--dark-highlight);
 
