@@ -244,8 +244,7 @@ div[class*="message-"] div[class*="container-"] div[class*="wrapper-"] {
   .channel-textarea-upload:hover { background-color: transparent; }
 }
 
-.theme-dark div[class*="chat-"] form,
-.theme-dark .chat form {
+.theme-dark div[class*="chat-"] form {
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
@@ -261,6 +260,23 @@ div[class*="message-"] div[class*="container-"] div[class*="wrapper-"] {
     padding-right: 10px;
     position: absolute;
     top: -25px;
+  }
+
+  // Emoji/GIF thing
+  div[class*="contentWrapper-"] {
+    background: var(--dark-highlight);
+    border-radius: 0;
+
+    div[class*="categoryList-"] { background: var(--dark-highlight); }
+    div[class*="bodyWrapper-"] { background: var(--dark-secondary); }
+    header[class*="categoryWrapper-"] { background: var(--dark-secondary); }
+
+    div[class*="inspector-"] {
+      background-color: var(--dark-secondary);
+      box-shadow: -2px -12px 20px var(--dark-highlight);
+      z-index: 1000;
+      div[class*="emoji-"] { height: 36px; width: 36px; }
+    }
   }
 }
 
