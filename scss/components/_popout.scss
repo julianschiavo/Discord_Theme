@@ -252,10 +252,7 @@ div[class*="emojiPicker-"] {
     opacity: .75;
   }
 
-  div[class*="header-"] {
-    background-color: var(--dark-highlight);
-    .search-bar-light { background: transparent; }
-  }
+  div[class*="emojiPickerListWrapper-"] { background-color: var(--dark-secondary); }
 
   div[class*="stickyHeader-"] {
     background-color: var(--dark-primary);
