@@ -44,23 +44,16 @@ div[class*="bumpBox-"] {
   }
 
   span[class*="spoilerText-"] {
-    background: transparent;
-    border: 2px solid var(--dark-primary);
-    padding: 0 .4em;
+    background: rgba(#000, .25);
+    border-radius: 0;
     position: relative;
-    transition: all 250ms ease;
 
     &[class*="hidden-"] {
       background: var(--dark-highlight);
-      border: 2px solid var(--dark-highlight);
-      border-radius: 3px;
-
-      span { display: none; }
-      &::before { content: '[ Spoiler ]'; }
+      border-radius: 0;
 
       &:hover {
         background: var(--dark-primary);
-        border: 2px solid var(--dark-primary);
       }
     }
   }
