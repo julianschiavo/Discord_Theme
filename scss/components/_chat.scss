@@ -1025,129 +1025,125 @@ div[class*="base-"][class*="flex-"][style*="flex: 1 1 auto; margin-left"] {
 
 
 // Servers section
-.theme-dark nav[class*="wrapper-1R"] { // scss-lint:disable MergeableSelector
+.theme-dark nav[class*="guilds-"] { // scss-lint:disable MergeableSelector
   background: var(--dark-highlight);
   border-radius: 0;
 
   div[class*="unreadMentionsBar-"] { box-shadow: none; }
   div[class*="scroller-"] { background: transparent; }
 
-  div[class*="systemPad-"] {
-    position: relative;
+  // Friends icon was replaced with Hub channel at Canary, remove later
+  div[class*="homeButton-"] { background: transparent !important; }
+  a[aria-label="Home"] {
+    background-color: transparent;
+    background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
 
-    // Friends icon was replaced with Hub channel at Canary, remove later
-    div[class*="homeButton-"] { background: transparent !important; }
-    a[aria-label="Home"] {
-      background-color: transparent;
-      background-image: url('https://cdn.discordapp.com/attachments/469030745692962836/469030765783678996/ic_forum_white_24px.svg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 32px;
+    div[class*="childWrapper-"] { background: transparent; }
+    svg { display: none; }
+  }
 
-      div[class*="childWrapper-"] { background: transparent; }
-      svg { display: none; }
-    }
+  // Fix DM avatars too
+  div[class*="avatarSmall-"] a {
+    background-position: 50%;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
 
-    // Fix DM avatars too
-    div[class*="avatarSmall-"] a {
-      background-position: 50%;
-      background-size: 100% 100%;
-      border-radius: 50%;
-      height: 100%;
-      width: 100%;
-    }
+  // Temp soultion to unread servers
+  div[class*="listItem-"] {
+    div[class*="pill-"] {
+      height: 48px;
+      width: 72px;
 
-    // Temp soultion to unread servers
-    div[class*="listItem-"] {
-      div[class*="pill-"] {
-        height: 48px;
-        width: 72px;
-
-        span[class*="item-"] {
-          background-color: var(--notif);
-          margin-left: -3px;
-        }
-      }
-
-      div[class*="badgeWrapper-"] div[class*="iconBadge"] {
-        background-color: var(--dark-secondary);
+      span[class*="item-"] {
+        background-color: var(--notif);
+        margin-left: -3px;
       }
     }
 
-    div[class*="listItem- BREAK"] {  // Still under work
-      @include transform(translate(49px, -17px) !important);
-      border-radius: 50% !important;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 hsla(0, 0%, 100%, .15) !important;
-      height: 14px !important;
-      margin-top: 0 !important;
-      opacity: 1 !important;
-      pointer-events: none !important;
-      width: 14px !important;
-      z-index: 100 !important;
+    div[class*="badgeWrapper-"] div[class*="iconBadge"] {
+      background-color: var(--dark-secondary);
     }
+  }
 
-    div[class*="container-"] {
-      div[class*="dragfix"] div[class*="wrapper-"] { background: transparent !important; }
-      &::after {
-        background-color: var(--dark-primary);
-        left: -5px;
-        right: 0;
-        top: -5px;
-      }
+  div[class*="listItem- BREAK"] {  // Still under work
+    @include transform(translate(49px, -17px) !important);
+    border-radius: 50% !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 hsla(0, 0%, 100%, .15) !important;
+    height: 14px !important;
+    margin-top: 0 !important;
+    opacity: 1 !important;
+    pointer-events: none !important;
+    width: 14px !important;
+    z-index: 100 !important;
+  }
+
+  div[class*="container-"] {
+    div[class*="dragfix"] div[class*="wrapper-"] { background: transparent !important; }
+    &::after {
+      background-color: var(--dark-primary);
+      left: -5px;
+      right: 0;
+      top: -5px;
     }
+  }
 
-    div[class*="container-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
-    div[class*="friendsOnline"] { display: none; }
+  div[class*="container-"][class*="audio-"] div[class*="guildInner-"]::after { top: 30px; }
+  div[class*="friendsOnline"] { display: none; }
 
-    div[class*="container-"][class*="selected-"] {
-      background: transparent;
+  div[class*="container-"][class*="selected-"] {
+    background: transparent;
 
-      & div[class*="unread-"]::before {
-        @include transform(translate(35px, 5px) scale(1.2));
-        pointer-events: none;
-        visibility: visible !important;
-      }
-
-      &::before {
-        color: #fff;
-        content: '' !important;
-        display: block;
-        height: 64px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        visibility: hidden;
-        width: 4px;
-        z-index: 100;
-      }
-    }
-
-    div[class*="container-"][class*="selected-"]::before,
-    div[class*="container-"][class*="selected-"][class*="unread-"]::before,
-    div[class*="container-"][class*="unread-"]::before {
-      @include transform(translate(50px, -20px) scale(1.2));
-      background: var(--notif);
-      border-radius: 50%;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
-      height: 12px;
-      margin-top: 0;
-      pointer-events: none;
-      width: 12px;
-      z-index: 100;
-    }
-
-    div[class*="container-"][class*="selected-"][class*="unread-"]::before { // scss-lint:disable MergeableSelector
+    & div[class*="unread-"]::before {
       @include transform(translate(35px, 5px) scale(1.2));
+      pointer-events: none;
       visibility: visible !important;
     }
 
-    div[class*="guildSeperator-"] {
-      left: -5px;
-      margin: 0;
-      padding-bottom: 10px;
-      position: relative;
-      width: 90%;
+    &::before {
+      color: #fff;
+      content: '' !important;
+      display: block;
+      height: 64px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      width: 4px;
+      z-index: 100;
     }
+  }
+
+  div[class*="container-"][class*="selected-"]::before,
+  div[class*="container-"][class*="selected-"][class*="unread-"]::before,
+  div[class*="container-"][class*="unread-"]::before {
+    @include transform(translate(50px, -20px) scale(1.2));
+    background: var(--notif);
+    border-radius: 50%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), inset 0 1px 0 hsla(0, 0%, 100%, .15);
+    height: 12px;
+    margin-top: 0;
+    pointer-events: none;
+    width: 12px;
+    z-index: 100;
+  }
+
+  div[class*="container-"][class*="selected-"][class*="unread-"]::before { // scss-lint:disable MergeableSelector
+    @include transform(translate(35px, 5px) scale(1.2));
+    visibility: visible !important;
+  }
+
+  div[class*="guildSeperator-"] {
+    left: -5px;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative;
+    width: 90%;
   }
 
   // Search for servers
