@@ -3,7 +3,7 @@
 .theme-dark, .theme-light {
   div[class*="userSettingsAccount-"]::after {
     color: var(--accent);
-    content: 'Theme version: #{$version}';
+    content: 'Last update: #{$version}';
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -240,6 +240,7 @@ div[class*="valueChecked-"][class*="switchEnabled-"] {
 }
 
 div[class*="root-"][class*="fullscreenOnMobile-"] {
+  background: var(--dark-highlight);
   div[class*="slideBody-"] { background: transparent; }
   div[class*="wrapper-"] { border-radius: 0; }
   div[class*="tiles-"] {
