@@ -456,9 +456,9 @@ div[class*="popoutTopLeft-"], div[class*="popoutBottom-"], div[id="popout_1"] {
 }
 
 .option-popout .btn-item:hover { background: var(--dark-secondary); color: #fff; }
-.theme-dark div[class*="contextMenu-"] .item-group { border-color: rgba(255, 255, 255, .03) !important; }
+.theme-dark div[class*="menu-3"] .item-group { border-color: rgba(255, 255, 255, .03) !important; }
 
-div[class*="contextMenu-"] {
+div[class*="menu-3"] {
   @include animation(sub-contextmenu-anim 200ms ease-in-out);
   @include crossbrowser(transform-origin, top left);
   background: var(--dark-highlight) !important;
@@ -516,12 +516,13 @@ div[class*="contextMenu-"] {
     }
   }
 
-  div[class*="itemSubMenu-"] {
+  div[class*="submenuPaddingContainer-"] {
     position: relative;
+    div[class*="submenu-"] { background: var(--dark-highlight); }
   }
 
-  div[class*="itemSubMenu-"]:hover::after { opacity: .75; }
-  div[class*="itemSubMenu-"]::after {
+  div[class*="submenuPaddingContainer-"]:hover::after { opacity: .75; }
+  div[class*="submenuPaddingContainer-"]::after {
     @include transform(translateY(-4px));
     background-size: contain;
     content: '';
