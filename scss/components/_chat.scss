@@ -237,7 +237,7 @@ div[class*="message-"] div[class*="container-"] div[class*="wrapper-"] {
   .channel-textarea-upload:hover { background-color: transparent; }
 }
 
-.theme-dark div[class*="chat-"] form {
+.theme-dark div[class*="chat-"] form {  // scss-lint:disable MergeableSelector
   background-color: #3c3c3c;
   border: 0;
   color: #fff;
@@ -981,7 +981,10 @@ div[class*="base-"] div[class*="sidebar-"] {
 }
 
 .theme-dark div[class*="membersWrap-"] { // scss-lint:disable MergeableSelector
-  div[class*="members-"] { background-color: var(--dark-secondary); }
+  div[class*="members-"] {
+    background-color: var(--dark-secondary);
+    & > div { background: transparent; }
+  }
 
   div[class*="member-"]:hover div[class*="content-"] { background: transparent; }
   div[class*="member-"].popout-open div[class*="content-"] { background: transparent; }
