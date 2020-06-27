@@ -427,7 +427,11 @@ div[class*="channelTextArea-"] div[class*="inner-"], div[class*="channelTextArea
   padding-bottom: 4px;
   padding-top: 4px;
 
-  button[class*="attachButton-"] { height: 24px; }
+  button[class*="attachButton-"] {
+    height: 24px;
+    top: 13px;
+  }
+
   button[class*="emojiButton"] {
     &:hover { background: transparent; }
   }
