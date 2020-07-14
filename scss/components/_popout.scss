@@ -2,6 +2,8 @@
 div[class*="userPopout-"] {
   @include animation(user-popout-anim 350ms ease-in-out);
 
+  overflow: inherit;
+
   div[class*="activity-"] {
     background: transparent;
 
