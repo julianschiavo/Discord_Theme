@@ -1,0 +1,20 @@
+// Convert ugly, forced uppercase on roles and category names
+h2, span {
+  &.container-q97qHp {
+    text-transform: none;
+    font-size: 14px;
+  }
+}
+
+// Remove "Now Playing" side bar in friends section
+div[class*="nowPlayingColumn"] { display: none; }
+
+// Remove Nitro gift icon inside chat textarea
+div[class*="channelTextArea"] button[aria-label="Send a gift"] { display: none; }
+
+// Remove nitro tab from DM list
+ul[aria-label="Direct Messages"] li[aria-posinset="2"] { display: none; }
+
+// Remove useless icons from top-right
+a[href="https://support.discord.com"] { display: none; }  // Help button
+div[aria-label="Notification Settings"] { display: none; }  // Notification settings button

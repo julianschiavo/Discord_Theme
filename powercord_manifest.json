@@ -1,8 +1,8 @@
 {
   "name": "AlexFlipnote/Discord_Theme",
   "description": "🎨 A discord theme that changes your CSS style",
-  "version": "2.9.1",
+  "version": "3.0.0",
   "author": "AlexFlipnote",
   "license": "GPL-3.0",
-  "theme": "theme.css"
+  "theme": "index.scss"
 }
